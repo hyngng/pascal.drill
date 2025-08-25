@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zh/S/py4S+U=",
+  "dgSpecHash": "IxH2hbbB3BY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kiw60\\Desktop\\test3\\Pascal\\Drill\\Drill.csproj",
+  "projectFilePath": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Drill.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kiw60\\.nuget\\packages\\communitytoolkit.common\\8.2.1\\communitytoolkit.common.8.2.1.nupkg.sha512",
     "C:\\Users\\kiw60\\.nuget\\packages\\communitytoolkit.winui.controls.settingscontrols\\8.2.250402\\communitytoolkit.winui.controls.settingscontrols.8.2.250402.nupkg.sha512",

@@ -1,1 +1,1 @@
-C:\Users\kiw60\Desktop\test3\Pascal\Drill\Drill.csproj;x64
+C:\Users\kiw60\Desktop\Pascal\Drill\Drill.csproj;x64

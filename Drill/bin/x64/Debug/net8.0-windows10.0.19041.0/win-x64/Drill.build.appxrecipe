@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>67f7fa6c-903b-45fb-9cc2-41d76128ebb2</PackageIdentityName>
     <PackageIdentityPublisher>CN=kiw60</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kiw60\Desktop\test3\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\kiw60\Desktop\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.runtimeconfig.json">
       <PackagePath>Drill.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.dll">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.dll">
       <PackagePath>Drill.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Drill.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
@@ -694,7 +694,7 @@
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\microsoft.web.webview2\1.0.2903.40\lib_manual\net8.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.deps.json">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.deps.json">
       <PackagePath>Drill.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\communitytoolkit.winui.controls.settingscontrols\8.2.250402\lib\net8.0-windows10.0.19041\CommunityToolkit.WinUI.Controls.SettingsControls.pri">
@@ -709,25 +709,25 @@
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\communitytoolkit.winui.triggers\8.2.250402\lib\net8.0-windows10.0.19041\CommunityToolkit.WinUI.Triggers.pri">
       <PackagePath>CommunityToolkit.WinUI.Triggers.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

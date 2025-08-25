@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>67f7fa6c-903b-45fb-9cc2-41d76128ebb2</PackageIdentityName>
     <PackageIdentityPublisher>CN=kiw60</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kiw60\Desktop\test3\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\kiw60\Desktop\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>8417EA3C3C03933B62A5B94A16982F9E9ABB11C8E11EFD1514CE20AAF67EF388</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>67f7fa6c-903b-45fb-9cc2-41d76128ebb2_1.0.0.0_x64__s8yqbydf55vk2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>67f7fa6c-903b-45fb-9cc2-41d76128ebb2_s8yqbydf55vk2!App</RegisteredUserModeAppID>
@@ -26,28 +26,28 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-08-25T13:30:42.660</Modified>
+      <Modified>2025-08-25T13:44:29.371</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-08-25T13:30:42.484</Modified>
+      <Modified>2025-08-25T13:44:29.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.runtimeconfig.json">
       <PackagePath>Drill.runtimeconfig.json</PackagePath>
-      <Modified>2025-08-25T07:41:32.385</Modified>
+      <Modified>2025-08-25T13:43:10.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.dll">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.dll">
       <PackagePath>Drill.dll</PackagePath>
-      <Modified>2025-08-25T13:30:42.389</Modified>
+      <Modified>2025-08-25T13:44:28.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Drill.exe</PackagePath>
-      <Modified>2025-08-25T13:30:42.389</Modified>
+      <Modified>2025-08-25T13:44:28.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -925,9 +925,9 @@
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
       <Modified>2024-11-10T08:57:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.deps.json">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.deps.json">
       <PackagePath>Drill.deps.json</PackagePath>
-      <Modified>2025-08-25T07:41:32.360</Modified>
+      <Modified>2025-08-25T13:43:10.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\communitytoolkit.winui.controls.settingscontrols\8.2.250402\lib\net8.0-windows10.0.19041\CommunityToolkit.WinUI.Controls.SettingsControls.pri">
       <PackagePath>CommunityToolkit.WinUI.Controls.SettingsControls.pri</PackagePath>
@@ -945,31 +945,31 @@
       <PackagePath>CommunityToolkit.WinUI.Triggers.pri</PackagePath>
       <Modified>2025-04-02T18:04:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2025-08-23T10:00:53.187</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <Modified>2025-08-23T10:00:53.187</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <Modified>2025-08-23T10:00:53.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <Modified>2025-08-23T10:00:53.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <Modified>2025-08-23T10:00:53.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <Modified>2025-08-23T10:00:53.193</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\test3\Pascal\Drill\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kiw60\Desktop\Pascal\Drill\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <Modified>2025-08-23T10:00:53.193</Modified>
     </AppxPackagedFile>

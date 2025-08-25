@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kiw60\\Desktop\\test3\\Pascal\\Drill\\Drill.csproj": {}
+    "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Drill.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiw60\\Desktop\\test3\\Pascal\\Drill\\Drill.csproj": {
+    "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Drill.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiw60\\Desktop\\test3\\Pascal\\Drill\\Drill.csproj",
+        "projectUniqueName": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Drill.csproj",
         "projectName": "Drill",
-        "projectPath": "C:\\Users\\kiw60\\Desktop\\test3\\Pascal\\Drill\\Drill.csproj",
+        "projectPath": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Drill.csproj",
         "packagesPath": "C:\\Users\\kiw60\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiw60\\Desktop\\test3\\Pascal\\Drill\\obj\\",
+        "outputPath": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
