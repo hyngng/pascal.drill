@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Drill.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Drill"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="Base"/>
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TitleBar x:Name="CustomTitleBar" Title="파스칼 프로젝트"
+              IsBackButtonVisible="True"
+              IsBackButtonEnabled="{x:Bind RootFrame.CanGoBack, Mode=OneWay}"
+              BackRequested="TitleBar_BackRequested"
+              IsPaneToggleButtonVisible="True"
+              PaneToggleRequested="TitleBar_PaneToggleRequested">
+        </TitleBar>
+
+        <NavigationView x:Name="RootNavigationView" Grid.Row="1"
+                        IsBackButtonVisible="Collapsed"
+                        IsPaneToggleButtonVisible="False"
+                        SelectionChanged="NavSelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Play" Content="PDF 병합과 분할" Tag="PdfEdit" />
+                <NavigationViewItem Icon="Save" Content="기대해 주세요" Tag="MaybeLater" />
+            </NavigationView.MenuItems>
+            <Frame x:Name="RootFrame"/>
+        </NavigationView>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Drill (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Drill (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
