@@ -12,6 +12,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage.Pickers;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -26,6 +27,36 @@ namespace Drill.Pages
         public PdfEditPage()
         {
             InitializeComponent();
+        }
+
+        private async void PickAPhotoButton_Click(object sender, RoutedEventArgs e)
+        {
+            var senderButton = sender as Button;
+            senderButton.IsEnabled = false;
+
+            PickAPhotoOutputTextBlock.Text = "";
+
+            var openPicker = new Windows.Storage.Pickers.FileOpenPicker();
+
+            var window = App.MainWindow;
+
+            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+
+            WinRT.Interop.InitializeWithWindow.Initialize(openPicker, hWnd);
+
+            openPicker.ViewMode = PickerViewMode.Thumbnail;
+            openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+            openPicker.FileTypeFilter.Add(".jpg");
+            openPicker.FileTypeFilter.Add(".jpeg");
+            openPicker.FileTypeFilter.Add(".png");
+
+            var file = await openPicker.PickSingleFileAsync();
+            if (file != null)
+                PickAPhotoOutputTextBlock.Text = "Picked photo: " + file.Name;
+            else
+                PickAPhotoOutputTextBlock.Text = "Operation cancelled.";
+
+            senderButton.IsEnabled = true;
         }
     }
 }

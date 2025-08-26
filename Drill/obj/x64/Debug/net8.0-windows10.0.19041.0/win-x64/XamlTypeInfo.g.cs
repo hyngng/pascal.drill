@@ -226,7 +226,7 @@ namespace Drill.Drill_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[64];
+            _typeNameTable = new string[69];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -280,19 +280,24 @@ namespace Drill.Drill_XamlTypeInfo
             _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
             _typeNameTable[51] = "Single";
             _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
-            _typeNameTable[53] = "Drill.Pages.MaybeLaterPage";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[56] = "Drill.Pages.PdfEditPage";
-            _typeNameTable[57] = "CommunityToolkit.WinUI.Controls.SettingsCard";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
-            _typeNameTable[59] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
-            _typeNameTable[60] = "Drill.Pages.SettingsPage";
-            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[62] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[63] = "Int32";
+            _typeNameTable[53] = "CommunityToolkit.WinUI.Controls.SettingsCard";
+            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[55] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
+            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.PersonPicture";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Media.ImageSource";
+            _typeNameTable[58] = "Int32";
+            _typeNameTable[59] = "Windows.ApplicationModel.Contacts.Contact";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings";
+            _typeNameTable[61] = "Drill.Pages.CreditPage";
+            _typeNameTable[62] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[64] = "Drill.Pages.MaybeLaterPage";
+            _typeNameTable[65] = "Drill.Pages.PdfEditPage";
+            _typeNameTable[66] = "Drill.Pages.SettingsPage";
+            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[68] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[64];
+            _typeTable = new global::System.Type[69];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -346,17 +351,22 @@ namespace Drill.Drill_XamlTypeInfo
             _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
             _typeTable[51] = typeof(global::System.Single);
             _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
-            _typeTable[53] = typeof(global::Drill.Pages.MaybeLaterPage);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[56] = typeof(global::Drill.Pages.PdfEditPage);
-            _typeTable[57] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
-            _typeTable[59] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
-            _typeTable[60] = typeof(global::Drill.Pages.SettingsPage);
-            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[62] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[63] = typeof(global::System.Int32);
+            _typeTable[53] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
+            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[55] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
+            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
+            _typeTable[58] = typeof(global::System.Int32);
+            _typeTable[59] = typeof(global::Windows.ApplicationModel.Contacts.Contact);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings);
+            _typeTable[61] = typeof(global::Drill.Pages.CreditPage);
+            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[64] = typeof(global::Drill.Pages.MaybeLaterPage);
+            _typeTable[65] = typeof(global::Drill.Pages.PdfEditPage);
+            _typeTable[66] = typeof(global::Drill.Pages.SettingsPage);
+            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[68] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -402,11 +412,14 @@ namespace Drill.Drill_XamlTypeInfo
         private object Activate_36_MainWindow() { return new global::Drill.MainWindow(); }
         private object Activate_38_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
         private object Activate_48_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
-        private object Activate_53_MaybeLaterPage() { return new global::Drill.Pages.MaybeLaterPage(); }
-        private object Activate_56_PdfEditPage() { return new global::Drill.Pages.PdfEditPage(); }
-        private object Activate_57_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
-        private object Activate_60_SettingsPage() { return new global::Drill.Pages.SettingsPage(); }
-        private object Activate_61_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_53_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
+        private object Activate_56_PersonPicture() { return new global::Microsoft.UI.Xaml.Controls.PersonPicture(); }
+        private object Activate_59_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
+        private object Activate_61_CreditPage() { return new global::Drill.Pages.CreditPage(); }
+        private object Activate_64_MaybeLaterPage() { return new global::Drill.Pages.MaybeLaterPage(); }
+        private object Activate_65_PdfEditPage() { return new global::Drill.Pages.PdfEditPage(); }
+        private object Activate_66_SettingsPage() { return new global::Drill.Pages.SettingsPage(); }
+        private object Activate_67_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
         private void StaticInitializer_6_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
@@ -439,13 +452,17 @@ namespace Drill.Drill_XamlTypeInfo
         private void StaticInitializer_48_ScrollPresenter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter).TypeHandle);
         private void StaticInitializer_50_ScrollingInteractionState() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState).TypeHandle);
         private void StaticInitializer_52_ScrollingZoomMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode).TypeHandle);
-        private void StaticInitializer_53_MaybeLaterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.MaybeLaterPage).TypeHandle);
-        private void StaticInitializer_56_PdfEditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.PdfEditPage).TypeHandle);
-        private void StaticInitializer_57_SettingsCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard).TypeHandle);
-        private void StaticInitializer_59_ContentAlignment() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment).TypeHandle);
-        private void StaticInitializer_60_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.SettingsPage).TypeHandle);
-        private void StaticInitializer_61_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_62_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_53_SettingsCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard).TypeHandle);
+        private void StaticInitializer_55_ContentAlignment() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment).TypeHandle);
+        private void StaticInitializer_56_PersonPicture() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture).TypeHandle);
+        private void StaticInitializer_59_Contact() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.ApplicationModel.Contacts.Contact).TypeHandle);
+        private void StaticInitializer_60_PersonPictureTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings).TypeHandle);
+        private void StaticInitializer_61_CreditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.CreditPage).TypeHandle);
+        private void StaticInitializer_64_MaybeLaterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.MaybeLaterPage).TypeHandle);
+        private void StaticInitializer_65_PdfEditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.PdfEditPage).TypeHandle);
+        private void StaticInitializer_66_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Drill.Pages.SettingsPage).TypeHandle);
+        private void StaticInitializer_67_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_68_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -459,7 +476,7 @@ namespace Drill.Drill_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_62_IList(object instance, object item)
+        private void VectorAdd_68_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -581,6 +598,7 @@ namespace Drill.Drill_XamlTypeInfo
                 userType.AddMemberName("IsBackButtonVisible");
                 userType.AddMemberName("IsPaneToggleButtonVisible");
                 userType.AddMemberName("MenuItems");
+                userType.AddMemberName("FooterMenuItems");
                 userType.AddMemberName("AlwaysShowHeader");
                 userType.AddMemberName("AutoSuggestBox");
                 userType.AddMemberName("CompactModeThresholdWidth");
@@ -588,7 +606,6 @@ namespace Drill.Drill_XamlTypeInfo
                 userType.AddMemberName("ContentOverlay");
                 userType.AddMemberName("DisplayMode");
                 userType.AddMemberName("ExpandedModeThresholdWidth");
-                userType.AddMemberName("FooterMenuItems");
                 userType.AddMemberName("FooterMenuItemsSource");
                 userType.AddMemberName("Header");
                 userType.AddMemberName("HeaderTemplate");
@@ -913,37 +930,13 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 53:   //  Drill.Pages.MaybeLaterPage
-                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_53_MaybeLaterPage;
-                userType.StaticInitializer = StaticInitializer_53_MaybeLaterPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 54:   //  Microsoft.UI.Xaml.Controls.Page
-                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 55:   //  Microsoft.UI.Xaml.Controls.UserControl
-                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 56:   //  Drill.Pages.PdfEditPage
-                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_56_PdfEditPage;
-                userType.StaticInitializer = StaticInitializer_56_PdfEditPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 57:   //  CommunityToolkit.WinUI.Controls.SettingsCard
+            case 53:   //  CommunityToolkit.WinUI.Controls.SettingsCard
                 userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
-                userType.Activator = Activate_57_SettingsCard;
-                userType.StaticInitializer = StaticInitializer_57_SettingsCard;
-                userType.AddMemberName("Description");
-                userType.AddMemberName("Header");
+                userType.Activator = Activate_53_SettingsCard;
+                userType.StaticInitializer = StaticInitializer_53_SettingsCard;
                 userType.AddMemberName("HeaderIcon");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("Description");
                 userType.AddMemberName("ActionIcon");
                 userType.AddMemberName("ActionIconToolTip");
                 userType.AddMemberName("IsClickEnabled");
@@ -952,31 +945,103 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+            case 54:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
                 xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 59:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
+            case 55:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
                 userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_59_ContentAlignment;
+                userType.StaticInitializer = StaticInitializer_55_ContentAlignment;
                 userType.AddEnumValue("Right", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Right);
                 userType.AddEnumValue("Left", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Left);
                 userType.AddEnumValue("Vertical", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Vertical);
                 xamlType = userType;
                 break;
 
-            case 60:   //  Drill.Pages.SettingsPage
+            case 56:   //  Microsoft.UI.Xaml.Controls.PersonPicture
+                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_56_PersonPicture;
+                userType.StaticInitializer = StaticInitializer_56_PersonPicture;
+                userType.AddMemberName("ProfilePicture");
+                userType.AddMemberName("BadgeGlyph");
+                userType.AddMemberName("BadgeImageSource");
+                userType.AddMemberName("BadgeNumber");
+                userType.AddMemberName("BadgeText");
+                userType.AddMemberName("Contact");
+                userType.AddMemberName("DisplayName");
+                userType.AddMemberName("Initials");
+                userType.AddMemberName("IsGroup");
+                userType.AddMemberName("PreferSmallImage");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 57:   //  Microsoft.UI.Xaml.Media.ImageSource
+                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 58:   //  Int32
+                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 59:   //  Windows.ApplicationModel.Contacts.Contact
+                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_59_Contact;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 60:   //  Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
+                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_60_PersonPictureTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 61:   //  Drill.Pages.CreditPage
                 userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_60_SettingsPage;
-                userType.StaticInitializer = StaticInitializer_60_SettingsPage;
+                userType.Activator = Activate_61_CreditPage;
+                userType.StaticInitializer = StaticInitializer_61_CreditPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 61:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 62:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 63:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 64:   //  Drill.Pages.MaybeLaterPage
+                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_64_MaybeLaterPage;
+                userType.StaticInitializer = StaticInitializer_64_MaybeLaterPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 65:   //  Drill.Pages.PdfEditPage
+                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_65_PdfEditPage;
+                userType.StaticInitializer = StaticInitializer_65_PdfEditPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 66:   //  Drill.Pages.SettingsPage
+                userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_66_SettingsPage;
+                userType.StaticInitializer = StaticInitializer_66_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 67:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_61_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_61_TreeViewNode;
+                userType.Activator = Activate_67_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_67_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -988,16 +1053,12 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 62:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 68:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_62_IList;
-                userType.CollectionAdd = VectorAdd_62_IList;
+                userType.StaticInitializer = StaticInitializer_68_IList;
+                userType.CollectionAdd = VectorAdd_68_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
-                break;
-
-            case 63:   //  Int32
-                xamlType = new global::Drill.Drill_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -1200,75 +1261,75 @@ namespace Drill.Drill_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItems;
         }
-        private object get_15_NavigationView_AlwaysShowHeader(object instance)
+        private object get_15_NavigationView_FooterMenuItems(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.FooterMenuItems;
+        }
+        private object get_16_NavigationView_AlwaysShowHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.AlwaysShowHeader;
         }
-        private void set_15_NavigationView_AlwaysShowHeader(object instance, object Value)
+        private void set_16_NavigationView_AlwaysShowHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.AlwaysShowHeader = (global::System.Boolean)Value;
         }
-        private object get_16_NavigationView_AutoSuggestBox(object instance)
+        private object get_17_NavigationView_AutoSuggestBox(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.AutoSuggestBox;
         }
-        private void set_16_NavigationView_AutoSuggestBox(object instance, object Value)
+        private void set_17_NavigationView_AutoSuggestBox(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
         }
-        private object get_17_NavigationView_CompactModeThresholdWidth(object instance)
+        private object get_18_NavigationView_CompactModeThresholdWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.CompactModeThresholdWidth;
         }
-        private void set_17_NavigationView_CompactModeThresholdWidth(object instance, object Value)
+        private void set_18_NavigationView_CompactModeThresholdWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.CompactModeThresholdWidth = (global::System.Double)Value;
         }
-        private object get_18_NavigationView_CompactPaneLength(object instance)
+        private object get_19_NavigationView_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.CompactPaneLength;
         }
-        private void set_18_NavigationView_CompactPaneLength(object instance, object Value)
+        private void set_19_NavigationView_CompactPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.CompactPaneLength = (global::System.Double)Value;
         }
-        private object get_19_NavigationView_ContentOverlay(object instance)
+        private object get_20_NavigationView_ContentOverlay(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ContentOverlay;
         }
-        private void set_19_NavigationView_ContentOverlay(object instance, object Value)
+        private void set_20_NavigationView_ContentOverlay(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_20_NavigationView_DisplayMode(object instance)
+        private object get_21_NavigationView_DisplayMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.DisplayMode;
         }
-        private object get_21_NavigationView_ExpandedModeThresholdWidth(object instance)
+        private object get_22_NavigationView_ExpandedModeThresholdWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ExpandedModeThresholdWidth;
         }
-        private void set_21_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
+        private void set_22_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ExpandedModeThresholdWidth = (global::System.Double)Value;
-        }
-        private object get_22_NavigationView_FooterMenuItems(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.FooterMenuItems;
         }
         private object get_23_NavigationView_FooterMenuItemsSource(object instance)
         {
@@ -1875,15 +1936,15 @@ namespace Drill.Drill_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
         }
-        private object get_94_SettingsCard_Description(object instance)
+        private object get_94_SettingsCard_HeaderIcon(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.Description;
+            return that.HeaderIcon;
         }
-        private void set_94_SettingsCard_Description(object instance, object Value)
+        private void set_94_SettingsCard_HeaderIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.Description = (global::System.Object)Value;
+            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
         private object get_95_SettingsCard_Header(object instance)
         {
@@ -1895,15 +1956,15 @@ namespace Drill.Drill_XamlTypeInfo
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_96_SettingsCard_HeaderIcon(object instance)
+        private object get_96_SettingsCard_Description(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.HeaderIcon;
+            return that.Description;
         }
-        private void set_96_SettingsCard_HeaderIcon(object instance, object Value)
+        private void set_96_SettingsCard_Description(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
+            that.Description = (global::System.Object)Value;
         }
         private object get_97_SettingsCard_ActionIcon(object instance)
         {
@@ -1955,52 +2016,157 @@ namespace Drill.Drill_XamlTypeInfo
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.IsActionIconVisible = (global::System.Boolean)Value;
         }
-        private object get_102_TreeViewNode_Children(object instance)
+        private object get_102_PersonPicture_ProfilePicture(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.ProfilePicture;
+        }
+        private void set_102_PersonPicture_ProfilePicture(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.ProfilePicture = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_103_PersonPicture_BadgeGlyph(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeGlyph;
+        }
+        private void set_103_PersonPicture_BadgeGlyph(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeGlyph = (global::System.String)Value;
+        }
+        private object get_104_PersonPicture_BadgeImageSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeImageSource;
+        }
+        private void set_104_PersonPicture_BadgeImageSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeImageSource = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_105_PersonPicture_BadgeNumber(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeNumber;
+        }
+        private void set_105_PersonPicture_BadgeNumber(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeNumber = (global::System.Int32)Value;
+        }
+        private object get_106_PersonPicture_BadgeText(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeText;
+        }
+        private void set_106_PersonPicture_BadgeText(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeText = (global::System.String)Value;
+        }
+        private object get_107_PersonPicture_Contact(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.Contact;
+        }
+        private void set_107_PersonPicture_Contact(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.Contact = (global::Windows.ApplicationModel.Contacts.Contact)Value;
+        }
+        private object get_108_PersonPicture_DisplayName(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.DisplayName;
+        }
+        private void set_108_PersonPicture_DisplayName(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.DisplayName = (global::System.String)Value;
+        }
+        private object get_109_PersonPicture_Initials(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.Initials;
+        }
+        private void set_109_PersonPicture_Initials(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.Initials = (global::System.String)Value;
+        }
+        private object get_110_PersonPicture_IsGroup(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.IsGroup;
+        }
+        private void set_110_PersonPicture_IsGroup(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.IsGroup = (global::System.Boolean)Value;
+        }
+        private object get_111_PersonPicture_PreferSmallImage(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.PreferSmallImage;
+        }
+        private void set_111_PersonPicture_PreferSmallImage(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.PreferSmallImage = (global::System.Boolean)Value;
+        }
+        private object get_112_PersonPicture_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.TemplateSettings;
+        }
+        private object get_113_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_103_TreeViewNode_Content(object instance)
+        private object get_114_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_103_TreeViewNode_Content(object instance, object Value)
+        private void set_114_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_104_TreeViewNode_Depth(object instance)
+        private object get_115_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_105_TreeViewNode_HasChildren(object instance)
+        private object get_116_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_106_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_117_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_106_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_117_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_107_TreeViewNode_IsExpanded(object instance)
+        private object get_118_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_107_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_118_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_108_TreeViewNode_Parent(object instance)
+        private object get_119_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -2118,61 +2284,61 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlMember.Getter = get_14_NavigationView_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItems":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_15_NavigationView_FooterMenuItems;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AlwaysShowHeader":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "AlwaysShowHeader", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_NavigationView_AlwaysShowHeader;
-                xamlMember.Setter = set_15_NavigationView_AlwaysShowHeader;
+                xamlMember.Getter = get_16_NavigationView_AlwaysShowHeader;
+                xamlMember.Setter = set_16_NavigationView_AlwaysShowHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AutoSuggestBox":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "AutoSuggestBox", "Microsoft.UI.Xaml.Controls.AutoSuggestBox");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_NavigationView_AutoSuggestBox;
-                xamlMember.Setter = set_16_NavigationView_AutoSuggestBox;
+                xamlMember.Getter = get_17_NavigationView_AutoSuggestBox;
+                xamlMember.Setter = set_17_NavigationView_AutoSuggestBox;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactModeThresholdWidth":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "CompactModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_NavigationView_CompactModeThresholdWidth;
-                xamlMember.Setter = set_17_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Getter = get_18_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Setter = set_18_NavigationView_CompactModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactPaneLength":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_NavigationView_CompactPaneLength;
-                xamlMember.Setter = set_18_NavigationView_CompactPaneLength;
+                xamlMember.Getter = get_19_NavigationView_CompactPaneLength;
+                xamlMember.Setter = set_19_NavigationView_CompactPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlay":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "ContentOverlay", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_NavigationView_ContentOverlay;
-                xamlMember.Setter = set_19_NavigationView_ContentOverlay;
+                xamlMember.Getter = get_20_NavigationView_ContentOverlay;
+                xamlMember.Setter = set_20_NavigationView_ContentOverlay;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.DisplayMode":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "DisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_NavigationView_DisplayMode;
+                xamlMember.Getter = get_21_NavigationView_DisplayMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ExpandedModeThresholdWidth":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "ExpandedModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_NavigationView_ExpandedModeThresholdWidth;
-                xamlMember.Setter = set_21_NavigationView_ExpandedModeThresholdWidth;
-                break;
-            case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItems":
-                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_NavigationView_FooterMenuItems;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Getter = get_22_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Setter = set_22_NavigationView_ExpandedModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItemsSource":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
@@ -2659,12 +2825,12 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlMember.Getter = get_93_ScrollView_ZoomMode;
                 xamlMember.Setter = set_93_ScrollView_ZoomMode;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Description", "Object");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_SettingsCard_Description;
-                xamlMember.Setter = set_94_SettingsCard_Description;
+                xamlMember.Getter = get_94_SettingsCard_HeaderIcon;
+                xamlMember.Setter = set_94_SettingsCard_HeaderIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.Header":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
@@ -2673,12 +2839,12 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlMember.Getter = get_95_SettingsCard_Header;
                 xamlMember.Setter = set_95_SettingsCard_Header;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_SettingsCard_HeaderIcon;
-                xamlMember.Setter = set_96_SettingsCard_HeaderIcon;
+                xamlMember.Getter = get_96_SettingsCard_Description;
+                xamlMember.Setter = set_96_SettingsCard_Description;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIcon":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
@@ -2715,50 +2881,126 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlMember.Getter = get_101_SettingsCard_IsActionIconVisible;
                 xamlMember.Setter = set_101_SettingsCard_IsActionIconVisible;
                 break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.ProfilePicture":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "ProfilePicture", "Microsoft.UI.Xaml.Media.ImageSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_102_PersonPicture_ProfilePicture;
+                xamlMember.Setter = set_102_PersonPicture_ProfilePicture;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeGlyph":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "BadgeGlyph", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_103_PersonPicture_BadgeGlyph;
+                xamlMember.Setter = set_103_PersonPicture_BadgeGlyph;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeImageSource":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "BadgeImageSource", "Microsoft.UI.Xaml.Media.ImageSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_104_PersonPicture_BadgeImageSource;
+                xamlMember.Setter = set_104_PersonPicture_BadgeImageSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeNumber":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "BadgeNumber", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_105_PersonPicture_BadgeNumber;
+                xamlMember.Setter = set_105_PersonPicture_BadgeNumber;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeText":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "BadgeText", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_106_PersonPicture_BadgeText;
+                xamlMember.Setter = set_106_PersonPicture_BadgeText;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.Contact":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Contact", "Windows.ApplicationModel.Contacts.Contact");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_107_PersonPicture_Contact;
+                xamlMember.Setter = set_107_PersonPicture_Contact;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.DisplayName":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "DisplayName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_108_PersonPicture_DisplayName;
+                xamlMember.Setter = set_108_PersonPicture_DisplayName;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.Initials":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Initials", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_109_PersonPicture_Initials;
+                xamlMember.Setter = set_109_PersonPicture_Initials;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.IsGroup":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "IsGroup", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_110_PersonPicture_IsGroup;
+                xamlMember.Setter = set_110_PersonPicture_IsGroup;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.PreferSmallImage":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "PreferSmallImage", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_111_PersonPicture_PreferSmallImage;
+                xamlMember.Setter = set_111_PersonPicture_PreferSmallImage;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.TemplateSettings":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings");
+                xamlMember.Getter = get_112_PersonPicture_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_102_TreeViewNode_Children;
+                xamlMember.Getter = get_113_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_TreeViewNode_Content;
-                xamlMember.Setter = set_103_TreeViewNode_Content;
+                xamlMember.Getter = get_114_TreeViewNode_Content;
+                xamlMember.Setter = set_114_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_TreeViewNode_Depth;
+                xamlMember.Getter = get_115_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_116_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_106_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_106_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_117_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_117_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_107_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_118_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_118_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_108_TreeViewNode_Parent;
+                xamlMember.Getter = get_119_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

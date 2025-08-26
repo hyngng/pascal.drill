@@ -1,49 +1,60 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kiw60\\Desktop\\Pascal\\",
+  "WorkspaceRootPath": "D:\\develop\\pascal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\pages\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\creditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\creditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\pages\\maybelaterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\maybelaterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\pages\\pdfeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\pdfeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\pdfeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\pages\\maybelaterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\maybelaterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\maybelaterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\maybelaterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\drill.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\drill.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\pages\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\creditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\creditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\maybelaterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\maybelaterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|d:\\develop\\pascal\\drill\\pages\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250606001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kiw60\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\pages\\pdfeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\pages\\pdfeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\pascal\\drill\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545009D6-A18C-4196-893F-232C869D83DA}|Drill\\Drill.csproj|solutionrelative:drill\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,36 +73,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Drill\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Drill\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowCYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:28:59.671Z"
+              "Title": "Drill",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Drill.csproj",
+              "RelativeDocumentMoniker": "Drill\\Drill.csproj",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Drill.csproj",
+              "RelativeToolTip": "Drill\\Drill.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-26T07:44:36.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PdfEditPage.xaml",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\PdfEditPage.xaml",
-              "RelativeDocumentMoniker": "Drill\\Pages\\PdfEditPage.xaml",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\PdfEditPage.xaml",
-              "RelativeToolTip": "Drill\\Pages\\PdfEditPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Drill\\MainWindow.xaml",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\MainWindow.xaml",
+              "RelativeToolTip": "Drill\\MainWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-25T00:27:27.393Z"
+              "WhenOpened": "2025-08-26T01:37:25.234Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CreditPage.xaml",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\CreditPage.xaml",
+              "RelativeDocumentMoniker": "Drill\\Pages\\CreditPage.xaml",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\CreditPage.xaml",
+              "RelativeToolTip": "Drill\\Pages\\CreditPage.xaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-26T06:15:03.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SettingsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\SettingsPage.xaml",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\SettingsPage.xaml",
               "RelativeDocumentMoniker": "Drill\\Pages\\SettingsPage.xaml",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\SettingsPage.xaml",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\SettingsPage.xaml",
               "RelativeToolTip": "Drill\\Pages\\SettingsPage.xaml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-25T00:30:01.06Z",
               "EditorCaption": ""
@@ -99,99 +125,126 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MaybeLaterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\MaybeLaterPage.xaml.cs",
-              "RelativeDocumentMoniker": "Drill\\Pages\\MaybeLaterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\MaybeLaterPage.xaml.cs",
-              "RelativeToolTip": "Drill\\Pages\\MaybeLaterPage.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAApwBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:35:57.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MaybeLaterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\MaybeLaterPage.xaml",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\MaybeLaterPage.xaml",
               "RelativeDocumentMoniker": "Drill\\Pages\\MaybeLaterPage.xaml",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\MaybeLaterPage.xaml",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\MaybeLaterPage.xaml",
               "RelativeToolTip": "Drill\\Pages\\MaybeLaterPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAACTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-25T00:30:28.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Drill\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\MainWindow.xaml",
-              "RelativeToolTip": "Drill\\MainWindow.xaml",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvyUAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PdfEditPage.xaml",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\PdfEditPage.xaml",
+              "RelativeDocumentMoniker": "Drill\\Pages\\PdfEditPage.xaml",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\PdfEditPage.xaml",
+              "RelativeToolTip": "Drill\\Pages\\PdfEditPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-25T00:17:12.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\App.xaml",
-              "RelativeDocumentMoniker": "Drill\\App.xaml",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\App.xaml",
-              "RelativeToolTip": "Drill\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-25T00:31:04.928Z"
+              "WhenOpened": "2025-08-25T00:27:27.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SettingsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\SettingsPage.xaml.cs",
-              "RelativeDocumentMoniker": "Drill\\Pages\\SettingsPage.xaml.cs",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\SettingsPage.xaml.cs",
-              "RelativeToolTip": "Drill\\Pages\\SettingsPage.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDUAAAAVAAAAAAAAAA==",
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\App.xaml",
+              "RelativeDocumentMoniker": "Drill\\App.xaml",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\App.xaml",
+              "RelativeToolTip": "Drill\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-25T00:31:04.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Drill\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Drill\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAEwE0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:35:58.79Z"
+              "WhenOpened": "2025-08-26T06:15:50.335Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "NavigationHelper.cs",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs",
-              "RelativeDocumentMoniker": "..\\..\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs",
-              "ToolTip": "C:\\Users\\kiw60\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs",
-              "RelativeToolTip": "..\\..\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs",
-              "ViewState": "AgIAAB0BAAAAAAAAAAAAACwBAAAOAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Drill\\App.xaml.cs",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\App.xaml.cs",
+              "RelativeToolTip": "Drill\\App.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T07:28:12.767Z"
+              "WhenOpened": "2025-08-25T01:02:53.307Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "PdfEditPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\PdfEditPage.xaml.cs",
-              "RelativeDocumentMoniker": "Drill\\Pages\\PdfEditPage.xaml.cs",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\Pages\\PdfEditPage.xaml.cs",
-              "RelativeToolTip": "Drill\\Pages\\PdfEditPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAcAAAAAAAAAA==",
+              "Title": "CreditPage.xaml.cs",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\CreditPage.xaml.cs",
+              "RelativeDocumentMoniker": "Drill\\Pages\\CreditPage.xaml.cs",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\CreditPage.xaml.cs",
+              "RelativeToolTip": "Drill\\Pages\\CreditPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:27:41.337Z"
+              "WhenOpened": "2025-08-26T06:16:41.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Drill\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\kiw60\\Desktop\\Pascal\\Drill\\App.xaml.cs",
-              "RelativeToolTip": "Drill\\App.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwB0AAAAeAAAAAAAAAA==",
+              "Title": "MaybeLaterPage.xaml.cs",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\MaybeLaterPage.xaml.cs",
+              "RelativeDocumentMoniker": "Drill\\Pages\\MaybeLaterPage.xaml.cs",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\MaybeLaterPage.xaml.cs",
+              "RelativeToolTip": "Drill\\Pages\\MaybeLaterPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T01:02:53.307Z"
+              "WhenOpened": "2025-08-25T00:35:57.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SettingsPage.xaml.cs",
+              "DocumentMoniker": "D:\\develop\\pascal\\Drill\\Pages\\SettingsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Drill\\Pages\\SettingsPage.xaml.cs",
+              "ToolTip": "D:\\develop\\pascal\\Drill\\Pages\\SettingsPage.xaml.cs",
+              "RelativeToolTip": "Drill\\Pages\\SettingsPage.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAlwDwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:35:58.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "DocumentMoniker": "C:\\Users\\USER\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250606001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "ToolTip": "C:\\Users\\USER\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250606001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "ViewState": "AgIAALoAAAAAAAAAAAD4vx0BAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-08-26T00:51:26.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NavigationHelper.cs",
+              "DocumentMoniker": "C:\\Users\\kiw60\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs",
+              "ToolTip": "C:\\Users\\kiw60\\Downloads\\WinUI-Gallery-main\\WinUI-Gallery-main\\WinUIGallery\\Helpers\\NavigationHelper.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T07:28:12.767Z"
             }
           ]
         }

@@ -6,9 +6,51 @@
     xmlns:local="using:Drill.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
     mc:Ignorable="d">
 
-    <Grid>
+    <Page.Resources>
+        <x:Double x:Key="SettingsCardSpacing">4</x:Double>
 
+        <Style
+        x:Key="SettingsSectionHeaderTextBlockStyle"
+        BasedOn="{StaticResource BodyStrongTextBlockStyle}"
+        TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="Margin" Value="1,30,0,6" />
+            </Style.Setters>
+        </Style>
+    </Page.Resources>
+    
+    <Grid x:Name="RootGrid"
+          MaxWidth="1064">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock x:Name="PageHeader"
+                   Margin="36,24,36,0"
+                   AutomationProperties.HeadingLevel="Level1"
+                   Style="{StaticResource TitleTextBlockStyle}"
+                   Text="PDF 편집 도구" />
+        <ScrollView Grid.Row="1" Padding="36,0,36,0"
+            VerticalScrollBarVisibility="Auto"
+            VerticalScrollMode="Auto">
+            <Border>
+                <StackPanel VerticalAlignment="Top" Orientation="Horizontal">
+                    <toolkit:SettingsCard Description="프로그램 테마를 바꿔보세요" Header="테마">
+                        <toolkit:SettingsCard.HeaderIcon>
+                            <FontIcon Glyph="&#xE790;" />
+                        </toolkit:SettingsCard.HeaderIcon>
+                        <StackPanel Orientation="Vertical">
+                            <Button x:Name="PickAPhotoButton" Content="Open a picture"
+                                    Click="PickAPhotoButton_Click" Margin="0,0,0,10"/>
+                            <TextBlock x:Name="PickAPhotoOutputTextBlock" TextWrapping="Wrap" Padding="20,5,0,0"/>
+                        </StackPanel>
+                    </toolkit:SettingsCard>
+                </StackPanel>
+            </Border>
+        </ScrollView>
     </Grid>
 </Page>

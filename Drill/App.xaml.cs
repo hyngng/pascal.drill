@@ -46,6 +46,8 @@ namespace Drill
         {
             _window = new MainWindow();
             _window.Activate();
+
+            MainWindow = _window;
         }
     }
 }

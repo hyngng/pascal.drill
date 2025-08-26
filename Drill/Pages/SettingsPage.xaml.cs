@@ -26,9 +26,26 @@ namespace Drill.Pages
     /// </summary>
     public sealed partial class SettingsPage : Page
     {
+        private const string ThemeKey = "AppTheme";
+
         public SettingsPage()
         {
             this.InitializeComponent();
+        }
+
+        private void SettingsPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            var savedTheme = ApplicationData.Current.LocalSettings.Values[ThemeKey]?.ToString();
+
+            if (!string.IsNullOrEmpty(savedTheme))
+            {
+                var selectedItem = themeMode.Items
+                    .OfType<ComboBoxItem>()
+                    .FirstOrDefault(item => item.Tag.ToString() == savedTheme);
+
+                if (selectedItem != null)
+                    themeMode.SelectedItem = selectedItem;
+            }
         }
 
         private void themeMode_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -53,6 +70,8 @@ namespace Drill.Pages
                             break;
                     }
                 }
+
+                ApplicationData.Current.LocalSettings.Values[ThemeKey] = tag;
             }
         }
     }

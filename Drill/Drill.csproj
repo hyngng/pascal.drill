@@ -13,18 +13,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Pages\CreditPage.xaml" />
     <None Remove="Pages\MaybeLaterPage.xaml" />
     <None Remove="Pages\SettingsPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\SplashScreen.scale-200.png" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Imgs\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Imgs\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\Imgs\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Imgs\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Imgs\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Imgs\StoreLogo.png" />
+    <Content Include="Assets\Imgs\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +46,11 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250606001" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\CreditPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="Pages\MaybeLaterPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -58,6 +64,10 @@
     <Page Update="Pages\PdfEditPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Icon\" />
+    <Folder Include="Assets\Avatar\" />
   </ItemGroup>
 
   <!--

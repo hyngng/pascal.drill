@@ -7,6 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
+    Loaded="SettingsPage_Loaded"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -22,13 +23,14 @@
         </Style>
     </Page.Resources>
 
-    <Grid x:Name="RootGrid">
+    <Grid x:Name="RootGrid"
+          MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        
         <TextBlock x:Name="PageHeader"
-                   MaxWidth="1064"
                    Margin="36,24,36,0"
                    AutomationProperties.HeadingLevel="Level1"
                    Style="{StaticResource TitleTextBlockStyle}"
@@ -37,7 +39,7 @@
                     VerticalScrollBarVisibility="Auto"
                     VerticalScrollMode="Auto">
             <Border>
-                <StackPanel MaxWidth="1064" Spacing="{StaticResource SettingsCardSpacing}">
+                <StackPanel Spacing="{StaticResource SettingsCardSpacing}">
                     <StackPanel.ChildrenTransitions>
                         <RepositionThemeTransition />
                     </StackPanel.ChildrenTransitions>
@@ -49,8 +51,8 @@
                         <ComboBox x:Name="themeMode"
                                   AutomationProperties.AutomationId="themeModeComboBox"
                                   SelectionChanged="themeMode_SelectionChanged">
-                            <ComboBoxItem Content="라이트 모드" Tag="Light" />
-                            <ComboBoxItem Content="다크 모드" Tag="Dark" />
+                            <ComboBoxItem Content="밝게" Tag="Light" />
+                            <ComboBoxItem Content="어둡게" Tag="Dark" />
                             <ComboBoxItem Content="시스템 설정" Tag="Default" />
                         </ComboBox>
                     </toolkit:SettingsCard>

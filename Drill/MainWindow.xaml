@@ -19,22 +19,28 @@
         </Grid.RowDefinitions>
 
         <TitleBar x:Name="CustomTitleBar" Title="파스칼 프로젝트"
-              IsBackButtonVisible="True"
-              IsBackButtonEnabled="{x:Bind RootFrame.CanGoBack, Mode=OneWay}"
-              BackRequested="TitleBar_BackRequested"
-              IsPaneToggleButtonVisible="True"
-              PaneToggleRequested="TitleBar_PaneToggleRequested">
+                  IsBackButtonVisible="True"
+                  IsBackButtonEnabled="{x:Bind RootFrame.CanGoBack, Mode=OneWay}"
+                  BackRequested="TitleBar_BackRequested"
+                  IsPaneToggleButtonVisible="True"
+                  PaneToggleRequested="TitleBar_PaneToggleRequested">
         </TitleBar>
 
         <NavigationView x:Name="RootNavigationView" Grid.Row="1"
                         IsBackButtonVisible="Collapsed"
                         IsPaneToggleButtonVisible="False"
                         SelectionChanged="NavSelectionChanged">
+            
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Play" Content="PDF 병합과 분할" Tag="PdfEdit" />
-                <NavigationViewItem Icon="Save" Content="기대해 주세요" Tag="MaybeLater" />
+                <NavigationViewItem Icon="OpenFile" Content="PDF 편집 도구" Tag="PdfEdit" />
+                <NavigationViewItem Icon="View" Content="기대해 주세요" Tag="MaybeLater" />
             </NavigationView.MenuItems>
-            <Frame x:Name="RootFrame"/>
+
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Icon="OutlineStar" Content="크레딧" Tag="Credit" />
+            </NavigationView.FooterMenuItems>
+
+            <Frame x:Name="RootFrame" />
         </NavigationView>
     </Grid>
 </Window>
