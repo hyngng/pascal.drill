@@ -26,8 +26,8 @@
                   PaneToggleRequested="TitleBar_PaneToggleRequested">
         </TitleBar>
 
-        <NavigationView x:Name="RootNavigationView" Grid.Row="1"
-                        IsBackButtonVisible="Collapsed"
+        <NavigationView x:Name="RootNavigationView" x:Uid="NavView"
+                        IsBackButtonVisible="Collapsed" Grid.Row="1"
                         IsPaneToggleButtonVisible="False"
                         SelectionChanged="NavSelectionChanged">
             

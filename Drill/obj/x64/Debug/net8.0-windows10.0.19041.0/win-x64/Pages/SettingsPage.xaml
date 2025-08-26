@@ -56,6 +56,18 @@
                             <ComboBoxItem Content="시스템 설정" Tag="Default" />
                         </ComboBox>
                     </toolkit:SettingsCard>
+                    <!--<toolkit:SettingsCard Description="프로그램 재질을 바꿔보세요" Header="테마">
+                        <toolkit:SettingsCard.HeaderIcon>
+                            <FontIcon Glyph="&#xE790;" />
+                        </toolkit:SettingsCard.HeaderIcon>
+                        <ComboBox x:Name="materialMode"
+                                  AutomationProperties.AutomationId="materialModeComboBox"
+                                  SelectionChanged="materialMode_SelectionChanged">
+                            <ComboBoxItem Content="미카" Tag="Light" />
+                            <ComboBoxItem Content="아크릴" Tag="Dark" />
+                            <ComboBoxItem Content="시스템 설정" Tag="Default" />
+                        </ComboBox>
+                    </toolkit:SettingsCard>-->
                 </StackPanel>
             </Border>
         </ScrollView>

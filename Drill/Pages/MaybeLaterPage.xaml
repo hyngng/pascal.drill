@@ -41,7 +41,7 @@
                     <StackPanel.ChildrenTransitions>
                         <RepositionThemeTransition />
                     </StackPanel.ChildrenTransitions>
-                    <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="추가하고 싶은 기능이 있다면 언제든지 말씀해주세요. 피드백은 받지 않습니다. 감사합니다." />
+                    <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="추가하고 싶은 기능이 있다면 언제든지 말씀해주세요. 피드백은 받지 않겠습니다. 감사합니다." />
                 </StackPanel>
             </Border>
         </ScrollView>

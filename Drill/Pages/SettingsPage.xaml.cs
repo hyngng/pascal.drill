@@ -36,16 +36,14 @@ namespace Drill.Pages
         private void SettingsPage_Loaded(object sender, RoutedEventArgs e)
         {
             var savedTheme = ApplicationData.Current.LocalSettings.Values[ThemeKey]?.ToString();
+            var targetTag = !string.IsNullOrEmpty(savedTheme) ? savedTheme : "Default";
 
-            if (!string.IsNullOrEmpty(savedTheme))
-            {
-                var selectedItem = themeMode.Items
-                    .OfType<ComboBoxItem>()
-                    .FirstOrDefault(item => item.Tag.ToString() == savedTheme);
+            var selectedItem = themeMode.Items
+                .OfType<ComboBoxItem>()
+                .FirstOrDefault(item => item.Tag.ToString() == targetTag);
 
-                if (selectedItem != null)
-                    themeMode.SelectedItem = selectedItem;
-            }
+            if (selectedItem != null)
+                themeMode.SelectedItem = selectedItem;
         }
 
         private void themeMode_SelectionChanged(object sender, SelectionChangedEventArgs e)

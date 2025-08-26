@@ -934,9 +934,9 @@ namespace Drill.Drill_XamlTypeInfo
                 userType = new global::Drill.Drill_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
                 userType.Activator = Activate_53_SettingsCard;
                 userType.StaticInitializer = StaticInitializer_53_SettingsCard;
-                userType.AddMemberName("HeaderIcon");
                 userType.AddMemberName("Header");
                 userType.AddMemberName("Description");
+                userType.AddMemberName("HeaderIcon");
                 userType.AddMemberName("ActionIcon");
                 userType.AddMemberName("ActionIconToolTip");
                 userType.AddMemberName("IsClickEnabled");
@@ -1936,35 +1936,35 @@ namespace Drill.Drill_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
         }
-        private object get_94_SettingsCard_HeaderIcon(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.HeaderIcon;
-        }
-        private void set_94_SettingsCard_HeaderIcon(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
-        }
-        private object get_95_SettingsCard_Header(object instance)
+        private object get_94_SettingsCard_Header(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.Header;
         }
-        private void set_95_SettingsCard_Header(object instance, object Value)
+        private void set_94_SettingsCard_Header(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_96_SettingsCard_Description(object instance)
+        private object get_95_SettingsCard_Description(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.Description;
         }
-        private void set_96_SettingsCard_Description(object instance, object Value)
+        private void set_95_SettingsCard_Description(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.Description = (global::System.Object)Value;
+        }
+        private object get_96_SettingsCard_HeaderIcon(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.HeaderIcon;
+        }
+        private void set_96_SettingsCard_HeaderIcon(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
         private object get_97_SettingsCard_ActionIcon(object instance)
         {
@@ -2825,26 +2825,26 @@ namespace Drill.Drill_XamlTypeInfo
                 xamlMember.Getter = get_93_ScrollView_ZoomMode;
                 xamlMember.Setter = set_93_ScrollView_ZoomMode;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
-                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_SettingsCard_HeaderIcon;
-                xamlMember.Setter = set_94_SettingsCard_HeaderIcon;
-                break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.Header":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_SettingsCard_Header;
-                xamlMember.Setter = set_95_SettingsCard_Header;
+                xamlMember.Getter = get_94_SettingsCard_Header;
+                xamlMember.Setter = set_94_SettingsCard_Header;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_SettingsCard_Description;
-                xamlMember.Setter = set_96_SettingsCard_Description;
+                xamlMember.Getter = get_95_SettingsCard_Description;
+                xamlMember.Setter = set_95_SettingsCard_Description;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
+                userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Drill.Drill_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_96_SettingsCard_HeaderIcon;
+                xamlMember.Setter = set_96_SettingsCard_HeaderIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIcon":
                 userType = (global::Drill.Drill_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");

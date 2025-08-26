@@ -26,8 +26,8 @@
                                                                     >
         </TitleBar>
 
-        <NavigationView x:ConnectionId='3' x:Name="RootNavigationView" Grid.Row="1"
-                        IsBackButtonVisible="Collapsed"
+        <NavigationView x:ConnectionId='3' x:Name="RootNavigationView" x:Uid="NavView"
+                        IsBackButtonVisible="Collapsed" Grid.Row="1"
                         IsPaneToggleButtonVisible="False"
                                                               >
             
