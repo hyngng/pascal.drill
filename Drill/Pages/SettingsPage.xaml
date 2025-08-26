@@ -53,7 +53,7 @@
                                   SelectionChanged="themeMode_SelectionChanged">
                             <ComboBoxItem Content="밝게" Tag="Light" />
                             <ComboBoxItem Content="어둡게" Tag="Dark" />
-                            <ComboBoxItem Content="시스템 설정" Tag="Default" />
+                            <ComboBoxItem Content="시스템 설정을 따름" Tag="Default" />
                         </ComboBox>
                     </toolkit:SettingsCard>
                     <!--<toolkit:SettingsCard Description="프로그램 재질을 바꿔보세요" Header="테마">

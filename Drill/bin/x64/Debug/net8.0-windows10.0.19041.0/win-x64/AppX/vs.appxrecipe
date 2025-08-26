@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\kiw60\Desktop\pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-08-26T12:14:54.639</Modified>
+      <Modified>2025-08-26T13:21:14.148</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kiw60\Desktop\pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-08-26T12:14:54.456</Modified>
+      <Modified>2025-08-26T13:21:13.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\Desktop\pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.runtimeconfig.json">
       <PackagePath>Drill.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\Desktop\pascal\Drill\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Drill.dll">
       <PackagePath>Drill.dll</PackagePath>
-      <Modified>2025-08-26T12:14:54.341</Modified>
+      <Modified>2025-08-26T13:21:13.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\Desktop\pascal\Drill\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Drill.exe</PackagePath>
-      <Modified>2025-08-26T12:14:54.346</Modified>
+      <Modified>2025-08-26T13:21:13.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiw60\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
