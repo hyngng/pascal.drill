@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kiw60\\Desktop\\test4\\Reference\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8CCA82D-E02D-0786-12D5-B70DF7218E7C}|Drill\\Drill.csproj|c:\\users\\kiw60\\desktop\\test4\\reference\\drill\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{C8CCA82D-E02D-0786-12D5-B70DF7218E7C}|Drill\\Drill.csproj|solutionrelative:drill\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\kiw60\\Desktop\\test4\\Reference\\Drill\\README.md",
+              "RelativeDocumentMoniker": "Drill\\README.md",
+              "ToolTip": "C:\\Users\\kiw60\\Desktop\\test4\\Reference\\Drill\\README.md",
+              "RelativeToolTip": "Drill\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-27T12:13:14.679Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
