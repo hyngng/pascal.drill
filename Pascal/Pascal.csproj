@@ -47,6 +47,24 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BreadcrumbPageMappings.cs</LastGenOutput>
     </None>
+    <Page Update="Views\MaybeLaterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\PdfEditPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="ViewModels\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\HomeLandingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\CreditPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Compile Update="T4Templates\BreadcrumbPageMappings.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -57,6 +75,16 @@
     <None Include="Assets\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Avatar\gabin.png" />
+    <None Remove="Assets\Avatar\thyun.png" />
+    <None Remove="ViewModels\SettingsPage.xaml" />
+    <None Remove="Views\CreditPage.xaml" />
+    <None Remove="Views\HomeLandingPage.xaml" />
+    <None Remove="Views\MaybeLaterPage.xaml" />
+    <None Remove="Views\PdfEditPage.xaml" />
+    <None Remove="Views\SettingsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

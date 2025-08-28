@@ -226,7 +226,7 @@ namespace Pascal.Pascal_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[58];
+            _typeNameTable = new string[79];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -268,25 +268,46 @@ namespace Pascal.Pascal_XamlTypeInfo
             _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.ImageIcon";
             _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.IconElement";
             _typeNameTable[40] = "Microsoft.UI.Xaml.Media.ImageSource";
-            _typeNameTable[41] = "DevWinUI.FontIconExtension";
-            _typeNameTable[42] = "DevWinUI.TextIconExtension";
-            _typeNameTable[43] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[44] = "DevWinUI.GlyphCode";
-            _typeNameTable[45] = "DevWinUI.GlyphName";
-            _typeNameTable[46] = "Microsoft.UI.Xaml.Media.FontFamily";
-            _typeNameTable[47] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[48] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[49] = "Microsoft.UI.Xaml.Media.Brush";
-            _typeNameTable[50] = "Pascal.Views.MainWindow";
-            _typeNameTable[51] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[52] = "Pascal.ViewModels.MainViewModel";
-            _typeNameTable[53] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Thickness";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[56] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[57] = "Int32";
+            _typeNameTable[41] = "Pascal.Views.MainWindow";
+            _typeNameTable[42] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[43] = "Pascal.ViewModels.MainViewModel";
+            _typeNameTable[44] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
+            _typeNameTable[45] = "Microsoft.UI.Xaml.Thickness";
+            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.ScrollView";
+            _typeNameTable[47] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
+            _typeNameTable[48] = "Microsoft.UI.Xaml.Visibility";
+            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
+            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
+            _typeNameTable[51] = "Microsoft.UI.Composition.CompositionPropertySet";
+            _typeNameTable[52] = "Microsoft.UI.Composition.CompositionObject";
+            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
+            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
+            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
+            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
+            _typeNameTable[59] = "Single";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
+            _typeNameTable[61] = "DevWinUI.PanelAttach";
+            _typeNameTable[62] = "DevWinUI.PanelTransitionCollection";
+            _typeNameTable[63] = "DevWinUI.SettingsCard";
+            _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[65] = "DevWinUI.ContentAlignment";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.PersonPicture";
+            _typeNameTable[67] = "Int32";
+            _typeNameTable[68] = "Windows.ApplicationModel.Contacts.Contact";
+            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings";
+            _typeNameTable[70] = "Pascal.Views.CreditPage";
+            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[73] = "Pascal.Views.HomeLandingPage";
+            _typeNameTable[74] = "Pascal.Views.MaybeLaterPage";
+            _typeNameTable[75] = "Pascal.Views.PdfEditPage";
+            _typeNameTable[76] = "Pascal.Views.SettingsPage";
+            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[78] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[58];
+            _typeTable = new global::System.Type[79];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -328,23 +349,44 @@ namespace Pascal.Pascal_XamlTypeInfo
             _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
             _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
             _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
-            _typeTable[41] = typeof(global::DevWinUI.FontIconExtension);
-            _typeTable[42] = typeof(global::DevWinUI.TextIconExtension);
-            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[44] = typeof(global::DevWinUI.GlyphCode);
-            _typeTable[45] = typeof(global::DevWinUI.GlyphName);
-            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
-            _typeTable[47] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[48] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
-            _typeTable[50] = typeof(global::Pascal.Views.MainWindow);
-            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[52] = typeof(global::Pascal.ViewModels.MainViewModel);
-            _typeTable[53] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Thickness);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[56] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[57] = typeof(global::System.Int32);
+            _typeTable[41] = typeof(global::Pascal.Views.MainWindow);
+            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[43] = typeof(global::Pascal.ViewModels.MainViewModel);
+            _typeTable[44] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
+            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Thickness);
+            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
+            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
+            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Visibility);
+            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
+            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
+            _typeTable[51] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
+            _typeTable[52] = typeof(global::Microsoft.UI.Composition.CompositionObject);
+            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
+            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
+            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
+            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
+            _typeTable[59] = typeof(global::System.Single);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
+            _typeTable[61] = typeof(global::DevWinUI.PanelAttach);
+            _typeTable[62] = typeof(global::DevWinUI.PanelTransitionCollection);
+            _typeTable[63] = typeof(global::DevWinUI.SettingsCard);
+            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[65] = typeof(global::DevWinUI.ContentAlignment);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture);
+            _typeTable[67] = typeof(global::System.Int32);
+            _typeTable[68] = typeof(global::Windows.ApplicationModel.Contacts.Contact);
+            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings);
+            _typeTable[70] = typeof(global::Pascal.Views.CreditPage);
+            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[73] = typeof(global::Pascal.Views.HomeLandingPage);
+            _typeTable[74] = typeof(global::Pascal.Views.MaybeLaterPage);
+            _typeTable[75] = typeof(global::Pascal.Views.PdfEditPage);
+            _typeTable[76] = typeof(global::Pascal.Views.SettingsPage);
+            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[78] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -389,10 +431,20 @@ namespace Pascal.Pascal_XamlTypeInfo
         private object Activate_33_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::DevWinUI.BreadcrumbStep>(); }
         private object Activate_34_Collection() { return new global::System.Collections.ObjectModel.Collection<global::DevWinUI.BreadcrumbStep>(); }
         private object Activate_38_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
-        private object Activate_41_FontIconExtension() { return new global::DevWinUI.FontIconExtension(); }
-        private object Activate_50_MainWindow() { return new global::Pascal.Views.MainWindow(); }
-        private object Activate_52_MainViewModel() { return new global::Pascal.ViewModels.MainViewModel(); }
-        private object Activate_55_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_41_MainWindow() { return new global::Pascal.Views.MainWindow(); }
+        private object Activate_43_MainViewModel() { return new global::Pascal.ViewModels.MainViewModel(); }
+        private object Activate_46_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
+        private object Activate_56_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
+        private object Activate_61_PanelAttach() { return new global::DevWinUI.PanelAttach(); }
+        private object Activate_63_SettingsCard() { return new global::DevWinUI.SettingsCard(); }
+        private object Activate_66_PersonPicture() { return new global::Microsoft.UI.Xaml.Controls.PersonPicture(); }
+        private object Activate_68_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
+        private object Activate_70_CreditPage() { return new global::Pascal.Views.CreditPage(); }
+        private object Activate_73_HomeLandingPage() { return new global::Pascal.Views.HomeLandingPage(); }
+        private object Activate_74_MaybeLaterPage() { return new global::Pascal.Views.MaybeLaterPage(); }
+        private object Activate_75_PdfEditPage() { return new global::Pascal.Views.PdfEditPage(); }
+        private object Activate_76_SettingsPage() { return new global::Pascal.Views.SettingsPage(); }
+        private object Activate_77_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_TitleBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TitleBar).TypeHandle);
         private void StaticInitializer_9_TitleBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TitleBarTemplateSettings).TypeHandle);
@@ -416,18 +468,36 @@ namespace Pascal.Pascal_XamlTypeInfo
         private void StaticInitializer_36_Type() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Type).TypeHandle);
         private void StaticInitializer_37_MemberInfo() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Reflection.MemberInfo).TypeHandle);
         private void StaticInitializer_38_ImageIcon() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon).TypeHandle);
-        private void StaticInitializer_41_FontIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.FontIconExtension).TypeHandle);
-        private void StaticInitializer_42_TextIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.TextIconExtension).TypeHandle);
-        private void StaticInitializer_44_GlyphCode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.GlyphCode).TypeHandle);
-        private void StaticInitializer_45_GlyphName() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.GlyphName).TypeHandle);
-        private void StaticInitializer_47_FontWeight() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontWeight).TypeHandle);
-        private void StaticInitializer_48_FontStyle() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontStyle).TypeHandle);
-        private void StaticInitializer_50_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.MainWindow).TypeHandle);
-        private void StaticInitializer_52_MainViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.ViewModels.MainViewModel).TypeHandle);
-        private void StaticInitializer_53_ObservableObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject).TypeHandle);
-        private void StaticInitializer_54_Thickness() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Thickness).TypeHandle);
-        private void StaticInitializer_55_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_56_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_41_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.MainWindow).TypeHandle);
+        private void StaticInitializer_43_MainViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.ViewModels.MainViewModel).TypeHandle);
+        private void StaticInitializer_44_ObservableObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject).TypeHandle);
+        private void StaticInitializer_45_Thickness() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Thickness).TypeHandle);
+        private void StaticInitializer_46_ScrollView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollView).TypeHandle);
+        private void StaticInitializer_47_ScrollingScrollBarVisibility() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility).TypeHandle);
+        private void StaticInitializer_49_ScrollingScrollMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode).TypeHandle);
+        private void StaticInitializer_50_ScrollingContentOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation).TypeHandle);
+        private void StaticInitializer_51_CompositionPropertySet() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionPropertySet).TypeHandle);
+        private void StaticInitializer_52_CompositionObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionObject).TypeHandle);
+        private void StaticInitializer_53_ScrollingChainMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode).TypeHandle);
+        private void StaticInitializer_54_ScrollingRailMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode).TypeHandle);
+        private void StaticInitializer_55_ScrollingInputKinds() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds).TypeHandle);
+        private void StaticInitializer_56_ScrollPresenter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter).TypeHandle);
+        private void StaticInitializer_58_ScrollingInteractionState() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState).TypeHandle);
+        private void StaticInitializer_60_ScrollingZoomMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode).TypeHandle);
+        private void StaticInitializer_61_PanelAttach() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.PanelAttach).TypeHandle);
+        private void StaticInitializer_62_PanelTransitionCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.PanelTransitionCollection).TypeHandle);
+        private void StaticInitializer_63_SettingsCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.SettingsCard).TypeHandle);
+        private void StaticInitializer_65_ContentAlignment() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.ContentAlignment).TypeHandle);
+        private void StaticInitializer_66_PersonPicture() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture).TypeHandle);
+        private void StaticInitializer_68_Contact() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.ApplicationModel.Contacts.Contact).TypeHandle);
+        private void StaticInitializer_69_PersonPictureTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings).TypeHandle);
+        private void StaticInitializer_70_CreditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.CreditPage).TypeHandle);
+        private void StaticInitializer_73_HomeLandingPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.HomeLandingPage).TypeHandle);
+        private void StaticInitializer_74_MaybeLaterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.MaybeLaterPage).TypeHandle);
+        private void StaticInitializer_75_PdfEditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPage).TypeHandle);
+        private void StaticInitializer_76_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.SettingsPage).TypeHandle);
+        private void StaticInitializer_77_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_78_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -453,7 +523,7 @@ namespace Pascal.Pascal_XamlTypeInfo
             var newItem = (global::DevWinUI.BreadcrumbStep)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_56_IList(object instance, object item)
+        private void VectorAdd_78_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -500,11 +570,11 @@ namespace Pascal.Pascal_XamlTypeInfo
                 userType.AddMemberName("Title");
                 userType.AddMemberName("IsBackButtonVisible");
                 userType.AddMemberName("IsPaneToggleButtonVisible");
-                userType.AddMemberName("Subtitle");
                 userType.AddMemberName("LeftHeader");
-                userType.AddMemberName("RightHeader");
                 userType.AddMemberName("IconSource");
                 userType.AddMemberName("IsBackButtonEnabled");
+                userType.AddMemberName("RightHeader");
+                userType.AddMemberName("Subtitle");
                 userType.AddMemberName("TemplateSettings");
                 xamlType = userType;
                 break;
@@ -781,2909 +851,36 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  DevWinUI.FontIconExtension
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevWinUI.TextIconExtension"));
-                userType.Activator = Activate_41_FontIconExtension;
-                userType.StaticInitializer = StaticInitializer_41_FontIconExtension;
-                userType.AddMemberName("Glyph");
-                userType.AddMemberName("GlyphCode");
-                userType.AddMemberName("GlyphName");
-                userType.AddMemberName("FontFamily");
-                userType.SetIsMarkupExtension();
-                xamlType = userType;
-                break;
-
-            case 42:   //  DevWinUI.TextIconExtension
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
-                userType.StaticInitializer = StaticInitializer_42_TextIconExtension;
-                userType.AddMemberName("FontSize");
-                userType.AddMemberName("FontWeight");
-                userType.AddMemberName("FontStyle");
-                userType.AddMemberName("Foreground");
-                userType.AddMemberName("IsTextScaleFactorEnabled");
-                userType.AddMemberName("MirroredWhenRightToLeft");
-                userType.SetIsMarkupExtension();
-                xamlType = userType;
-                break;
-
-            case 43:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
-                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 44:   //  DevWinUI.GlyphCode
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_44_GlyphCode;
-                userType.AddEnumValue("None", global::DevWinUI.GlyphCode.None);
-                userType.AddEnumValue("E700", global::DevWinUI.GlyphCode.E700);
-                userType.AddEnumValue("E701", global::DevWinUI.GlyphCode.E701);
-                userType.AddEnumValue("E702", global::DevWinUI.GlyphCode.E702);
-                userType.AddEnumValue("E703", global::DevWinUI.GlyphCode.E703);
-                userType.AddEnumValue("E704", global::DevWinUI.GlyphCode.E704);
-                userType.AddEnumValue("E705", global::DevWinUI.GlyphCode.E705);
-                userType.AddEnumValue("E706", global::DevWinUI.GlyphCode.E706);
-                userType.AddEnumValue("E707", global::DevWinUI.GlyphCode.E707);
-                userType.AddEnumValue("E708", global::DevWinUI.GlyphCode.E708);
-                userType.AddEnumValue("E709", global::DevWinUI.GlyphCode.E709);
-                userType.AddEnumValue("E70A", global::DevWinUI.GlyphCode.E70A);
-                userType.AddEnumValue("E70B", global::DevWinUI.GlyphCode.E70B);
-                userType.AddEnumValue("E70C", global::DevWinUI.GlyphCode.E70C);
-                userType.AddEnumValue("E70D", global::DevWinUI.GlyphCode.E70D);
-                userType.AddEnumValue("E70E", global::DevWinUI.GlyphCode.E70E);
-                userType.AddEnumValue("E70F", global::DevWinUI.GlyphCode.E70F);
-                userType.AddEnumValue("E710", global::DevWinUI.GlyphCode.E710);
-                userType.AddEnumValue("E711", global::DevWinUI.GlyphCode.E711);
-                userType.AddEnumValue("E712", global::DevWinUI.GlyphCode.E712);
-                userType.AddEnumValue("E713", global::DevWinUI.GlyphCode.E713);
-                userType.AddEnumValue("E714", global::DevWinUI.GlyphCode.E714);
-                userType.AddEnumValue("E715", global::DevWinUI.GlyphCode.E715);
-                userType.AddEnumValue("E716", global::DevWinUI.GlyphCode.E716);
-                userType.AddEnumValue("E717", global::DevWinUI.GlyphCode.E717);
-                userType.AddEnumValue("E718", global::DevWinUI.GlyphCode.E718);
-                userType.AddEnumValue("E719", global::DevWinUI.GlyphCode.E719);
-                userType.AddEnumValue("E71A", global::DevWinUI.GlyphCode.E71A);
-                userType.AddEnumValue("E71B", global::DevWinUI.GlyphCode.E71B);
-                userType.AddEnumValue("E71C", global::DevWinUI.GlyphCode.E71C);
-                userType.AddEnumValue("E71D", global::DevWinUI.GlyphCode.E71D);
-                userType.AddEnumValue("E71E", global::DevWinUI.GlyphCode.E71E);
-                userType.AddEnumValue("E71F", global::DevWinUI.GlyphCode.E71F);
-                userType.AddEnumValue("E720", global::DevWinUI.GlyphCode.E720);
-                userType.AddEnumValue("E721", global::DevWinUI.GlyphCode.E721);
-                userType.AddEnumValue("E722", global::DevWinUI.GlyphCode.E722);
-                userType.AddEnumValue("E723", global::DevWinUI.GlyphCode.E723);
-                userType.AddEnumValue("E724", global::DevWinUI.GlyphCode.E724);
-                userType.AddEnumValue("E725", global::DevWinUI.GlyphCode.E725);
-                userType.AddEnumValue("E726", global::DevWinUI.GlyphCode.E726);
-                userType.AddEnumValue("E727", global::DevWinUI.GlyphCode.E727);
-                userType.AddEnumValue("E728", global::DevWinUI.GlyphCode.E728);
-                userType.AddEnumValue("E729", global::DevWinUI.GlyphCode.E729);
-                userType.AddEnumValue("E72A", global::DevWinUI.GlyphCode.E72A);
-                userType.AddEnumValue("E72B", global::DevWinUI.GlyphCode.E72B);
-                userType.AddEnumValue("E72C", global::DevWinUI.GlyphCode.E72C);
-                userType.AddEnumValue("E72D", global::DevWinUI.GlyphCode.E72D);
-                userType.AddEnumValue("E72E", global::DevWinUI.GlyphCode.E72E);
-                userType.AddEnumValue("E730", global::DevWinUI.GlyphCode.E730);
-                userType.AddEnumValue("E731", global::DevWinUI.GlyphCode.E731);
-                userType.AddEnumValue("E734", global::DevWinUI.GlyphCode.E734);
-                userType.AddEnumValue("E735", global::DevWinUI.GlyphCode.E735);
-                userType.AddEnumValue("E736", global::DevWinUI.GlyphCode.E736);
-                userType.AddEnumValue("E737", global::DevWinUI.GlyphCode.E737);
-                userType.AddEnumValue("E738", global::DevWinUI.GlyphCode.E738);
-                userType.AddEnumValue("E739", global::DevWinUI.GlyphCode.E739);
-                userType.AddEnumValue("E73A", global::DevWinUI.GlyphCode.E73A);
-                userType.AddEnumValue("E73B", global::DevWinUI.GlyphCode.E73B);
-                userType.AddEnumValue("E73C", global::DevWinUI.GlyphCode.E73C);
-                userType.AddEnumValue("E73D", global::DevWinUI.GlyphCode.E73D);
-                userType.AddEnumValue("E73E", global::DevWinUI.GlyphCode.E73E);
-                userType.AddEnumValue("E73F", global::DevWinUI.GlyphCode.E73F);
-                userType.AddEnumValue("E740", global::DevWinUI.GlyphCode.E740);
-                userType.AddEnumValue("E741", global::DevWinUI.GlyphCode.E741);
-                userType.AddEnumValue("E742", global::DevWinUI.GlyphCode.E742);
-                userType.AddEnumValue("E743", global::DevWinUI.GlyphCode.E743);
-                userType.AddEnumValue("E744", global::DevWinUI.GlyphCode.E744);
-                userType.AddEnumValue("E745", global::DevWinUI.GlyphCode.E745);
-                userType.AddEnumValue("E746", global::DevWinUI.GlyphCode.E746);
-                userType.AddEnumValue("E747", global::DevWinUI.GlyphCode.E747);
-                userType.AddEnumValue("E748", global::DevWinUI.GlyphCode.E748);
-                userType.AddEnumValue("E749", global::DevWinUI.GlyphCode.E749);
-                userType.AddEnumValue("E74A", global::DevWinUI.GlyphCode.E74A);
-                userType.AddEnumValue("E74B", global::DevWinUI.GlyphCode.E74B);
-                userType.AddEnumValue("E74C", global::DevWinUI.GlyphCode.E74C);
-                userType.AddEnumValue("E74D", global::DevWinUI.GlyphCode.E74D);
-                userType.AddEnumValue("E74E", global::DevWinUI.GlyphCode.E74E);
-                userType.AddEnumValue("E74F", global::DevWinUI.GlyphCode.E74F);
-                userType.AddEnumValue("E750", global::DevWinUI.GlyphCode.E750);
-                userType.AddEnumValue("E751", global::DevWinUI.GlyphCode.E751);
-                userType.AddEnumValue("E752", global::DevWinUI.GlyphCode.E752);
-                userType.AddEnumValue("E753", global::DevWinUI.GlyphCode.E753);
-                userType.AddEnumValue("E754", global::DevWinUI.GlyphCode.E754);
-                userType.AddEnumValue("E755", global::DevWinUI.GlyphCode.E755);
-                userType.AddEnumValue("E756", global::DevWinUI.GlyphCode.E756);
-                userType.AddEnumValue("E759", global::DevWinUI.GlyphCode.E759);
-                userType.AddEnumValue("E75A", global::DevWinUI.GlyphCode.E75A);
-                userType.AddEnumValue("E75B", global::DevWinUI.GlyphCode.E75B);
-                userType.AddEnumValue("E75C", global::DevWinUI.GlyphCode.E75C);
-                userType.AddEnumValue("E75D", global::DevWinUI.GlyphCode.E75D);
-                userType.AddEnumValue("E75E", global::DevWinUI.GlyphCode.E75E);
-                userType.AddEnumValue("E75F", global::DevWinUI.GlyphCode.E75F);
-                userType.AddEnumValue("E760", global::DevWinUI.GlyphCode.E760);
-                userType.AddEnumValue("E761", global::DevWinUI.GlyphCode.E761);
-                userType.AddEnumValue("E762", global::DevWinUI.GlyphCode.E762);
-                userType.AddEnumValue("E763", global::DevWinUI.GlyphCode.E763);
-                userType.AddEnumValue("E764", global::DevWinUI.GlyphCode.E764);
-                userType.AddEnumValue("E765", global::DevWinUI.GlyphCode.E765);
-                userType.AddEnumValue("E766", global::DevWinUI.GlyphCode.E766);
-                userType.AddEnumValue("E767", global::DevWinUI.GlyphCode.E767);
-                userType.AddEnumValue("E768", global::DevWinUI.GlyphCode.E768);
-                userType.AddEnumValue("E769", global::DevWinUI.GlyphCode.E769);
-                userType.AddEnumValue("E76B", global::DevWinUI.GlyphCode.E76B);
-                userType.AddEnumValue("E76C", global::DevWinUI.GlyphCode.E76C);
-                userType.AddEnumValue("E76D", global::DevWinUI.GlyphCode.E76D);
-                userType.AddEnumValue("E76E", global::DevWinUI.GlyphCode.E76E);
-                userType.AddEnumValue("E76F", global::DevWinUI.GlyphCode.E76F);
-                userType.AddEnumValue("E770", global::DevWinUI.GlyphCode.E770);
-                userType.AddEnumValue("E771", global::DevWinUI.GlyphCode.E771);
-                userType.AddEnumValue("E772", global::DevWinUI.GlyphCode.E772);
-                userType.AddEnumValue("E773", global::DevWinUI.GlyphCode.E773);
-                userType.AddEnumValue("E774", global::DevWinUI.GlyphCode.E774);
-                userType.AddEnumValue("E775", global::DevWinUI.GlyphCode.E775);
-                userType.AddEnumValue("E776", global::DevWinUI.GlyphCode.E776);
-                userType.AddEnumValue("E777", global::DevWinUI.GlyphCode.E777);
-                userType.AddEnumValue("E778", global::DevWinUI.GlyphCode.E778);
-                userType.AddEnumValue("E779", global::DevWinUI.GlyphCode.E779);
-                userType.AddEnumValue("E77A", global::DevWinUI.GlyphCode.E77A);
-                userType.AddEnumValue("E77B", global::DevWinUI.GlyphCode.E77B);
-                userType.AddEnumValue("E77C", global::DevWinUI.GlyphCode.E77C);
-                userType.AddEnumValue("E77E", global::DevWinUI.GlyphCode.E77E);
-                userType.AddEnumValue("E77F", global::DevWinUI.GlyphCode.E77F);
-                userType.AddEnumValue("E780", global::DevWinUI.GlyphCode.E780);
-                userType.AddEnumValue("E781", global::DevWinUI.GlyphCode.E781);
-                userType.AddEnumValue("E783", global::DevWinUI.GlyphCode.E783);
-                userType.AddEnumValue("E784", global::DevWinUI.GlyphCode.E784);
-                userType.AddEnumValue("E785", global::DevWinUI.GlyphCode.E785);
-                userType.AddEnumValue("E786", global::DevWinUI.GlyphCode.E786);
-                userType.AddEnumValue("E787", global::DevWinUI.GlyphCode.E787);
-                userType.AddEnumValue("E788", global::DevWinUI.GlyphCode.E788);
-                userType.AddEnumValue("E789", global::DevWinUI.GlyphCode.E789);
-                userType.AddEnumValue("E78A", global::DevWinUI.GlyphCode.E78A);
-                userType.AddEnumValue("E78B", global::DevWinUI.GlyphCode.E78B);
-                userType.AddEnumValue("E78C", global::DevWinUI.GlyphCode.E78C);
-                userType.AddEnumValue("E790", global::DevWinUI.GlyphCode.E790);
-                userType.AddEnumValue("E791", global::DevWinUI.GlyphCode.E791);
-                userType.AddEnumValue("E792", global::DevWinUI.GlyphCode.E792);
-                userType.AddEnumValue("E793", global::DevWinUI.GlyphCode.E793);
-                userType.AddEnumValue("E799", global::DevWinUI.GlyphCode.E799);
-                userType.AddEnumValue("E7A5", global::DevWinUI.GlyphCode.E7A5);
-                userType.AddEnumValue("E7A6", global::DevWinUI.GlyphCode.E7A6);
-                userType.AddEnumValue("E7A7", global::DevWinUI.GlyphCode.E7A7);
-                userType.AddEnumValue("E7A8", global::DevWinUI.GlyphCode.E7A8);
-                userType.AddEnumValue("E7AC", global::DevWinUI.GlyphCode.E7AC);
-                userType.AddEnumValue("E7AD", global::DevWinUI.GlyphCode.E7AD);
-                userType.AddEnumValue("E7B3", global::DevWinUI.GlyphCode.E7B3);
-                userType.AddEnumValue("E7B5", global::DevWinUI.GlyphCode.E7B5);
-                userType.AddEnumValue("E7B7", global::DevWinUI.GlyphCode.E7B7);
-                userType.AddEnumValue("E7B8", global::DevWinUI.GlyphCode.E7B8);
-                userType.AddEnumValue("E7BA", global::DevWinUI.GlyphCode.E7BA);
-                userType.AddEnumValue("E7BC", global::DevWinUI.GlyphCode.E7BC);
-                userType.AddEnumValue("E7BE", global::DevWinUI.GlyphCode.E7BE);
-                userType.AddEnumValue("E7BF", global::DevWinUI.GlyphCode.E7BF);
-                userType.AddEnumValue("E7C0", global::DevWinUI.GlyphCode.E7C0);
-                userType.AddEnumValue("E7C1", global::DevWinUI.GlyphCode.E7C1);
-                userType.AddEnumValue("E7C2", global::DevWinUI.GlyphCode.E7C2);
-                userType.AddEnumValue("E7C3", global::DevWinUI.GlyphCode.E7C3);
-                userType.AddEnumValue("E7C4", global::DevWinUI.GlyphCode.E7C4);
-                userType.AddEnumValue("E7C5", global::DevWinUI.GlyphCode.E7C5);
-                userType.AddEnumValue("E7C6", global::DevWinUI.GlyphCode.E7C6);
-                userType.AddEnumValue("E7C7", global::DevWinUI.GlyphCode.E7C7);
-                userType.AddEnumValue("E7C8", global::DevWinUI.GlyphCode.E7C8);
-                userType.AddEnumValue("E7C9", global::DevWinUI.GlyphCode.E7C9);
-                userType.AddEnumValue("E7DE", global::DevWinUI.GlyphCode.E7DE);
-                userType.AddEnumValue("E7E3", global::DevWinUI.GlyphCode.E7E3);
-                userType.AddEnumValue("E7E6", global::DevWinUI.GlyphCode.E7E6);
-                userType.AddEnumValue("E7E7", global::DevWinUI.GlyphCode.E7E7);
-                userType.AddEnumValue("E7E8", global::DevWinUI.GlyphCode.E7E8);
-                userType.AddEnumValue("E7EA", global::DevWinUI.GlyphCode.E7EA);
-                userType.AddEnumValue("E7EB", global::DevWinUI.GlyphCode.E7EB);
-                userType.AddEnumValue("E7EC", global::DevWinUI.GlyphCode.E7EC);
-                userType.AddEnumValue("E7ED", global::DevWinUI.GlyphCode.E7ED);
-                userType.AddEnumValue("E7EE", global::DevWinUI.GlyphCode.E7EE);
-                userType.AddEnumValue("E7EF", global::DevWinUI.GlyphCode.E7EF);
-                userType.AddEnumValue("E7F0", global::DevWinUI.GlyphCode.E7F0);
-                userType.AddEnumValue("E7F1", global::DevWinUI.GlyphCode.E7F1);
-                userType.AddEnumValue("E7F2", global::DevWinUI.GlyphCode.E7F2);
-                userType.AddEnumValue("E7F3", global::DevWinUI.GlyphCode.E7F3);
-                userType.AddEnumValue("E7F4", global::DevWinUI.GlyphCode.E7F4);
-                userType.AddEnumValue("E7F5", global::DevWinUI.GlyphCode.E7F5);
-                userType.AddEnumValue("E7F6", global::DevWinUI.GlyphCode.E7F6);
-                userType.AddEnumValue("E7F7", global::DevWinUI.GlyphCode.E7F7);
-                userType.AddEnumValue("E7F8", global::DevWinUI.GlyphCode.E7F8);
-                userType.AddEnumValue("E7F9", global::DevWinUI.GlyphCode.E7F9);
-                userType.AddEnumValue("E7FA", global::DevWinUI.GlyphCode.E7FA);
-                userType.AddEnumValue("E7FB", global::DevWinUI.GlyphCode.E7FB);
-                userType.AddEnumValue("E7FC", global::DevWinUI.GlyphCode.E7FC);
-                userType.AddEnumValue("E7FD", global::DevWinUI.GlyphCode.E7FD);
-                userType.AddEnumValue("E802", global::DevWinUI.GlyphCode.E802);
-                userType.AddEnumValue("E803", global::DevWinUI.GlyphCode.E803);
-                userType.AddEnumValue("E804", global::DevWinUI.GlyphCode.E804);
-                userType.AddEnumValue("E805", global::DevWinUI.GlyphCode.E805);
-                userType.AddEnumValue("E806", global::DevWinUI.GlyphCode.E806);
-                userType.AddEnumValue("E809", global::DevWinUI.GlyphCode.E809);
-                userType.AddEnumValue("E80A", global::DevWinUI.GlyphCode.E80A);
-                userType.AddEnumValue("E80B", global::DevWinUI.GlyphCode.E80B);
-                userType.AddEnumValue("E80C", global::DevWinUI.GlyphCode.E80C);
-                userType.AddEnumValue("E80D", global::DevWinUI.GlyphCode.E80D);
-                userType.AddEnumValue("E80F", global::DevWinUI.GlyphCode.E80F);
-                userType.AddEnumValue("E811", global::DevWinUI.GlyphCode.E811);
-                userType.AddEnumValue("E812", global::DevWinUI.GlyphCode.E812);
-                userType.AddEnumValue("E813", global::DevWinUI.GlyphCode.E813);
-                userType.AddEnumValue("E814", global::DevWinUI.GlyphCode.E814);
-                userType.AddEnumValue("E815", global::DevWinUI.GlyphCode.E815);
-                userType.AddEnumValue("E816", global::DevWinUI.GlyphCode.E816);
-                userType.AddEnumValue("E819", global::DevWinUI.GlyphCode.E819);
-                userType.AddEnumValue("E81A", global::DevWinUI.GlyphCode.E81A);
-                userType.AddEnumValue("E81B", global::DevWinUI.GlyphCode.E81B);
-                userType.AddEnumValue("E81C", global::DevWinUI.GlyphCode.E81C);
-                userType.AddEnumValue("E81D", global::DevWinUI.GlyphCode.E81D);
-                userType.AddEnumValue("E81E", global::DevWinUI.GlyphCode.E81E);
-                userType.AddEnumValue("E81F", global::DevWinUI.GlyphCode.E81F);
-                userType.AddEnumValue("E821", global::DevWinUI.GlyphCode.E821);
-                userType.AddEnumValue("E822", global::DevWinUI.GlyphCode.E822);
-                userType.AddEnumValue("E823", global::DevWinUI.GlyphCode.E823);
-                userType.AddEnumValue("E825", global::DevWinUI.GlyphCode.E825);
-                userType.AddEnumValue("E826", global::DevWinUI.GlyphCode.E826);
-                userType.AddEnumValue("E829", global::DevWinUI.GlyphCode.E829);
-                userType.AddEnumValue("E82A", global::DevWinUI.GlyphCode.E82A);
-                userType.AddEnumValue("E82B", global::DevWinUI.GlyphCode.E82B);
-                userType.AddEnumValue("E82C", global::DevWinUI.GlyphCode.E82C);
-                userType.AddEnumValue("E82D", global::DevWinUI.GlyphCode.E82D);
-                userType.AddEnumValue("E82E", global::DevWinUI.GlyphCode.E82E);
-                userType.AddEnumValue("E82F", global::DevWinUI.GlyphCode.E82F);
-                userType.AddEnumValue("E830", global::DevWinUI.GlyphCode.E830);
-                userType.AddEnumValue("E835", global::DevWinUI.GlyphCode.E835);
-                userType.AddEnumValue("E836", global::DevWinUI.GlyphCode.E836);
-                userType.AddEnumValue("E838", global::DevWinUI.GlyphCode.E838);
-                userType.AddEnumValue("E839", global::DevWinUI.GlyphCode.E839);
-                userType.AddEnumValue("E83A", global::DevWinUI.GlyphCode.E83A);
-                userType.AddEnumValue("E83B", global::DevWinUI.GlyphCode.E83B);
-                userType.AddEnumValue("E83C", global::DevWinUI.GlyphCode.E83C);
-                userType.AddEnumValue("E83D", global::DevWinUI.GlyphCode.E83D);
-                userType.AddEnumValue("E83E", global::DevWinUI.GlyphCode.E83E);
-                userType.AddEnumValue("E83F", global::DevWinUI.GlyphCode.E83F);
-                userType.AddEnumValue("E840", global::DevWinUI.GlyphCode.E840);
-                userType.AddEnumValue("E841", global::DevWinUI.GlyphCode.E841);
-                userType.AddEnumValue("E842", global::DevWinUI.GlyphCode.E842);
-                userType.AddEnumValue("E843", global::DevWinUI.GlyphCode.E843);
-                userType.AddEnumValue("E844", global::DevWinUI.GlyphCode.E844);
-                userType.AddEnumValue("E845", global::DevWinUI.GlyphCode.E845);
-                userType.AddEnumValue("E846", global::DevWinUI.GlyphCode.E846);
-                userType.AddEnumValue("E847", global::DevWinUI.GlyphCode.E847);
-                userType.AddEnumValue("E848", global::DevWinUI.GlyphCode.E848);
-                userType.AddEnumValue("E849", global::DevWinUI.GlyphCode.E849);
-                userType.AddEnumValue("E84A", global::DevWinUI.GlyphCode.E84A);
-                userType.AddEnumValue("E84B", global::DevWinUI.GlyphCode.E84B);
-                userType.AddEnumValue("E84C", global::DevWinUI.GlyphCode.E84C);
-                userType.AddEnumValue("E84D", global::DevWinUI.GlyphCode.E84D);
-                userType.AddEnumValue("E84E", global::DevWinUI.GlyphCode.E84E);
-                userType.AddEnumValue("E84F", global::DevWinUI.GlyphCode.E84F);
-                userType.AddEnumValue("E850", global::DevWinUI.GlyphCode.E850);
-                userType.AddEnumValue("E851", global::DevWinUI.GlyphCode.E851);
-                userType.AddEnumValue("E852", global::DevWinUI.GlyphCode.E852);
-                userType.AddEnumValue("E853", global::DevWinUI.GlyphCode.E853);
-                userType.AddEnumValue("E854", global::DevWinUI.GlyphCode.E854);
-                userType.AddEnumValue("E855", global::DevWinUI.GlyphCode.E855);
-                userType.AddEnumValue("E856", global::DevWinUI.GlyphCode.E856);
-                userType.AddEnumValue("E857", global::DevWinUI.GlyphCode.E857);
-                userType.AddEnumValue("E858", global::DevWinUI.GlyphCode.E858);
-                userType.AddEnumValue("E859", global::DevWinUI.GlyphCode.E859);
-                userType.AddEnumValue("E85A", global::DevWinUI.GlyphCode.E85A);
-                userType.AddEnumValue("E85B", global::DevWinUI.GlyphCode.E85B);
-                userType.AddEnumValue("E85C", global::DevWinUI.GlyphCode.E85C);
-                userType.AddEnumValue("E85D", global::DevWinUI.GlyphCode.E85D);
-                userType.AddEnumValue("E85E", global::DevWinUI.GlyphCode.E85E);
-                userType.AddEnumValue("E85F", global::DevWinUI.GlyphCode.E85F);
-                userType.AddEnumValue("E860", global::DevWinUI.GlyphCode.E860);
-                userType.AddEnumValue("E861", global::DevWinUI.GlyphCode.E861);
-                userType.AddEnumValue("E862", global::DevWinUI.GlyphCode.E862);
-                userType.AddEnumValue("E863", global::DevWinUI.GlyphCode.E863);
-                userType.AddEnumValue("E864", global::DevWinUI.GlyphCode.E864);
-                userType.AddEnumValue("E865", global::DevWinUI.GlyphCode.E865);
-                userType.AddEnumValue("E866", global::DevWinUI.GlyphCode.E866);
-                userType.AddEnumValue("E867", global::DevWinUI.GlyphCode.E867);
-                userType.AddEnumValue("E868", global::DevWinUI.GlyphCode.E868);
-                userType.AddEnumValue("E869", global::DevWinUI.GlyphCode.E869);
-                userType.AddEnumValue("E86A", global::DevWinUI.GlyphCode.E86A);
-                userType.AddEnumValue("E86B", global::DevWinUI.GlyphCode.E86B);
-                userType.AddEnumValue("E86C", global::DevWinUI.GlyphCode.E86C);
-                userType.AddEnumValue("E86D", global::DevWinUI.GlyphCode.E86D);
-                userType.AddEnumValue("E86E", global::DevWinUI.GlyphCode.E86E);
-                userType.AddEnumValue("E86F", global::DevWinUI.GlyphCode.E86F);
-                userType.AddEnumValue("E870", global::DevWinUI.GlyphCode.E870);
-                userType.AddEnumValue("E871", global::DevWinUI.GlyphCode.E871);
-                userType.AddEnumValue("E872", global::DevWinUI.GlyphCode.E872);
-                userType.AddEnumValue("E873", global::DevWinUI.GlyphCode.E873);
-                userType.AddEnumValue("E874", global::DevWinUI.GlyphCode.E874);
-                userType.AddEnumValue("E875", global::DevWinUI.GlyphCode.E875);
-                userType.AddEnumValue("E876", global::DevWinUI.GlyphCode.E876);
-                userType.AddEnumValue("E877", global::DevWinUI.GlyphCode.E877);
-                userType.AddEnumValue("E878", global::DevWinUI.GlyphCode.E878);
-                userType.AddEnumValue("E879", global::DevWinUI.GlyphCode.E879);
-                userType.AddEnumValue("E87A", global::DevWinUI.GlyphCode.E87A);
-                userType.AddEnumValue("E87B", global::DevWinUI.GlyphCode.E87B);
-                userType.AddEnumValue("E87C", global::DevWinUI.GlyphCode.E87C);
-                userType.AddEnumValue("E87D", global::DevWinUI.GlyphCode.E87D);
-                userType.AddEnumValue("E87E", global::DevWinUI.GlyphCode.E87E);
-                userType.AddEnumValue("E87F", global::DevWinUI.GlyphCode.E87F);
-                userType.AddEnumValue("E880", global::DevWinUI.GlyphCode.E880);
-                userType.AddEnumValue("E881", global::DevWinUI.GlyphCode.E881);
-                userType.AddEnumValue("E882", global::DevWinUI.GlyphCode.E882);
-                userType.AddEnumValue("E883", global::DevWinUI.GlyphCode.E883);
-                userType.AddEnumValue("E884", global::DevWinUI.GlyphCode.E884);
-                userType.AddEnumValue("E885", global::DevWinUI.GlyphCode.E885);
-                userType.AddEnumValue("E886", global::DevWinUI.GlyphCode.E886);
-                userType.AddEnumValue("E887", global::DevWinUI.GlyphCode.E887);
-                userType.AddEnumValue("E888", global::DevWinUI.GlyphCode.E888);
-                userType.AddEnumValue("E889", global::DevWinUI.GlyphCode.E889);
-                userType.AddEnumValue("E88A", global::DevWinUI.GlyphCode.E88A);
-                userType.AddEnumValue("E88B", global::DevWinUI.GlyphCode.E88B);
-                userType.AddEnumValue("E88C", global::DevWinUI.GlyphCode.E88C);
-                userType.AddEnumValue("E88D", global::DevWinUI.GlyphCode.E88D);
-                userType.AddEnumValue("E88E", global::DevWinUI.GlyphCode.E88E);
-                userType.AddEnumValue("E88F", global::DevWinUI.GlyphCode.E88F);
-                userType.AddEnumValue("E890", global::DevWinUI.GlyphCode.E890);
-                userType.AddEnumValue("E891", global::DevWinUI.GlyphCode.E891);
-                userType.AddEnumValue("E892", global::DevWinUI.GlyphCode.E892);
-                userType.AddEnumValue("E893", global::DevWinUI.GlyphCode.E893);
-                userType.AddEnumValue("E894", global::DevWinUI.GlyphCode.E894);
-                userType.AddEnumValue("E895", global::DevWinUI.GlyphCode.E895);
-                userType.AddEnumValue("E896", global::DevWinUI.GlyphCode.E896);
-                userType.AddEnumValue("E897", global::DevWinUI.GlyphCode.E897);
-                userType.AddEnumValue("E898", global::DevWinUI.GlyphCode.E898);
-                userType.AddEnumValue("E899", global::DevWinUI.GlyphCode.E899);
-                userType.AddEnumValue("E89A", global::DevWinUI.GlyphCode.E89A);
-                userType.AddEnumValue("E89B", global::DevWinUI.GlyphCode.E89B);
-                userType.AddEnumValue("E89C", global::DevWinUI.GlyphCode.E89C);
-                userType.AddEnumValue("E89E", global::DevWinUI.GlyphCode.E89E);
-                userType.AddEnumValue("E89F", global::DevWinUI.GlyphCode.E89F);
-                userType.AddEnumValue("E8A0", global::DevWinUI.GlyphCode.E8A0);
-                userType.AddEnumValue("E8A1", global::DevWinUI.GlyphCode.E8A1);
-                userType.AddEnumValue("E8A2", global::DevWinUI.GlyphCode.E8A2);
-                userType.AddEnumValue("E8A3", global::DevWinUI.GlyphCode.E8A3);
-                userType.AddEnumValue("E8A4", global::DevWinUI.GlyphCode.E8A4);
-                userType.AddEnumValue("E8A5", global::DevWinUI.GlyphCode.E8A5);
-                userType.AddEnumValue("E8A6", global::DevWinUI.GlyphCode.E8A6);
-                userType.AddEnumValue("E8A7", global::DevWinUI.GlyphCode.E8A7);
-                userType.AddEnumValue("E8A8", global::DevWinUI.GlyphCode.E8A8);
-                userType.AddEnumValue("E8A9", global::DevWinUI.GlyphCode.E8A9);
-                userType.AddEnumValue("E8AA", global::DevWinUI.GlyphCode.E8AA);
-                userType.AddEnumValue("E8AB", global::DevWinUI.GlyphCode.E8AB);
-                userType.AddEnumValue("E8AC", global::DevWinUI.GlyphCode.E8AC);
-                userType.AddEnumValue("E8AD", global::DevWinUI.GlyphCode.E8AD);
-                userType.AddEnumValue("E8AE", global::DevWinUI.GlyphCode.E8AE);
-                userType.AddEnumValue("E8AF", global::DevWinUI.GlyphCode.E8AF);
-                userType.AddEnumValue("E8B0", global::DevWinUI.GlyphCode.E8B0);
-                userType.AddEnumValue("E8B1", global::DevWinUI.GlyphCode.E8B1);
-                userType.AddEnumValue("E8B2", global::DevWinUI.GlyphCode.E8B2);
-                userType.AddEnumValue("E8B3", global::DevWinUI.GlyphCode.E8B3);
-                userType.AddEnumValue("E8B4", global::DevWinUI.GlyphCode.E8B4);
-                userType.AddEnumValue("E8B5", global::DevWinUI.GlyphCode.E8B5);
-                userType.AddEnumValue("E8B6", global::DevWinUI.GlyphCode.E8B6);
-                userType.AddEnumValue("E8B7", global::DevWinUI.GlyphCode.E8B7);
-                userType.AddEnumValue("E8B8", global::DevWinUI.GlyphCode.E8B8);
-                userType.AddEnumValue("E8B9", global::DevWinUI.GlyphCode.E8B9);
-                userType.AddEnumValue("E8BA", global::DevWinUI.GlyphCode.E8BA);
-                userType.AddEnumValue("E8BB", global::DevWinUI.GlyphCode.E8BB);
-                userType.AddEnumValue("E8BC", global::DevWinUI.GlyphCode.E8BC);
-                userType.AddEnumValue("E8BD", global::DevWinUI.GlyphCode.E8BD);
-                userType.AddEnumValue("E8BE", global::DevWinUI.GlyphCode.E8BE);
-                userType.AddEnumValue("E8BF", global::DevWinUI.GlyphCode.E8BF);
-                userType.AddEnumValue("E8C0", global::DevWinUI.GlyphCode.E8C0);
-                userType.AddEnumValue("E8C1", global::DevWinUI.GlyphCode.E8C1);
-                userType.AddEnumValue("E8C2", global::DevWinUI.GlyphCode.E8C2);
-                userType.AddEnumValue("E8C3", global::DevWinUI.GlyphCode.E8C3);
-                userType.AddEnumValue("E8C4", global::DevWinUI.GlyphCode.E8C4);
-                userType.AddEnumValue("E8C5", global::DevWinUI.GlyphCode.E8C5);
-                userType.AddEnumValue("E8C6", global::DevWinUI.GlyphCode.E8C6);
-                userType.AddEnumValue("E8C7", global::DevWinUI.GlyphCode.E8C7);
-                userType.AddEnumValue("E8C8", global::DevWinUI.GlyphCode.E8C8);
-                userType.AddEnumValue("E8C9", global::DevWinUI.GlyphCode.E8C9);
-                userType.AddEnumValue("E8CA", global::DevWinUI.GlyphCode.E8CA);
-                userType.AddEnumValue("E8CB", global::DevWinUI.GlyphCode.E8CB);
-                userType.AddEnumValue("E8CC", global::DevWinUI.GlyphCode.E8CC);
-                userType.AddEnumValue("E8CD", global::DevWinUI.GlyphCode.E8CD);
-                userType.AddEnumValue("E8CE", global::DevWinUI.GlyphCode.E8CE);
-                userType.AddEnumValue("E8CF", global::DevWinUI.GlyphCode.E8CF);
-                userType.AddEnumValue("E8D0", global::DevWinUI.GlyphCode.E8D0);
-                userType.AddEnumValue("E8D1", global::DevWinUI.GlyphCode.E8D1);
-                userType.AddEnumValue("E8D2", global::DevWinUI.GlyphCode.E8D2);
-                userType.AddEnumValue("E8D3", global::DevWinUI.GlyphCode.E8D3);
-                userType.AddEnumValue("E8D4", global::DevWinUI.GlyphCode.E8D4);
-                userType.AddEnumValue("E8D5", global::DevWinUI.GlyphCode.E8D5);
-                userType.AddEnumValue("E8D6", global::DevWinUI.GlyphCode.E8D6);
-                userType.AddEnumValue("E8D7", global::DevWinUI.GlyphCode.E8D7);
-                userType.AddEnumValue("E8D8", global::DevWinUI.GlyphCode.E8D8);
-                userType.AddEnumValue("E8D9", global::DevWinUI.GlyphCode.E8D9);
-                userType.AddEnumValue("E8DA", global::DevWinUI.GlyphCode.E8DA);
-                userType.AddEnumValue("E8DB", global::DevWinUI.GlyphCode.E8DB);
-                userType.AddEnumValue("E8DC", global::DevWinUI.GlyphCode.E8DC);
-                userType.AddEnumValue("E8DD", global::DevWinUI.GlyphCode.E8DD);
-                userType.AddEnumValue("E8DE", global::DevWinUI.GlyphCode.E8DE);
-                userType.AddEnumValue("E8DF", global::DevWinUI.GlyphCode.E8DF);
-                userType.AddEnumValue("E8E0", global::DevWinUI.GlyphCode.E8E0);
-                userType.AddEnumValue("E8E1", global::DevWinUI.GlyphCode.E8E1);
-                userType.AddEnumValue("E8E2", global::DevWinUI.GlyphCode.E8E2);
-                userType.AddEnumValue("E8E3", global::DevWinUI.GlyphCode.E8E3);
-                userType.AddEnumValue("E8E4", global::DevWinUI.GlyphCode.E8E4);
-                userType.AddEnumValue("E8E5", global::DevWinUI.GlyphCode.E8E5);
-                userType.AddEnumValue("E8E6", global::DevWinUI.GlyphCode.E8E6);
-                userType.AddEnumValue("E8E7", global::DevWinUI.GlyphCode.E8E7);
-                userType.AddEnumValue("E8E8", global::DevWinUI.GlyphCode.E8E8);
-                userType.AddEnumValue("E8E9", global::DevWinUI.GlyphCode.E8E9);
-                userType.AddEnumValue("E8EA", global::DevWinUI.GlyphCode.E8EA);
-                userType.AddEnumValue("E8EB", global::DevWinUI.GlyphCode.E8EB);
-                userType.AddEnumValue("E8EC", global::DevWinUI.GlyphCode.E8EC);
-                userType.AddEnumValue("E8ED", global::DevWinUI.GlyphCode.E8ED);
-                userType.AddEnumValue("E8EE", global::DevWinUI.GlyphCode.E8EE);
-                userType.AddEnumValue("E8EF", global::DevWinUI.GlyphCode.E8EF);
-                userType.AddEnumValue("E8F0", global::DevWinUI.GlyphCode.E8F0);
-                userType.AddEnumValue("E8F1", global::DevWinUI.GlyphCode.E8F1);
-                userType.AddEnumValue("E8F2", global::DevWinUI.GlyphCode.E8F2);
-                userType.AddEnumValue("E8F3", global::DevWinUI.GlyphCode.E8F3);
-                userType.AddEnumValue("E8F4", global::DevWinUI.GlyphCode.E8F4);
-                userType.AddEnumValue("E8F5", global::DevWinUI.GlyphCode.E8F5);
-                userType.AddEnumValue("E8F6", global::DevWinUI.GlyphCode.E8F6);
-                userType.AddEnumValue("E8F7", global::DevWinUI.GlyphCode.E8F7);
-                userType.AddEnumValue("E8F8", global::DevWinUI.GlyphCode.E8F8);
-                userType.AddEnumValue("E8F9", global::DevWinUI.GlyphCode.E8F9);
-                userType.AddEnumValue("E8FA", global::DevWinUI.GlyphCode.E8FA);
-                userType.AddEnumValue("E8FB", global::DevWinUI.GlyphCode.E8FB);
-                userType.AddEnumValue("E8FC", global::DevWinUI.GlyphCode.E8FC);
-                userType.AddEnumValue("E8FD", global::DevWinUI.GlyphCode.E8FD);
-                userType.AddEnumValue("E8FE", global::DevWinUI.GlyphCode.E8FE);
-                userType.AddEnumValue("E8FF", global::DevWinUI.GlyphCode.E8FF);
-                userType.AddEnumValue("E902", global::DevWinUI.GlyphCode.E902);
-                userType.AddEnumValue("E904", global::DevWinUI.GlyphCode.E904);
-                userType.AddEnumValue("E905", global::DevWinUI.GlyphCode.E905);
-                userType.AddEnumValue("E906", global::DevWinUI.GlyphCode.E906);
-                userType.AddEnumValue("E907", global::DevWinUI.GlyphCode.E907);
-                userType.AddEnumValue("E908", global::DevWinUI.GlyphCode.E908);
-                userType.AddEnumValue("E909", global::DevWinUI.GlyphCode.E909);
-                userType.AddEnumValue("E90A", global::DevWinUI.GlyphCode.E90A);
-                userType.AddEnumValue("E90B", global::DevWinUI.GlyphCode.E90B);
-                userType.AddEnumValue("E90C", global::DevWinUI.GlyphCode.E90C);
-                userType.AddEnumValue("E90D", global::DevWinUI.GlyphCode.E90D);
-                userType.AddEnumValue("E90E", global::DevWinUI.GlyphCode.E90E);
-                userType.AddEnumValue("E90F", global::DevWinUI.GlyphCode.E90F);
-                userType.AddEnumValue("E910", global::DevWinUI.GlyphCode.E910);
-                userType.AddEnumValue("E911", global::DevWinUI.GlyphCode.E911);
-                userType.AddEnumValue("E912", global::DevWinUI.GlyphCode.E912);
-                userType.AddEnumValue("E913", global::DevWinUI.GlyphCode.E913);
-                userType.AddEnumValue("E914", global::DevWinUI.GlyphCode.E914);
-                userType.AddEnumValue("E915", global::DevWinUI.GlyphCode.E915);
-                userType.AddEnumValue("E916", global::DevWinUI.GlyphCode.E916);
-                userType.AddEnumValue("E91B", global::DevWinUI.GlyphCode.E91B);
-                userType.AddEnumValue("E91C", global::DevWinUI.GlyphCode.E91C);
-                userType.AddEnumValue("E91F", global::DevWinUI.GlyphCode.E91F);
-                userType.AddEnumValue("E921", global::DevWinUI.GlyphCode.E921);
-                userType.AddEnumValue("E922", global::DevWinUI.GlyphCode.E922);
-                userType.AddEnumValue("E923", global::DevWinUI.GlyphCode.E923);
-                userType.AddEnumValue("E924", global::DevWinUI.GlyphCode.E924);
-                userType.AddEnumValue("E925", global::DevWinUI.GlyphCode.E925);
-                userType.AddEnumValue("E926", global::DevWinUI.GlyphCode.E926);
-                userType.AddEnumValue("E927", global::DevWinUI.GlyphCode.E927);
-                userType.AddEnumValue("E928", global::DevWinUI.GlyphCode.E928);
-                userType.AddEnumValue("E929", global::DevWinUI.GlyphCode.E929);
-                userType.AddEnumValue("E92C", global::DevWinUI.GlyphCode.E92C);
-                userType.AddEnumValue("E92D", global::DevWinUI.GlyphCode.E92D);
-                userType.AddEnumValue("E92E", global::DevWinUI.GlyphCode.E92E);
-                userType.AddEnumValue("E92F", global::DevWinUI.GlyphCode.E92F);
-                userType.AddEnumValue("E930", global::DevWinUI.GlyphCode.E930);
-                userType.AddEnumValue("E931", global::DevWinUI.GlyphCode.E931);
-                userType.AddEnumValue("E932", global::DevWinUI.GlyphCode.E932);
-                userType.AddEnumValue("E933", global::DevWinUI.GlyphCode.E933);
-                userType.AddEnumValue("E934", global::DevWinUI.GlyphCode.E934);
-                userType.AddEnumValue("E935", global::DevWinUI.GlyphCode.E935);
-                userType.AddEnumValue("E936", global::DevWinUI.GlyphCode.E936);
-                userType.AddEnumValue("E937", global::DevWinUI.GlyphCode.E937);
-                userType.AddEnumValue("E938", global::DevWinUI.GlyphCode.E938);
-                userType.AddEnumValue("E939", global::DevWinUI.GlyphCode.E939);
-                userType.AddEnumValue("E93C", global::DevWinUI.GlyphCode.E93C);
-                userType.AddEnumValue("E93E", global::DevWinUI.GlyphCode.E93E);
-                userType.AddEnumValue("E943", global::DevWinUI.GlyphCode.E943);
-                userType.AddEnumValue("E944", global::DevWinUI.GlyphCode.E944);
-                userType.AddEnumValue("E945", global::DevWinUI.GlyphCode.E945);
-                userType.AddEnumValue("E946", global::DevWinUI.GlyphCode.E946);
-                userType.AddEnumValue("E947", global::DevWinUI.GlyphCode.E947);
-                userType.AddEnumValue("E948", global::DevWinUI.GlyphCode.E948);
-                userType.AddEnumValue("E949", global::DevWinUI.GlyphCode.E949);
-                userType.AddEnumValue("E94A", global::DevWinUI.GlyphCode.E94A);
-                userType.AddEnumValue("E94B", global::DevWinUI.GlyphCode.E94B);
-                userType.AddEnumValue("E94C", global::DevWinUI.GlyphCode.E94C);
-                userType.AddEnumValue("E94D", global::DevWinUI.GlyphCode.E94D);
-                userType.AddEnumValue("E94E", global::DevWinUI.GlyphCode.E94E);
-                userType.AddEnumValue("E94F", global::DevWinUI.GlyphCode.E94F);
-                userType.AddEnumValue("E950", global::DevWinUI.GlyphCode.E950);
-                userType.AddEnumValue("E951", global::DevWinUI.GlyphCode.E951);
-                userType.AddEnumValue("E952", global::DevWinUI.GlyphCode.E952);
-                userType.AddEnumValue("E953", global::DevWinUI.GlyphCode.E953);
-                userType.AddEnumValue("E954", global::DevWinUI.GlyphCode.E954);
-                userType.AddEnumValue("E955", global::DevWinUI.GlyphCode.E955);
-                userType.AddEnumValue("E956", global::DevWinUI.GlyphCode.E956);
-                userType.AddEnumValue("E957", global::DevWinUI.GlyphCode.E957);
-                userType.AddEnumValue("E958", global::DevWinUI.GlyphCode.E958);
-                userType.AddEnumValue("E95A", global::DevWinUI.GlyphCode.E95A);
-                userType.AddEnumValue("E95B", global::DevWinUI.GlyphCode.E95B);
-                userType.AddEnumValue("E95D", global::DevWinUI.GlyphCode.E95D);
-                userType.AddEnumValue("E95E", global::DevWinUI.GlyphCode.E95E);
-                userType.AddEnumValue("E95F", global::DevWinUI.GlyphCode.E95F);
-                userType.AddEnumValue("E960", global::DevWinUI.GlyphCode.E960);
-                userType.AddEnumValue("E961", global::DevWinUI.GlyphCode.E961);
-                userType.AddEnumValue("E962", global::DevWinUI.GlyphCode.E962);
-                userType.AddEnumValue("E963", global::DevWinUI.GlyphCode.E963);
-                userType.AddEnumValue("E964", global::DevWinUI.GlyphCode.E964);
-                userType.AddEnumValue("E965", global::DevWinUI.GlyphCode.E965);
-                userType.AddEnumValue("E966", global::DevWinUI.GlyphCode.E966);
-                userType.AddEnumValue("E967", global::DevWinUI.GlyphCode.E967);
-                userType.AddEnumValue("E968", global::DevWinUI.GlyphCode.E968);
-                userType.AddEnumValue("E969", global::DevWinUI.GlyphCode.E969);
-                userType.AddEnumValue("E96A", global::DevWinUI.GlyphCode.E96A);
-                userType.AddEnumValue("E96D", global::DevWinUI.GlyphCode.E96D);
-                userType.AddEnumValue("E96E", global::DevWinUI.GlyphCode.E96E);
-                userType.AddEnumValue("E96F", global::DevWinUI.GlyphCode.E96F);
-                userType.AddEnumValue("E970", global::DevWinUI.GlyphCode.E970);
-                userType.AddEnumValue("E971", global::DevWinUI.GlyphCode.E971);
-                userType.AddEnumValue("E972", global::DevWinUI.GlyphCode.E972);
-                userType.AddEnumValue("E973", global::DevWinUI.GlyphCode.E973);
-                userType.AddEnumValue("E974", global::DevWinUI.GlyphCode.E974);
-                userType.AddEnumValue("E975", global::DevWinUI.GlyphCode.E975);
-                userType.AddEnumValue("E976", global::DevWinUI.GlyphCode.E976);
-                userType.AddEnumValue("E977", global::DevWinUI.GlyphCode.E977);
-                userType.AddEnumValue("E978", global::DevWinUI.GlyphCode.E978);
-                userType.AddEnumValue("E979", global::DevWinUI.GlyphCode.E979);
-                userType.AddEnumValue("E97A", global::DevWinUI.GlyphCode.E97A);
-                userType.AddEnumValue("E97B", global::DevWinUI.GlyphCode.E97B);
-                userType.AddEnumValue("E97C", global::DevWinUI.GlyphCode.E97C);
-                userType.AddEnumValue("E97D", global::DevWinUI.GlyphCode.E97D);
-                userType.AddEnumValue("E97E", global::DevWinUI.GlyphCode.E97E);
-                userType.AddEnumValue("E97F", global::DevWinUI.GlyphCode.E97F);
-                userType.AddEnumValue("E980", global::DevWinUI.GlyphCode.E980);
-                userType.AddEnumValue("E981", global::DevWinUI.GlyphCode.E981);
-                userType.AddEnumValue("E982", global::DevWinUI.GlyphCode.E982);
-                userType.AddEnumValue("E983", global::DevWinUI.GlyphCode.E983);
-                userType.AddEnumValue("E984", global::DevWinUI.GlyphCode.E984);
-                userType.AddEnumValue("E985", global::DevWinUI.GlyphCode.E985);
-                userType.AddEnumValue("E986", global::DevWinUI.GlyphCode.E986);
-                userType.AddEnumValue("E987", global::DevWinUI.GlyphCode.E987);
-                userType.AddEnumValue("E988", global::DevWinUI.GlyphCode.E988);
-                userType.AddEnumValue("E989", global::DevWinUI.GlyphCode.E989);
-                userType.AddEnumValue("E98A", global::DevWinUI.GlyphCode.E98A);
-                userType.AddEnumValue("E98F", global::DevWinUI.GlyphCode.E98F);
-                userType.AddEnumValue("E990", global::DevWinUI.GlyphCode.E990);
-                userType.AddEnumValue("E992", global::DevWinUI.GlyphCode.E992);
-                userType.AddEnumValue("E993", global::DevWinUI.GlyphCode.E993);
-                userType.AddEnumValue("E994", global::DevWinUI.GlyphCode.E994);
-                userType.AddEnumValue("E995", global::DevWinUI.GlyphCode.E995);
-                userType.AddEnumValue("E996", global::DevWinUI.GlyphCode.E996);
-                userType.AddEnumValue("E998", global::DevWinUI.GlyphCode.E998);
-                userType.AddEnumValue("E99A", global::DevWinUI.GlyphCode.E99A);
-                userType.AddEnumValue("E9A1", global::DevWinUI.GlyphCode.E9A1);
-                userType.AddEnumValue("E9A6", global::DevWinUI.GlyphCode.E9A6);
-                userType.AddEnumValue("E9A8", global::DevWinUI.GlyphCode.E9A8);
-                userType.AddEnumValue("E9A9", global::DevWinUI.GlyphCode.E9A9);
-                userType.AddEnumValue("E9AA", global::DevWinUI.GlyphCode.E9AA);
-                userType.AddEnumValue("E9AB", global::DevWinUI.GlyphCode.E9AB);
-                userType.AddEnumValue("E9AC", global::DevWinUI.GlyphCode.E9AC);
-                userType.AddEnumValue("E9AD", global::DevWinUI.GlyphCode.E9AD);
-                userType.AddEnumValue("E9AE", global::DevWinUI.GlyphCode.E9AE);
-                userType.AddEnumValue("E9AF", global::DevWinUI.GlyphCode.E9AF);
-                userType.AddEnumValue("E9B0", global::DevWinUI.GlyphCode.E9B0);
-                userType.AddEnumValue("E9B1", global::DevWinUI.GlyphCode.E9B1);
-                userType.AddEnumValue("E9B2", global::DevWinUI.GlyphCode.E9B2);
-                userType.AddEnumValue("E9B3", global::DevWinUI.GlyphCode.E9B3);
-                userType.AddEnumValue("E9B4", global::DevWinUI.GlyphCode.E9B4);
-                userType.AddEnumValue("E9B5", global::DevWinUI.GlyphCode.E9B5);
-                userType.AddEnumValue("E9B6", global::DevWinUI.GlyphCode.E9B6);
-                userType.AddEnumValue("E9B7", global::DevWinUI.GlyphCode.E9B7);
-                userType.AddEnumValue("E9B8", global::DevWinUI.GlyphCode.E9B8);
-                userType.AddEnumValue("E9B9", global::DevWinUI.GlyphCode.E9B9);
-                userType.AddEnumValue("E9BA", global::DevWinUI.GlyphCode.E9BA);
-                userType.AddEnumValue("E9BB", global::DevWinUI.GlyphCode.E9BB);
-                userType.AddEnumValue("E9BC", global::DevWinUI.GlyphCode.E9BC);
-                userType.AddEnumValue("E9CA", global::DevWinUI.GlyphCode.E9CA);
-                userType.AddEnumValue("E9CE", global::DevWinUI.GlyphCode.E9CE);
-                userType.AddEnumValue("E9D2", global::DevWinUI.GlyphCode.E9D2);
-                userType.AddEnumValue("E9D5", global::DevWinUI.GlyphCode.E9D5);
-                userType.AddEnumValue("E9D9", global::DevWinUI.GlyphCode.E9D9);
-                userType.AddEnumValue("E9E9", global::DevWinUI.GlyphCode.E9E9);
-                userType.AddEnumValue("E9F3", global::DevWinUI.GlyphCode.E9F3);
-                userType.AddEnumValue("E9F5", global::DevWinUI.GlyphCode.E9F5);
-                userType.AddEnumValue("E9F9", global::DevWinUI.GlyphCode.E9F9);
-                userType.AddEnumValue("EA0C", global::DevWinUI.GlyphCode.EA0C);
-                userType.AddEnumValue("EA0D", global::DevWinUI.GlyphCode.EA0D);
-                userType.AddEnumValue("EA14", global::DevWinUI.GlyphCode.EA14);
-                userType.AddEnumValue("EA18", global::DevWinUI.GlyphCode.EA18);
-                userType.AddEnumValue("EA1F", global::DevWinUI.GlyphCode.EA1F);
-                userType.AddEnumValue("EA21", global::DevWinUI.GlyphCode.EA21);
-                userType.AddEnumValue("EA24", global::DevWinUI.GlyphCode.EA24);
-                userType.AddEnumValue("EA35", global::DevWinUI.GlyphCode.EA35);
-                userType.AddEnumValue("EA37", global::DevWinUI.GlyphCode.EA37);
-                userType.AddEnumValue("EA38", global::DevWinUI.GlyphCode.EA38);
-                userType.AddEnumValue("EA39", global::DevWinUI.GlyphCode.EA39);
-                userType.AddEnumValue("EA3A", global::DevWinUI.GlyphCode.EA3A);
-                userType.AddEnumValue("EA3B", global::DevWinUI.GlyphCode.EA3B);
-                userType.AddEnumValue("EA3C", global::DevWinUI.GlyphCode.EA3C);
-                userType.AddEnumValue("EA3D", global::DevWinUI.GlyphCode.EA3D);
-                userType.AddEnumValue("EA3F", global::DevWinUI.GlyphCode.EA3F);
-                userType.AddEnumValue("EA40", global::DevWinUI.GlyphCode.EA40);
-                userType.AddEnumValue("EA41", global::DevWinUI.GlyphCode.EA41);
-                userType.AddEnumValue("EA42", global::DevWinUI.GlyphCode.EA42);
-                userType.AddEnumValue("EA43", global::DevWinUI.GlyphCode.EA43);
-                userType.AddEnumValue("EA44", global::DevWinUI.GlyphCode.EA44);
-                userType.AddEnumValue("EA47", global::DevWinUI.GlyphCode.EA47);
-                userType.AddEnumValue("EA48", global::DevWinUI.GlyphCode.EA48);
-                userType.AddEnumValue("EA49", global::DevWinUI.GlyphCode.EA49);
-                userType.AddEnumValue("EA4A", global::DevWinUI.GlyphCode.EA4A);
-                userType.AddEnumValue("EA4B", global::DevWinUI.GlyphCode.EA4B);
-                userType.AddEnumValue("EA4C", global::DevWinUI.GlyphCode.EA4C);
-                userType.AddEnumValue("EA4E", global::DevWinUI.GlyphCode.EA4E);
-                userType.AddEnumValue("EA4F", global::DevWinUI.GlyphCode.EA4F);
-                userType.AddEnumValue("EA50", global::DevWinUI.GlyphCode.EA50);
-                userType.AddEnumValue("EA51", global::DevWinUI.GlyphCode.EA51);
-                userType.AddEnumValue("EA52", global::DevWinUI.GlyphCode.EA52);
-                userType.AddEnumValue("EA53", global::DevWinUI.GlyphCode.EA53);
-                userType.AddEnumValue("EA54", global::DevWinUI.GlyphCode.EA54);
-                userType.AddEnumValue("EA55", global::DevWinUI.GlyphCode.EA55);
-                userType.AddEnumValue("EA56", global::DevWinUI.GlyphCode.EA56);
-                userType.AddEnumValue("EA57", global::DevWinUI.GlyphCode.EA57);
-                userType.AddEnumValue("EA58", global::DevWinUI.GlyphCode.EA58);
-                userType.AddEnumValue("EA5B", global::DevWinUI.GlyphCode.EA5B);
-                userType.AddEnumValue("EA5C", global::DevWinUI.GlyphCode.EA5C);
-                userType.AddEnumValue("EA5E", global::DevWinUI.GlyphCode.EA5E);
-                userType.AddEnumValue("EA5F", global::DevWinUI.GlyphCode.EA5F);
-                userType.AddEnumValue("EA60", global::DevWinUI.GlyphCode.EA60);
-                userType.AddEnumValue("EA61", global::DevWinUI.GlyphCode.EA61);
-                userType.AddEnumValue("EA62", global::DevWinUI.GlyphCode.EA62);
-                userType.AddEnumValue("EA63", global::DevWinUI.GlyphCode.EA63);
-                userType.AddEnumValue("EA64", global::DevWinUI.GlyphCode.EA64);
-                userType.AddEnumValue("EA65", global::DevWinUI.GlyphCode.EA65);
-                userType.AddEnumValue("EA69", global::DevWinUI.GlyphCode.EA69);
-                userType.AddEnumValue("EA6A", global::DevWinUI.GlyphCode.EA6A);
-                userType.AddEnumValue("EA6C", global::DevWinUI.GlyphCode.EA6C);
-                userType.AddEnumValue("EA79", global::DevWinUI.GlyphCode.EA79);
-                userType.AddEnumValue("EA80", global::DevWinUI.GlyphCode.EA80);
-                userType.AddEnumValue("EA81", global::DevWinUI.GlyphCode.EA81);
-                userType.AddEnumValue("EA82", global::DevWinUI.GlyphCode.EA82);
-                userType.AddEnumValue("EA83", global::DevWinUI.GlyphCode.EA83);
-                userType.AddEnumValue("EA84", global::DevWinUI.GlyphCode.EA84);
-                userType.AddEnumValue("EA86", global::DevWinUI.GlyphCode.EA86);
-                userType.AddEnumValue("EA89", global::DevWinUI.GlyphCode.EA89);
-                userType.AddEnumValue("EA8A", global::DevWinUI.GlyphCode.EA8A);
-                userType.AddEnumValue("EA8B", global::DevWinUI.GlyphCode.EA8B);
-                userType.AddEnumValue("EA8C", global::DevWinUI.GlyphCode.EA8C);
-                userType.AddEnumValue("EA8D", global::DevWinUI.GlyphCode.EA8D);
-                userType.AddEnumValue("EA8E", global::DevWinUI.GlyphCode.EA8E);
-                userType.AddEnumValue("EA8F", global::DevWinUI.GlyphCode.EA8F);
-                userType.AddEnumValue("EA90", global::DevWinUI.GlyphCode.EA90);
-                userType.AddEnumValue("EA91", global::DevWinUI.GlyphCode.EA91);
-                userType.AddEnumValue("EA92", global::DevWinUI.GlyphCode.EA92);
-                userType.AddEnumValue("EA93", global::DevWinUI.GlyphCode.EA93);
-                userType.AddEnumValue("EA94", global::DevWinUI.GlyphCode.EA94);
-                userType.AddEnumValue("EA95", global::DevWinUI.GlyphCode.EA95);
-                userType.AddEnumValue("EA97", global::DevWinUI.GlyphCode.EA97);
-                userType.AddEnumValue("EA98", global::DevWinUI.GlyphCode.EA98);
-                userType.AddEnumValue("EA99", global::DevWinUI.GlyphCode.EA99);
-                userType.AddEnumValue("EAC2", global::DevWinUI.GlyphCode.EAC2);
-                userType.AddEnumValue("EADF", global::DevWinUI.GlyphCode.EADF);
-                userType.AddEnumValue("EAFC", global::DevWinUI.GlyphCode.EAFC);
-                userType.AddEnumValue("EB05", global::DevWinUI.GlyphCode.EB05);
-                userType.AddEnumValue("EB0F", global::DevWinUI.GlyphCode.EB0F);
-                userType.AddEnumValue("EB11", global::DevWinUI.GlyphCode.EB11);
-                userType.AddEnumValue("EB3C", global::DevWinUI.GlyphCode.EB3C);
-                userType.AddEnumValue("EB41", global::DevWinUI.GlyphCode.EB41);
-                userType.AddEnumValue("EB42", global::DevWinUI.GlyphCode.EB42);
-                userType.AddEnumValue("EB44", global::DevWinUI.GlyphCode.EB44);
-                userType.AddEnumValue("EB47", global::DevWinUI.GlyphCode.EB47);
-                userType.AddEnumValue("EB48", global::DevWinUI.GlyphCode.EB48);
-                userType.AddEnumValue("EB49", global::DevWinUI.GlyphCode.EB49);
-                userType.AddEnumValue("EB4A", global::DevWinUI.GlyphCode.EB4A);
-                userType.AddEnumValue("EB4B", global::DevWinUI.GlyphCode.EB4B);
-                userType.AddEnumValue("EB4C", global::DevWinUI.GlyphCode.EB4C);
-                userType.AddEnumValue("EB4D", global::DevWinUI.GlyphCode.EB4D);
-                userType.AddEnumValue("EB4E", global::DevWinUI.GlyphCode.EB4E);
-                userType.AddEnumValue("EB4F", global::DevWinUI.GlyphCode.EB4F);
-                userType.AddEnumValue("EB50", global::DevWinUI.GlyphCode.EB50);
-                userType.AddEnumValue("EB51", global::DevWinUI.GlyphCode.EB51);
-                userType.AddEnumValue("EB52", global::DevWinUI.GlyphCode.EB52);
-                userType.AddEnumValue("EB55", global::DevWinUI.GlyphCode.EB55);
-                userType.AddEnumValue("EB56", global::DevWinUI.GlyphCode.EB56);
-                userType.AddEnumValue("EB57", global::DevWinUI.GlyphCode.EB57);
-                userType.AddEnumValue("EB58", global::DevWinUI.GlyphCode.EB58);
-                userType.AddEnumValue("EB59", global::DevWinUI.GlyphCode.EB59);
-                userType.AddEnumValue("EB5A", global::DevWinUI.GlyphCode.EB5A);
-                userType.AddEnumValue("EB5B", global::DevWinUI.GlyphCode.EB5B);
-                userType.AddEnumValue("EB5C", global::DevWinUI.GlyphCode.EB5C);
-                userType.AddEnumValue("EB5D", global::DevWinUI.GlyphCode.EB5D);
-                userType.AddEnumValue("EB5E", global::DevWinUI.GlyphCode.EB5E);
-                userType.AddEnumValue("EB5F", global::DevWinUI.GlyphCode.EB5F);
-                userType.AddEnumValue("EB60", global::DevWinUI.GlyphCode.EB60);
-                userType.AddEnumValue("EB61", global::DevWinUI.GlyphCode.EB61);
-                userType.AddEnumValue("EB62", global::DevWinUI.GlyphCode.EB62);
-                userType.AddEnumValue("EB63", global::DevWinUI.GlyphCode.EB63);
-                userType.AddEnumValue("EB66", global::DevWinUI.GlyphCode.EB66);
-                userType.AddEnumValue("EB67", global::DevWinUI.GlyphCode.EB67);
-                userType.AddEnumValue("EB68", global::DevWinUI.GlyphCode.EB68);
-                userType.AddEnumValue("EB77", global::DevWinUI.GlyphCode.EB77);
-                userType.AddEnumValue("EB7E", global::DevWinUI.GlyphCode.EB7E);
-                userType.AddEnumValue("EB82", global::DevWinUI.GlyphCode.EB82);
-                userType.AddEnumValue("EB83", global::DevWinUI.GlyphCode.EB83);
-                userType.AddEnumValue("EB84", global::DevWinUI.GlyphCode.EB84);
-                userType.AddEnumValue("EB85", global::DevWinUI.GlyphCode.EB85);
-                userType.AddEnumValue("EB86", global::DevWinUI.GlyphCode.EB86);
-                userType.AddEnumValue("EB87", global::DevWinUI.GlyphCode.EB87);
-                userType.AddEnumValue("EB88", global::DevWinUI.GlyphCode.EB88);
-                userType.AddEnumValue("EB89", global::DevWinUI.GlyphCode.EB89);
-                userType.AddEnumValue("EB8A", global::DevWinUI.GlyphCode.EB8A);
-                userType.AddEnumValue("EB8B", global::DevWinUI.GlyphCode.EB8B);
-                userType.AddEnumValue("EB8C", global::DevWinUI.GlyphCode.EB8C);
-                userType.AddEnumValue("EB8D", global::DevWinUI.GlyphCode.EB8D);
-                userType.AddEnumValue("EB90", global::DevWinUI.GlyphCode.EB90);
-                userType.AddEnumValue("EB91", global::DevWinUI.GlyphCode.EB91);
-                userType.AddEnumValue("EB95", global::DevWinUI.GlyphCode.EB95);
-                userType.AddEnumValue("EB96", global::DevWinUI.GlyphCode.EB96);
-                userType.AddEnumValue("EB97", global::DevWinUI.GlyphCode.EB97);
-                userType.AddEnumValue("EB9D", global::DevWinUI.GlyphCode.EB9D);
-                userType.AddEnumValue("EB9E", global::DevWinUI.GlyphCode.EB9E);
-                userType.AddEnumValue("EB9F", global::DevWinUI.GlyphCode.EB9F);
-                userType.AddEnumValue("EBA0", global::DevWinUI.GlyphCode.EBA0);
-                userType.AddEnumValue("EBA1", global::DevWinUI.GlyphCode.EBA1);
-                userType.AddEnumValue("EBA2", global::DevWinUI.GlyphCode.EBA2);
-                userType.AddEnumValue("EBA3", global::DevWinUI.GlyphCode.EBA3);
-                userType.AddEnumValue("EBA4", global::DevWinUI.GlyphCode.EBA4);
-                userType.AddEnumValue("EBA5", global::DevWinUI.GlyphCode.EBA5);
-                userType.AddEnumValue("EBA6", global::DevWinUI.GlyphCode.EBA6);
-                userType.AddEnumValue("EBA7", global::DevWinUI.GlyphCode.EBA7);
-                userType.AddEnumValue("EBA8", global::DevWinUI.GlyphCode.EBA8);
-                userType.AddEnumValue("EBA9", global::DevWinUI.GlyphCode.EBA9);
-                userType.AddEnumValue("EBAA", global::DevWinUI.GlyphCode.EBAA);
-                userType.AddEnumValue("EBAB", global::DevWinUI.GlyphCode.EBAB);
-                userType.AddEnumValue("EBAC", global::DevWinUI.GlyphCode.EBAC);
-                userType.AddEnumValue("EBAD", global::DevWinUI.GlyphCode.EBAD);
-                userType.AddEnumValue("EBAE", global::DevWinUI.GlyphCode.EBAE);
-                userType.AddEnumValue("EBAF", global::DevWinUI.GlyphCode.EBAF);
-                userType.AddEnumValue("EBB0", global::DevWinUI.GlyphCode.EBB0);
-                userType.AddEnumValue("EBB1", global::DevWinUI.GlyphCode.EBB1);
-                userType.AddEnumValue("EBB2", global::DevWinUI.GlyphCode.EBB2);
-                userType.AddEnumValue("EBB3", global::DevWinUI.GlyphCode.EBB3);
-                userType.AddEnumValue("EBB4", global::DevWinUI.GlyphCode.EBB4);
-                userType.AddEnumValue("EBB5", global::DevWinUI.GlyphCode.EBB5);
-                userType.AddEnumValue("EBB6", global::DevWinUI.GlyphCode.EBB6);
-                userType.AddEnumValue("EBB7", global::DevWinUI.GlyphCode.EBB7);
-                userType.AddEnumValue("EBB8", global::DevWinUI.GlyphCode.EBB8);
-                userType.AddEnumValue("EBB9", global::DevWinUI.GlyphCode.EBB9);
-                userType.AddEnumValue("EBBA", global::DevWinUI.GlyphCode.EBBA);
-                userType.AddEnumValue("EBBB", global::DevWinUI.GlyphCode.EBBB);
-                userType.AddEnumValue("EBBC", global::DevWinUI.GlyphCode.EBBC);
-                userType.AddEnumValue("EBBD", global::DevWinUI.GlyphCode.EBBD);
-                userType.AddEnumValue("EBBE", global::DevWinUI.GlyphCode.EBBE);
-                userType.AddEnumValue("EBBF", global::DevWinUI.GlyphCode.EBBF);
-                userType.AddEnumValue("EBC0", global::DevWinUI.GlyphCode.EBC0);
-                userType.AddEnumValue("EBC3", global::DevWinUI.GlyphCode.EBC3);
-                userType.AddEnumValue("EBC4", global::DevWinUI.GlyphCode.EBC4);
-                userType.AddEnumValue("EBC5", global::DevWinUI.GlyphCode.EBC5);
-                userType.AddEnumValue("EBC6", global::DevWinUI.GlyphCode.EBC6);
-                userType.AddEnumValue("EBD2", global::DevWinUI.GlyphCode.EBD2);
-                userType.AddEnumValue("EBD3", global::DevWinUI.GlyphCode.EBD3);
-                userType.AddEnumValue("EBD4", global::DevWinUI.GlyphCode.EBD4);
-                userType.AddEnumValue("EBD5", global::DevWinUI.GlyphCode.EBD5);
-                userType.AddEnumValue("EBD6", global::DevWinUI.GlyphCode.EBD6);
-                userType.AddEnumValue("EBD7", global::DevWinUI.GlyphCode.EBD7);
-                userType.AddEnumValue("EBD8", global::DevWinUI.GlyphCode.EBD8);
-                userType.AddEnumValue("EBD9", global::DevWinUI.GlyphCode.EBD9);
-                userType.AddEnumValue("EBDA", global::DevWinUI.GlyphCode.EBDA);
-                userType.AddEnumValue("EBDB", global::DevWinUI.GlyphCode.EBDB);
-                userType.AddEnumValue("EBDE", global::DevWinUI.GlyphCode.EBDE);
-                userType.AddEnumValue("EBE6", global::DevWinUI.GlyphCode.EBE6);
-                userType.AddEnumValue("EBE7", global::DevWinUI.GlyphCode.EBE7);
-                userType.AddEnumValue("EBE8", global::DevWinUI.GlyphCode.EBE8);
-                userType.AddEnumValue("EBFC", global::DevWinUI.GlyphCode.EBFC);
-                userType.AddEnumValue("EBFD", global::DevWinUI.GlyphCode.EBFD);
-                userType.AddEnumValue("EBFE", global::DevWinUI.GlyphCode.EBFE);
-                userType.AddEnumValue("EBFF", global::DevWinUI.GlyphCode.EBFF);
-                userType.AddEnumValue("EC00", global::DevWinUI.GlyphCode.EC00);
-                userType.AddEnumValue("EC02", global::DevWinUI.GlyphCode.EC02);
-                userType.AddEnumValue("EC05", global::DevWinUI.GlyphCode.EC05);
-                userType.AddEnumValue("EC06", global::DevWinUI.GlyphCode.EC06);
-                userType.AddEnumValue("EC07", global::DevWinUI.GlyphCode.EC07);
-                userType.AddEnumValue("EC08", global::DevWinUI.GlyphCode.EC08);
-                userType.AddEnumValue("EC09", global::DevWinUI.GlyphCode.EC09);
-                userType.AddEnumValue("EC0A", global::DevWinUI.GlyphCode.EC0A);
-                userType.AddEnumValue("EC0B", global::DevWinUI.GlyphCode.EC0B);
-                userType.AddEnumValue("EC11", global::DevWinUI.GlyphCode.EC11);
-                userType.AddEnumValue("EC12", global::DevWinUI.GlyphCode.EC12);
-                userType.AddEnumValue("EC13", global::DevWinUI.GlyphCode.EC13);
-                userType.AddEnumValue("EC14", global::DevWinUI.GlyphCode.EC14);
-                userType.AddEnumValue("EC15", global::DevWinUI.GlyphCode.EC15);
-                userType.AddEnumValue("EC16", global::DevWinUI.GlyphCode.EC16);
-                userType.AddEnumValue("EC19", global::DevWinUI.GlyphCode.EC19);
-                userType.AddEnumValue("EC1B", global::DevWinUI.GlyphCode.EC1B);
-                userType.AddEnumValue("EC1E", global::DevWinUI.GlyphCode.EC1E);
-                userType.AddEnumValue("EC20", global::DevWinUI.GlyphCode.EC20);
-                userType.AddEnumValue("EC24", global::DevWinUI.GlyphCode.EC24);
-                userType.AddEnumValue("EC25", global::DevWinUI.GlyphCode.EC25);
-                userType.AddEnumValue("EC26", global::DevWinUI.GlyphCode.EC26);
-                userType.AddEnumValue("EC27", global::DevWinUI.GlyphCode.EC27);
-                userType.AddEnumValue("EC31", global::DevWinUI.GlyphCode.EC31);
-                userType.AddEnumValue("EC32", global::DevWinUI.GlyphCode.EC32);
-                userType.AddEnumValue("EC37", global::DevWinUI.GlyphCode.EC37);
-                userType.AddEnumValue("EC38", global::DevWinUI.GlyphCode.EC38);
-                userType.AddEnumValue("EC39", global::DevWinUI.GlyphCode.EC39);
-                userType.AddEnumValue("EC3A", global::DevWinUI.GlyphCode.EC3A);
-                userType.AddEnumValue("EC3B", global::DevWinUI.GlyphCode.EC3B);
-                userType.AddEnumValue("EC3C", global::DevWinUI.GlyphCode.EC3C);
-                userType.AddEnumValue("EC3D", global::DevWinUI.GlyphCode.EC3D);
-                userType.AddEnumValue("EC3E", global::DevWinUI.GlyphCode.EC3E);
-                userType.AddEnumValue("EC3F", global::DevWinUI.GlyphCode.EC3F);
-                userType.AddEnumValue("EC40", global::DevWinUI.GlyphCode.EC40);
-                userType.AddEnumValue("EC41", global::DevWinUI.GlyphCode.EC41);
-                userType.AddEnumValue("EC42", global::DevWinUI.GlyphCode.EC42);
-                userType.AddEnumValue("EC43", global::DevWinUI.GlyphCode.EC43);
-                userType.AddEnumValue("EC44", global::DevWinUI.GlyphCode.EC44);
-                userType.AddEnumValue("EC45", global::DevWinUI.GlyphCode.EC45);
-                userType.AddEnumValue("EC46", global::DevWinUI.GlyphCode.EC46);
-                userType.AddEnumValue("EC47", global::DevWinUI.GlyphCode.EC47);
-                userType.AddEnumValue("EC48", global::DevWinUI.GlyphCode.EC48);
-                userType.AddEnumValue("EC49", global::DevWinUI.GlyphCode.EC49);
-                userType.AddEnumValue("EC4A", global::DevWinUI.GlyphCode.EC4A);
-                userType.AddEnumValue("EC4E", global::DevWinUI.GlyphCode.EC4E);
-                userType.AddEnumValue("EC4F", global::DevWinUI.GlyphCode.EC4F);
-                userType.AddEnumValue("EC50", global::DevWinUI.GlyphCode.EC50);
-                userType.AddEnumValue("EC51", global::DevWinUI.GlyphCode.EC51);
-                userType.AddEnumValue("EC52", global::DevWinUI.GlyphCode.EC52);
-                userType.AddEnumValue("EC54", global::DevWinUI.GlyphCode.EC54);
-                userType.AddEnumValue("EC55", global::DevWinUI.GlyphCode.EC55);
-                userType.AddEnumValue("EC56", global::DevWinUI.GlyphCode.EC56);
-                userType.AddEnumValue("EC57", global::DevWinUI.GlyphCode.EC57);
-                userType.AddEnumValue("EC58", global::DevWinUI.GlyphCode.EC58);
-                userType.AddEnumValue("EC59", global::DevWinUI.GlyphCode.EC59);
-                userType.AddEnumValue("EC5A", global::DevWinUI.GlyphCode.EC5A);
-                userType.AddEnumValue("EC5B", global::DevWinUI.GlyphCode.EC5B);
-                userType.AddEnumValue("EC5C", global::DevWinUI.GlyphCode.EC5C);
-                userType.AddEnumValue("EC61", global::DevWinUI.GlyphCode.EC61);
-                userType.AddEnumValue("EC64", global::DevWinUI.GlyphCode.EC64);
-                userType.AddEnumValue("EC6C", global::DevWinUI.GlyphCode.EC6C);
-                userType.AddEnumValue("EC6D", global::DevWinUI.GlyphCode.EC6D);
-                userType.AddEnumValue("EC71", global::DevWinUI.GlyphCode.EC71);
-                userType.AddEnumValue("EC72", global::DevWinUI.GlyphCode.EC72);
-                userType.AddEnumValue("EC74", global::DevWinUI.GlyphCode.EC74);
-                userType.AddEnumValue("EC75", global::DevWinUI.GlyphCode.EC75);
-                userType.AddEnumValue("EC76", global::DevWinUI.GlyphCode.EC76);
-                userType.AddEnumValue("EC77", global::DevWinUI.GlyphCode.EC77);
-                userType.AddEnumValue("EC7A", global::DevWinUI.GlyphCode.EC7A);
-                userType.AddEnumValue("EC7E", global::DevWinUI.GlyphCode.EC7E);
-                userType.AddEnumValue("EC7F", global::DevWinUI.GlyphCode.EC7F);
-                userType.AddEnumValue("EC80", global::DevWinUI.GlyphCode.EC80);
-                userType.AddEnumValue("EC81", global::DevWinUI.GlyphCode.EC81);
-                userType.AddEnumValue("EC87", global::DevWinUI.GlyphCode.EC87);
-                userType.AddEnumValue("EC88", global::DevWinUI.GlyphCode.EC88);
-                userType.AddEnumValue("EC8A", global::DevWinUI.GlyphCode.EC8A);
-                userType.AddEnumValue("EC8F", global::DevWinUI.GlyphCode.EC8F);
-                userType.AddEnumValue("EC92", global::DevWinUI.GlyphCode.EC92);
-                userType.AddEnumValue("EC94", global::DevWinUI.GlyphCode.EC94);
-                userType.AddEnumValue("ECA5", global::DevWinUI.GlyphCode.ECA5);
-                userType.AddEnumValue("ECA7", global::DevWinUI.GlyphCode.ECA7);
-                userType.AddEnumValue("ECAA", global::DevWinUI.GlyphCode.ECAA);
-                userType.AddEnumValue("ECAD", global::DevWinUI.GlyphCode.ECAD);
-                userType.AddEnumValue("ECAF", global::DevWinUI.GlyphCode.ECAF);
-                userType.AddEnumValue("ECB9", global::DevWinUI.GlyphCode.ECB9);
-                userType.AddEnumValue("ECBA", global::DevWinUI.GlyphCode.ECBA);
-                userType.AddEnumValue("ECBB", global::DevWinUI.GlyphCode.ECBB);
-                userType.AddEnumValue("ECBC", global::DevWinUI.GlyphCode.ECBC);
-                userType.AddEnumValue("ECBD", global::DevWinUI.GlyphCode.ECBD);
-                userType.AddEnumValue("ECBE", global::DevWinUI.GlyphCode.ECBE);
-                userType.AddEnumValue("ECBF", global::DevWinUI.GlyphCode.ECBF);
-                userType.AddEnumValue("ECC4", global::DevWinUI.GlyphCode.ECC4);
-                userType.AddEnumValue("ECC5", global::DevWinUI.GlyphCode.ECC5);
-                userType.AddEnumValue("ECC6", global::DevWinUI.GlyphCode.ECC6);
-                userType.AddEnumValue("ECC8", global::DevWinUI.GlyphCode.ECC8);
-                userType.AddEnumValue("ECC9", global::DevWinUI.GlyphCode.ECC9);
-                userType.AddEnumValue("ECCA", global::DevWinUI.GlyphCode.ECCA);
-                userType.AddEnumValue("ECCB", global::DevWinUI.GlyphCode.ECCB);
-                userType.AddEnumValue("ECCC", global::DevWinUI.GlyphCode.ECCC);
-                userType.AddEnumValue("ECCD", global::DevWinUI.GlyphCode.ECCD);
-                userType.AddEnumValue("ECE4", global::DevWinUI.GlyphCode.ECE4);
-                userType.AddEnumValue("ECE7", global::DevWinUI.GlyphCode.ECE7);
-                userType.AddEnumValue("ECE8", global::DevWinUI.GlyphCode.ECE8);
-                userType.AddEnumValue("ECE9", global::DevWinUI.GlyphCode.ECE9);
-                userType.AddEnumValue("ECF0", global::DevWinUI.GlyphCode.ECF0);
-                userType.AddEnumValue("ECF1", global::DevWinUI.GlyphCode.ECF1);
-                userType.AddEnumValue("ECF3", global::DevWinUI.GlyphCode.ECF3);
-                userType.AddEnumValue("ED0C", global::DevWinUI.GlyphCode.ED0C);
-                userType.AddEnumValue("ED0D", global::DevWinUI.GlyphCode.ED0D);
-                userType.AddEnumValue("ED0E", global::DevWinUI.GlyphCode.ED0E);
-                userType.AddEnumValue("ED10", global::DevWinUI.GlyphCode.ED10);
-                userType.AddEnumValue("ED11", global::DevWinUI.GlyphCode.ED11);
-                userType.AddEnumValue("ED14", global::DevWinUI.GlyphCode.ED14);
-                userType.AddEnumValue("ED15", global::DevWinUI.GlyphCode.ED15);
-                userType.AddEnumValue("ED1A", global::DevWinUI.GlyphCode.ED1A);
-                userType.AddEnumValue("ED1E", global::DevWinUI.GlyphCode.ED1E);
-                userType.AddEnumValue("ED1F", global::DevWinUI.GlyphCode.ED1F);
-                userType.AddEnumValue("ED25", global::DevWinUI.GlyphCode.ED25);
-                userType.AddEnumValue("ED28", global::DevWinUI.GlyphCode.ED28);
-                userType.AddEnumValue("ED2A", global::DevWinUI.GlyphCode.ED2A);
-                userType.AddEnumValue("ED2B", global::DevWinUI.GlyphCode.ED2B);
-                userType.AddEnumValue("ED2C", global::DevWinUI.GlyphCode.ED2C);
-                userType.AddEnumValue("ED2D", global::DevWinUI.GlyphCode.ED2D);
-                userType.AddEnumValue("ED2E", global::DevWinUI.GlyphCode.ED2E);
-                userType.AddEnumValue("ED2F", global::DevWinUI.GlyphCode.ED2F);
-                userType.AddEnumValue("ED30", global::DevWinUI.GlyphCode.ED30);
-                userType.AddEnumValue("ED31", global::DevWinUI.GlyphCode.ED31);
-                userType.AddEnumValue("ED32", global::DevWinUI.GlyphCode.ED32);
-                userType.AddEnumValue("ED33", global::DevWinUI.GlyphCode.ED33);
-                userType.AddEnumValue("ED35", global::DevWinUI.GlyphCode.ED35);
-                userType.AddEnumValue("ED39", global::DevWinUI.GlyphCode.ED39);
-                userType.AddEnumValue("ED3A", global::DevWinUI.GlyphCode.ED3A);
-                userType.AddEnumValue("ED3C", global::DevWinUI.GlyphCode.ED3C);
-                userType.AddEnumValue("ED3D", global::DevWinUI.GlyphCode.ED3D);
-                userType.AddEnumValue("ED41", global::DevWinUI.GlyphCode.ED41);
-                userType.AddEnumValue("ED42", global::DevWinUI.GlyphCode.ED42);
-                userType.AddEnumValue("ED43", global::DevWinUI.GlyphCode.ED43);
-                userType.AddEnumValue("ED44", global::DevWinUI.GlyphCode.ED44);
-                userType.AddEnumValue("ED47", global::DevWinUI.GlyphCode.ED47);
-                userType.AddEnumValue("ED4C", global::DevWinUI.GlyphCode.ED4C);
-                userType.AddEnumValue("ED4D", global::DevWinUI.GlyphCode.ED4D);
-                userType.AddEnumValue("ED53", global::DevWinUI.GlyphCode.ED53);
-                userType.AddEnumValue("ED54", global::DevWinUI.GlyphCode.ED54);
-                userType.AddEnumValue("ED55", global::DevWinUI.GlyphCode.ED55);
-                userType.AddEnumValue("ED56", global::DevWinUI.GlyphCode.ED56);
-                userType.AddEnumValue("ED57", global::DevWinUI.GlyphCode.ED57);
-                userType.AddEnumValue("ED58", global::DevWinUI.GlyphCode.ED58);
-                userType.AddEnumValue("ED59", global::DevWinUI.GlyphCode.ED59);
-                userType.AddEnumValue("ED5A", global::DevWinUI.GlyphCode.ED5A);
-                userType.AddEnumValue("ED5B", global::DevWinUI.GlyphCode.ED5B);
-                userType.AddEnumValue("ED5C", global::DevWinUI.GlyphCode.ED5C);
-                userType.AddEnumValue("ED5D", global::DevWinUI.GlyphCode.ED5D);
-                userType.AddEnumValue("ED5E", global::DevWinUI.GlyphCode.ED5E);
-                userType.AddEnumValue("ED5F", global::DevWinUI.GlyphCode.ED5F);
-                userType.AddEnumValue("ED60", global::DevWinUI.GlyphCode.ED60);
-                userType.AddEnumValue("ED61", global::DevWinUI.GlyphCode.ED61);
-                userType.AddEnumValue("ED62", global::DevWinUI.GlyphCode.ED62);
-                userType.AddEnumValue("ED63", global::DevWinUI.GlyphCode.ED63);
-                userType.AddEnumValue("ED64", global::DevWinUI.GlyphCode.ED64);
-                userType.AddEnumValue("ED65", global::DevWinUI.GlyphCode.ED65);
-                userType.AddEnumValue("ED66", global::DevWinUI.GlyphCode.ED66);
-                userType.AddEnumValue("ED67", global::DevWinUI.GlyphCode.ED67);
-                userType.AddEnumValue("EDA2", global::DevWinUI.GlyphCode.EDA2);
-                userType.AddEnumValue("EDA3", global::DevWinUI.GlyphCode.EDA3);
-                userType.AddEnumValue("EDA4", global::DevWinUI.GlyphCode.EDA4);
-                userType.AddEnumValue("EDA5", global::DevWinUI.GlyphCode.EDA5);
-                userType.AddEnumValue("EDA6", global::DevWinUI.GlyphCode.EDA6);
-                userType.AddEnumValue("EDA7", global::DevWinUI.GlyphCode.EDA7);
-                userType.AddEnumValue("EDA8", global::DevWinUI.GlyphCode.EDA8);
-                userType.AddEnumValue("EDA9", global::DevWinUI.GlyphCode.EDA9);
-                userType.AddEnumValue("EDAA", global::DevWinUI.GlyphCode.EDAA);
-                userType.AddEnumValue("EDAB", global::DevWinUI.GlyphCode.EDAB);
-                userType.AddEnumValue("EDAC", global::DevWinUI.GlyphCode.EDAC);
-                userType.AddEnumValue("EDAD", global::DevWinUI.GlyphCode.EDAD);
-                userType.AddEnumValue("EDAE", global::DevWinUI.GlyphCode.EDAE);
-                userType.AddEnumValue("EDAF", global::DevWinUI.GlyphCode.EDAF);
-                userType.AddEnumValue("EDB0", global::DevWinUI.GlyphCode.EDB0);
-                userType.AddEnumValue("EDB1", global::DevWinUI.GlyphCode.EDB1);
-                userType.AddEnumValue("EDB3", global::DevWinUI.GlyphCode.EDB3);
-                userType.AddEnumValue("EDB4", global::DevWinUI.GlyphCode.EDB4);
-                userType.AddEnumValue("EDB5", global::DevWinUI.GlyphCode.EDB5);
-                userType.AddEnumValue("EDC6", global::DevWinUI.GlyphCode.EDC6);
-                userType.AddEnumValue("EDD5", global::DevWinUI.GlyphCode.EDD5);
-                userType.AddEnumValue("EDD6", global::DevWinUI.GlyphCode.EDD6);
-                userType.AddEnumValue("EDD7", global::DevWinUI.GlyphCode.EDD7);
-                userType.AddEnumValue("EDD8", global::DevWinUI.GlyphCode.EDD8);
-                userType.AddEnumValue("EDD9", global::DevWinUI.GlyphCode.EDD9);
-                userType.AddEnumValue("EDDA", global::DevWinUI.GlyphCode.EDDA);
-                userType.AddEnumValue("EDDB", global::DevWinUI.GlyphCode.EDDB);
-                userType.AddEnumValue("EDDC", global::DevWinUI.GlyphCode.EDDC);
-                userType.AddEnumValue("EDE0", global::DevWinUI.GlyphCode.EDE0);
-                userType.AddEnumValue("EDE1", global::DevWinUI.GlyphCode.EDE1);
-                userType.AddEnumValue("EDE2", global::DevWinUI.GlyphCode.EDE2);
-                userType.AddEnumValue("EDE3", global::DevWinUI.GlyphCode.EDE3);
-                userType.AddEnumValue("EDE4", global::DevWinUI.GlyphCode.EDE4);
-                userType.AddEnumValue("EDE5", global::DevWinUI.GlyphCode.EDE5);
-                userType.AddEnumValue("EDFB", global::DevWinUI.GlyphCode.EDFB);
-                userType.AddEnumValue("EE35", global::DevWinUI.GlyphCode.EE35);
-                userType.AddEnumValue("EE3F", global::DevWinUI.GlyphCode.EE3F);
-                userType.AddEnumValue("EE40", global::DevWinUI.GlyphCode.EE40);
-                userType.AddEnumValue("EE47", global::DevWinUI.GlyphCode.EE47);
-                userType.AddEnumValue("EE49", global::DevWinUI.GlyphCode.EE49);
-                userType.AddEnumValue("EE4A", global::DevWinUI.GlyphCode.EE4A);
-                userType.AddEnumValue("EE56", global::DevWinUI.GlyphCode.EE56);
-                userType.AddEnumValue("EE57", global::DevWinUI.GlyphCode.EE57);
-                userType.AddEnumValue("EE63", global::DevWinUI.GlyphCode.EE63);
-                userType.AddEnumValue("EE64", global::DevWinUI.GlyphCode.EE64);
-                userType.AddEnumValue("EE65", global::DevWinUI.GlyphCode.EE65);
-                userType.AddEnumValue("EE6F", global::DevWinUI.GlyphCode.EE6F);
-                userType.AddEnumValue("EE71", global::DevWinUI.GlyphCode.EE71);
-                userType.AddEnumValue("EE77", global::DevWinUI.GlyphCode.EE77);
-                userType.AddEnumValue("EE79", global::DevWinUI.GlyphCode.EE79);
-                userType.AddEnumValue("EE7A", global::DevWinUI.GlyphCode.EE7A);
-                userType.AddEnumValue("EE92", global::DevWinUI.GlyphCode.EE92);
-                userType.AddEnumValue("EE93", global::DevWinUI.GlyphCode.EE93);
-                userType.AddEnumValue("EE94", global::DevWinUI.GlyphCode.EE94);
-                userType.AddEnumValue("EEA3", global::DevWinUI.GlyphCode.EEA3);
-                userType.AddEnumValue("EECA", global::DevWinUI.GlyphCode.EECA);
-                userType.AddEnumValue("EF15", global::DevWinUI.GlyphCode.EF15);
-                userType.AddEnumValue("EF16", global::DevWinUI.GlyphCode.EF16);
-                userType.AddEnumValue("EF17", global::DevWinUI.GlyphCode.EF17);
-                userType.AddEnumValue("EF18", global::DevWinUI.GlyphCode.EF18);
-                userType.AddEnumValue("EF19", global::DevWinUI.GlyphCode.EF19);
-                userType.AddEnumValue("EF1F", global::DevWinUI.GlyphCode.EF1F);
-                userType.AddEnumValue("EF20", global::DevWinUI.GlyphCode.EF20);
-                userType.AddEnumValue("EF2C", global::DevWinUI.GlyphCode.EF2C);
-                userType.AddEnumValue("EF2D", global::DevWinUI.GlyphCode.EF2D);
-                userType.AddEnumValue("EF2E", global::DevWinUI.GlyphCode.EF2E);
-                userType.AddEnumValue("EF2F", global::DevWinUI.GlyphCode.EF2F);
-                userType.AddEnumValue("EF31", global::DevWinUI.GlyphCode.EF31);
-                userType.AddEnumValue("EF3B", global::DevWinUI.GlyphCode.EF3B);
-                userType.AddEnumValue("EF3C", global::DevWinUI.GlyphCode.EF3C);
-                userType.AddEnumValue("EF3D", global::DevWinUI.GlyphCode.EF3D);
-                userType.AddEnumValue("EF3E", global::DevWinUI.GlyphCode.EF3E);
-                userType.AddEnumValue("EF3F", global::DevWinUI.GlyphCode.EF3F);
-                userType.AddEnumValue("EF40", global::DevWinUI.GlyphCode.EF40);
-                userType.AddEnumValue("EF42", global::DevWinUI.GlyphCode.EF42);
-                userType.AddEnumValue("EF58", global::DevWinUI.GlyphCode.EF58);
-                userType.AddEnumValue("EF6B", global::DevWinUI.GlyphCode.EF6B);
-                userType.AddEnumValue("EF90", global::DevWinUI.GlyphCode.EF90);
-                userType.AddEnumValue("EFA5", global::DevWinUI.GlyphCode.EFA5);
-                userType.AddEnumValue("EFA9", global::DevWinUI.GlyphCode.EFA9);
-                userType.AddEnumValue("F000", global::DevWinUI.GlyphCode.F000);
-                userType.AddEnumValue("F003", global::DevWinUI.GlyphCode.F003);
-                userType.AddEnumValue("F012", global::DevWinUI.GlyphCode.F012);
-                userType.AddEnumValue("F080", global::DevWinUI.GlyphCode.F080);
-                userType.AddEnumValue("F081", global::DevWinUI.GlyphCode.F081);
-                userType.AddEnumValue("F085", global::DevWinUI.GlyphCode.F085);
-                userType.AddEnumValue("F08C", global::DevWinUI.GlyphCode.F08C);
-                userType.AddEnumValue("F08D", global::DevWinUI.GlyphCode.F08D);
-                userType.AddEnumValue("F08E", global::DevWinUI.GlyphCode.F08E);
-                userType.AddEnumValue("F08F", global::DevWinUI.GlyphCode.F08F);
-                userType.AddEnumValue("F090", global::DevWinUI.GlyphCode.F090);
-                userType.AddEnumValue("F093", global::DevWinUI.GlyphCode.F093);
-                userType.AddEnumValue("F094", global::DevWinUI.GlyphCode.F094);
-                userType.AddEnumValue("F095", global::DevWinUI.GlyphCode.F095);
-                userType.AddEnumValue("F096", global::DevWinUI.GlyphCode.F096);
-                userType.AddEnumValue("F0AD", global::DevWinUI.GlyphCode.F0AD);
-                userType.AddEnumValue("F0AE", global::DevWinUI.GlyphCode.F0AE);
-                userType.AddEnumValue("F0AF", global::DevWinUI.GlyphCode.F0AF);
-                userType.AddEnumValue("F0B0", global::DevWinUI.GlyphCode.F0B0);
-                userType.AddEnumValue("F0B2", global::DevWinUI.GlyphCode.F0B2);
-                userType.AddEnumValue("F0B3", global::DevWinUI.GlyphCode.F0B3);
-                userType.AddEnumValue("F0B4", global::DevWinUI.GlyphCode.F0B4);
-                userType.AddEnumValue("F0B5", global::DevWinUI.GlyphCode.F0B5);
-                userType.AddEnumValue("F0B6", global::DevWinUI.GlyphCode.F0B6);
-                userType.AddEnumValue("F0B7", global::DevWinUI.GlyphCode.F0B7);
-                userType.AddEnumValue("F0B8", global::DevWinUI.GlyphCode.F0B8);
-                userType.AddEnumValue("F0B9", global::DevWinUI.GlyphCode.F0B9);
-                userType.AddEnumValue("F0C6", global::DevWinUI.GlyphCode.F0C6);
-                userType.AddEnumValue("F0C7", global::DevWinUI.GlyphCode.F0C7);
-                userType.AddEnumValue("F0CA", global::DevWinUI.GlyphCode.F0CA);
-                userType.AddEnumValue("F0CB", global::DevWinUI.GlyphCode.F0CB);
-                userType.AddEnumValue("F0CC", global::DevWinUI.GlyphCode.F0CC);
-                userType.AddEnumValue("F0CD", global::DevWinUI.GlyphCode.F0CD);
-                userType.AddEnumValue("F0CE", global::DevWinUI.GlyphCode.F0CE);
-                userType.AddEnumValue("F0D2", global::DevWinUI.GlyphCode.F0D2);
-                userType.AddEnumValue("F0D3", global::DevWinUI.GlyphCode.F0D3);
-                userType.AddEnumValue("F0D5", global::DevWinUI.GlyphCode.F0D5);
-                userType.AddEnumValue("F0D6", global::DevWinUI.GlyphCode.F0D6);
-                userType.AddEnumValue("F0D7", global::DevWinUI.GlyphCode.F0D7);
-                userType.AddEnumValue("F0D8", global::DevWinUI.GlyphCode.F0D8);
-                userType.AddEnumValue("F0E2", global::DevWinUI.GlyphCode.F0E2);
-                userType.AddEnumValue("F0E3", global::DevWinUI.GlyphCode.F0E3);
-                userType.AddEnumValue("F0E4", global::DevWinUI.GlyphCode.F0E4);
-                userType.AddEnumValue("F0E5", global::DevWinUI.GlyphCode.F0E5);
-                userType.AddEnumValue("F0E6", global::DevWinUI.GlyphCode.F0E6);
-                userType.AddEnumValue("F0E7", global::DevWinUI.GlyphCode.F0E7);
-                userType.AddEnumValue("F0E8", global::DevWinUI.GlyphCode.F0E8);
-                userType.AddEnumValue("F0E9", global::DevWinUI.GlyphCode.F0E9);
-                userType.AddEnumValue("F0EA", global::DevWinUI.GlyphCode.F0EA);
-                userType.AddEnumValue("F0EB", global::DevWinUI.GlyphCode.F0EB);
-                userType.AddEnumValue("F0EC", global::DevWinUI.GlyphCode.F0EC);
-                userType.AddEnumValue("F0ED", global::DevWinUI.GlyphCode.F0ED);
-                userType.AddEnumValue("F0EE", global::DevWinUI.GlyphCode.F0EE);
-                userType.AddEnumValue("F0EF", global::DevWinUI.GlyphCode.F0EF);
-                userType.AddEnumValue("F0F7", global::DevWinUI.GlyphCode.F0F7);
-                userType.AddEnumValue("F0F8", global::DevWinUI.GlyphCode.F0F8);
-                userType.AddEnumValue("F0F9", global::DevWinUI.GlyphCode.F0F9);
-                userType.AddEnumValue("F0FB", global::DevWinUI.GlyphCode.F0FB);
-                userType.AddEnumValue("F103", global::DevWinUI.GlyphCode.F103);
-                userType.AddEnumValue("F108", global::DevWinUI.GlyphCode.F108);
-                userType.AddEnumValue("F109", global::DevWinUI.GlyphCode.F109);
-                userType.AddEnumValue("F10A", global::DevWinUI.GlyphCode.F10A);
-                userType.AddEnumValue("F10B", global::DevWinUI.GlyphCode.F10B);
-                userType.AddEnumValue("F10C", global::DevWinUI.GlyphCode.F10C);
-                userType.AddEnumValue("F10D", global::DevWinUI.GlyphCode.F10D);
-                userType.AddEnumValue("F10E", global::DevWinUI.GlyphCode.F10E);
-                userType.AddEnumValue("F110", global::DevWinUI.GlyphCode.F110);
-                userType.AddEnumValue("F111", global::DevWinUI.GlyphCode.F111);
-                userType.AddEnumValue("F119", global::DevWinUI.GlyphCode.F119);
-                userType.AddEnumValue("F11B", global::DevWinUI.GlyphCode.F11B);
-                userType.AddEnumValue("F126", global::DevWinUI.GlyphCode.F126);
-                userType.AddEnumValue("F127", global::DevWinUI.GlyphCode.F127);
-                userType.AddEnumValue("F128", global::DevWinUI.GlyphCode.F128);
-                userType.AddEnumValue("F129", global::DevWinUI.GlyphCode.F129);
-                userType.AddEnumValue("F12A", global::DevWinUI.GlyphCode.F12A);
-                userType.AddEnumValue("F12B", global::DevWinUI.GlyphCode.F12B);
-                userType.AddEnumValue("F12E", global::DevWinUI.GlyphCode.F12E);
-                userType.AddEnumValue("F12F", global::DevWinUI.GlyphCode.F12F);
-                userType.AddEnumValue("F131", global::DevWinUI.GlyphCode.F131);
-                userType.AddEnumValue("F133", global::DevWinUI.GlyphCode.F133);
-                userType.AddEnumValue("F136", global::DevWinUI.GlyphCode.F136);
-                userType.AddEnumValue("F137", global::DevWinUI.GlyphCode.F137);
-                userType.AddEnumValue("F138", global::DevWinUI.GlyphCode.F138);
-                userType.AddEnumValue("F139", global::DevWinUI.GlyphCode.F139);
-                userType.AddEnumValue("F13A", global::DevWinUI.GlyphCode.F13A);
-                userType.AddEnumValue("F13B", global::DevWinUI.GlyphCode.F13B);
-                userType.AddEnumValue("F13C", global::DevWinUI.GlyphCode.F13C);
-                userType.AddEnumValue("F13D", global::DevWinUI.GlyphCode.F13D);
-                userType.AddEnumValue("F13E", global::DevWinUI.GlyphCode.F13E);
-                userType.AddEnumValue("F13F", global::DevWinUI.GlyphCode.F13F);
-                userType.AddEnumValue("F140", global::DevWinUI.GlyphCode.F140);
-                userType.AddEnumValue("F141", global::DevWinUI.GlyphCode.F141);
-                userType.AddEnumValue("F142", global::DevWinUI.GlyphCode.F142);
-                userType.AddEnumValue("F143", global::DevWinUI.GlyphCode.F143);
-                userType.AddEnumValue("F146", global::DevWinUI.GlyphCode.F146);
-                userType.AddEnumValue("F147", global::DevWinUI.GlyphCode.F147);
-                userType.AddEnumValue("F148", global::DevWinUI.GlyphCode.F148);
-                userType.AddEnumValue("F149", global::DevWinUI.GlyphCode.F149);
-                userType.AddEnumValue("F14A", global::DevWinUI.GlyphCode.F14A);
-                userType.AddEnumValue("F14B", global::DevWinUI.GlyphCode.F14B);
-                userType.AddEnumValue("F14C", global::DevWinUI.GlyphCode.F14C);
-                userType.AddEnumValue("F14D", global::DevWinUI.GlyphCode.F14D);
-                userType.AddEnumValue("F14E", global::DevWinUI.GlyphCode.F14E);
-                userType.AddEnumValue("F14F", global::DevWinUI.GlyphCode.F14F);
-                userType.AddEnumValue("F150", global::DevWinUI.GlyphCode.F150);
-                userType.AddEnumValue("F151", global::DevWinUI.GlyphCode.F151);
-                userType.AddEnumValue("F152", global::DevWinUI.GlyphCode.F152);
-                userType.AddEnumValue("F153", global::DevWinUI.GlyphCode.F153);
-                userType.AddEnumValue("F154", global::DevWinUI.GlyphCode.F154);
-                userType.AddEnumValue("F155", global::DevWinUI.GlyphCode.F155);
-                userType.AddEnumValue("F156", global::DevWinUI.GlyphCode.F156);
-                userType.AddEnumValue("F157", global::DevWinUI.GlyphCode.F157);
-                userType.AddEnumValue("F158", global::DevWinUI.GlyphCode.F158);
-                userType.AddEnumValue("F159", global::DevWinUI.GlyphCode.F159);
-                userType.AddEnumValue("F15F", global::DevWinUI.GlyphCode.F15F);
-                userType.AddEnumValue("F161", global::DevWinUI.GlyphCode.F161);
-                userType.AddEnumValue("F163", global::DevWinUI.GlyphCode.F163);
-                userType.AddEnumValue("F164", global::DevWinUI.GlyphCode.F164);
-                userType.AddEnumValue("F165", global::DevWinUI.GlyphCode.F165);
-                userType.AddEnumValue("F166", global::DevWinUI.GlyphCode.F166);
-                userType.AddEnumValue("F167", global::DevWinUI.GlyphCode.F167);
-                userType.AddEnumValue("F168", global::DevWinUI.GlyphCode.F168);
-                userType.AddEnumValue("F169", global::DevWinUI.GlyphCode.F169);
-                userType.AddEnumValue("F16A", global::DevWinUI.GlyphCode.F16A);
-                userType.AddEnumValue("F16B", global::DevWinUI.GlyphCode.F16B);
-                userType.AddEnumValue("F16C", global::DevWinUI.GlyphCode.F16C);
-                userType.AddEnumValue("F16D", global::DevWinUI.GlyphCode.F16D);
-                userType.AddEnumValue("F16E", global::DevWinUI.GlyphCode.F16E);
-                userType.AddEnumValue("F175", global::DevWinUI.GlyphCode.F175);
-                userType.AddEnumValue("F17F", global::DevWinUI.GlyphCode.F17F);
-                userType.AddEnumValue("F180", global::DevWinUI.GlyphCode.F180);
-                userType.AddEnumValue("F182", global::DevWinUI.GlyphCode.F182);
-                userType.AddEnumValue("F191", global::DevWinUI.GlyphCode.F191);
-                userType.AddEnumValue("F193", global::DevWinUI.GlyphCode.F193);
-                userType.AddEnumValue("F19D", global::DevWinUI.GlyphCode.F19D);
-                userType.AddEnumValue("F19E", global::DevWinUI.GlyphCode.F19E);
-                userType.AddEnumValue("F19F", global::DevWinUI.GlyphCode.F19F);
-                userType.AddEnumValue("F1AD", global::DevWinUI.GlyphCode.F1AD);
-                userType.AddEnumValue("F1CB", global::DevWinUI.GlyphCode.F1CB);
-                userType.AddEnumValue("F1CC", global::DevWinUI.GlyphCode.F1CC);
-                userType.AddEnumValue("F1D8", global::DevWinUI.GlyphCode.F1D8);
-                userType.AddEnumValue("F1D9", global::DevWinUI.GlyphCode.F1D9);
-                userType.AddEnumValue("F20C", global::DevWinUI.GlyphCode.F20C);
-                userType.AddEnumValue("F20D", global::DevWinUI.GlyphCode.F20D);
-                userType.AddEnumValue("F210", global::DevWinUI.GlyphCode.F210);
-                userType.AddEnumValue("F211", global::DevWinUI.GlyphCode.F211);
-                userType.AddEnumValue("F22C", global::DevWinUI.GlyphCode.F22C);
-                userType.AddEnumValue("F22E", global::DevWinUI.GlyphCode.F22E);
-                userType.AddEnumValue("F246", global::DevWinUI.GlyphCode.F246);
-                userType.AddEnumValue("F259", global::DevWinUI.GlyphCode.F259);
-                userType.AddEnumValue("F260", global::DevWinUI.GlyphCode.F260);
-                userType.AddEnumValue("F261", global::DevWinUI.GlyphCode.F261);
-                userType.AddEnumValue("F26B", global::DevWinUI.GlyphCode.F26B);
-                userType.AddEnumValue("F26C", global::DevWinUI.GlyphCode.F26C);
-                userType.AddEnumValue("F26D", global::DevWinUI.GlyphCode.F26D);
-                userType.AddEnumValue("F26E", global::DevWinUI.GlyphCode.F26E);
-                userType.AddEnumValue("F270", global::DevWinUI.GlyphCode.F270);
-                userType.AddEnumValue("F271", global::DevWinUI.GlyphCode.F271);
-                userType.AddEnumValue("F272", global::DevWinUI.GlyphCode.F272);
-                userType.AddEnumValue("F28B", global::DevWinUI.GlyphCode.F28B);
-                userType.AddEnumValue("F2B7", global::DevWinUI.GlyphCode.F2B7);
-                userType.AddEnumValue("F32A", global::DevWinUI.GlyphCode.F32A);
-                userType.AddEnumValue("F354", global::DevWinUI.GlyphCode.F354);
-                userType.AddEnumValue("F384", global::DevWinUI.GlyphCode.F384);
-                userType.AddEnumValue("F385", global::DevWinUI.GlyphCode.F385);
-                userType.AddEnumValue("F386", global::DevWinUI.GlyphCode.F386);
-                userType.AddEnumValue("F3B1", global::DevWinUI.GlyphCode.F3B1);
-                userType.AddEnumValue("F3CC", global::DevWinUI.GlyphCode.F3CC);
-                userType.AddEnumValue("F3CD", global::DevWinUI.GlyphCode.F3CD);
-                userType.AddEnumValue("F3E2", global::DevWinUI.GlyphCode.F3E2);
-                userType.AddEnumValue("F3E7", global::DevWinUI.GlyphCode.F3E7);
-                userType.AddEnumValue("F404", global::DevWinUI.GlyphCode.F404);
-                userType.AddEnumValue("F405", global::DevWinUI.GlyphCode.F405);
-                userType.AddEnumValue("F406", global::DevWinUI.GlyphCode.F406);
-                userType.AddEnumValue("F407", global::DevWinUI.GlyphCode.F407);
-                userType.AddEnumValue("F408", global::DevWinUI.GlyphCode.F408);
-                userType.AddEnumValue("F413", global::DevWinUI.GlyphCode.F413);
-                userType.AddEnumValue("F427", global::DevWinUI.GlyphCode.F427);
-                userType.AddEnumValue("F439", global::DevWinUI.GlyphCode.F439);
-                userType.AddEnumValue("F45E", global::DevWinUI.GlyphCode.F45E);
-                userType.AddEnumValue("F45F", global::DevWinUI.GlyphCode.F45F);
-                userType.AddEnumValue("F460", global::DevWinUI.GlyphCode.F460);
-                userType.AddEnumValue("F461", global::DevWinUI.GlyphCode.F461);
-                userType.AddEnumValue("F462", global::DevWinUI.GlyphCode.F462);
-                userType.AddEnumValue("F463", global::DevWinUI.GlyphCode.F463);
-                userType.AddEnumValue("F464", global::DevWinUI.GlyphCode.F464);
-                userType.AddEnumValue("F465", global::DevWinUI.GlyphCode.F465);
-                userType.AddEnumValue("F466", global::DevWinUI.GlyphCode.F466);
-                userType.AddEnumValue("F473", global::DevWinUI.GlyphCode.F473);
-                userType.AddEnumValue("F474", global::DevWinUI.GlyphCode.F474);
-                userType.AddEnumValue("F475", global::DevWinUI.GlyphCode.F475);
-                userType.AddEnumValue("F476", global::DevWinUI.GlyphCode.F476);
-                userType.AddEnumValue("F47F", global::DevWinUI.GlyphCode.F47F);
-                userType.AddEnumValue("F49A", global::DevWinUI.GlyphCode.F49A);
-                userType.AddEnumValue("F4A5", global::DevWinUI.GlyphCode.F4A5);
-                userType.AddEnumValue("F4A9", global::DevWinUI.GlyphCode.F4A9);
-                userType.AddEnumValue("F4AA", global::DevWinUI.GlyphCode.F4AA);
-                userType.AddEnumValue("F4BE", global::DevWinUI.GlyphCode.F4BE);
-                userType.AddEnumValue("F4BF", global::DevWinUI.GlyphCode.F4BF);
-                userType.AddEnumValue("F4C0", global::DevWinUI.GlyphCode.F4C0);
-                userType.AddEnumValue("F4C3", global::DevWinUI.GlyphCode.F4C3);
-                userType.AddEnumValue("F540", global::DevWinUI.GlyphCode.F540);
-                userType.AddEnumValue("F552", global::DevWinUI.GlyphCode.F552);
-                userType.AddEnumValue("F56D", global::DevWinUI.GlyphCode.F56D);
-                userType.AddEnumValue("F56E", global::DevWinUI.GlyphCode.F56E);
-                userType.AddEnumValue("F56F", global::DevWinUI.GlyphCode.F56F);
-                userType.AddEnumValue("F570", global::DevWinUI.GlyphCode.F570);
-                userType.AddEnumValue("F571", global::DevWinUI.GlyphCode.F571);
-                userType.AddEnumValue("F572", global::DevWinUI.GlyphCode.F572);
-                userType.AddEnumValue("F573", global::DevWinUI.GlyphCode.F573);
-                userType.AddEnumValue("F574", global::DevWinUI.GlyphCode.F574);
-                userType.AddEnumValue("F575", global::DevWinUI.GlyphCode.F575);
-                userType.AddEnumValue("F576", global::DevWinUI.GlyphCode.F576);
-                userType.AddEnumValue("F577", global::DevWinUI.GlyphCode.F577);
-                userType.AddEnumValue("F578", global::DevWinUI.GlyphCode.F578);
-                userType.AddEnumValue("F579", global::DevWinUI.GlyphCode.F579);
-                userType.AddEnumValue("F57A", global::DevWinUI.GlyphCode.F57A);
-                userType.AddEnumValue("F57B", global::DevWinUI.GlyphCode.F57B);
-                userType.AddEnumValue("F57C", global::DevWinUI.GlyphCode.F57C);
-                userType.AddEnumValue("F57D", global::DevWinUI.GlyphCode.F57D);
-                userType.AddEnumValue("F57E", global::DevWinUI.GlyphCode.F57E);
-                userType.AddEnumValue("F57F", global::DevWinUI.GlyphCode.F57F);
-                userType.AddEnumValue("F580", global::DevWinUI.GlyphCode.F580);
-                userType.AddEnumValue("F581", global::DevWinUI.GlyphCode.F581);
-                userType.AddEnumValue("F582", global::DevWinUI.GlyphCode.F582);
-                userType.AddEnumValue("F583", global::DevWinUI.GlyphCode.F583);
-                userType.AddEnumValue("F584", global::DevWinUI.GlyphCode.F584);
-                userType.AddEnumValue("F585", global::DevWinUI.GlyphCode.F585);
-                userType.AddEnumValue("F586", global::DevWinUI.GlyphCode.F586);
-                userType.AddEnumValue("F587", global::DevWinUI.GlyphCode.F587);
-                userType.AddEnumValue("F588", global::DevWinUI.GlyphCode.F588);
-                userType.AddEnumValue("F589", global::DevWinUI.GlyphCode.F589);
-                userType.AddEnumValue("F58A", global::DevWinUI.GlyphCode.F58A);
-                userType.AddEnumValue("F58B", global::DevWinUI.GlyphCode.F58B);
-                userType.AddEnumValue("F58C", global::DevWinUI.GlyphCode.F58C);
-                userType.AddEnumValue("F58D", global::DevWinUI.GlyphCode.F58D);
-                userType.AddEnumValue("F58E", global::DevWinUI.GlyphCode.F58E);
-                userType.AddEnumValue("F58F", global::DevWinUI.GlyphCode.F58F);
-                userType.AddEnumValue("F590", global::DevWinUI.GlyphCode.F590);
-                userType.AddEnumValue("F591", global::DevWinUI.GlyphCode.F591);
-                userType.AddEnumValue("F592", global::DevWinUI.GlyphCode.F592);
-                userType.AddEnumValue("F593", global::DevWinUI.GlyphCode.F593);
-                userType.AddEnumValue("F594", global::DevWinUI.GlyphCode.F594);
-                userType.AddEnumValue("F595", global::DevWinUI.GlyphCode.F595);
-                userType.AddEnumValue("F596", global::DevWinUI.GlyphCode.F596);
-                userType.AddEnumValue("F597", global::DevWinUI.GlyphCode.F597);
-                userType.AddEnumValue("F598", global::DevWinUI.GlyphCode.F598);
-                userType.AddEnumValue("F599", global::DevWinUI.GlyphCode.F599);
-                userType.AddEnumValue("F59A", global::DevWinUI.GlyphCode.F59A);
-                userType.AddEnumValue("F59B", global::DevWinUI.GlyphCode.F59B);
-                userType.AddEnumValue("F59C", global::DevWinUI.GlyphCode.F59C);
-                userType.AddEnumValue("F59D", global::DevWinUI.GlyphCode.F59D);
-                userType.AddEnumValue("F59E", global::DevWinUI.GlyphCode.F59E);
-                userType.AddEnumValue("F59F", global::DevWinUI.GlyphCode.F59F);
-                userType.AddEnumValue("F5A0", global::DevWinUI.GlyphCode.F5A0);
-                userType.AddEnumValue("F5A1", global::DevWinUI.GlyphCode.F5A1);
-                userType.AddEnumValue("F5A2", global::DevWinUI.GlyphCode.F5A2);
-                userType.AddEnumValue("F5A3", global::DevWinUI.GlyphCode.F5A3);
-                userType.AddEnumValue("F5A4", global::DevWinUI.GlyphCode.F5A4);
-                userType.AddEnumValue("F5A5", global::DevWinUI.GlyphCode.F5A5);
-                userType.AddEnumValue("F5A6", global::DevWinUI.GlyphCode.F5A6);
-                userType.AddEnumValue("F5A7", global::DevWinUI.GlyphCode.F5A7);
-                userType.AddEnumValue("F5A8", global::DevWinUI.GlyphCode.F5A8);
-                userType.AddEnumValue("F5A9", global::DevWinUI.GlyphCode.F5A9);
-                userType.AddEnumValue("F5AA", global::DevWinUI.GlyphCode.F5AA);
-                userType.AddEnumValue("F5AB", global::DevWinUI.GlyphCode.F5AB);
-                userType.AddEnumValue("F5AC", global::DevWinUI.GlyphCode.F5AC);
-                userType.AddEnumValue("F5AD", global::DevWinUI.GlyphCode.F5AD);
-                userType.AddEnumValue("F5AE", global::DevWinUI.GlyphCode.F5AE);
-                userType.AddEnumValue("F5B0", global::DevWinUI.GlyphCode.F5B0);
-                userType.AddEnumValue("F5E7", global::DevWinUI.GlyphCode.F5E7);
-                userType.AddEnumValue("F5ED", global::DevWinUI.GlyphCode.F5ED);
-                userType.AddEnumValue("F5EE", global::DevWinUI.GlyphCode.F5EE);
-                userType.AddEnumValue("F5EF", global::DevWinUI.GlyphCode.F5EF);
-                userType.AddEnumValue("F5F2", global::DevWinUI.GlyphCode.F5F2);
-                userType.AddEnumValue("F5F3", global::DevWinUI.GlyphCode.F5F3);
-                userType.AddEnumValue("F5F4", global::DevWinUI.GlyphCode.F5F4);
-                userType.AddEnumValue("F5F5", global::DevWinUI.GlyphCode.F5F5);
-                userType.AddEnumValue("F5F6", global::DevWinUI.GlyphCode.F5F6);
-                userType.AddEnumValue("F5F7", global::DevWinUI.GlyphCode.F5F7);
-                userType.AddEnumValue("F5F8", global::DevWinUI.GlyphCode.F5F8);
-                userType.AddEnumValue("F5F9", global::DevWinUI.GlyphCode.F5F9);
-                userType.AddEnumValue("F5FA", global::DevWinUI.GlyphCode.F5FA);
-                userType.AddEnumValue("F5FB", global::DevWinUI.GlyphCode.F5FB);
-                userType.AddEnumValue("F5FC", global::DevWinUI.GlyphCode.F5FC);
-                userType.AddEnumValue("F5FD", global::DevWinUI.GlyphCode.F5FD);
-                userType.AddEnumValue("F5FE", global::DevWinUI.GlyphCode.F5FE);
-                userType.AddEnumValue("F5FF", global::DevWinUI.GlyphCode.F5FF);
-                userType.AddEnumValue("F600", global::DevWinUI.GlyphCode.F600);
-                userType.AddEnumValue("F601", global::DevWinUI.GlyphCode.F601);
-                userType.AddEnumValue("F602", global::DevWinUI.GlyphCode.F602);
-                userType.AddEnumValue("F603", global::DevWinUI.GlyphCode.F603);
-                userType.AddEnumValue("F604", global::DevWinUI.GlyphCode.F604);
-                userType.AddEnumValue("F605", global::DevWinUI.GlyphCode.F605);
-                userType.AddEnumValue("F606", global::DevWinUI.GlyphCode.F606);
-                userType.AddEnumValue("F607", global::DevWinUI.GlyphCode.F607);
-                userType.AddEnumValue("F608", global::DevWinUI.GlyphCode.F608);
-                userType.AddEnumValue("F618", global::DevWinUI.GlyphCode.F618);
-                userType.AddEnumValue("F619", global::DevWinUI.GlyphCode.F619);
-                userType.AddEnumValue("F61A", global::DevWinUI.GlyphCode.F61A);
-                userType.AddEnumValue("F61B", global::DevWinUI.GlyphCode.F61B);
-                userType.AddEnumValue("F61C", global::DevWinUI.GlyphCode.F61C);
-                userType.AddEnumValue("F61D", global::DevWinUI.GlyphCode.F61D);
-                userType.AddEnumValue("F61E", global::DevWinUI.GlyphCode.F61E);
-                userType.AddEnumValue("F61F", global::DevWinUI.GlyphCode.F61F);
-                userType.AddEnumValue("F620", global::DevWinUI.GlyphCode.F620);
-                userType.AddEnumValue("F623", global::DevWinUI.GlyphCode.F623);
-                userType.AddEnumValue("F624", global::DevWinUI.GlyphCode.F624);
-                userType.AddEnumValue("F63C", global::DevWinUI.GlyphCode.F63C);
-                userType.AddEnumValue("F657", global::DevWinUI.GlyphCode.F657);
-                userType.AddEnumValue("F658", global::DevWinUI.GlyphCode.F658);
-                userType.AddEnumValue("F659", global::DevWinUI.GlyphCode.F659);
-                userType.AddEnumValue("F65A", global::DevWinUI.GlyphCode.F65A);
-                userType.AddEnumValue("F65B", global::DevWinUI.GlyphCode.F65B);
-                userType.AddEnumValue("F65C", global::DevWinUI.GlyphCode.F65C);
-                userType.AddEnumValue("F69E", global::DevWinUI.GlyphCode.F69E);
-                userType.AddEnumValue("F6A9", global::DevWinUI.GlyphCode.F6A9);
-                userType.AddEnumValue("F6B8", global::DevWinUI.GlyphCode.F6B8);
-                userType.AddEnumValue("F6BA", global::DevWinUI.GlyphCode.F6BA);
-                userType.AddEnumValue("F6FA", global::DevWinUI.GlyphCode.F6FA);
-                userType.AddEnumValue("F712", global::DevWinUI.GlyphCode.F712);
-                userType.AddEnumValue("F714", global::DevWinUI.GlyphCode.F714);
-                userType.AddEnumValue("F715", global::DevWinUI.GlyphCode.F715);
-                userType.AddEnumValue("F716", global::DevWinUI.GlyphCode.F716);
-                userType.AddEnumValue("F71A", global::DevWinUI.GlyphCode.F71A);
-                userType.AddEnumValue("F71C", global::DevWinUI.GlyphCode.F71C);
-                userType.AddEnumValue("F71D", global::DevWinUI.GlyphCode.F71D);
-                userType.AddEnumValue("F71E", global::DevWinUI.GlyphCode.F71E);
-                userType.AddEnumValue("F738", global::DevWinUI.GlyphCode.F738);
-                userType.AddEnumValue("F739", global::DevWinUI.GlyphCode.F739);
-                userType.AddEnumValue("F73D", global::DevWinUI.GlyphCode.F73D);
-                userType.AddEnumValue("F73E", global::DevWinUI.GlyphCode.F73E);
-                userType.AddEnumValue("F73F", global::DevWinUI.GlyphCode.F73F);
-                userType.AddEnumValue("F740", global::DevWinUI.GlyphCode.F740);
-                userType.AddEnumValue("F741", global::DevWinUI.GlyphCode.F741);
-                userType.AddEnumValue("F742", global::DevWinUI.GlyphCode.F742);
-                userType.AddEnumValue("F743", global::DevWinUI.GlyphCode.F743);
-                userType.AddEnumValue("F744", global::DevWinUI.GlyphCode.F744);
-                userType.AddEnumValue("F745", global::DevWinUI.GlyphCode.F745);
-                userType.AddEnumValue("F746", global::DevWinUI.GlyphCode.F746);
-                userType.AddEnumValue("F763", global::DevWinUI.GlyphCode.F763);
-                userType.AddEnumValue("F781", global::DevWinUI.GlyphCode.F781);
-                userType.AddEnumValue("F785", global::DevWinUI.GlyphCode.F785);
-                userType.AddEnumValue("F78A", global::DevWinUI.GlyphCode.F78A);
-                userType.AddEnumValue("F78B", global::DevWinUI.GlyphCode.F78B);
-                userType.AddEnumValue("F78C", global::DevWinUI.GlyphCode.F78C);
-                userType.AddEnumValue("F78D", global::DevWinUI.GlyphCode.F78D);
-                userType.AddEnumValue("F7AD", global::DevWinUI.GlyphCode.F7AD);
-                userType.AddEnumValue("F7AE", global::DevWinUI.GlyphCode.F7AE);
-                userType.AddEnumValue("F7AF", global::DevWinUI.GlyphCode.F7AF);
-                userType.AddEnumValue("F7B0", global::DevWinUI.GlyphCode.F7B0);
-                userType.AddEnumValue("F7B1", global::DevWinUI.GlyphCode.F7B1);
-                userType.AddEnumValue("F7B2", global::DevWinUI.GlyphCode.F7B2);
-                userType.AddEnumValue("F7B3", global::DevWinUI.GlyphCode.F7B3);
-                userType.AddEnumValue("F7B4", global::DevWinUI.GlyphCode.F7B4);
-                userType.AddEnumValue("F7B5", global::DevWinUI.GlyphCode.F7B5);
-                userType.AddEnumValue("F7B6", global::DevWinUI.GlyphCode.F7B6);
-                userType.AddEnumValue("F7B7", global::DevWinUI.GlyphCode.F7B7);
-                userType.AddEnumValue("F7B8", global::DevWinUI.GlyphCode.F7B8);
-                userType.AddEnumValue("F7B9", global::DevWinUI.GlyphCode.F7B9);
-                userType.AddEnumValue("F7BA", global::DevWinUI.GlyphCode.F7BA);
-                userType.AddEnumValue("F7BB", global::DevWinUI.GlyphCode.F7BB);
-                userType.AddEnumValue("F7ED", global::DevWinUI.GlyphCode.F7ED);
-                userType.AddEnumValue("F7EE", global::DevWinUI.GlyphCode.F7EE);
-                userType.AddEnumValue("F809", global::DevWinUI.GlyphCode.F809);
-                userType.AddEnumValue("F83B", global::DevWinUI.GlyphCode.F83B);
-                userType.AddEnumValue("F83D", global::DevWinUI.GlyphCode.F83D);
-                userType.AddEnumValue("F83E", global::DevWinUI.GlyphCode.F83E);
-                userType.AddEnumValue("F83F", global::DevWinUI.GlyphCode.F83F);
-                userType.AddEnumValue("F847", global::DevWinUI.GlyphCode.F847);
-                userType.AddEnumValue("F87B", global::DevWinUI.GlyphCode.F87B);
-                userType.AddEnumValue("F87C", global::DevWinUI.GlyphCode.F87C);
-                userType.AddEnumValue("F87D", global::DevWinUI.GlyphCode.F87D);
-                userType.AddEnumValue("F87E", global::DevWinUI.GlyphCode.F87E);
-                userType.AddEnumValue("F89A", global::DevWinUI.GlyphCode.F89A);
-                userType.AddEnumValue("F8A5", global::DevWinUI.GlyphCode.F8A5);
-                userType.AddEnumValue("F8A6", global::DevWinUI.GlyphCode.F8A6);
-                userType.AddEnumValue("F8AA", global::DevWinUI.GlyphCode.F8AA);
-                userType.AddEnumValue("F8AB", global::DevWinUI.GlyphCode.F8AB);
-                userType.AddEnumValue("F8AC", global::DevWinUI.GlyphCode.F8AC);
-                userType.AddEnumValue("F8AD", global::DevWinUI.GlyphCode.F8AD);
-                userType.AddEnumValue("F8AE", global::DevWinUI.GlyphCode.F8AE);
-                userType.AddEnumValue("F8AF", global::DevWinUI.GlyphCode.F8AF);
-                userType.AddEnumValue("F8B0", global::DevWinUI.GlyphCode.F8B0);
-                userType.AddEnumValue("F8B1", global::DevWinUI.GlyphCode.F8B1);
-                userType.AddEnumValue("F8B2", global::DevWinUI.GlyphCode.F8B2);
-                userType.AddEnumValue("F8B3", global::DevWinUI.GlyphCode.F8B3);
-                xamlType = userType;
-                break;
-
-            case 45:   //  DevWinUI.GlyphName
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_45_GlyphName;
-                userType.AddEnumValue("None", global::DevWinUI.GlyphName.None);
-                userType.AddEnumValue("GlobalNavButton", global::DevWinUI.GlyphName.GlobalNavButton);
-                userType.AddEnumValue("Wifi", global::DevWinUI.GlyphName.Wifi);
-                userType.AddEnumValue("Bluetooth", global::DevWinUI.GlyphName.Bluetooth);
-                userType.AddEnumValue("Connect", global::DevWinUI.GlyphName.Connect);
-                userType.AddEnumValue("InternetSharing", global::DevWinUI.GlyphName.InternetSharing);
-                userType.AddEnumValue("VPN", global::DevWinUI.GlyphName.VPN);
-                userType.AddEnumValue("Brightness", global::DevWinUI.GlyphName.Brightness);
-                userType.AddEnumValue("MapPin", global::DevWinUI.GlyphName.MapPin);
-                userType.AddEnumValue("QuietHours", global::DevWinUI.GlyphName.QuietHours);
-                userType.AddEnumValue("Airplane", global::DevWinUI.GlyphName.Airplane);
-                userType.AddEnumValue("Tablet", global::DevWinUI.GlyphName.Tablet);
-                userType.AddEnumValue("QuickNote", global::DevWinUI.GlyphName.QuickNote);
-                userType.AddEnumValue("RememberedDevice", global::DevWinUI.GlyphName.RememberedDevice);
-                userType.AddEnumValue("ChevronDown", global::DevWinUI.GlyphName.ChevronDown);
-                userType.AddEnumValue("ChevronUp", global::DevWinUI.GlyphName.ChevronUp);
-                userType.AddEnumValue("Edit", global::DevWinUI.GlyphName.Edit);
-                userType.AddEnumValue("Add", global::DevWinUI.GlyphName.Add);
-                userType.AddEnumValue("Cancel", global::DevWinUI.GlyphName.Cancel);
-                userType.AddEnumValue("More", global::DevWinUI.GlyphName.More);
-                userType.AddEnumValue("Settings", global::DevWinUI.GlyphName.Settings);
-                userType.AddEnumValue("Video", global::DevWinUI.GlyphName.Video);
-                userType.AddEnumValue("Mail", global::DevWinUI.GlyphName.Mail);
-                userType.AddEnumValue("People", global::DevWinUI.GlyphName.People);
-                userType.AddEnumValue("Phone", global::DevWinUI.GlyphName.Phone);
-                userType.AddEnumValue("Pin", global::DevWinUI.GlyphName.Pin);
-                userType.AddEnumValue("Shop", global::DevWinUI.GlyphName.Shop);
-                userType.AddEnumValue("Stop", global::DevWinUI.GlyphName.Stop);
-                userType.AddEnumValue("Link", global::DevWinUI.GlyphName.Link);
-                userType.AddEnumValue("Filter", global::DevWinUI.GlyphName.Filter);
-                userType.AddEnumValue("AllApps", global::DevWinUI.GlyphName.AllApps);
-                userType.AddEnumValue("Zoom", global::DevWinUI.GlyphName.Zoom);
-                userType.AddEnumValue("ZoomOut", global::DevWinUI.GlyphName.ZoomOut);
-                userType.AddEnumValue("Microphone", global::DevWinUI.GlyphName.Microphone);
-                userType.AddEnumValue("Search", global::DevWinUI.GlyphName.Search);
-                userType.AddEnumValue("Camera", global::DevWinUI.GlyphName.Camera);
-                userType.AddEnumValue("Attach", global::DevWinUI.GlyphName.Attach);
-                userType.AddEnumValue("Send", global::DevWinUI.GlyphName.Send);
-                userType.AddEnumValue("SendFill", global::DevWinUI.GlyphName.SendFill);
-                userType.AddEnumValue("WalkSolid", global::DevWinUI.GlyphName.WalkSolid);
-                userType.AddEnumValue("InPrivate", global::DevWinUI.GlyphName.InPrivate);
-                userType.AddEnumValue("FavoriteList", global::DevWinUI.GlyphName.FavoriteList);
-                userType.AddEnumValue("PageSolid", global::DevWinUI.GlyphName.PageSolid);
-                userType.AddEnumValue("Forward", global::DevWinUI.GlyphName.Forward);
-                userType.AddEnumValue("Back", global::DevWinUI.GlyphName.Back);
-                userType.AddEnumValue("Refresh", global::DevWinUI.GlyphName.Refresh);
-                userType.AddEnumValue("Share", global::DevWinUI.GlyphName.Share);
-                userType.AddEnumValue("Lock", global::DevWinUI.GlyphName.Lock);
-                userType.AddEnumValue("ReportHacked", global::DevWinUI.GlyphName.ReportHacked);
-                userType.AddEnumValue("EMI", global::DevWinUI.GlyphName.EMI);
-                userType.AddEnumValue("FavoriteStar", global::DevWinUI.GlyphName.FavoriteStar);
-                userType.AddEnumValue("FavoriteStarFill", global::DevWinUI.GlyphName.FavoriteStarFill);
-                userType.AddEnumValue("ReadingMode", global::DevWinUI.GlyphName.ReadingMode);
-                userType.AddEnumValue("Favicon", global::DevWinUI.GlyphName.Favicon);
-                userType.AddEnumValue("Remove", global::DevWinUI.GlyphName.Remove);
-                userType.AddEnumValue("Checkbox", global::DevWinUI.GlyphName.Checkbox);
-                userType.AddEnumValue("CheckboxComposite", global::DevWinUI.GlyphName.CheckboxComposite);
-                userType.AddEnumValue("CheckboxFill", global::DevWinUI.GlyphName.CheckboxFill);
-                userType.AddEnumValue("CheckboxIndeterminate", global::DevWinUI.GlyphName.CheckboxIndeterminate);
-                userType.AddEnumValue("CheckboxCompositeReversed", global::DevWinUI.GlyphName.CheckboxCompositeReversed);
-                userType.AddEnumValue("CheckMark", global::DevWinUI.GlyphName.CheckMark);
-                userType.AddEnumValue("BackToWindow", global::DevWinUI.GlyphName.BackToWindow);
-                userType.AddEnumValue("FullScreen", global::DevWinUI.GlyphName.FullScreen);
-                userType.AddEnumValue("ResizeTouchLarger", global::DevWinUI.GlyphName.ResizeTouchLarger);
-                userType.AddEnumValue("ResizeTouchSmaller", global::DevWinUI.GlyphName.ResizeTouchSmaller);
-                userType.AddEnumValue("ResizeMouseSmall", global::DevWinUI.GlyphName.ResizeMouseSmall);
-                userType.AddEnumValue("ResizeMouseMedium", global::DevWinUI.GlyphName.ResizeMouseMedium);
-                userType.AddEnumValue("ResizeMouseWide", global::DevWinUI.GlyphName.ResizeMouseWide);
-                userType.AddEnumValue("ResizeMouseTall", global::DevWinUI.GlyphName.ResizeMouseTall);
-                userType.AddEnumValue("ResizeMouseLarge", global::DevWinUI.GlyphName.ResizeMouseLarge);
-                userType.AddEnumValue("SwitchUser", global::DevWinUI.GlyphName.SwitchUser);
-                userType.AddEnumValue("Print", global::DevWinUI.GlyphName.Print);
-                userType.AddEnumValue("Up", global::DevWinUI.GlyphName.Up);
-                userType.AddEnumValue("Down", global::DevWinUI.GlyphName.Down);
-                userType.AddEnumValue("OEM", global::DevWinUI.GlyphName.OEM);
-                userType.AddEnumValue("Delete", global::DevWinUI.GlyphName.Delete);
-                userType.AddEnumValue("Save", global::DevWinUI.GlyphName.Save);
-                userType.AddEnumValue("Mute", global::DevWinUI.GlyphName.Mute);
-                userType.AddEnumValue("BackSpaceQWERTY", global::DevWinUI.GlyphName.BackSpaceQWERTY);
-                userType.AddEnumValue("ReturnKey", global::DevWinUI.GlyphName.ReturnKey);
-                userType.AddEnumValue("UpArrowShiftKey", global::DevWinUI.GlyphName.UpArrowShiftKey);
-                userType.AddEnumValue("Cloud", global::DevWinUI.GlyphName.Cloud);
-                userType.AddEnumValue("Flashlight", global::DevWinUI.GlyphName.Flashlight);
-                userType.AddEnumValue("RotationLock", global::DevWinUI.GlyphName.RotationLock);
-                userType.AddEnumValue("CommandPrompt", global::DevWinUI.GlyphName.CommandPrompt);
-                userType.AddEnumValue("SIPMove", global::DevWinUI.GlyphName.SIPMove);
-                userType.AddEnumValue("SIPUndock", global::DevWinUI.GlyphName.SIPUndock);
-                userType.AddEnumValue("SIPRedock", global::DevWinUI.GlyphName.SIPRedock);
-                userType.AddEnumValue("EraseTool", global::DevWinUI.GlyphName.EraseTool);
-                userType.AddEnumValue("UnderscoreSpace", global::DevWinUI.GlyphName.UnderscoreSpace);
-                userType.AddEnumValue("GripperTool", global::DevWinUI.GlyphName.GripperTool);
-                userType.AddEnumValue("Dialpad", global::DevWinUI.GlyphName.Dialpad);
-                userType.AddEnumValue("PageLeft", global::DevWinUI.GlyphName.PageLeft);
-                userType.AddEnumValue("PageRight", global::DevWinUI.GlyphName.PageRight);
-                userType.AddEnumValue("MultiSelect", global::DevWinUI.GlyphName.MultiSelect);
-                userType.AddEnumValue("KeyboardLeftHanded", global::DevWinUI.GlyphName.KeyboardLeftHanded);
-                userType.AddEnumValue("KeyboardRightHanded", global::DevWinUI.GlyphName.KeyboardRightHanded);
-                userType.AddEnumValue("KeyboardClassic", global::DevWinUI.GlyphName.KeyboardClassic);
-                userType.AddEnumValue("KeyboardSplit", global::DevWinUI.GlyphName.KeyboardSplit);
-                userType.AddEnumValue("Volume", global::DevWinUI.GlyphName.Volume);
-                userType.AddEnumValue("Play", global::DevWinUI.GlyphName.Play);
-                userType.AddEnumValue("Pause", global::DevWinUI.GlyphName.Pause);
-                userType.AddEnumValue("ChevronLeft", global::DevWinUI.GlyphName.ChevronLeft);
-                userType.AddEnumValue("ChevronRight", global::DevWinUI.GlyphName.ChevronRight);
-                userType.AddEnumValue("InkingTool", global::DevWinUI.GlyphName.InkingTool);
-                userType.AddEnumValue("Emoji2", global::DevWinUI.GlyphName.Emoji2);
-                userType.AddEnumValue("GripperBarHorizontal", global::DevWinUI.GlyphName.GripperBarHorizontal);
-                userType.AddEnumValue("System", global::DevWinUI.GlyphName.System);
-                userType.AddEnumValue("Personalize", global::DevWinUI.GlyphName.Personalize);
-                userType.AddEnumValue("Devices", global::DevWinUI.GlyphName.Devices);
-                userType.AddEnumValue("SearchAndApps", global::DevWinUI.GlyphName.SearchAndApps);
-                userType.AddEnumValue("Globe", global::DevWinUI.GlyphName.Globe);
-                userType.AddEnumValue("TimeLanguage", global::DevWinUI.GlyphName.TimeLanguage);
-                userType.AddEnumValue("EaseOfAccess", global::DevWinUI.GlyphName.EaseOfAccess);
-                userType.AddEnumValue("UpdateRestore", global::DevWinUI.GlyphName.UpdateRestore);
-                userType.AddEnumValue("HangUp", global::DevWinUI.GlyphName.HangUp);
-                userType.AddEnumValue("ContactInfo", global::DevWinUI.GlyphName.ContactInfo);
-                userType.AddEnumValue("Unpin", global::DevWinUI.GlyphName.Unpin);
-                userType.AddEnumValue("Contact", global::DevWinUI.GlyphName.Contact);
-                userType.AddEnumValue("Memo", global::DevWinUI.GlyphName.Memo);
-                userType.AddEnumValue("IncomingCall", global::DevWinUI.GlyphName.IncomingCall);
-                userType.AddEnumValue("Paste", global::DevWinUI.GlyphName.Paste);
-                userType.AddEnumValue("PhoneBook", global::DevWinUI.GlyphName.PhoneBook);
-                userType.AddEnumValue("LEDLight", global::DevWinUI.GlyphName.LEDLight);
-                userType.AddEnumValue("Error", global::DevWinUI.GlyphName.Error);
-                userType.AddEnumValue("GripperBarVertical", global::DevWinUI.GlyphName.GripperBarVertical);
-                userType.AddEnumValue("Unlock", global::DevWinUI.GlyphName.Unlock);
-                userType.AddEnumValue("Slideshow", global::DevWinUI.GlyphName.Slideshow);
-                userType.AddEnumValue("Calendar", global::DevWinUI.GlyphName.Calendar);
-                userType.AddEnumValue("GripperResize", global::DevWinUI.GlyphName.GripperResize);
-                userType.AddEnumValue("Megaphone", global::DevWinUI.GlyphName.Megaphone);
-                userType.AddEnumValue("Trim", global::DevWinUI.GlyphName.Trim);
-                userType.AddEnumValue("NewWindow", global::DevWinUI.GlyphName.NewWindow);
-                userType.AddEnumValue("SaveLocal", global::DevWinUI.GlyphName.SaveLocal);
-                userType.AddEnumValue("Color", global::DevWinUI.GlyphName.Color);
-                userType.AddEnumValue("DataSense", global::DevWinUI.GlyphName.DataSense);
-                userType.AddEnumValue("SaveAs", global::DevWinUI.GlyphName.SaveAs);
-                userType.AddEnumValue("Light", global::DevWinUI.GlyphName.Light);
-                userType.AddEnumValue("AspectRatio", global::DevWinUI.GlyphName.AspectRatio);
-                userType.AddEnumValue("DataSenseBar", global::DevWinUI.GlyphName.DataSenseBar);
-                userType.AddEnumValue("Redo", global::DevWinUI.GlyphName.Redo);
-                userType.AddEnumValue("Undo", global::DevWinUI.GlyphName.Undo);
-                userType.AddEnumValue("Crop", global::DevWinUI.GlyphName.Crop);
-                userType.AddEnumValue("OpenWith", global::DevWinUI.GlyphName.OpenWith);
-                userType.AddEnumValue("Rotate", global::DevWinUI.GlyphName.Rotate);
-                userType.AddEnumValue("RedEye", global::DevWinUI.GlyphName.RedEye);
-                userType.AddEnumValue("SetlockScreen", global::DevWinUI.GlyphName.SetlockScreen);
-                userType.AddEnumValue("MapPin2", global::DevWinUI.GlyphName.MapPin2);
-                userType.AddEnumValue("Package", global::DevWinUI.GlyphName.Package);
-                userType.AddEnumValue("Warning", global::DevWinUI.GlyphName.Warning);
-                userType.AddEnumValue("ReadingList", global::DevWinUI.GlyphName.ReadingList);
-                userType.AddEnumValue("Education", global::DevWinUI.GlyphName.Education);
-                userType.AddEnumValue("ShoppingCart", global::DevWinUI.GlyphName.ShoppingCart);
-                userType.AddEnumValue("Train", global::DevWinUI.GlyphName.Train);
-                userType.AddEnumValue("Flag", global::DevWinUI.GlyphName.Flag);
-                userType.AddEnumValue("Move", global::DevWinUI.GlyphName.Move);
-                userType.AddEnumValue("Page", global::DevWinUI.GlyphName.Page);
-                userType.AddEnumValue("TaskView", global::DevWinUI.GlyphName.TaskView);
-                userType.AddEnumValue("BrowsePhotos", global::DevWinUI.GlyphName.BrowsePhotos);
-                userType.AddEnumValue("HalfStarLeft", global::DevWinUI.GlyphName.HalfStarLeft);
-                userType.AddEnumValue("HalfStarRight", global::DevWinUI.GlyphName.HalfStarRight);
-                userType.AddEnumValue("Record", global::DevWinUI.GlyphName.Record);
-                userType.AddEnumValue("TouchPointer", global::DevWinUI.GlyphName.TouchPointer);
-                userType.AddEnumValue("LangJPN", global::DevWinUI.GlyphName.LangJPN);
-                userType.AddEnumValue("Ferry", global::DevWinUI.GlyphName.Ferry);
-                userType.AddEnumValue("Highlight", global::DevWinUI.GlyphName.Highlight);
-                userType.AddEnumValue("ActionCenterNotification", global::DevWinUI.GlyphName.ActionCenterNotification);
-                userType.AddEnumValue("PowerButton", global::DevWinUI.GlyphName.PowerButton);
-                userType.AddEnumValue("ResizeTouchNarrower", global::DevWinUI.GlyphName.ResizeTouchNarrower);
-                userType.AddEnumValue("ResizeTouchShorter", global::DevWinUI.GlyphName.ResizeTouchShorter);
-                userType.AddEnumValue("DrivingMode", global::DevWinUI.GlyphName.DrivingMode);
-                userType.AddEnumValue("RingerSilent", global::DevWinUI.GlyphName.RingerSilent);
-                userType.AddEnumValue("OtherUser", global::DevWinUI.GlyphName.OtherUser);
-                userType.AddEnumValue("Admin", global::DevWinUI.GlyphName.Admin);
-                userType.AddEnumValue("CC", global::DevWinUI.GlyphName.CC);
-                userType.AddEnumValue("SDCard", global::DevWinUI.GlyphName.SDCard);
-                userType.AddEnumValue("CallForwarding", global::DevWinUI.GlyphName.CallForwarding);
-                userType.AddEnumValue("SettingsDisplaySound", global::DevWinUI.GlyphName.SettingsDisplaySound);
-                userType.AddEnumValue("TVMonitor", global::DevWinUI.GlyphName.TVMonitor);
-                userType.AddEnumValue("Speakers", global::DevWinUI.GlyphName.Speakers);
-                userType.AddEnumValue("Headphone", global::DevWinUI.GlyphName.Headphone);
-                userType.AddEnumValue("DeviceLaptopPic", global::DevWinUI.GlyphName.DeviceLaptopPic);
-                userType.AddEnumValue("DeviceLaptopNoPic", global::DevWinUI.GlyphName.DeviceLaptopNoPic);
-                userType.AddEnumValue("DeviceMonitorRightPic", global::DevWinUI.GlyphName.DeviceMonitorRightPic);
-                userType.AddEnumValue("DeviceMonitorLeftPic", global::DevWinUI.GlyphName.DeviceMonitorLeftPic);
-                userType.AddEnumValue("DeviceMonitorNoPic", global::DevWinUI.GlyphName.DeviceMonitorNoPic);
-                userType.AddEnumValue("Game", global::DevWinUI.GlyphName.Game);
-                userType.AddEnumValue("HorizontalTabKey", global::DevWinUI.GlyphName.HorizontalTabKey);
-                userType.AddEnumValue("StreetsideSplitMinimize", global::DevWinUI.GlyphName.StreetsideSplitMinimize);
-                userType.AddEnumValue("StreetsideSplitExpand", global::DevWinUI.GlyphName.StreetsideSplitExpand);
-                userType.AddEnumValue("Car", global::DevWinUI.GlyphName.Car);
-                userType.AddEnumValue("Walk", global::DevWinUI.GlyphName.Walk);
-                userType.AddEnumValue("Bus", global::DevWinUI.GlyphName.Bus);
-                userType.AddEnumValue("TiltUp", global::DevWinUI.GlyphName.TiltUp);
-                userType.AddEnumValue("TiltDown", global::DevWinUI.GlyphName.TiltDown);
-                userType.AddEnumValue("CallControl", global::DevWinUI.GlyphName.CallControl);
-                userType.AddEnumValue("RotateMapRight", global::DevWinUI.GlyphName.RotateMapRight);
-                userType.AddEnumValue("RotateMapLeft", global::DevWinUI.GlyphName.RotateMapLeft);
-                userType.AddEnumValue("Home", global::DevWinUI.GlyphName.Home);
-                userType.AddEnumValue("ParkingLocation", global::DevWinUI.GlyphName.ParkingLocation);
-                userType.AddEnumValue("MapCompassTop", global::DevWinUI.GlyphName.MapCompassTop);
-                userType.AddEnumValue("MapCompassBottom", global::DevWinUI.GlyphName.MapCompassBottom);
-                userType.AddEnumValue("IncidentTriangle", global::DevWinUI.GlyphName.IncidentTriangle);
-                userType.AddEnumValue("Touch", global::DevWinUI.GlyphName.Touch);
-                userType.AddEnumValue("MapDirections", global::DevWinUI.GlyphName.MapDirections);
-                userType.AddEnumValue("StartPoint", global::DevWinUI.GlyphName.StartPoint);
-                userType.AddEnumValue("StopPoint", global::DevWinUI.GlyphName.StopPoint);
-                userType.AddEnumValue("EndPoint", global::DevWinUI.GlyphName.EndPoint);
-                userType.AddEnumValue("History", global::DevWinUI.GlyphName.History);
-                userType.AddEnumValue("Location", global::DevWinUI.GlyphName.Location);
-                userType.AddEnumValue("MapLayers", global::DevWinUI.GlyphName.MapLayers);
-                userType.AddEnumValue("Accident", global::DevWinUI.GlyphName.Accident);
-                userType.AddEnumValue("Work", global::DevWinUI.GlyphName.Work);
-                userType.AddEnumValue("Construction", global::DevWinUI.GlyphName.Construction);
-                userType.AddEnumValue("Recent", global::DevWinUI.GlyphName.Recent);
-                userType.AddEnumValue("Bank", global::DevWinUI.GlyphName.Bank);
-                userType.AddEnumValue("DownloadMap", global::DevWinUI.GlyphName.DownloadMap);
-                userType.AddEnumValue("InkingToolFill2", global::DevWinUI.GlyphName.InkingToolFill2);
-                userType.AddEnumValue("HighlightFill2", global::DevWinUI.GlyphName.HighlightFill2);
-                userType.AddEnumValue("EraseToolFill", global::DevWinUI.GlyphName.EraseToolFill);
-                userType.AddEnumValue("EraseToolFill2", global::DevWinUI.GlyphName.EraseToolFill2);
-                userType.AddEnumValue("Dictionary", global::DevWinUI.GlyphName.Dictionary);
-                userType.AddEnumValue("DictionaryAdd", global::DevWinUI.GlyphName.DictionaryAdd);
-                userType.AddEnumValue("ToolTip", global::DevWinUI.GlyphName.ToolTip);
-                userType.AddEnumValue("ChromeBack", global::DevWinUI.GlyphName.ChromeBack);
-                userType.AddEnumValue("ProvisioningPackage", global::DevWinUI.GlyphName.ProvisioningPackage);
-                userType.AddEnumValue("AddRemoteDevice", global::DevWinUI.GlyphName.AddRemoteDevice);
-                userType.AddEnumValue("FolderOpen", global::DevWinUI.GlyphName.FolderOpen);
-                userType.AddEnumValue("Ethernet", global::DevWinUI.GlyphName.Ethernet);
-                userType.AddEnumValue("ShareBroadband", global::DevWinUI.GlyphName.ShareBroadband);
-                userType.AddEnumValue("DirectAccess", global::DevWinUI.GlyphName.DirectAccess);
-                userType.AddEnumValue("DialUp", global::DevWinUI.GlyphName.DialUp);
-                userType.AddEnumValue("DefenderApp", global::DevWinUI.GlyphName.DefenderApp);
-                userType.AddEnumValue("BatteryCharging9", global::DevWinUI.GlyphName.BatteryCharging9);
-                userType.AddEnumValue("Battery10", global::DevWinUI.GlyphName.Battery10);
-                userType.AddEnumValue("Pinned", global::DevWinUI.GlyphName.Pinned);
-                userType.AddEnumValue("PinFill", global::DevWinUI.GlyphName.PinFill);
-                userType.AddEnumValue("PinnedFill", global::DevWinUI.GlyphName.PinnedFill);
-                userType.AddEnumValue("PeriodKey", global::DevWinUI.GlyphName.PeriodKey);
-                userType.AddEnumValue("PuncKey", global::DevWinUI.GlyphName.PuncKey);
-                userType.AddEnumValue("RevToggleKey", global::DevWinUI.GlyphName.RevToggleKey);
-                userType.AddEnumValue("RightArrowKeyTime1", global::DevWinUI.GlyphName.RightArrowKeyTime1);
-                userType.AddEnumValue("RightArrowKeyTime2", global::DevWinUI.GlyphName.RightArrowKeyTime2);
-                userType.AddEnumValue("LeftQuote", global::DevWinUI.GlyphName.LeftQuote);
-                userType.AddEnumValue("RightQuote", global::DevWinUI.GlyphName.RightQuote);
-                userType.AddEnumValue("DownShiftKey", global::DevWinUI.GlyphName.DownShiftKey);
-                userType.AddEnumValue("UpShiftKey", global::DevWinUI.GlyphName.UpShiftKey);
-                userType.AddEnumValue("PuncKey0", global::DevWinUI.GlyphName.PuncKey0);
-                userType.AddEnumValue("PuncKeyLeftBottom", global::DevWinUI.GlyphName.PuncKeyLeftBottom);
-                userType.AddEnumValue("RightArrowKeyTime3", global::DevWinUI.GlyphName.RightArrowKeyTime3);
-                userType.AddEnumValue("RightArrowKeyTime4", global::DevWinUI.GlyphName.RightArrowKeyTime4);
-                userType.AddEnumValue("Battery0", global::DevWinUI.GlyphName.Battery0);
-                userType.AddEnumValue("Battery1", global::DevWinUI.GlyphName.Battery1);
-                userType.AddEnumValue("Battery2", global::DevWinUI.GlyphName.Battery2);
-                userType.AddEnumValue("Battery3", global::DevWinUI.GlyphName.Battery3);
-                userType.AddEnumValue("Battery4", global::DevWinUI.GlyphName.Battery4);
-                userType.AddEnumValue("Battery5", global::DevWinUI.GlyphName.Battery5);
-                userType.AddEnumValue("Battery6", global::DevWinUI.GlyphName.Battery6);
-                userType.AddEnumValue("Battery7", global::DevWinUI.GlyphName.Battery7);
-                userType.AddEnumValue("Battery8", global::DevWinUI.GlyphName.Battery8);
-                userType.AddEnumValue("Battery9", global::DevWinUI.GlyphName.Battery9);
-                userType.AddEnumValue("BatteryCharging0", global::DevWinUI.GlyphName.BatteryCharging0);
-                userType.AddEnumValue("BatteryCharging1", global::DevWinUI.GlyphName.BatteryCharging1);
-                userType.AddEnumValue("BatteryCharging2", global::DevWinUI.GlyphName.BatteryCharging2);
-                userType.AddEnumValue("BatteryCharging3", global::DevWinUI.GlyphName.BatteryCharging3);
-                userType.AddEnumValue("BatteryCharging4", global::DevWinUI.GlyphName.BatteryCharging4);
-                userType.AddEnumValue("BatteryCharging5", global::DevWinUI.GlyphName.BatteryCharging5);
-                userType.AddEnumValue("BatteryCharging6", global::DevWinUI.GlyphName.BatteryCharging6);
-                userType.AddEnumValue("BatteryCharging7", global::DevWinUI.GlyphName.BatteryCharging7);
-                userType.AddEnumValue("BatteryCharging8", global::DevWinUI.GlyphName.BatteryCharging8);
-                userType.AddEnumValue("BatterySaver0", global::DevWinUI.GlyphName.BatterySaver0);
-                userType.AddEnumValue("BatterySaver1", global::DevWinUI.GlyphName.BatterySaver1);
-                userType.AddEnumValue("BatterySaver2", global::DevWinUI.GlyphName.BatterySaver2);
-                userType.AddEnumValue("BatterySaver3", global::DevWinUI.GlyphName.BatterySaver3);
-                userType.AddEnumValue("BatterySaver4", global::DevWinUI.GlyphName.BatterySaver4);
-                userType.AddEnumValue("BatterySaver5", global::DevWinUI.GlyphName.BatterySaver5);
-                userType.AddEnumValue("BatterySaver6", global::DevWinUI.GlyphName.BatterySaver6);
-                userType.AddEnumValue("BatterySaver7", global::DevWinUI.GlyphName.BatterySaver7);
-                userType.AddEnumValue("BatterySaver8", global::DevWinUI.GlyphName.BatterySaver8);
-                userType.AddEnumValue("SignalBars1", global::DevWinUI.GlyphName.SignalBars1);
-                userType.AddEnumValue("SignalBars2", global::DevWinUI.GlyphName.SignalBars2);
-                userType.AddEnumValue("SignalBars3", global::DevWinUI.GlyphName.SignalBars3);
-                userType.AddEnumValue("SignalBars4", global::DevWinUI.GlyphName.SignalBars4);
-                userType.AddEnumValue("SignalBars5", global::DevWinUI.GlyphName.SignalBars5);
-                userType.AddEnumValue("SignalNotConnected", global::DevWinUI.GlyphName.SignalNotConnected);
-                userType.AddEnumValue("Wifi1", global::DevWinUI.GlyphName.Wifi1);
-                userType.AddEnumValue("Wifi2", global::DevWinUI.GlyphName.Wifi2);
-                userType.AddEnumValue("Wifi3", global::DevWinUI.GlyphName.Wifi3);
-                userType.AddEnumValue("MobSIMLock", global::DevWinUI.GlyphName.MobSIMLock);
-                userType.AddEnumValue("MobSIMMissing", global::DevWinUI.GlyphName.MobSIMMissing);
-                userType.AddEnumValue("Vibrate", global::DevWinUI.GlyphName.Vibrate);
-                userType.AddEnumValue("RoamingInternational", global::DevWinUI.GlyphName.RoamingInternational);
-                userType.AddEnumValue("RoamingDomestic", global::DevWinUI.GlyphName.RoamingDomestic);
-                userType.AddEnumValue("CallForwardInternational", global::DevWinUI.GlyphName.CallForwardInternational);
-                userType.AddEnumValue("CallForwardRoaming", global::DevWinUI.GlyphName.CallForwardRoaming);
-                userType.AddEnumValue("JpnRomanji", global::DevWinUI.GlyphName.JpnRomanji);
-                userType.AddEnumValue("JpnRomanjiLock", global::DevWinUI.GlyphName.JpnRomanjiLock);
-                userType.AddEnumValue("JpnRomanjiShift", global::DevWinUI.GlyphName.JpnRomanjiShift);
-                userType.AddEnumValue("JpnRomanjiShiftLock", global::DevWinUI.GlyphName.JpnRomanjiShiftLock);
-                userType.AddEnumValue("StatusDataTransfer", global::DevWinUI.GlyphName.StatusDataTransfer);
-                userType.AddEnumValue("StatusDataTransferVPN", global::DevWinUI.GlyphName.StatusDataTransferVPN);
-                userType.AddEnumValue("StatusDualSIM2", global::DevWinUI.GlyphName.StatusDualSIM2);
-                userType.AddEnumValue("StatusDualSIM2VPN", global::DevWinUI.GlyphName.StatusDualSIM2VPN);
-                userType.AddEnumValue("StatusDualSIM1", global::DevWinUI.GlyphName.StatusDualSIM1);
-                userType.AddEnumValue("StatusDualSIM1VPN", global::DevWinUI.GlyphName.StatusDualSIM1VPN);
-                userType.AddEnumValue("StatusSGLTE", global::DevWinUI.GlyphName.StatusSGLTE);
-                userType.AddEnumValue("StatusSGLTECell", global::DevWinUI.GlyphName.StatusSGLTECell);
-                userType.AddEnumValue("StatusSGLTEDataVPN", global::DevWinUI.GlyphName.StatusSGLTEDataVPN);
-                userType.AddEnumValue("StatusVPN", global::DevWinUI.GlyphName.StatusVPN);
-                userType.AddEnumValue("WifiHotspot", global::DevWinUI.GlyphName.WifiHotspot);
-                userType.AddEnumValue("LanguageKor", global::DevWinUI.GlyphName.LanguageKor);
-                userType.AddEnumValue("LanguageCht", global::DevWinUI.GlyphName.LanguageCht);
-                userType.AddEnumValue("LanguageChs", global::DevWinUI.GlyphName.LanguageChs);
-                userType.AddEnumValue("USB", global::DevWinUI.GlyphName.USB);
-                userType.AddEnumValue("InkingToolFill", global::DevWinUI.GlyphName.InkingToolFill);
-                userType.AddEnumValue("View", global::DevWinUI.GlyphName.View);
-                userType.AddEnumValue("HighlightFill", global::DevWinUI.GlyphName.HighlightFill);
-                userType.AddEnumValue("Previous", global::DevWinUI.GlyphName.Previous);
-                userType.AddEnumValue("Next", global::DevWinUI.GlyphName.Next);
-                userType.AddEnumValue("Clear", global::DevWinUI.GlyphName.Clear);
-                userType.AddEnumValue("Sync", global::DevWinUI.GlyphName.Sync);
-                userType.AddEnumValue("Download", global::DevWinUI.GlyphName.Download);
-                userType.AddEnumValue("Help", global::DevWinUI.GlyphName.Help);
-                userType.AddEnumValue("Upload", global::DevWinUI.GlyphName.Upload);
-                userType.AddEnumValue("Emoji", global::DevWinUI.GlyphName.Emoji);
-                userType.AddEnumValue("TwoPage", global::DevWinUI.GlyphName.TwoPage);
-                userType.AddEnumValue("LeaveChat", global::DevWinUI.GlyphName.LeaveChat);
-                userType.AddEnumValue("MailForward", global::DevWinUI.GlyphName.MailForward);
-                userType.AddEnumValue("RotateCamera", global::DevWinUI.GlyphName.RotateCamera);
-                userType.AddEnumValue("ClosePane", global::DevWinUI.GlyphName.ClosePane);
-                userType.AddEnumValue("OpenPane", global::DevWinUI.GlyphName.OpenPane);
-                userType.AddEnumValue("PreviewLink", global::DevWinUI.GlyphName.PreviewLink);
-                userType.AddEnumValue("AttachCamera", global::DevWinUI.GlyphName.AttachCamera);
-                userType.AddEnumValue("ZoomIn", global::DevWinUI.GlyphName.ZoomIn);
-                userType.AddEnumValue("Bookmarks", global::DevWinUI.GlyphName.Bookmarks);
-                userType.AddEnumValue("Document", global::DevWinUI.GlyphName.Document);
-                userType.AddEnumValue("ProtectedDocument", global::DevWinUI.GlyphName.ProtectedDocument);
-                userType.AddEnumValue("OpenInNewWindow", global::DevWinUI.GlyphName.OpenInNewWindow);
-                userType.AddEnumValue("MailFill", global::DevWinUI.GlyphName.MailFill);
-                userType.AddEnumValue("ViewAll", global::DevWinUI.GlyphName.ViewAll);
-                userType.AddEnumValue("VideoChat", global::DevWinUI.GlyphName.VideoChat);
-                userType.AddEnumValue("Switch", global::DevWinUI.GlyphName.Switch);
-                userType.AddEnumValue("Rename", global::DevWinUI.GlyphName.Rename);
-                userType.AddEnumValue("Go", global::DevWinUI.GlyphName.Go);
-                userType.AddEnumValue("SurfaceHub", global::DevWinUI.GlyphName.SurfaceHub);
-                userType.AddEnumValue("Remote", global::DevWinUI.GlyphName.Remote);
-                userType.AddEnumValue("Click", global::DevWinUI.GlyphName.Click);
-                userType.AddEnumValue("Shuffle", global::DevWinUI.GlyphName.Shuffle);
-                userType.AddEnumValue("Movies", global::DevWinUI.GlyphName.Movies);
-                userType.AddEnumValue("SelectAll", global::DevWinUI.GlyphName.SelectAll);
-                userType.AddEnumValue("Orientation", global::DevWinUI.GlyphName.Orientation);
-                userType.AddEnumValue("Import", global::DevWinUI.GlyphName.Import);
-                userType.AddEnumValue("ImportAll", global::DevWinUI.GlyphName.ImportAll);
-                userType.AddEnumValue("Folder", global::DevWinUI.GlyphName.Folder);
-                userType.AddEnumValue("Webcam", global::DevWinUI.GlyphName.Webcam);
-                userType.AddEnumValue("Picture", global::DevWinUI.GlyphName.Picture);
-                userType.AddEnumValue("Caption", global::DevWinUI.GlyphName.Caption);
-                userType.AddEnumValue("ChromeClose", global::DevWinUI.GlyphName.ChromeClose);
-                userType.AddEnumValue("ShowResults", global::DevWinUI.GlyphName.ShowResults);
-                userType.AddEnumValue("Message", global::DevWinUI.GlyphName.Message);
-                userType.AddEnumValue("Leaf", global::DevWinUI.GlyphName.Leaf);
-                userType.AddEnumValue("CalendarDay", global::DevWinUI.GlyphName.CalendarDay);
-                userType.AddEnumValue("CalendarWeek", global::DevWinUI.GlyphName.CalendarWeek);
-                userType.AddEnumValue("Characters", global::DevWinUI.GlyphName.Characters);
-                userType.AddEnumValue("MailReplyAll", global::DevWinUI.GlyphName.MailReplyAll);
-                userType.AddEnumValue("Read", global::DevWinUI.GlyphName.Read);
-                userType.AddEnumValue("ShowBcc", global::DevWinUI.GlyphName.ShowBcc);
-                userType.AddEnumValue("HideBcc", global::DevWinUI.GlyphName.HideBcc);
-                userType.AddEnumValue("Cut", global::DevWinUI.GlyphName.Cut);
-                userType.AddEnumValue("PaymentCard", global::DevWinUI.GlyphName.PaymentCard);
-                userType.AddEnumValue("Copy", global::DevWinUI.GlyphName.Copy);
-                userType.AddEnumValue("Important", global::DevWinUI.GlyphName.Important);
-                userType.AddEnumValue("MailReply", global::DevWinUI.GlyphName.MailReply);
-                userType.AddEnumValue("Sort", global::DevWinUI.GlyphName.Sort);
-                userType.AddEnumValue("MobileTablet", global::DevWinUI.GlyphName.MobileTablet);
-                userType.AddEnumValue("DisconnectDrive", global::DevWinUI.GlyphName.DisconnectDrive);
-                userType.AddEnumValue("MapDrive", global::DevWinUI.GlyphName.MapDrive);
-                userType.AddEnumValue("ContactPresence", global::DevWinUI.GlyphName.ContactPresence);
-                userType.AddEnumValue("Priority", global::DevWinUI.GlyphName.Priority);
-                userType.AddEnumValue("GotoToday", global::DevWinUI.GlyphName.GotoToday);
-                userType.AddEnumValue("Font", global::DevWinUI.GlyphName.Font);
-                userType.AddEnumValue("FontColor", global::DevWinUI.GlyphName.FontColor);
-                userType.AddEnumValue("Contact2", global::DevWinUI.GlyphName.Contact2);
-                userType.AddEnumValue("FolderFill", global::DevWinUI.GlyphName.FolderFill);
-                userType.AddEnumValue("Audio", global::DevWinUI.GlyphName.Audio);
-                userType.AddEnumValue("Permissions", global::DevWinUI.GlyphName.Permissions);
-                userType.AddEnumValue("DisableUpdates", global::DevWinUI.GlyphName.DisableUpdates);
-                userType.AddEnumValue("Unfavorite", global::DevWinUI.GlyphName.Unfavorite);
-                userType.AddEnumValue("OpenLocal", global::DevWinUI.GlyphName.OpenLocal);
-                userType.AddEnumValue("Italic", global::DevWinUI.GlyphName.Italic);
-                userType.AddEnumValue("Underline", global::DevWinUI.GlyphName.Underline);
-                userType.AddEnumValue("Bold", global::DevWinUI.GlyphName.Bold);
-                userType.AddEnumValue("MoveToFolder", global::DevWinUI.GlyphName.MoveToFolder);
-                userType.AddEnumValue("LikeDislike", global::DevWinUI.GlyphName.LikeDislike);
-                userType.AddEnumValue("Dislike", global::DevWinUI.GlyphName.Dislike);
-                userType.AddEnumValue("Like", global::DevWinUI.GlyphName.Like);
-                userType.AddEnumValue("AlignRight", global::DevWinUI.GlyphName.AlignRight);
-                userType.AddEnumValue("AlignCenter", global::DevWinUI.GlyphName.AlignCenter);
-                userType.AddEnumValue("AlignLeft", global::DevWinUI.GlyphName.AlignLeft);
-                userType.AddEnumValue("OpenFile", global::DevWinUI.GlyphName.OpenFile);
-                userType.AddEnumValue("ClearSelection", global::DevWinUI.GlyphName.ClearSelection);
-                userType.AddEnumValue("FontDecrease", global::DevWinUI.GlyphName.FontDecrease);
-                userType.AddEnumValue("FontIncrease", global::DevWinUI.GlyphName.FontIncrease);
-                userType.AddEnumValue("FontSize", global::DevWinUI.GlyphName.FontSize);
-                userType.AddEnumValue("CellPhone", global::DevWinUI.GlyphName.CellPhone);
-                userType.AddEnumValue("Reshare", global::DevWinUI.GlyphName.Reshare);
-                userType.AddEnumValue("Tag", global::DevWinUI.GlyphName.Tag);
-                userType.AddEnumValue("RepeatOne", global::DevWinUI.GlyphName.RepeatOne);
-                userType.AddEnumValue("RepeatAll", global::DevWinUI.GlyphName.RepeatAll);
-                userType.AddEnumValue("Calculator", global::DevWinUI.GlyphName.Calculator);
-                userType.AddEnumValue("Directions", global::DevWinUI.GlyphName.Directions);
-                userType.AddEnumValue("Library", global::DevWinUI.GlyphName.Library);
-                userType.AddEnumValue("ChatBubbles", global::DevWinUI.GlyphName.ChatBubbles);
-                userType.AddEnumValue("PostUpdate", global::DevWinUI.GlyphName.PostUpdate);
-                userType.AddEnumValue("NewFolder", global::DevWinUI.GlyphName.NewFolder);
-                userType.AddEnumValue("CalendarReply", global::DevWinUI.GlyphName.CalendarReply);
-                userType.AddEnumValue("UnsyncFolder", global::DevWinUI.GlyphName.UnsyncFolder);
-                userType.AddEnumValue("SyncFolder", global::DevWinUI.GlyphName.SyncFolder);
-                userType.AddEnumValue("BlockContact", global::DevWinUI.GlyphName.BlockContact);
-                userType.AddEnumValue("SwitchApps", global::DevWinUI.GlyphName.SwitchApps);
-                userType.AddEnumValue("AddFriend", global::DevWinUI.GlyphName.AddFriend);
-                userType.AddEnumValue("Accept", global::DevWinUI.GlyphName.Accept);
-                userType.AddEnumValue("GoToStart", global::DevWinUI.GlyphName.GoToStart);
-                userType.AddEnumValue("BulletedList", global::DevWinUI.GlyphName.BulletedList);
-                userType.AddEnumValue("Scan", global::DevWinUI.GlyphName.Scan);
-                userType.AddEnumValue("Preview", global::DevWinUI.GlyphName.Preview);
-                userType.AddEnumValue("Group", global::DevWinUI.GlyphName.Group);
-                userType.AddEnumValue("ZeroBars", global::DevWinUI.GlyphName.ZeroBars);
-                userType.AddEnumValue("OneBar", global::DevWinUI.GlyphName.OneBar);
-                userType.AddEnumValue("TwoBars", global::DevWinUI.GlyphName.TwoBars);
-                userType.AddEnumValue("ThreeBars", global::DevWinUI.GlyphName.ThreeBars);
-                userType.AddEnumValue("FourBars", global::DevWinUI.GlyphName.FourBars);
-                userType.AddEnumValue("World", global::DevWinUI.GlyphName.World);
-                userType.AddEnumValue("Comment", global::DevWinUI.GlyphName.Comment);
-                userType.AddEnumValue("MusicInfo", global::DevWinUI.GlyphName.MusicInfo);
-                userType.AddEnumValue("DockLeft", global::DevWinUI.GlyphName.DockLeft);
-                userType.AddEnumValue("DockRight", global::DevWinUI.GlyphName.DockRight);
-                userType.AddEnumValue("DockBottom", global::DevWinUI.GlyphName.DockBottom);
-                userType.AddEnumValue("Repair", global::DevWinUI.GlyphName.Repair);
-                userType.AddEnumValue("Accounts", global::DevWinUI.GlyphName.Accounts);
-                userType.AddEnumValue("DullSound", global::DevWinUI.GlyphName.DullSound);
-                userType.AddEnumValue("Manage", global::DevWinUI.GlyphName.Manage);
-                userType.AddEnumValue("Street", global::DevWinUI.GlyphName.Street);
-                userType.AddEnumValue("Printer3D", global::DevWinUI.GlyphName.Printer3D);
-                userType.AddEnumValue("RadioBullet", global::DevWinUI.GlyphName.RadioBullet);
-                userType.AddEnumValue("Stopwatch", global::DevWinUI.GlyphName.Stopwatch);
-                userType.AddEnumValue("Photo", global::DevWinUI.GlyphName.Photo);
-                userType.AddEnumValue("ActionCenter", global::DevWinUI.GlyphName.ActionCenter);
-                userType.AddEnumValue("FullCircleMask", global::DevWinUI.GlyphName.FullCircleMask);
-                userType.AddEnumValue("ChromeMinimize", global::DevWinUI.GlyphName.ChromeMinimize);
-                userType.AddEnumValue("ChromeMaximize", global::DevWinUI.GlyphName.ChromeMaximize);
-                userType.AddEnumValue("ChromeRestore", global::DevWinUI.GlyphName.ChromeRestore);
-                userType.AddEnumValue("Annotation", global::DevWinUI.GlyphName.Annotation);
-                userType.AddEnumValue("BackSpaceQWERTYSm", global::DevWinUI.GlyphName.BackSpaceQWERTYSm);
-                userType.AddEnumValue("BackSpaceQWERTYMd", global::DevWinUI.GlyphName.BackSpaceQWERTYMd);
-                userType.AddEnumValue("Swipe", global::DevWinUI.GlyphName.Swipe);
-                userType.AddEnumValue("Fingerprint", global::DevWinUI.GlyphName.Fingerprint);
-                userType.AddEnumValue("Handwriting", global::DevWinUI.GlyphName.Handwriting);
-                userType.AddEnumValue("ChromeBackToWindow", global::DevWinUI.GlyphName.ChromeBackToWindow);
-                userType.AddEnumValue("ChromeFullScreen", global::DevWinUI.GlyphName.ChromeFullScreen);
-                userType.AddEnumValue("KeyboardStandard", global::DevWinUI.GlyphName.KeyboardStandard);
-                userType.AddEnumValue("KeyboardDismiss", global::DevWinUI.GlyphName.KeyboardDismiss);
-                userType.AddEnumValue("Completed", global::DevWinUI.GlyphName.Completed);
-                userType.AddEnumValue("ChromeAnnotate", global::DevWinUI.GlyphName.ChromeAnnotate);
-                userType.AddEnumValue("Label", global::DevWinUI.GlyphName.Label);
-                userType.AddEnumValue("IBeam", global::DevWinUI.GlyphName.IBeam);
-                userType.AddEnumValue("IBeamOutline", global::DevWinUI.GlyphName.IBeamOutline);
-                userType.AddEnumValue("FlickDown", global::DevWinUI.GlyphName.FlickDown);
-                userType.AddEnumValue("FlickUp", global::DevWinUI.GlyphName.FlickUp);
-                userType.AddEnumValue("FlickLeft", global::DevWinUI.GlyphName.FlickLeft);
-                userType.AddEnumValue("FlickRight", global::DevWinUI.GlyphName.FlickRight);
-                userType.AddEnumValue("FeedbackApp", global::DevWinUI.GlyphName.FeedbackApp);
-                userType.AddEnumValue("MusicAlbum", global::DevWinUI.GlyphName.MusicAlbum);
-                userType.AddEnumValue("Streaming", global::DevWinUI.GlyphName.Streaming);
-                userType.AddEnumValue("Code", global::DevWinUI.GlyphName.Code);
-                userType.AddEnumValue("ReturnToWindow", global::DevWinUI.GlyphName.ReturnToWindow);
-                userType.AddEnumValue("LightningBolt", global::DevWinUI.GlyphName.LightningBolt);
-                userType.AddEnumValue("Info", global::DevWinUI.GlyphName.Info);
-                userType.AddEnumValue("CalculatorMultiply", global::DevWinUI.GlyphName.CalculatorMultiply);
-                userType.AddEnumValue("CalculatorAddition", global::DevWinUI.GlyphName.CalculatorAddition);
-                userType.AddEnumValue("CalculatorSubtract", global::DevWinUI.GlyphName.CalculatorSubtract);
-                userType.AddEnumValue("CalculatorDivide", global::DevWinUI.GlyphName.CalculatorDivide);
-                userType.AddEnumValue("CalculatorSquareroot", global::DevWinUI.GlyphName.CalculatorSquareroot);
-                userType.AddEnumValue("CalculatorPercentage", global::DevWinUI.GlyphName.CalculatorPercentage);
-                userType.AddEnumValue("CalculatorNegate", global::DevWinUI.GlyphName.CalculatorNegate);
-                userType.AddEnumValue("CalculatorEqualTo", global::DevWinUI.GlyphName.CalculatorEqualTo);
-                userType.AddEnumValue("CalculatorBackspace", global::DevWinUI.GlyphName.CalculatorBackspace);
-                userType.AddEnumValue("Component", global::DevWinUI.GlyphName.Component);
-                userType.AddEnumValue("DMC", global::DevWinUI.GlyphName.DMC);
-                userType.AddEnumValue("Dock", global::DevWinUI.GlyphName.Dock);
-                userType.AddEnumValue("MultimediaDMS", global::DevWinUI.GlyphName.MultimediaDMS);
-                userType.AddEnumValue("MultimediaDVR", global::DevWinUI.GlyphName.MultimediaDVR);
-                userType.AddEnumValue("MultimediaPMP", global::DevWinUI.GlyphName.MultimediaPMP);
-                userType.AddEnumValue("PrintfaxPrinterFile", global::DevWinUI.GlyphName.PrintfaxPrinterFile);
-                userType.AddEnumValue("Sensor", global::DevWinUI.GlyphName.Sensor);
-                userType.AddEnumValue("StorageOptical", global::DevWinUI.GlyphName.StorageOptical);
-                userType.AddEnumValue("Communications", global::DevWinUI.GlyphName.Communications);
-                userType.AddEnumValue("Headset", global::DevWinUI.GlyphName.Headset);
-                userType.AddEnumValue("Projector", global::DevWinUI.GlyphName.Projector);
-                userType.AddEnumValue("Health", global::DevWinUI.GlyphName.Health);
-                userType.AddEnumValue("Wire", global::DevWinUI.GlyphName.Wire);
-                userType.AddEnumValue("Webcam2", global::DevWinUI.GlyphName.Webcam2);
-                userType.AddEnumValue("Input", global::DevWinUI.GlyphName.Input);
-                userType.AddEnumValue("Mouse", global::DevWinUI.GlyphName.Mouse);
-                userType.AddEnumValue("Smartcard", global::DevWinUI.GlyphName.Smartcard);
-                userType.AddEnumValue("SmartcardVirtual", global::DevWinUI.GlyphName.SmartcardVirtual);
-                userType.AddEnumValue("MediaStorageTower", global::DevWinUI.GlyphName.MediaStorageTower);
-                userType.AddEnumValue("ReturnKeySm", global::DevWinUI.GlyphName.ReturnKeySm);
-                userType.AddEnumValue("GameConsole", global::DevWinUI.GlyphName.GameConsole);
-                userType.AddEnumValue("Network", global::DevWinUI.GlyphName.Network);
-                userType.AddEnumValue("StorageNetworkWireless", global::DevWinUI.GlyphName.StorageNetworkWireless);
-                userType.AddEnumValue("StorageTape", global::DevWinUI.GlyphName.StorageTape);
-                userType.AddEnumValue("ChevronUpSmall", global::DevWinUI.GlyphName.ChevronUpSmall);
-                userType.AddEnumValue("ChevronDownSmall", global::DevWinUI.GlyphName.ChevronDownSmall);
-                userType.AddEnumValue("ChevronLeftSmall", global::DevWinUI.GlyphName.ChevronLeftSmall);
-                userType.AddEnumValue("ChevronRightSmall", global::DevWinUI.GlyphName.ChevronRightSmall);
-                userType.AddEnumValue("ChevronUpMed", global::DevWinUI.GlyphName.ChevronUpMed);
-                userType.AddEnumValue("ChevronDownMed", global::DevWinUI.GlyphName.ChevronDownMed);
-                userType.AddEnumValue("ChevronLeftMed", global::DevWinUI.GlyphName.ChevronLeftMed);
-                userType.AddEnumValue("ChevronRightMed", global::DevWinUI.GlyphName.ChevronRightMed);
-                userType.AddEnumValue("Devices2", global::DevWinUI.GlyphName.Devices2);
-                userType.AddEnumValue("ExpandTile", global::DevWinUI.GlyphName.ExpandTile);
-                userType.AddEnumValue("PC1", global::DevWinUI.GlyphName.PC1);
-                userType.AddEnumValue("PresenceChicklet", global::DevWinUI.GlyphName.PresenceChicklet);
-                userType.AddEnumValue("PresenceChickletVideo", global::DevWinUI.GlyphName.PresenceChickletVideo);
-                userType.AddEnumValue("Reply", global::DevWinUI.GlyphName.Reply);
-                userType.AddEnumValue("SetTile", global::DevWinUI.GlyphName.SetTile);
-                userType.AddEnumValue("Type", global::DevWinUI.GlyphName.Type);
-                userType.AddEnumValue("Korean", global::DevWinUI.GlyphName.Korean);
-                userType.AddEnumValue("HalfAlpha", global::DevWinUI.GlyphName.HalfAlpha);
-                userType.AddEnumValue("FullAlpha", global::DevWinUI.GlyphName.FullAlpha);
-                userType.AddEnumValue("Key12On", global::DevWinUI.GlyphName.Key12On);
-                userType.AddEnumValue("ChineseChangjie", global::DevWinUI.GlyphName.ChineseChangjie);
-                userType.AddEnumValue("QWERTYOn", global::DevWinUI.GlyphName.QWERTYOn);
-                userType.AddEnumValue("QWERTYOff", global::DevWinUI.GlyphName.QWERTYOff);
-                userType.AddEnumValue("ChineseQuick", global::DevWinUI.GlyphName.ChineseQuick);
-                userType.AddEnumValue("Japanese", global::DevWinUI.GlyphName.Japanese);
-                userType.AddEnumValue("FullHiragana", global::DevWinUI.GlyphName.FullHiragana);
-                userType.AddEnumValue("FullKatakana", global::DevWinUI.GlyphName.FullKatakana);
-                userType.AddEnumValue("HalfKatakana", global::DevWinUI.GlyphName.HalfKatakana);
-                userType.AddEnumValue("ChineseBoPoMoFo", global::DevWinUI.GlyphName.ChineseBoPoMoFo);
-                userType.AddEnumValue("ChinesePinyin", global::DevWinUI.GlyphName.ChinesePinyin);
-                userType.AddEnumValue("ConstructionCone", global::DevWinUI.GlyphName.ConstructionCone);
-                userType.AddEnumValue("XboxOneConsole", global::DevWinUI.GlyphName.XboxOneConsole);
-                userType.AddEnumValue("Volume0", global::DevWinUI.GlyphName.Volume0);
-                userType.AddEnumValue("Volume1", global::DevWinUI.GlyphName.Volume1);
-                userType.AddEnumValue("Volume2", global::DevWinUI.GlyphName.Volume2);
-                userType.AddEnumValue("Volume3", global::DevWinUI.GlyphName.Volume3);
-                userType.AddEnumValue("BatteryUnknown", global::DevWinUI.GlyphName.BatteryUnknown);
-                userType.AddEnumValue("WifiAttentionOverlay", global::DevWinUI.GlyphName.WifiAttentionOverlay);
-                userType.AddEnumValue("Robot", global::DevWinUI.GlyphName.Robot);
-                userType.AddEnumValue("TapAndSend", global::DevWinUI.GlyphName.TapAndSend);
-                userType.AddEnumValue("FitPage", global::DevWinUI.GlyphName.FitPage);
-                userType.AddEnumValue("PasswordKeyShow", global::DevWinUI.GlyphName.PasswordKeyShow);
-                userType.AddEnumValue("PasswordKeyHide", global::DevWinUI.GlyphName.PasswordKeyHide);
-                userType.AddEnumValue("BidiLtr", global::DevWinUI.GlyphName.BidiLtr);
-                userType.AddEnumValue("BidiRtl", global::DevWinUI.GlyphName.BidiRtl);
-                userType.AddEnumValue("ForwardSm", global::DevWinUI.GlyphName.ForwardSm);
-                userType.AddEnumValue("CommaKey", global::DevWinUI.GlyphName.CommaKey);
-                userType.AddEnumValue("DashKey", global::DevWinUI.GlyphName.DashKey);
-                userType.AddEnumValue("DullSoundKey", global::DevWinUI.GlyphName.DullSoundKey);
-                userType.AddEnumValue("HalfDullSound", global::DevWinUI.GlyphName.HalfDullSound);
-                userType.AddEnumValue("RightDoubleQuote", global::DevWinUI.GlyphName.RightDoubleQuote);
-                userType.AddEnumValue("LeftDoubleQuote", global::DevWinUI.GlyphName.LeftDoubleQuote);
-                userType.AddEnumValue("PuncKeyRightBottom", global::DevWinUI.GlyphName.PuncKeyRightBottom);
-                userType.AddEnumValue("PuncKey1", global::DevWinUI.GlyphName.PuncKey1);
-                userType.AddEnumValue("PuncKey2", global::DevWinUI.GlyphName.PuncKey2);
-                userType.AddEnumValue("PuncKey3", global::DevWinUI.GlyphName.PuncKey3);
-                userType.AddEnumValue("PuncKey4", global::DevWinUI.GlyphName.PuncKey4);
-                userType.AddEnumValue("PuncKey5", global::DevWinUI.GlyphName.PuncKey5);
-                userType.AddEnumValue("PuncKey6", global::DevWinUI.GlyphName.PuncKey6);
-                userType.AddEnumValue("PuncKey9", global::DevWinUI.GlyphName.PuncKey9);
-                userType.AddEnumValue("PuncKey7", global::DevWinUI.GlyphName.PuncKey7);
-                userType.AddEnumValue("PuncKey8", global::DevWinUI.GlyphName.PuncKey8);
-                userType.AddEnumValue("Frigid", global::DevWinUI.GlyphName.Frigid);
-                userType.AddEnumValue("Unknown", global::DevWinUI.GlyphName.Unknown);
-                userType.AddEnumValue("AreaChart", global::DevWinUI.GlyphName.AreaChart);
-                userType.AddEnumValue("CheckList", global::DevWinUI.GlyphName.CheckList);
-                userType.AddEnumValue("Diagnostic", global::DevWinUI.GlyphName.Diagnostic);
-                userType.AddEnumValue("Equalizer", global::DevWinUI.GlyphName.Equalizer);
-                userType.AddEnumValue("Process", global::DevWinUI.GlyphName.Process);
-                userType.AddEnumValue("Processing", global::DevWinUI.GlyphName.Processing);
-                userType.AddEnumValue("ReportDocument", global::DevWinUI.GlyphName.ReportDocument);
-                userType.AddEnumValue("VideoSolid", global::DevWinUI.GlyphName.VideoSolid);
-                userType.AddEnumValue("MixedMediaBadge", global::DevWinUI.GlyphName.MixedMediaBadge);
-                userType.AddEnumValue("DisconnectDisplay", global::DevWinUI.GlyphName.DisconnectDisplay);
-                userType.AddEnumValue("Shield", global::DevWinUI.GlyphName.Shield);
-                userType.AddEnumValue("Info2", global::DevWinUI.GlyphName.Info2);
-                userType.AddEnumValue("ActionCenterAsterisk", global::DevWinUI.GlyphName.ActionCenterAsterisk);
-                userType.AddEnumValue("Beta", global::DevWinUI.GlyphName.Beta);
-                userType.AddEnumValue("SaveCopy", global::DevWinUI.GlyphName.SaveCopy);
-                userType.AddEnumValue("List", global::DevWinUI.GlyphName.List);
-                userType.AddEnumValue("Asterisk", global::DevWinUI.GlyphName.Asterisk);
-                userType.AddEnumValue("ErrorBadge", global::DevWinUI.GlyphName.ErrorBadge);
-                userType.AddEnumValue("CircleRing", global::DevWinUI.GlyphName.CircleRing);
-                userType.AddEnumValue("CircleFill", global::DevWinUI.GlyphName.CircleFill);
-                userType.AddEnumValue("MergeCall", global::DevWinUI.GlyphName.MergeCall);
-                userType.AddEnumValue("PrivateCall", global::DevWinUI.GlyphName.PrivateCall);
-                userType.AddEnumValue("Record2", global::DevWinUI.GlyphName.Record2);
-                userType.AddEnumValue("AllAppsMirrored", global::DevWinUI.GlyphName.AllAppsMirrored);
-                userType.AddEnumValue("BookmarksMirrored", global::DevWinUI.GlyphName.BookmarksMirrored);
-                userType.AddEnumValue("BulletedListMirrored", global::DevWinUI.GlyphName.BulletedListMirrored);
-                userType.AddEnumValue("CallForwardInternationalMirrored", global::DevWinUI.GlyphName.CallForwardInternationalMirrored);
-                userType.AddEnumValue("CallForwardRoamingMirrored", global::DevWinUI.GlyphName.CallForwardRoamingMirrored);
-                userType.AddEnumValue("ChromeBackMirrored", global::DevWinUI.GlyphName.ChromeBackMirrored);
-                userType.AddEnumValue("ClearSelectionMirrored", global::DevWinUI.GlyphName.ClearSelectionMirrored);
-                userType.AddEnumValue("ClosePaneMirrored", global::DevWinUI.GlyphName.ClosePaneMirrored);
-                userType.AddEnumValue("ContactInfoMirrored", global::DevWinUI.GlyphName.ContactInfoMirrored);
-                userType.AddEnumValue("DockRightMirrored", global::DevWinUI.GlyphName.DockRightMirrored);
-                userType.AddEnumValue("DockLeftMirrored", global::DevWinUI.GlyphName.DockLeftMirrored);
-                userType.AddEnumValue("ExpandTileMirrored", global::DevWinUI.GlyphName.ExpandTileMirrored);
-                userType.AddEnumValue("GoMirrored", global::DevWinUI.GlyphName.GoMirrored);
-                userType.AddEnumValue("GripperResizeMirrored", global::DevWinUI.GlyphName.GripperResizeMirrored);
-                userType.AddEnumValue("HelpMirrored", global::DevWinUI.GlyphName.HelpMirrored);
-                userType.AddEnumValue("ImportMirrored", global::DevWinUI.GlyphName.ImportMirrored);
-                userType.AddEnumValue("ImportAllMirrored", global::DevWinUI.GlyphName.ImportAllMirrored);
-                userType.AddEnumValue("LeaveChatMirrored", global::DevWinUI.GlyphName.LeaveChatMirrored);
-                userType.AddEnumValue("ListMirrored", global::DevWinUI.GlyphName.ListMirrored);
-                userType.AddEnumValue("MailForwardMirrored", global::DevWinUI.GlyphName.MailForwardMirrored);
-                userType.AddEnumValue("MailReplyMirrored", global::DevWinUI.GlyphName.MailReplyMirrored);
-                userType.AddEnumValue("MailReplyAllMirrored", global::DevWinUI.GlyphName.MailReplyAllMirrored);
-                userType.AddEnumValue("OpenPaneMirrored", global::DevWinUI.GlyphName.OpenPaneMirrored);
-                userType.AddEnumValue("OpenWithMirrored", global::DevWinUI.GlyphName.OpenWithMirrored);
-                userType.AddEnumValue("ParkingLocationMirrored", global::DevWinUI.GlyphName.ParkingLocationMirrored);
-                userType.AddEnumValue("ResizeMouseMediumMirrored", global::DevWinUI.GlyphName.ResizeMouseMediumMirrored);
-                userType.AddEnumValue("ResizeMouseSmallMirrored", global::DevWinUI.GlyphName.ResizeMouseSmallMirrored);
-                userType.AddEnumValue("ResizeMouseTallMirrored", global::DevWinUI.GlyphName.ResizeMouseTallMirrored);
-                userType.AddEnumValue("ResizeTouchNarrowerMirrored", global::DevWinUI.GlyphName.ResizeTouchNarrowerMirrored);
-                userType.AddEnumValue("SendMirrored", global::DevWinUI.GlyphName.SendMirrored);
-                userType.AddEnumValue("SendFillMirrored", global::DevWinUI.GlyphName.SendFillMirrored);
-                userType.AddEnumValue("ShowResultsMirrored", global::DevWinUI.GlyphName.ShowResultsMirrored);
-                userType.AddEnumValue("Media", global::DevWinUI.GlyphName.Media);
-                userType.AddEnumValue("SyncError", global::DevWinUI.GlyphName.SyncError);
-                userType.AddEnumValue("Devices3", global::DevWinUI.GlyphName.Devices3);
-                userType.AddEnumValue("SlowMotionOn", global::DevWinUI.GlyphName.SlowMotionOn);
-                userType.AddEnumValue("Lightbulb", global::DevWinUI.GlyphName.Lightbulb);
-                userType.AddEnumValue("StatusCircle", global::DevWinUI.GlyphName.StatusCircle);
-                userType.AddEnumValue("StatusTriangle", global::DevWinUI.GlyphName.StatusTriangle);
-                userType.AddEnumValue("StatusError", global::DevWinUI.GlyphName.StatusError);
-                userType.AddEnumValue("StatusWarning", global::DevWinUI.GlyphName.StatusWarning);
-                userType.AddEnumValue("Puzzle", global::DevWinUI.GlyphName.Puzzle);
-                userType.AddEnumValue("CalendarSolid", global::DevWinUI.GlyphName.CalendarSolid);
-                userType.AddEnumValue("HomeSolid", global::DevWinUI.GlyphName.HomeSolid);
-                userType.AddEnumValue("ParkingLocationSolid", global::DevWinUI.GlyphName.ParkingLocationSolid);
-                userType.AddEnumValue("ContactSolid", global::DevWinUI.GlyphName.ContactSolid);
-                userType.AddEnumValue("ConstructionSolid", global::DevWinUI.GlyphName.ConstructionSolid);
-                userType.AddEnumValue("AccidentSolid", global::DevWinUI.GlyphName.AccidentSolid);
-                userType.AddEnumValue("Ringer", global::DevWinUI.GlyphName.Ringer);
-                userType.AddEnumValue("PDF", global::DevWinUI.GlyphName.PDF);
-                userType.AddEnumValue("ThoughtBubble", global::DevWinUI.GlyphName.ThoughtBubble);
-                userType.AddEnumValue("HeartBroken", global::DevWinUI.GlyphName.HeartBroken);
-                userType.AddEnumValue("BatteryCharging10", global::DevWinUI.GlyphName.BatteryCharging10);
-                userType.AddEnumValue("BatterySaver9", global::DevWinUI.GlyphName.BatterySaver9);
-                userType.AddEnumValue("BatterySaver10", global::DevWinUI.GlyphName.BatterySaver10);
-                userType.AddEnumValue("CallForwardingMirrored", global::DevWinUI.GlyphName.CallForwardingMirrored);
-                userType.AddEnumValue("MultiSelectMirrored", global::DevWinUI.GlyphName.MultiSelectMirrored);
-                userType.AddEnumValue("Broom", global::DevWinUI.GlyphName.Broom);
-                userType.AddEnumValue("ForwardCall", global::DevWinUI.GlyphName.ForwardCall);
-                userType.AddEnumValue("Trackers", global::DevWinUI.GlyphName.Trackers);
-                userType.AddEnumValue("Market", global::DevWinUI.GlyphName.Market);
-                userType.AddEnumValue("PieSingle", global::DevWinUI.GlyphName.PieSingle);
-                userType.AddEnumValue("StockUp", global::DevWinUI.GlyphName.StockUp);
-                userType.AddEnumValue("StockDown", global::DevWinUI.GlyphName.StockDown);
-                userType.AddEnumValue("Design", global::DevWinUI.GlyphName.Design);
-                userType.AddEnumValue("Website", global::DevWinUI.GlyphName.Website);
-                userType.AddEnumValue("Drop", global::DevWinUI.GlyphName.Drop);
-                userType.AddEnumValue("Radar", global::DevWinUI.GlyphName.Radar);
-                userType.AddEnumValue("BusSolid", global::DevWinUI.GlyphName.BusSolid);
-                userType.AddEnumValue("FerrySolid", global::DevWinUI.GlyphName.FerrySolid);
-                userType.AddEnumValue("StartPointSolid", global::DevWinUI.GlyphName.StartPointSolid);
-                userType.AddEnumValue("StopPointSolid", global::DevWinUI.GlyphName.StopPointSolid);
-                userType.AddEnumValue("EndPointSolid", global::DevWinUI.GlyphName.EndPointSolid);
-                userType.AddEnumValue("AirplaneSolid", global::DevWinUI.GlyphName.AirplaneSolid);
-                userType.AddEnumValue("TrainSolid", global::DevWinUI.GlyphName.TrainSolid);
-                userType.AddEnumValue("WorkSolid", global::DevWinUI.GlyphName.WorkSolid);
-                userType.AddEnumValue("ReminderFill", global::DevWinUI.GlyphName.ReminderFill);
-                userType.AddEnumValue("Reminder", global::DevWinUI.GlyphName.Reminder);
-                userType.AddEnumValue("Heart", global::DevWinUI.GlyphName.Heart);
-                userType.AddEnumValue("HeartFill", global::DevWinUI.GlyphName.HeartFill);
-                userType.AddEnumValue("EthernetError", global::DevWinUI.GlyphName.EthernetError);
-                userType.AddEnumValue("EthernetWarning", global::DevWinUI.GlyphName.EthernetWarning);
-                userType.AddEnumValue("StatusConnecting1", global::DevWinUI.GlyphName.StatusConnecting1);
-                userType.AddEnumValue("StatusConnecting2", global::DevWinUI.GlyphName.StatusConnecting2);
-                userType.AddEnumValue("StatusUnsecure", global::DevWinUI.GlyphName.StatusUnsecure);
-                userType.AddEnumValue("WifiError0", global::DevWinUI.GlyphName.WifiError0);
-                userType.AddEnumValue("WifiError1", global::DevWinUI.GlyphName.WifiError1);
-                userType.AddEnumValue("WifiError2", global::DevWinUI.GlyphName.WifiError2);
-                userType.AddEnumValue("WifiError3", global::DevWinUI.GlyphName.WifiError3);
-                userType.AddEnumValue("WifiError4", global::DevWinUI.GlyphName.WifiError4);
-                userType.AddEnumValue("WifiWarning0", global::DevWinUI.GlyphName.WifiWarning0);
-                userType.AddEnumValue("WifiWarning1", global::DevWinUI.GlyphName.WifiWarning1);
-                userType.AddEnumValue("WifiWarning2", global::DevWinUI.GlyphName.WifiWarning2);
-                userType.AddEnumValue("WifiWarning3", global::DevWinUI.GlyphName.WifiWarning3);
-                userType.AddEnumValue("WifiWarning4", global::DevWinUI.GlyphName.WifiWarning4);
-                userType.AddEnumValue("Devices4", global::DevWinUI.GlyphName.Devices4);
-                userType.AddEnumValue("NUIIris", global::DevWinUI.GlyphName.NUIIris);
-                userType.AddEnumValue("NUIFace", global::DevWinUI.GlyphName.NUIFace);
-                userType.AddEnumValue("GatewayRouter", global::DevWinUI.GlyphName.GatewayRouter);
-                userType.AddEnumValue("EditMirrored", global::DevWinUI.GlyphName.EditMirrored);
-                userType.AddEnumValue("NUIFPStartSlideHand", global::DevWinUI.GlyphName.NUIFPStartSlideHand);
-                userType.AddEnumValue("NUIFPStartSlideAction", global::DevWinUI.GlyphName.NUIFPStartSlideAction);
-                userType.AddEnumValue("NUIFPContinueSlideHand", global::DevWinUI.GlyphName.NUIFPContinueSlideHand);
-                userType.AddEnumValue("NUIFPContinueSlideAction", global::DevWinUI.GlyphName.NUIFPContinueSlideAction);
-                userType.AddEnumValue("NUIFPRollRightHand", global::DevWinUI.GlyphName.NUIFPRollRightHand);
-                userType.AddEnumValue("NUIFPRollRightHandAction", global::DevWinUI.GlyphName.NUIFPRollRightHandAction);
-                userType.AddEnumValue("NUIFPRollLeftHand", global::DevWinUI.GlyphName.NUIFPRollLeftHand);
-                userType.AddEnumValue("NUIFPRollLeftAction", global::DevWinUI.GlyphName.NUIFPRollLeftAction);
-                userType.AddEnumValue("NUIFPPressHand", global::DevWinUI.GlyphName.NUIFPPressHand);
-                userType.AddEnumValue("NUIFPPressAction", global::DevWinUI.GlyphName.NUIFPPressAction);
-                userType.AddEnumValue("NUIFPPressRepeatHand", global::DevWinUI.GlyphName.NUIFPPressRepeatHand);
-                userType.AddEnumValue("NUIFPPressRepeatAction", global::DevWinUI.GlyphName.NUIFPPressRepeatAction);
-                userType.AddEnumValue("StatusErrorFull", global::DevWinUI.GlyphName.StatusErrorFull);
-                userType.AddEnumValue("TaskViewExpanded", global::DevWinUI.GlyphName.TaskViewExpanded);
-                userType.AddEnumValue("Certificate", global::DevWinUI.GlyphName.Certificate);
-                userType.AddEnumValue("BackSpaceQWERTYLg", global::DevWinUI.GlyphName.BackSpaceQWERTYLg);
-                userType.AddEnumValue("ReturnKeyLg", global::DevWinUI.GlyphName.ReturnKeyLg);
-                userType.AddEnumValue("FastForward", global::DevWinUI.GlyphName.FastForward);
-                userType.AddEnumValue("Rewind", global::DevWinUI.GlyphName.Rewind);
-                userType.AddEnumValue("Photo2", global::DevWinUI.GlyphName.Photo2);
-                userType.AddEnumValue("MobBattery0", global::DevWinUI.GlyphName.MobBattery0);
-                userType.AddEnumValue("MobBattery1", global::DevWinUI.GlyphName.MobBattery1);
-                userType.AddEnumValue("MobBattery2", global::DevWinUI.GlyphName.MobBattery2);
-                userType.AddEnumValue("MobBattery3", global::DevWinUI.GlyphName.MobBattery3);
-                userType.AddEnumValue("MobBattery4", global::DevWinUI.GlyphName.MobBattery4);
-                userType.AddEnumValue("MobBattery5", global::DevWinUI.GlyphName.MobBattery5);
-                userType.AddEnumValue("MobBattery6", global::DevWinUI.GlyphName.MobBattery6);
-                userType.AddEnumValue("MobBattery7", global::DevWinUI.GlyphName.MobBattery7);
-                userType.AddEnumValue("MobBattery8", global::DevWinUI.GlyphName.MobBattery8);
-                userType.AddEnumValue("MobBattery9", global::DevWinUI.GlyphName.MobBattery9);
-                userType.AddEnumValue("MobBattery10", global::DevWinUI.GlyphName.MobBattery10);
-                userType.AddEnumValue("MobBatteryCharging0", global::DevWinUI.GlyphName.MobBatteryCharging0);
-                userType.AddEnumValue("MobBatteryCharging1", global::DevWinUI.GlyphName.MobBatteryCharging1);
-                userType.AddEnumValue("MobBatteryCharging2", global::DevWinUI.GlyphName.MobBatteryCharging2);
-                userType.AddEnumValue("MobBatteryCharging3", global::DevWinUI.GlyphName.MobBatteryCharging3);
-                userType.AddEnumValue("MobBatteryCharging4", global::DevWinUI.GlyphName.MobBatteryCharging4);
-                userType.AddEnumValue("MobBatteryCharging5", global::DevWinUI.GlyphName.MobBatteryCharging5);
-                userType.AddEnumValue("MobBatteryCharging6", global::DevWinUI.GlyphName.MobBatteryCharging6);
-                userType.AddEnumValue("MobBatteryCharging7", global::DevWinUI.GlyphName.MobBatteryCharging7);
-                userType.AddEnumValue("MobBatteryCharging8", global::DevWinUI.GlyphName.MobBatteryCharging8);
-                userType.AddEnumValue("MobBatteryCharging9", global::DevWinUI.GlyphName.MobBatteryCharging9);
-                userType.AddEnumValue("MobBatteryCharging10", global::DevWinUI.GlyphName.MobBatteryCharging10);
-                userType.AddEnumValue("MobBatterySaver0", global::DevWinUI.GlyphName.MobBatterySaver0);
-                userType.AddEnumValue("MobBatterySaver1", global::DevWinUI.GlyphName.MobBatterySaver1);
-                userType.AddEnumValue("MobBatterySaver2", global::DevWinUI.GlyphName.MobBatterySaver2);
-                userType.AddEnumValue("MobBatterySaver3", global::DevWinUI.GlyphName.MobBatterySaver3);
-                userType.AddEnumValue("MobBatterySaver4", global::DevWinUI.GlyphName.MobBatterySaver4);
-                userType.AddEnumValue("MobBatterySaver5", global::DevWinUI.GlyphName.MobBatterySaver5);
-                userType.AddEnumValue("MobBatterySaver6", global::DevWinUI.GlyphName.MobBatterySaver6);
-                userType.AddEnumValue("MobBatterySaver7", global::DevWinUI.GlyphName.MobBatterySaver7);
-                userType.AddEnumValue("MobBatterySaver8", global::DevWinUI.GlyphName.MobBatterySaver8);
-                userType.AddEnumValue("MobBatterySaver9", global::DevWinUI.GlyphName.MobBatterySaver9);
-                userType.AddEnumValue("MobBatterySaver10", global::DevWinUI.GlyphName.MobBatterySaver10);
-                userType.AddEnumValue("DictionaryCloud", global::DevWinUI.GlyphName.DictionaryCloud);
-                userType.AddEnumValue("ResetDrive", global::DevWinUI.GlyphName.ResetDrive);
-                userType.AddEnumValue("VolumeBars", global::DevWinUI.GlyphName.VolumeBars);
-                userType.AddEnumValue("Project", global::DevWinUI.GlyphName.Project);
-                userType.AddEnumValue("AdjustHologram", global::DevWinUI.GlyphName.AdjustHologram);
-                userType.AddEnumValue("CloudDownload", global::DevWinUI.GlyphName.CloudDownload);
-                userType.AddEnumValue("MobWifiCallBars", global::DevWinUI.GlyphName.MobWifiCallBars);
-                userType.AddEnumValue("MobWifiCall0", global::DevWinUI.GlyphName.MobWifiCall0);
-                userType.AddEnumValue("MobWifiCall1", global::DevWinUI.GlyphName.MobWifiCall1);
-                userType.AddEnumValue("MobWifiCall2", global::DevWinUI.GlyphName.MobWifiCall2);
-                userType.AddEnumValue("MobWifiCall3", global::DevWinUI.GlyphName.MobWifiCall3);
-                userType.AddEnumValue("MobWifiCall4", global::DevWinUI.GlyphName.MobWifiCall4);
-                userType.AddEnumValue("Family", global::DevWinUI.GlyphName.Family);
-                userType.AddEnumValue("LockFeedback", global::DevWinUI.GlyphName.LockFeedback);
-                userType.AddEnumValue("DeviceDiscovery", global::DevWinUI.GlyphName.DeviceDiscovery);
-                userType.AddEnumValue("WindDirection", global::DevWinUI.GlyphName.WindDirection);
-                userType.AddEnumValue("RightArrowKeyTime0", global::DevWinUI.GlyphName.RightArrowKeyTime0);
-                userType.AddEnumValue("Bug", global::DevWinUI.GlyphName.Bug);
-                userType.AddEnumValue("TabletMode", global::DevWinUI.GlyphName.TabletMode);
-                userType.AddEnumValue("StatusCircleLeft", global::DevWinUI.GlyphName.StatusCircleLeft);
-                userType.AddEnumValue("StatusTriangleLeft", global::DevWinUI.GlyphName.StatusTriangleLeft);
-                userType.AddEnumValue("StatusErrorLeft", global::DevWinUI.GlyphName.StatusErrorLeft);
-                userType.AddEnumValue("StatusWarningLeft", global::DevWinUI.GlyphName.StatusWarningLeft);
-                userType.AddEnumValue("MobBatteryUnknown", global::DevWinUI.GlyphName.MobBatteryUnknown);
-                userType.AddEnumValue("NetworkTower", global::DevWinUI.GlyphName.NetworkTower);
-                userType.AddEnumValue("CityNext", global::DevWinUI.GlyphName.CityNext);
-                userType.AddEnumValue("CityNext2", global::DevWinUI.GlyphName.CityNext2);
-                userType.AddEnumValue("Courthouse", global::DevWinUI.GlyphName.Courthouse);
-                userType.AddEnumValue("Groceries", global::DevWinUI.GlyphName.Groceries);
-                userType.AddEnumValue("Sustainable", global::DevWinUI.GlyphName.Sustainable);
-                userType.AddEnumValue("BuildingEnergy", global::DevWinUI.GlyphName.BuildingEnergy);
-                userType.AddEnumValue("ToggleFilled", global::DevWinUI.GlyphName.ToggleFilled);
-                userType.AddEnumValue("ToggleBorder", global::DevWinUI.GlyphName.ToggleBorder);
-                userType.AddEnumValue("SliderThumb", global::DevWinUI.GlyphName.SliderThumb);
-                userType.AddEnumValue("ToggleThumb", global::DevWinUI.GlyphName.ToggleThumb);
-                userType.AddEnumValue("MiracastLogoSmall", global::DevWinUI.GlyphName.MiracastLogoSmall);
-                userType.AddEnumValue("MiracastLogoLarge", global::DevWinUI.GlyphName.MiracastLogoLarge);
-                userType.AddEnumValue("PLAP", global::DevWinUI.GlyphName.PLAP);
-                userType.AddEnumValue("Badge", global::DevWinUI.GlyphName.Badge);
-                userType.AddEnumValue("SignalRoaming", global::DevWinUI.GlyphName.SignalRoaming);
-                userType.AddEnumValue("MobileLocked", global::DevWinUI.GlyphName.MobileLocked);
-                userType.AddEnumValue("InsiderHubApp", global::DevWinUI.GlyphName.InsiderHubApp);
-                userType.AddEnumValue("PersonalFolder", global::DevWinUI.GlyphName.PersonalFolder);
-                userType.AddEnumValue("HomeGroup", global::DevWinUI.GlyphName.HomeGroup);
-                userType.AddEnumValue("MyNetwork", global::DevWinUI.GlyphName.MyNetwork);
-                userType.AddEnumValue("KeyboardFull", global::DevWinUI.GlyphName.KeyboardFull);
-                userType.AddEnumValue("Cafe", global::DevWinUI.GlyphName.Cafe);
-                userType.AddEnumValue("MobSignal1", global::DevWinUI.GlyphName.MobSignal1);
-                userType.AddEnumValue("MobSignal2", global::DevWinUI.GlyphName.MobSignal2);
-                userType.AddEnumValue("MobSignal3", global::DevWinUI.GlyphName.MobSignal3);
-                userType.AddEnumValue("MobSignal4", global::DevWinUI.GlyphName.MobSignal4);
-                userType.AddEnumValue("MobSignal5", global::DevWinUI.GlyphName.MobSignal5);
-                userType.AddEnumValue("MobWifi1", global::DevWinUI.GlyphName.MobWifi1);
-                userType.AddEnumValue("MobWifi2", global::DevWinUI.GlyphName.MobWifi2);
-                userType.AddEnumValue("MobWifi3", global::DevWinUI.GlyphName.MobWifi3);
-                userType.AddEnumValue("MobWifi4", global::DevWinUI.GlyphName.MobWifi4);
-                userType.AddEnumValue("MobAirplane", global::DevWinUI.GlyphName.MobAirplane);
-                userType.AddEnumValue("MobBluetooth", global::DevWinUI.GlyphName.MobBluetooth);
-                userType.AddEnumValue("MobActionCenter", global::DevWinUI.GlyphName.MobActionCenter);
-                userType.AddEnumValue("MobLocation", global::DevWinUI.GlyphName.MobLocation);
-                userType.AddEnumValue("MobWifiHotspot", global::DevWinUI.GlyphName.MobWifiHotspot);
-                userType.AddEnumValue("LanguageJpn", global::DevWinUI.GlyphName.LanguageJpn);
-                userType.AddEnumValue("MobQuietHours", global::DevWinUI.GlyphName.MobQuietHours);
-                userType.AddEnumValue("MobDrivingMode", global::DevWinUI.GlyphName.MobDrivingMode);
-                userType.AddEnumValue("SpeedOff", global::DevWinUI.GlyphName.SpeedOff);
-                userType.AddEnumValue("SpeedMedium", global::DevWinUI.GlyphName.SpeedMedium);
-                userType.AddEnumValue("SpeedHigh", global::DevWinUI.GlyphName.SpeedHigh);
-                userType.AddEnumValue("ThisPC", global::DevWinUI.GlyphName.ThisPC);
-                userType.AddEnumValue("MusicNote", global::DevWinUI.GlyphName.MusicNote);
-                userType.AddEnumValue("FileExplorer", global::DevWinUI.GlyphName.FileExplorer);
-                userType.AddEnumValue("FileExplorerApp", global::DevWinUI.GlyphName.FileExplorerApp);
-                userType.AddEnumValue("LeftArrowKeyTime0", global::DevWinUI.GlyphName.LeftArrowKeyTime0);
-                userType.AddEnumValue("MicOff", global::DevWinUI.GlyphName.MicOff);
-                userType.AddEnumValue("MicSleep", global::DevWinUI.GlyphName.MicSleep);
-                userType.AddEnumValue("MicError", global::DevWinUI.GlyphName.MicError);
-                userType.AddEnumValue("PlaybackRate1x", global::DevWinUI.GlyphName.PlaybackRate1x);
-                userType.AddEnumValue("PlaybackRateOther", global::DevWinUI.GlyphName.PlaybackRateOther);
-                userType.AddEnumValue("CashDrawer", global::DevWinUI.GlyphName.CashDrawer);
-                userType.AddEnumValue("BarcodeScanner", global::DevWinUI.GlyphName.BarcodeScanner);
-                userType.AddEnumValue("ReceiptPrinter", global::DevWinUI.GlyphName.ReceiptPrinter);
-                userType.AddEnumValue("MagStripeReader", global::DevWinUI.GlyphName.MagStripeReader);
-                userType.AddEnumValue("CompletedSolid", global::DevWinUI.GlyphName.CompletedSolid);
-                userType.AddEnumValue("CompanionApp", global::DevWinUI.GlyphName.CompanionApp);
-                userType.AddEnumValue("Favicon2", global::DevWinUI.GlyphName.Favicon2);
-                userType.AddEnumValue("SwipeRevealArt", global::DevWinUI.GlyphName.SwipeRevealArt);
-                userType.AddEnumValue("MicOn", global::DevWinUI.GlyphName.MicOn);
-                userType.AddEnumValue("MicClipping", global::DevWinUI.GlyphName.MicClipping);
-                userType.AddEnumValue("TabletSelected", global::DevWinUI.GlyphName.TabletSelected);
-                userType.AddEnumValue("MobileSelected", global::DevWinUI.GlyphName.MobileSelected);
-                userType.AddEnumValue("LaptopSelected", global::DevWinUI.GlyphName.LaptopSelected);
-                userType.AddEnumValue("TVMonitorSelected", global::DevWinUI.GlyphName.TVMonitorSelected);
-                userType.AddEnumValue("DeveloperTools", global::DevWinUI.GlyphName.DeveloperTools);
-                userType.AddEnumValue("MobCallForwarding", global::DevWinUI.GlyphName.MobCallForwarding);
-                userType.AddEnumValue("MobCallForwardingMirrored", global::DevWinUI.GlyphName.MobCallForwardingMirrored);
-                userType.AddEnumValue("BodyCam", global::DevWinUI.GlyphName.BodyCam);
-                userType.AddEnumValue("PoliceCar", global::DevWinUI.GlyphName.PoliceCar);
-                userType.AddEnumValue("Draw", global::DevWinUI.GlyphName.Draw);
-                userType.AddEnumValue("DrawSolid", global::DevWinUI.GlyphName.DrawSolid);
-                userType.AddEnumValue("LowerBrightness", global::DevWinUI.GlyphName.LowerBrightness);
-                userType.AddEnumValue("ScrollUpDown", global::DevWinUI.GlyphName.ScrollUpDown);
-                userType.AddEnumValue("DateTime", global::DevWinUI.GlyphName.DateTime);
-                userType.AddEnumValue("HoloLens", global::DevWinUI.GlyphName.HoloLens);
-                userType.AddEnumValue("Tiles", global::DevWinUI.GlyphName.Tiles);
-                userType.AddEnumValue("PartyLeader", global::DevWinUI.GlyphName.PartyLeader);
-                userType.AddEnumValue("AppIconDefault", global::DevWinUI.GlyphName.AppIconDefault);
-                userType.AddEnumValue("Calories", global::DevWinUI.GlyphName.Calories);
-                userType.AddEnumValue("POI", global::DevWinUI.GlyphName.POI);
-                userType.AddEnumValue("BandBattery0", global::DevWinUI.GlyphName.BandBattery0);
-                userType.AddEnumValue("BandBattery1", global::DevWinUI.GlyphName.BandBattery1);
-                userType.AddEnumValue("BandBattery2", global::DevWinUI.GlyphName.BandBattery2);
-                userType.AddEnumValue("BandBattery3", global::DevWinUI.GlyphName.BandBattery3);
-                userType.AddEnumValue("BandBattery4", global::DevWinUI.GlyphName.BandBattery4);
-                userType.AddEnumValue("BandBattery5", global::DevWinUI.GlyphName.BandBattery5);
-                userType.AddEnumValue("BandBattery6", global::DevWinUI.GlyphName.BandBattery6);
-                userType.AddEnumValue("AddSurfaceHub", global::DevWinUI.GlyphName.AddSurfaceHub);
-                userType.AddEnumValue("DevUpdate", global::DevWinUI.GlyphName.DevUpdate);
-                userType.AddEnumValue("Unit", global::DevWinUI.GlyphName.Unit);
-                userType.AddEnumValue("AddTo", global::DevWinUI.GlyphName.AddTo);
-                userType.AddEnumValue("RemoveFrom", global::DevWinUI.GlyphName.RemoveFrom);
-                userType.AddEnumValue("RadioBtnOff", global::DevWinUI.GlyphName.RadioBtnOff);
-                userType.AddEnumValue("RadioBtnOn", global::DevWinUI.GlyphName.RadioBtnOn);
-                userType.AddEnumValue("RadioBullet2", global::DevWinUI.GlyphName.RadioBullet2);
-                userType.AddEnumValue("ExploreContent", global::DevWinUI.GlyphName.ExploreContent);
-                userType.AddEnumValue("Blocked2", global::DevWinUI.GlyphName.Blocked2);
-                userType.AddEnumValue("ScrollMode", global::DevWinUI.GlyphName.ScrollMode);
-                userType.AddEnumValue("ZoomMode", global::DevWinUI.GlyphName.ZoomMode);
-                userType.AddEnumValue("PanMode", global::DevWinUI.GlyphName.PanMode);
-                userType.AddEnumValue("WiredUSB", global::DevWinUI.GlyphName.WiredUSB);
-                userType.AddEnumValue("WirelessUSB", global::DevWinUI.GlyphName.WirelessUSB);
-                userType.AddEnumValue("USBSafeConnect", global::DevWinUI.GlyphName.USBSafeConnect);
-                userType.AddEnumValue("ActionCenterNotificationMirrored", global::DevWinUI.GlyphName.ActionCenterNotificationMirrored);
-                userType.AddEnumValue("ActionCenterMirrored", global::DevWinUI.GlyphName.ActionCenterMirrored);
-                userType.AddEnumValue("SubscriptionAdd", global::DevWinUI.GlyphName.SubscriptionAdd);
-                userType.AddEnumValue("ResetDevice", global::DevWinUI.GlyphName.ResetDevice);
-                userType.AddEnumValue("SubscriptionAddMirrored", global::DevWinUI.GlyphName.SubscriptionAddMirrored);
-                userType.AddEnumValue("QRCode", global::DevWinUI.GlyphName.QRCode);
-                userType.AddEnumValue("Feedback", global::DevWinUI.GlyphName.Feedback);
-                userType.AddEnumValue("Hide", global::DevWinUI.GlyphName.Hide);
-                userType.AddEnumValue("Subtitles", global::DevWinUI.GlyphName.Subtitles);
-                userType.AddEnumValue("SubtitlesAudio", global::DevWinUI.GlyphName.SubtitlesAudio);
-                userType.AddEnumValue("OpenFolderHorizontal", global::DevWinUI.GlyphName.OpenFolderHorizontal);
-                userType.AddEnumValue("CalendarMirrored", global::DevWinUI.GlyphName.CalendarMirrored);
-                userType.AddEnumValue("MobeSIM", global::DevWinUI.GlyphName.MobeSIM);
-                userType.AddEnumValue("MobeSIMNoProfile", global::DevWinUI.GlyphName.MobeSIMNoProfile);
-                userType.AddEnumValue("MobeSIMLocked", global::DevWinUI.GlyphName.MobeSIMLocked);
-                userType.AddEnumValue("MobeSIMBusy", global::DevWinUI.GlyphName.MobeSIMBusy);
-                userType.AddEnumValue("SignalError", global::DevWinUI.GlyphName.SignalError);
-                userType.AddEnumValue("StreamingEnterprise", global::DevWinUI.GlyphName.StreamingEnterprise);
-                userType.AddEnumValue("Headphone0", global::DevWinUI.GlyphName.Headphone0);
-                userType.AddEnumValue("Headphone1", global::DevWinUI.GlyphName.Headphone1);
-                userType.AddEnumValue("Headphone2", global::DevWinUI.GlyphName.Headphone2);
-                userType.AddEnumValue("Headphone3", global::DevWinUI.GlyphName.Headphone3);
-                userType.AddEnumValue("Apps", global::DevWinUI.GlyphName.Apps);
-                userType.AddEnumValue("KeyboardBrightness", global::DevWinUI.GlyphName.KeyboardBrightness);
-                userType.AddEnumValue("KeyboardLowerBrightness", global::DevWinUI.GlyphName.KeyboardLowerBrightness);
-                userType.AddEnumValue("SkipBack10", global::DevWinUI.GlyphName.SkipBack10);
-                userType.AddEnumValue("SkipForward30", global::DevWinUI.GlyphName.SkipForward30);
-                userType.AddEnumValue("TreeFolderFolder", global::DevWinUI.GlyphName.TreeFolderFolder);
-                userType.AddEnumValue("TreeFolderFolderFill", global::DevWinUI.GlyphName.TreeFolderFolderFill);
-                userType.AddEnumValue("TreeFolderFolderOpen", global::DevWinUI.GlyphName.TreeFolderFolderOpen);
-                userType.AddEnumValue("TreeFolderFolderOpenFill", global::DevWinUI.GlyphName.TreeFolderFolderOpenFill);
-                userType.AddEnumValue("MultimediaDMP", global::DevWinUI.GlyphName.MultimediaDMP);
-                userType.AddEnumValue("KeyboardOneHanded", global::DevWinUI.GlyphName.KeyboardOneHanded);
-                userType.AddEnumValue("Narrator", global::DevWinUI.GlyphName.Narrator);
-                userType.AddEnumValue("EmojiTabPeople", global::DevWinUI.GlyphName.EmojiTabPeople);
-                userType.AddEnumValue("EmojiTabSmilesAnimals", global::DevWinUI.GlyphName.EmojiTabSmilesAnimals);
-                userType.AddEnumValue("EmojiTabCelebrationObjects", global::DevWinUI.GlyphName.EmojiTabCelebrationObjects);
-                userType.AddEnumValue("EmojiTabFoodPlants", global::DevWinUI.GlyphName.EmojiTabFoodPlants);
-                userType.AddEnumValue("EmojiTabTransitPlaces", global::DevWinUI.GlyphName.EmojiTabTransitPlaces);
-                userType.AddEnumValue("EmojiTabSymbols", global::DevWinUI.GlyphName.EmojiTabSymbols);
-                userType.AddEnumValue("EmojiTabTextSmiles", global::DevWinUI.GlyphName.EmojiTabTextSmiles);
-                userType.AddEnumValue("EmojiTabFavorites", global::DevWinUI.GlyphName.EmojiTabFavorites);
-                userType.AddEnumValue("EmojiSwatch", global::DevWinUI.GlyphName.EmojiSwatch);
-                userType.AddEnumValue("ConnectApp", global::DevWinUI.GlyphName.ConnectApp);
-                userType.AddEnumValue("CompanionDeviceFramework", global::DevWinUI.GlyphName.CompanionDeviceFramework);
-                userType.AddEnumValue("Ruler", global::DevWinUI.GlyphName.Ruler);
-                userType.AddEnumValue("FingerInking", global::DevWinUI.GlyphName.FingerInking);
-                userType.AddEnumValue("StrokeErase", global::DevWinUI.GlyphName.StrokeErase);
-                userType.AddEnumValue("PointErase", global::DevWinUI.GlyphName.PointErase);
-                userType.AddEnumValue("ClearAllInk", global::DevWinUI.GlyphName.ClearAllInk);
-                userType.AddEnumValue("Pencil", global::DevWinUI.GlyphName.Pencil);
-                userType.AddEnumValue("Marker", global::DevWinUI.GlyphName.Marker);
-                userType.AddEnumValue("InkingCaret", global::DevWinUI.GlyphName.InkingCaret);
-                userType.AddEnumValue("InkingColorOutline", global::DevWinUI.GlyphName.InkingColorOutline);
-                userType.AddEnumValue("InkingColorFill", global::DevWinUI.GlyphName.InkingColorFill);
-                userType.AddEnumValue("HardDrive", global::DevWinUI.GlyphName.HardDrive);
-                userType.AddEnumValue("NetworkAdapter", global::DevWinUI.GlyphName.NetworkAdapter);
-                userType.AddEnumValue("Touchscreen", global::DevWinUI.GlyphName.Touchscreen);
-                userType.AddEnumValue("NetworkPrinter", global::DevWinUI.GlyphName.NetworkPrinter);
-                userType.AddEnumValue("CloudPrinter", global::DevWinUI.GlyphName.CloudPrinter);
-                userType.AddEnumValue("KeyboardShortcut", global::DevWinUI.GlyphName.KeyboardShortcut);
-                userType.AddEnumValue("BrushSize", global::DevWinUI.GlyphName.BrushSize);
-                userType.AddEnumValue("NarratorForward", global::DevWinUI.GlyphName.NarratorForward);
-                userType.AddEnumValue("NarratorForwardMirrored", global::DevWinUI.GlyphName.NarratorForwardMirrored);
-                userType.AddEnumValue("SyncBadge12", global::DevWinUI.GlyphName.SyncBadge12);
-                userType.AddEnumValue("RingerBadge12", global::DevWinUI.GlyphName.RingerBadge12);
-                userType.AddEnumValue("AsteriskBadge12", global::DevWinUI.GlyphName.AsteriskBadge12);
-                userType.AddEnumValue("ErrorBadge12", global::DevWinUI.GlyphName.ErrorBadge12);
-                userType.AddEnumValue("CircleRingBadge12", global::DevWinUI.GlyphName.CircleRingBadge12);
-                userType.AddEnumValue("CircleFillBadge12", global::DevWinUI.GlyphName.CircleFillBadge12);
-                userType.AddEnumValue("ImportantBadge12", global::DevWinUI.GlyphName.ImportantBadge12);
-                userType.AddEnumValue("MailBadge12", global::DevWinUI.GlyphName.MailBadge12);
-                userType.AddEnumValue("PauseBadge12", global::DevWinUI.GlyphName.PauseBadge12);
-                userType.AddEnumValue("PlayBadge12", global::DevWinUI.GlyphName.PlayBadge12);
-                userType.AddEnumValue("PenWorkspace", global::DevWinUI.GlyphName.PenWorkspace);
-                userType.AddEnumValue("CaretLeft8", global::DevWinUI.GlyphName.CaretLeft8);
-                userType.AddEnumValue("CaretRight8", global::DevWinUI.GlyphName.CaretRight8);
-                userType.AddEnumValue("CaretUp8", global::DevWinUI.GlyphName.CaretUp8);
-                userType.AddEnumValue("CaretDown8", global::DevWinUI.GlyphName.CaretDown8);
-                userType.AddEnumValue("CaretLeftSolid8", global::DevWinUI.GlyphName.CaretLeftSolid8);
-                userType.AddEnumValue("CaretRightSolid8", global::DevWinUI.GlyphName.CaretRightSolid8);
-                userType.AddEnumValue("CaretUpSolid8", global::DevWinUI.GlyphName.CaretUpSolid8);
-                userType.AddEnumValue("CaretDownSolid8", global::DevWinUI.GlyphName.CaretDownSolid8);
-                userType.AddEnumValue("Strikethrough", global::DevWinUI.GlyphName.Strikethrough);
-                userType.AddEnumValue("Export", global::DevWinUI.GlyphName.Export);
-                userType.AddEnumValue("ExportMirrored", global::DevWinUI.GlyphName.ExportMirrored);
-                userType.AddEnumValue("ButtonMenu", global::DevWinUI.GlyphName.ButtonMenu);
-                userType.AddEnumValue("CloudSearch", global::DevWinUI.GlyphName.CloudSearch);
-                userType.AddEnumValue("PinyinIMELogo", global::DevWinUI.GlyphName.PinyinIMELogo);
-                userType.AddEnumValue("CalligraphyPen", global::DevWinUI.GlyphName.CalligraphyPen);
-                userType.AddEnumValue("ReplyMirrored", global::DevWinUI.GlyphName.ReplyMirrored);
-                userType.AddEnumValue("LockscreenDesktop", global::DevWinUI.GlyphName.LockscreenDesktop);
-                userType.AddEnumValue("TaskViewSettings", global::DevWinUI.GlyphName.TaskViewSettings);
-                userType.AddEnumValue("MiniExpand2Mirrored", global::DevWinUI.GlyphName.MiniExpand2Mirrored);
-                userType.AddEnumValue("MiniContract2Mirrored", global::DevWinUI.GlyphName.MiniContract2Mirrored);
-                userType.AddEnumValue("Play36", global::DevWinUI.GlyphName.Play36);
-                userType.AddEnumValue("PenPalette", global::DevWinUI.GlyphName.PenPalette);
-                userType.AddEnumValue("GuestUser", global::DevWinUI.GlyphName.GuestUser);
-                userType.AddEnumValue("SettingsBattery", global::DevWinUI.GlyphName.SettingsBattery);
-                userType.AddEnumValue("TaskbarPhone", global::DevWinUI.GlyphName.TaskbarPhone);
-                userType.AddEnumValue("LockScreenGlance", global::DevWinUI.GlyphName.LockScreenGlance);
-                userType.AddEnumValue("GenericScan", global::DevWinUI.GlyphName.GenericScan);
-                userType.AddEnumValue("ImageExport", global::DevWinUI.GlyphName.ImageExport);
-                userType.AddEnumValue("WifiEthernet", global::DevWinUI.GlyphName.WifiEthernet);
-                userType.AddEnumValue("ActionCenterQuiet", global::DevWinUI.GlyphName.ActionCenterQuiet);
-                userType.AddEnumValue("ActionCenterQuietNotification", global::DevWinUI.GlyphName.ActionCenterQuietNotification);
-                userType.AddEnumValue("TrackersMirrored", global::DevWinUI.GlyphName.TrackersMirrored);
-                userType.AddEnumValue("DateTimeMirrored", global::DevWinUI.GlyphName.DateTimeMirrored);
-                userType.AddEnumValue("Wheel", global::DevWinUI.GlyphName.Wheel);
-                userType.AddEnumValue("VirtualMachineGroup", global::DevWinUI.GlyphName.VirtualMachineGroup);
-                userType.AddEnumValue("ButtonView2", global::DevWinUI.GlyphName.ButtonView2);
-                userType.AddEnumValue("PenWorkspaceMirrored", global::DevWinUI.GlyphName.PenWorkspaceMirrored);
-                userType.AddEnumValue("PenPaletteMirrored", global::DevWinUI.GlyphName.PenPaletteMirrored);
-                userType.AddEnumValue("StrokeEraseMirrored", global::DevWinUI.GlyphName.StrokeEraseMirrored);
-                userType.AddEnumValue("PointEraseMirrored", global::DevWinUI.GlyphName.PointEraseMirrored);
-                userType.AddEnumValue("ClearAllInkMirrored", global::DevWinUI.GlyphName.ClearAllInkMirrored);
-                userType.AddEnumValue("BackgroundToggle", global::DevWinUI.GlyphName.BackgroundToggle);
-                userType.AddEnumValue("Marquee", global::DevWinUI.GlyphName.Marquee);
-                userType.AddEnumValue("ChromeCloseContrast", global::DevWinUI.GlyphName.ChromeCloseContrast);
-                userType.AddEnumValue("ChromeMinimizeContrast", global::DevWinUI.GlyphName.ChromeMinimizeContrast);
-                userType.AddEnumValue("ChromeMaximizeContrast", global::DevWinUI.GlyphName.ChromeMaximizeContrast);
-                userType.AddEnumValue("ChromeRestoreContrast", global::DevWinUI.GlyphName.ChromeRestoreContrast);
-                userType.AddEnumValue("TrafficLight", global::DevWinUI.GlyphName.TrafficLight);
-                userType.AddEnumValue("Replay", global::DevWinUI.GlyphName.Replay);
-                userType.AddEnumValue("Eyedropper", global::DevWinUI.GlyphName.Eyedropper);
-                userType.AddEnumValue("LineDisplay", global::DevWinUI.GlyphName.LineDisplay);
-                userType.AddEnumValue("PINPad", global::DevWinUI.GlyphName.PINPad);
-                userType.AddEnumValue("SignatureCapture", global::DevWinUI.GlyphName.SignatureCapture);
-                userType.AddEnumValue("ChipCardCreditCardReader", global::DevWinUI.GlyphName.ChipCardCreditCardReader);
-                userType.AddEnumValue("MarketDown", global::DevWinUI.GlyphName.MarketDown);
-                userType.AddEnumValue("PlayerSettings", global::DevWinUI.GlyphName.PlayerSettings);
-                userType.AddEnumValue("LandscapeOrientation", global::DevWinUI.GlyphName.LandscapeOrientation);
-                userType.AddEnumValue("Flow", global::DevWinUI.GlyphName.Flow);
-                userType.AddEnumValue("Touchpad", global::DevWinUI.GlyphName.Touchpad);
-                userType.AddEnumValue("Speech", global::DevWinUI.GlyphName.Speech);
-                userType.AddEnumValue("KnowledgeArticle", global::DevWinUI.GlyphName.KnowledgeArticle);
-                userType.AddEnumValue("Relationship", global::DevWinUI.GlyphName.Relationship);
-                userType.AddEnumValue("ZipFolder", global::DevWinUI.GlyphName.ZipFolder);
-                userType.AddEnumValue("DefaultAPN", global::DevWinUI.GlyphName.DefaultAPN);
-                userType.AddEnumValue("UserAPN", global::DevWinUI.GlyphName.UserAPN);
-                userType.AddEnumValue("DoublePinyin", global::DevWinUI.GlyphName.DoublePinyin);
-                userType.AddEnumValue("BlueLight", global::DevWinUI.GlyphName.BlueLight);
-                userType.AddEnumValue("CaretSolidLeft", global::DevWinUI.GlyphName.CaretSolidLeft);
-                userType.AddEnumValue("CaretSolidDown", global::DevWinUI.GlyphName.CaretSolidDown);
-                userType.AddEnumValue("CaretSolidRight", global::DevWinUI.GlyphName.CaretSolidRight);
-                userType.AddEnumValue("CaretSolidUp", global::DevWinUI.GlyphName.CaretSolidUp);
-                userType.AddEnumValue("ButtonA", global::DevWinUI.GlyphName.ButtonA);
-                userType.AddEnumValue("ButtonB", global::DevWinUI.GlyphName.ButtonB);
-                userType.AddEnumValue("ButtonY", global::DevWinUI.GlyphName.ButtonY);
-                userType.AddEnumValue("ButtonX", global::DevWinUI.GlyphName.ButtonX);
-                userType.AddEnumValue("ArrowUp8", global::DevWinUI.GlyphName.ArrowUp8);
-                userType.AddEnumValue("ArrowDown8", global::DevWinUI.GlyphName.ArrowDown8);
-                userType.AddEnumValue("ArrowRight8", global::DevWinUI.GlyphName.ArrowRight8);
-                userType.AddEnumValue("ArrowLeft8", global::DevWinUI.GlyphName.ArrowLeft8);
-                userType.AddEnumValue("QuarentinedItems", global::DevWinUI.GlyphName.QuarentinedItems);
-                userType.AddEnumValue("QuarentinedItemsMirrored", global::DevWinUI.GlyphName.QuarentinedItemsMirrored);
-                userType.AddEnumValue("Protractor", global::DevWinUI.GlyphName.Protractor);
-                userType.AddEnumValue("ChecklistMirrored", global::DevWinUI.GlyphName.ChecklistMirrored);
-                userType.AddEnumValue("StatusCircle7", global::DevWinUI.GlyphName.StatusCircle7);
-                userType.AddEnumValue("StatusCheckmark7", global::DevWinUI.GlyphName.StatusCheckmark7);
-                userType.AddEnumValue("StatusErrorCircle7", global::DevWinUI.GlyphName.StatusErrorCircle7);
-                userType.AddEnumValue("Connected", global::DevWinUI.GlyphName.Connected);
-                userType.AddEnumValue("PencilFill", global::DevWinUI.GlyphName.PencilFill);
-                userType.AddEnumValue("CalligraphyFill", global::DevWinUI.GlyphName.CalligraphyFill);
-                userType.AddEnumValue("QuarterStarLeft", global::DevWinUI.GlyphName.QuarterStarLeft);
-                userType.AddEnumValue("QuarterStarRight", global::DevWinUI.GlyphName.QuarterStarRight);
-                userType.AddEnumValue("ThreeQuarterStarLeft", global::DevWinUI.GlyphName.ThreeQuarterStarLeft);
-                userType.AddEnumValue("ThreeQuarterStarRight", global::DevWinUI.GlyphName.ThreeQuarterStarRight);
-                userType.AddEnumValue("QuietHoursBadge12", global::DevWinUI.GlyphName.QuietHoursBadge12);
-                userType.AddEnumValue("BackMirrored", global::DevWinUI.GlyphName.BackMirrored);
-                userType.AddEnumValue("ForwardMirrored", global::DevWinUI.GlyphName.ForwardMirrored);
-                userType.AddEnumValue("ChromeBackContrast", global::DevWinUI.GlyphName.ChromeBackContrast);
-                userType.AddEnumValue("ChromeBackContrastMirrored", global::DevWinUI.GlyphName.ChromeBackContrastMirrored);
-                userType.AddEnumValue("ChromeBackToWindowContrast", global::DevWinUI.GlyphName.ChromeBackToWindowContrast);
-                userType.AddEnumValue("ChromeFullScreenContrast", global::DevWinUI.GlyphName.ChromeFullScreenContrast);
-                userType.AddEnumValue("GridView", global::DevWinUI.GlyphName.GridView);
-                userType.AddEnumValue("ClipboardList", global::DevWinUI.GlyphName.ClipboardList);
-                userType.AddEnumValue("ClipboardListMirrored", global::DevWinUI.GlyphName.ClipboardListMirrored);
-                userType.AddEnumValue("OutlineQuarterStarLeft", global::DevWinUI.GlyphName.OutlineQuarterStarLeft);
-                userType.AddEnumValue("OutlineQuarterStarRight", global::DevWinUI.GlyphName.OutlineQuarterStarRight);
-                userType.AddEnumValue("OutlineHalfStarLeft", global::DevWinUI.GlyphName.OutlineHalfStarLeft);
-                userType.AddEnumValue("OutlineHalfStarRight", global::DevWinUI.GlyphName.OutlineHalfStarRight);
-                userType.AddEnumValue("OutlineThreeQuarterStarLeft", global::DevWinUI.GlyphName.OutlineThreeQuarterStarLeft);
-                userType.AddEnumValue("OutlineThreeQuarterStarRight", global::DevWinUI.GlyphName.OutlineThreeQuarterStarRight);
-                userType.AddEnumValue("SpatialVolume0", global::DevWinUI.GlyphName.SpatialVolume0);
-                userType.AddEnumValue("SpatialVolume1", global::DevWinUI.GlyphName.SpatialVolume1);
-                userType.AddEnumValue("SpatialVolume2", global::DevWinUI.GlyphName.SpatialVolume2);
-                userType.AddEnumValue("SpatialVolume3", global::DevWinUI.GlyphName.SpatialVolume3);
-                userType.AddEnumValue("ApplicationGuard", global::DevWinUI.GlyphName.ApplicationGuard);
-                userType.AddEnumValue("OutlineStarLeftHalf", global::DevWinUI.GlyphName.OutlineStarLeftHalf);
-                userType.AddEnumValue("OutlineStarRightHalf", global::DevWinUI.GlyphName.OutlineStarRightHalf);
-                userType.AddEnumValue("ChromeAnnotateContrast", global::DevWinUI.GlyphName.ChromeAnnotateContrast);
-                userType.AddEnumValue("DefenderBadge12", global::DevWinUI.GlyphName.DefenderBadge12);
-                userType.AddEnumValue("DetachablePC", global::DevWinUI.GlyphName.DetachablePC);
-                userType.AddEnumValue("LeftStick", global::DevWinUI.GlyphName.LeftStick);
-                userType.AddEnumValue("RightStick", global::DevWinUI.GlyphName.RightStick);
-                userType.AddEnumValue("TriggerLeft", global::DevWinUI.GlyphName.TriggerLeft);
-                userType.AddEnumValue("TriggerRight", global::DevWinUI.GlyphName.TriggerRight);
-                userType.AddEnumValue("BumperLeft", global::DevWinUI.GlyphName.BumperLeft);
-                userType.AddEnumValue("BumperRight", global::DevWinUI.GlyphName.BumperRight);
-                userType.AddEnumValue("Dpad", global::DevWinUI.GlyphName.Dpad);
-                userType.AddEnumValue("EnglishPunctuation", global::DevWinUI.GlyphName.EnglishPunctuation);
-                userType.AddEnumValue("ChinesePunctuation", global::DevWinUI.GlyphName.ChinesePunctuation);
-                userType.AddEnumValue("HMD", global::DevWinUI.GlyphName.HMD);
-                userType.AddEnumValue("CtrlSpatialRight", global::DevWinUI.GlyphName.CtrlSpatialRight);
-                userType.AddEnumValue("PaginationDotOutline10", global::DevWinUI.GlyphName.PaginationDotOutline10);
-                userType.AddEnumValue("PaginationDotSolid10", global::DevWinUI.GlyphName.PaginationDotSolid10);
-                userType.AddEnumValue("StrokeErase2", global::DevWinUI.GlyphName.StrokeErase2);
-                userType.AddEnumValue("SmallErase", global::DevWinUI.GlyphName.SmallErase);
-                userType.AddEnumValue("LargeErase", global::DevWinUI.GlyphName.LargeErase);
-                userType.AddEnumValue("FolderHorizontal", global::DevWinUI.GlyphName.FolderHorizontal);
-                userType.AddEnumValue("MicrophoneListening", global::DevWinUI.GlyphName.MicrophoneListening);
-                userType.AddEnumValue("StatusExclamationCircle7", global::DevWinUI.GlyphName.StatusExclamationCircle7);
-                userType.AddEnumValue("Video360", global::DevWinUI.GlyphName.Video360);
-                userType.AddEnumValue("GiftboxOpen", global::DevWinUI.GlyphName.GiftboxOpen);
-                userType.AddEnumValue("StatusCircleOuter", global::DevWinUI.GlyphName.StatusCircleOuter);
-                userType.AddEnumValue("StatusCircleInner", global::DevWinUI.GlyphName.StatusCircleInner);
-                userType.AddEnumValue("StatusCircleRing", global::DevWinUI.GlyphName.StatusCircleRing);
-                userType.AddEnumValue("StatusTriangleOuter", global::DevWinUI.GlyphName.StatusTriangleOuter);
-                userType.AddEnumValue("StatusTriangleInner", global::DevWinUI.GlyphName.StatusTriangleInner);
-                userType.AddEnumValue("StatusTriangleExclamation", global::DevWinUI.GlyphName.StatusTriangleExclamation);
-                userType.AddEnumValue("StatusCircleExclamation", global::DevWinUI.GlyphName.StatusCircleExclamation);
-                userType.AddEnumValue("StatusCircleErrorX", global::DevWinUI.GlyphName.StatusCircleErrorX);
-                userType.AddEnumValue("StatusCircleCheckmark", global::DevWinUI.GlyphName.StatusCircleCheckmark);
-                userType.AddEnumValue("StatusCircleInfo", global::DevWinUI.GlyphName.StatusCircleInfo);
-                userType.AddEnumValue("StatusCircleBlock", global::DevWinUI.GlyphName.StatusCircleBlock);
-                userType.AddEnumValue("StatusCircleBlock2", global::DevWinUI.GlyphName.StatusCircleBlock2);
-                userType.AddEnumValue("StatusCircleQuestionMark", global::DevWinUI.GlyphName.StatusCircleQuestionMark);
-                userType.AddEnumValue("StatusCircleSync", global::DevWinUI.GlyphName.StatusCircleSync);
-                userType.AddEnumValue("Dial1", global::DevWinUI.GlyphName.Dial1);
-                userType.AddEnumValue("Dial2", global::DevWinUI.GlyphName.Dial2);
-                userType.AddEnumValue("Dial3", global::DevWinUI.GlyphName.Dial3);
-                userType.AddEnumValue("Dial4", global::DevWinUI.GlyphName.Dial4);
-                userType.AddEnumValue("Dial5", global::DevWinUI.GlyphName.Dial5);
-                userType.AddEnumValue("Dial6", global::DevWinUI.GlyphName.Dial6);
-                userType.AddEnumValue("Dial7", global::DevWinUI.GlyphName.Dial7);
-                userType.AddEnumValue("Dial8", global::DevWinUI.GlyphName.Dial8);
-                userType.AddEnumValue("Dial9", global::DevWinUI.GlyphName.Dial9);
-                userType.AddEnumValue("Dial10", global::DevWinUI.GlyphName.Dial10);
-                userType.AddEnumValue("Dial11", global::DevWinUI.GlyphName.Dial11);
-                userType.AddEnumValue("Dial12", global::DevWinUI.GlyphName.Dial12);
-                userType.AddEnumValue("Dial13", global::DevWinUI.GlyphName.Dial13);
-                userType.AddEnumValue("Dial14", global::DevWinUI.GlyphName.Dial14);
-                userType.AddEnumValue("Dial15", global::DevWinUI.GlyphName.Dial15);
-                userType.AddEnumValue("Dial16", global::DevWinUI.GlyphName.Dial16);
-                userType.AddEnumValue("DialShape1", global::DevWinUI.GlyphName.DialShape1);
-                userType.AddEnumValue("DialShape2", global::DevWinUI.GlyphName.DialShape2);
-                userType.AddEnumValue("DialShape3", global::DevWinUI.GlyphName.DialShape3);
-                userType.AddEnumValue("DialShape4", global::DevWinUI.GlyphName.DialShape4);
-                userType.AddEnumValue("ClosedCaptionsInternational", global::DevWinUI.GlyphName.ClosedCaptionsInternational);
-                userType.AddEnumValue("TollSolid", global::DevWinUI.GlyphName.TollSolid);
-                userType.AddEnumValue("TrafficCongestionSolid", global::DevWinUI.GlyphName.TrafficCongestionSolid);
-                userType.AddEnumValue("ExploreContentSingle", global::DevWinUI.GlyphName.ExploreContentSingle);
-                userType.AddEnumValue("CollapseContent", global::DevWinUI.GlyphName.CollapseContent);
-                userType.AddEnumValue("CollapseContentSingle", global::DevWinUI.GlyphName.CollapseContentSingle);
-                userType.AddEnumValue("InfoSolid", global::DevWinUI.GlyphName.InfoSolid);
-                userType.AddEnumValue("GroupList", global::DevWinUI.GlyphName.GroupList);
-                userType.AddEnumValue("CaretBottomRightSolidCenter8", global::DevWinUI.GlyphName.CaretBottomRightSolidCenter8);
-                userType.AddEnumValue("ProgressRingDots", global::DevWinUI.GlyphName.ProgressRingDots);
-                userType.AddEnumValue("Checkbox14", global::DevWinUI.GlyphName.Checkbox14);
-                userType.AddEnumValue("CheckboxComposite14", global::DevWinUI.GlyphName.CheckboxComposite14);
-                userType.AddEnumValue("CheckboxIndeterminateCombo14", global::DevWinUI.GlyphName.CheckboxIndeterminateCombo14);
-                userType.AddEnumValue("CheckboxIndeterminateCombo", global::DevWinUI.GlyphName.CheckboxIndeterminateCombo);
-                userType.AddEnumValue("StatusPause7", global::DevWinUI.GlyphName.StatusPause7);
-                userType.AddEnumValue("CharacterAppearance", global::DevWinUI.GlyphName.CharacterAppearance);
-                userType.AddEnumValue("Lexicon", global::DevWinUI.GlyphName.Lexicon);
-                userType.AddEnumValue("ScreenTime", global::DevWinUI.GlyphName.ScreenTime);
-                userType.AddEnumValue("HeadlessDevice", global::DevWinUI.GlyphName.HeadlessDevice);
-                userType.AddEnumValue("NetworkSharing", global::DevWinUI.GlyphName.NetworkSharing);
-                userType.AddEnumValue("EyeGaze", global::DevWinUI.GlyphName.EyeGaze);
-                userType.AddEnumValue("ToggleLeft", global::DevWinUI.GlyphName.ToggleLeft);
-                userType.AddEnumValue("ToggleRight", global::DevWinUI.GlyphName.ToggleRight);
-                userType.AddEnumValue("WindowsInsider", global::DevWinUI.GlyphName.WindowsInsider);
-                userType.AddEnumValue("ChromeSwitch", global::DevWinUI.GlyphName.ChromeSwitch);
-                userType.AddEnumValue("ChromeSwitchContast", global::DevWinUI.GlyphName.ChromeSwitchContast);
-                userType.AddEnumValue("StatusCheckmark", global::DevWinUI.GlyphName.StatusCheckmark);
-                userType.AddEnumValue("StatusCheckmarkLeft", global::DevWinUI.GlyphName.StatusCheckmarkLeft);
-                userType.AddEnumValue("KeyboardLeftAligned", global::DevWinUI.GlyphName.KeyboardLeftAligned);
-                userType.AddEnumValue("KeyboardRightAligned", global::DevWinUI.GlyphName.KeyboardRightAligned);
-                userType.AddEnumValue("KeyboardSettings", global::DevWinUI.GlyphName.KeyboardSettings);
-                userType.AddEnumValue("NetworkPhysical", global::DevWinUI.GlyphName.NetworkPhysical);
-                userType.AddEnumValue("IOT", global::DevWinUI.GlyphName.IOT);
-                userType.AddEnumValue("UnknownMirrored", global::DevWinUI.GlyphName.UnknownMirrored);
-                userType.AddEnumValue("ViewDashboard", global::DevWinUI.GlyphName.ViewDashboard);
-                userType.AddEnumValue("ExploitProtectionSettings", global::DevWinUI.GlyphName.ExploitProtectionSettings);
-                userType.AddEnumValue("KeyboardNarrow", global::DevWinUI.GlyphName.KeyboardNarrow);
-                userType.AddEnumValue("Keyboard12Key", global::DevWinUI.GlyphName.Keyboard12Key);
-                userType.AddEnumValue("KeyboardDock", global::DevWinUI.GlyphName.KeyboardDock);
-                userType.AddEnumValue("KeyboardUndock", global::DevWinUI.GlyphName.KeyboardUndock);
-                userType.AddEnumValue("KeyboardLeftDock", global::DevWinUI.GlyphName.KeyboardLeftDock);
-                userType.AddEnumValue("KeyboardRightDock", global::DevWinUI.GlyphName.KeyboardRightDock);
-                userType.AddEnumValue("Ear", global::DevWinUI.GlyphName.Ear);
-                userType.AddEnumValue("PointerHand", global::DevWinUI.GlyphName.PointerHand);
-                userType.AddEnumValue("Bullseye", global::DevWinUI.GlyphName.Bullseye);
-                userType.AddEnumValue("DocumentApproval", global::DevWinUI.GlyphName.DocumentApproval);
-                userType.AddEnumValue("LocaleLanguage", global::DevWinUI.GlyphName.LocaleLanguage);
-                userType.AddEnumValue("PassiveAuthentication", global::DevWinUI.GlyphName.PassiveAuthentication);
-                userType.AddEnumValue("ColorSolid", global::DevWinUI.GlyphName.ColorSolid);
-                userType.AddEnumValue("NetworkOffline", global::DevWinUI.GlyphName.NetworkOffline);
-                userType.AddEnumValue("NetworkConnected", global::DevWinUI.GlyphName.NetworkConnected);
-                userType.AddEnumValue("NetworkConnectedCheckmark", global::DevWinUI.GlyphName.NetworkConnectedCheckmark);
-                userType.AddEnumValue("SignOut", global::DevWinUI.GlyphName.SignOut);
-                userType.AddEnumValue("StatusInfo", global::DevWinUI.GlyphName.StatusInfo);
-                userType.AddEnumValue("StatusInfoLeft", global::DevWinUI.GlyphName.StatusInfoLeft);
-                userType.AddEnumValue("NearbySharing", global::DevWinUI.GlyphName.NearbySharing);
-                userType.AddEnumValue("CtrlSpatialLeft", global::DevWinUI.GlyphName.CtrlSpatialLeft);
-                userType.AddEnumValue("InteractiveDashboard", global::DevWinUI.GlyphName.InteractiveDashboard);
-                userType.AddEnumValue("DeclineCall", global::DevWinUI.GlyphName.DeclineCall);
-                userType.AddEnumValue("ClippingTool", global::DevWinUI.GlyphName.ClippingTool);
-                userType.AddEnumValue("RectangularClipping", global::DevWinUI.GlyphName.RectangularClipping);
-                userType.AddEnumValue("FreeFormClipping", global::DevWinUI.GlyphName.FreeFormClipping);
-                userType.AddEnumValue("CopyTo", global::DevWinUI.GlyphName.CopyTo);
-                userType.AddEnumValue("IDBadge", global::DevWinUI.GlyphName.IDBadge);
-                userType.AddEnumValue("DynamicLock", global::DevWinUI.GlyphName.DynamicLock);
-                userType.AddEnumValue("PenTips", global::DevWinUI.GlyphName.PenTips);
-                userType.AddEnumValue("PenTipsMirrored", global::DevWinUI.GlyphName.PenTipsMirrored);
-                userType.AddEnumValue("HWPJoin", global::DevWinUI.GlyphName.HWPJoin);
-                userType.AddEnumValue("HWPInsert", global::DevWinUI.GlyphName.HWPInsert);
-                userType.AddEnumValue("HWPStrikeThrough", global::DevWinUI.GlyphName.HWPStrikeThrough);
-                userType.AddEnumValue("HWPScratchOut", global::DevWinUI.GlyphName.HWPScratchOut);
-                userType.AddEnumValue("HWPSplit", global::DevWinUI.GlyphName.HWPSplit);
-                userType.AddEnumValue("HWPNewLine", global::DevWinUI.GlyphName.HWPNewLine);
-                userType.AddEnumValue("HWPOverwrite", global::DevWinUI.GlyphName.HWPOverwrite);
-                userType.AddEnumValue("MobWifiWarning1", global::DevWinUI.GlyphName.MobWifiWarning1);
-                userType.AddEnumValue("MobWifiWarning2", global::DevWinUI.GlyphName.MobWifiWarning2);
-                userType.AddEnumValue("MobWifiWarning3", global::DevWinUI.GlyphName.MobWifiWarning3);
-                userType.AddEnumValue("MobWifiWarning4", global::DevWinUI.GlyphName.MobWifiWarning4);
-                userType.AddEnumValue("MicLocationCombo", global::DevWinUI.GlyphName.MicLocationCombo);
-                userType.AddEnumValue("Globe2", global::DevWinUI.GlyphName.Globe2);
-                userType.AddEnumValue("SpecialEffectSize", global::DevWinUI.GlyphName.SpecialEffectSize);
-                userType.AddEnumValue("GIF", global::DevWinUI.GlyphName.GIF);
-                userType.AddEnumValue("Sticker2", global::DevWinUI.GlyphName.Sticker2);
-                userType.AddEnumValue("SurfaceHubSelected", global::DevWinUI.GlyphName.SurfaceHubSelected);
-                userType.AddEnumValue("HoloLensSelected", global::DevWinUI.GlyphName.HoloLensSelected);
-                userType.AddEnumValue("Earbud", global::DevWinUI.GlyphName.Earbud);
-                userType.AddEnumValue("MixVolumes", global::DevWinUI.GlyphName.MixVolumes);
-                userType.AddEnumValue("Safe", global::DevWinUI.GlyphName.Safe);
-                userType.AddEnumValue("LaptopSecure", global::DevWinUI.GlyphName.LaptopSecure);
-                userType.AddEnumValue("PrintDefault", global::DevWinUI.GlyphName.PrintDefault);
-                userType.AddEnumValue("PageMirrored", global::DevWinUI.GlyphName.PageMirrored);
-                userType.AddEnumValue("LandscapeOrientationMirrored", global::DevWinUI.GlyphName.LandscapeOrientationMirrored);
-                userType.AddEnumValue("ColorOff", global::DevWinUI.GlyphName.ColorOff);
-                userType.AddEnumValue("PrintAllPages", global::DevWinUI.GlyphName.PrintAllPages);
-                userType.AddEnumValue("PrintCustomRange", global::DevWinUI.GlyphName.PrintCustomRange);
-                userType.AddEnumValue("PageMarginPortraitNarrow", global::DevWinUI.GlyphName.PageMarginPortraitNarrow);
-                userType.AddEnumValue("PageMarginPortraitNormal", global::DevWinUI.GlyphName.PageMarginPortraitNormal);
-                userType.AddEnumValue("PageMarginPortraitModerate", global::DevWinUI.GlyphName.PageMarginPortraitModerate);
-                userType.AddEnumValue("PageMarginPortraitWide", global::DevWinUI.GlyphName.PageMarginPortraitWide);
-                userType.AddEnumValue("PageMarginLandscapeNarrow", global::DevWinUI.GlyphName.PageMarginLandscapeNarrow);
-                userType.AddEnumValue("PageMarginLandscapeNormal", global::DevWinUI.GlyphName.PageMarginLandscapeNormal);
-                userType.AddEnumValue("PageMarginLandscapeModerate", global::DevWinUI.GlyphName.PageMarginLandscapeModerate);
-                userType.AddEnumValue("PageMarginLandscapeWide", global::DevWinUI.GlyphName.PageMarginLandscapeWide);
-                userType.AddEnumValue("CollateLandscape", global::DevWinUI.GlyphName.CollateLandscape);
-                userType.AddEnumValue("CollatePortrait", global::DevWinUI.GlyphName.CollatePortrait);
-                userType.AddEnumValue("CollatePortraitSeparated", global::DevWinUI.GlyphName.CollatePortraitSeparated);
-                userType.AddEnumValue("DuplexLandscapeOneSided", global::DevWinUI.GlyphName.DuplexLandscapeOneSided);
-                userType.AddEnumValue("DuplexLandscapeOneSidedMirrored", global::DevWinUI.GlyphName.DuplexLandscapeOneSidedMirrored);
-                userType.AddEnumValue("DuplexLandscapeTwoSidedLongEdge", global::DevWinUI.GlyphName.DuplexLandscapeTwoSidedLongEdge);
-                userType.AddEnumValue("DuplexLandscapeTwoSidedLongEdgeMirrored", global::DevWinUI.GlyphName.DuplexLandscapeTwoSidedLongEdgeMirrored);
-                userType.AddEnumValue("DuplexLandscapeTwoSidedShortEdge", global::DevWinUI.GlyphName.DuplexLandscapeTwoSidedShortEdge);
-                userType.AddEnumValue("DuplexLandscapeTwoSidedShortEdgeMirrored", global::DevWinUI.GlyphName.DuplexLandscapeTwoSidedShortEdgeMirrored);
-                userType.AddEnumValue("DuplexPortraitOneSided", global::DevWinUI.GlyphName.DuplexPortraitOneSided);
-                userType.AddEnumValue("DuplexPortraitOneSidedMirrored", global::DevWinUI.GlyphName.DuplexPortraitOneSidedMirrored);
-                userType.AddEnumValue("DuplexPortraitTwoSidedLongEdge", global::DevWinUI.GlyphName.DuplexPortraitTwoSidedLongEdge);
-                userType.AddEnumValue("DuplexPortraitTwoSidedLongEdgeMirrored", global::DevWinUI.GlyphName.DuplexPortraitTwoSidedLongEdgeMirrored);
-                userType.AddEnumValue("DuplexPortraitTwoSidedShortEdge", global::DevWinUI.GlyphName.DuplexPortraitTwoSidedShortEdge);
-                userType.AddEnumValue("DuplexPortraitTwoSidedShortEdgeMirrored", global::DevWinUI.GlyphName.DuplexPortraitTwoSidedShortEdgeMirrored);
-                userType.AddEnumValue("PPSOneLandscape", global::DevWinUI.GlyphName.PPSOneLandscape);
-                userType.AddEnumValue("PPSTwoLandscape", global::DevWinUI.GlyphName.PPSTwoLandscape);
-                userType.AddEnumValue("PPSTwoPortrait", global::DevWinUI.GlyphName.PPSTwoPortrait);
-                userType.AddEnumValue("PPSFourLandscape", global::DevWinUI.GlyphName.PPSFourLandscape);
-                userType.AddEnumValue("PPSFourPortrait", global::DevWinUI.GlyphName.PPSFourPortrait);
-                userType.AddEnumValue("HolePunchOff", global::DevWinUI.GlyphName.HolePunchOff);
-                userType.AddEnumValue("HolePunchPortraitLeft", global::DevWinUI.GlyphName.HolePunchPortraitLeft);
-                userType.AddEnumValue("HolePunchPortraitRight", global::DevWinUI.GlyphName.HolePunchPortraitRight);
-                userType.AddEnumValue("HolePunchPortraitTop", global::DevWinUI.GlyphName.HolePunchPortraitTop);
-                userType.AddEnumValue("HolePunchPortraitBottom", global::DevWinUI.GlyphName.HolePunchPortraitBottom);
-                userType.AddEnumValue("HolePunchLandscapeLeft", global::DevWinUI.GlyphName.HolePunchLandscapeLeft);
-                userType.AddEnumValue("HolePunchLandscapeRight", global::DevWinUI.GlyphName.HolePunchLandscapeRight);
-                userType.AddEnumValue("HolePunchLandscapeTop", global::DevWinUI.GlyphName.HolePunchLandscapeTop);
-                userType.AddEnumValue("HolePunchLandscapeBottom", global::DevWinUI.GlyphName.HolePunchLandscapeBottom);
-                userType.AddEnumValue("StaplingOff", global::DevWinUI.GlyphName.StaplingOff);
-                userType.AddEnumValue("StaplingPortraitTopLeft", global::DevWinUI.GlyphName.StaplingPortraitTopLeft);
-                userType.AddEnumValue("StaplingPortraitTopRight", global::DevWinUI.GlyphName.StaplingPortraitTopRight);
-                userType.AddEnumValue("StaplingPortraitBottomRight", global::DevWinUI.GlyphName.StaplingPortraitBottomRight);
-                userType.AddEnumValue("StaplingPortraitTwoLeft", global::DevWinUI.GlyphName.StaplingPortraitTwoLeft);
-                userType.AddEnumValue("StaplingPortraitTwoRight", global::DevWinUI.GlyphName.StaplingPortraitTwoRight);
-                userType.AddEnumValue("StaplingPortraitTwoTop", global::DevWinUI.GlyphName.StaplingPortraitTwoTop);
-                userType.AddEnumValue("StaplingPortraitTwoBottom", global::DevWinUI.GlyphName.StaplingPortraitTwoBottom);
-                userType.AddEnumValue("StaplingPortraitBookBinding", global::DevWinUI.GlyphName.StaplingPortraitBookBinding);
-                userType.AddEnumValue("StaplingLandscapeTopLeft", global::DevWinUI.GlyphName.StaplingLandscapeTopLeft);
-                userType.AddEnumValue("StaplingLandscapeTopRight", global::DevWinUI.GlyphName.StaplingLandscapeTopRight);
-                userType.AddEnumValue("StaplingLandscapeBottomLeft", global::DevWinUI.GlyphName.StaplingLandscapeBottomLeft);
-                userType.AddEnumValue("StaplingLandscapeBottomRight", global::DevWinUI.GlyphName.StaplingLandscapeBottomRight);
-                userType.AddEnumValue("StaplingLandscapeTwoLeft", global::DevWinUI.GlyphName.StaplingLandscapeTwoLeft);
-                userType.AddEnumValue("StaplingLandscapeTwoRight", global::DevWinUI.GlyphName.StaplingLandscapeTwoRight);
-                userType.AddEnumValue("StaplingLandscapeTwoTop", global::DevWinUI.GlyphName.StaplingLandscapeTwoTop);
-                userType.AddEnumValue("StaplingLandscapeTwoBottom", global::DevWinUI.GlyphName.StaplingLandscapeTwoBottom);
-                userType.AddEnumValue("StaplingLandscapeBookBinding", global::DevWinUI.GlyphName.StaplingLandscapeBookBinding);
-                userType.AddEnumValue("StatusDataTransferRoaming", global::DevWinUI.GlyphName.StatusDataTransferRoaming);
-                userType.AddEnumValue("MobSIMError", global::DevWinUI.GlyphName.MobSIMError);
-                userType.AddEnumValue("CollateLandscapeSeparated", global::DevWinUI.GlyphName.CollateLandscapeSeparated);
-                userType.AddEnumValue("PPSOnePortrait", global::DevWinUI.GlyphName.PPSOnePortrait);
-                userType.AddEnumValue("StaplingPortraitBottomLeft", global::DevWinUI.GlyphName.StaplingPortraitBottomLeft);
-                userType.AddEnumValue("PlaySolid", global::DevWinUI.GlyphName.PlaySolid);
-                userType.AddEnumValue("RepeatOff", global::DevWinUI.GlyphName.RepeatOff);
-                userType.AddEnumValue("Set", global::DevWinUI.GlyphName.Set);
-                userType.AddEnumValue("SetSolid", global::DevWinUI.GlyphName.SetSolid);
-                userType.AddEnumValue("FuzzyReading", global::DevWinUI.GlyphName.FuzzyReading);
-                userType.AddEnumValue("VerticalBattery0", global::DevWinUI.GlyphName.VerticalBattery0);
-                userType.AddEnumValue("VerticalBattery1", global::DevWinUI.GlyphName.VerticalBattery1);
-                userType.AddEnumValue("VerticalBattery2", global::DevWinUI.GlyphName.VerticalBattery2);
-                userType.AddEnumValue("VerticalBattery3", global::DevWinUI.GlyphName.VerticalBattery3);
-                userType.AddEnumValue("VerticalBattery4", global::DevWinUI.GlyphName.VerticalBattery4);
-                userType.AddEnumValue("VerticalBattery5", global::DevWinUI.GlyphName.VerticalBattery5);
-                userType.AddEnumValue("VerticalBattery6", global::DevWinUI.GlyphName.VerticalBattery6);
-                userType.AddEnumValue("VerticalBattery7", global::DevWinUI.GlyphName.VerticalBattery7);
-                userType.AddEnumValue("VerticalBattery8", global::DevWinUI.GlyphName.VerticalBattery8);
-                userType.AddEnumValue("VerticalBattery9", global::DevWinUI.GlyphName.VerticalBattery9);
-                userType.AddEnumValue("VerticalBattery10", global::DevWinUI.GlyphName.VerticalBattery10);
-                userType.AddEnumValue("VerticalBatteryCharging0", global::DevWinUI.GlyphName.VerticalBatteryCharging0);
-                userType.AddEnumValue("VerticalBatteryCharging1", global::DevWinUI.GlyphName.VerticalBatteryCharging1);
-                userType.AddEnumValue("VerticalBatteryCharging2", global::DevWinUI.GlyphName.VerticalBatteryCharging2);
-                userType.AddEnumValue("VerticalBatteryCharging3", global::DevWinUI.GlyphName.VerticalBatteryCharging3);
-                userType.AddEnumValue("VerticalBatteryCharging4", global::DevWinUI.GlyphName.VerticalBatteryCharging4);
-                userType.AddEnumValue("VerticalBatteryCharging5", global::DevWinUI.GlyphName.VerticalBatteryCharging5);
-                userType.AddEnumValue("VerticalBatteryCharging6", global::DevWinUI.GlyphName.VerticalBatteryCharging6);
-                userType.AddEnumValue("VerticalBatteryCharging7", global::DevWinUI.GlyphName.VerticalBatteryCharging7);
-                userType.AddEnumValue("VerticalBatteryCharging8", global::DevWinUI.GlyphName.VerticalBatteryCharging8);
-                userType.AddEnumValue("VerticalBatteryCharging9", global::DevWinUI.GlyphName.VerticalBatteryCharging9);
-                userType.AddEnumValue("VerticalBatteryCharging10", global::DevWinUI.GlyphName.VerticalBatteryCharging10);
-                userType.AddEnumValue("VerticalBatteryUnknown", global::DevWinUI.GlyphName.VerticalBatteryUnknown);
-                userType.AddEnumValue("SIMError", global::DevWinUI.GlyphName.SIMError);
-                userType.AddEnumValue("SIMMissing", global::DevWinUI.GlyphName.SIMMissing);
-                userType.AddEnumValue("SIMLock", global::DevWinUI.GlyphName.SIMLock);
-                userType.AddEnumValue("eSIM", global::DevWinUI.GlyphName.eSIM);
-                userType.AddEnumValue("eSIMNoProfile", global::DevWinUI.GlyphName.eSIMNoProfile);
-                userType.AddEnumValue("eSIMLocked", global::DevWinUI.GlyphName.eSIMLocked);
-                userType.AddEnumValue("eSIMBusy", global::DevWinUI.GlyphName.eSIMBusy);
-                userType.AddEnumValue("NoiseCancelation", global::DevWinUI.GlyphName.NoiseCancelation);
-                userType.AddEnumValue("NoiseCancelationOff", global::DevWinUI.GlyphName.NoiseCancelationOff);
-                userType.AddEnumValue("MusicSharing", global::DevWinUI.GlyphName.MusicSharing);
-                userType.AddEnumValue("MusicSharingOff", global::DevWinUI.GlyphName.MusicSharingOff);
-                userType.AddEnumValue("CircleShapeSolid", global::DevWinUI.GlyphName.CircleShapeSolid);
-                userType.AddEnumValue("WifiCallBars", global::DevWinUI.GlyphName.WifiCallBars);
-                userType.AddEnumValue("WifiCall0", global::DevWinUI.GlyphName.WifiCall0);
-                userType.AddEnumValue("WifiCall1", global::DevWinUI.GlyphName.WifiCall1);
-                userType.AddEnumValue("WifiCall2", global::DevWinUI.GlyphName.WifiCall2);
-                userType.AddEnumValue("WifiCall3", global::DevWinUI.GlyphName.WifiCall3);
-                userType.AddEnumValue("WifiCall4", global::DevWinUI.GlyphName.WifiCall4);
-                userType.AddEnumValue("CHTLanguageBar", global::DevWinUI.GlyphName.CHTLanguageBar);
-                userType.AddEnumValue("ComposeMode", global::DevWinUI.GlyphName.ComposeMode);
-                userType.AddEnumValue("ExpressiveInputEntry", global::DevWinUI.GlyphName.ExpressiveInputEntry);
-                userType.AddEnumValue("EmojiTabMoreSymbols", global::DevWinUI.GlyphName.EmojiTabMoreSymbols);
-                userType.AddEnumValue("WebSearch", global::DevWinUI.GlyphName.WebSearch);
-                userType.AddEnumValue("Kiosk", global::DevWinUI.GlyphName.Kiosk);
-                userType.AddEnumValue("RTTLogo", global::DevWinUI.GlyphName.RTTLogo);
-                userType.AddEnumValue("VoiceCall", global::DevWinUI.GlyphName.VoiceCall);
-                userType.AddEnumValue("GoToMessage", global::DevWinUI.GlyphName.GoToMessage);
-                userType.AddEnumValue("ReturnToCall", global::DevWinUI.GlyphName.ReturnToCall);
-                userType.AddEnumValue("StartPresenting", global::DevWinUI.GlyphName.StartPresenting);
-                userType.AddEnumValue("StopPresenting", global::DevWinUI.GlyphName.StopPresenting);
-                userType.AddEnumValue("ProductivityMode", global::DevWinUI.GlyphName.ProductivityMode);
-                userType.AddEnumValue("SetHistoryStatus", global::DevWinUI.GlyphName.SetHistoryStatus);
-                userType.AddEnumValue("SetHistoryStatus2", global::DevWinUI.GlyphName.SetHistoryStatus2);
-                userType.AddEnumValue("Keyboardsettings20", global::DevWinUI.GlyphName.Keyboardsettings20);
-                userType.AddEnumValue("OneHandedRight20", global::DevWinUI.GlyphName.OneHandedRight20);
-                userType.AddEnumValue("OneHandedLeft20", global::DevWinUI.GlyphName.OneHandedLeft20);
-                userType.AddEnumValue("Split20", global::DevWinUI.GlyphName.Split20);
-                userType.AddEnumValue("Full20", global::DevWinUI.GlyphName.Full20);
-                userType.AddEnumValue("Handwriting20", global::DevWinUI.GlyphName.Handwriting20);
-                userType.AddEnumValue("ChevronLeft20", global::DevWinUI.GlyphName.ChevronLeft20);
-                userType.AddEnumValue("ChevronLeft32", global::DevWinUI.GlyphName.ChevronLeft32);
-                userType.AddEnumValue("ChevronRight20", global::DevWinUI.GlyphName.ChevronRight20);
-                userType.AddEnumValue("ChevronRight32", global::DevWinUI.GlyphName.ChevronRight32);
-                userType.AddEnumValue("Event12", global::DevWinUI.GlyphName.Event12);
-                userType.AddEnumValue("MicOff2", global::DevWinUI.GlyphName.MicOff2);
-                userType.AddEnumValue("DeliveryOptimization", global::DevWinUI.GlyphName.DeliveryOptimization);
-                userType.AddEnumValue("CancelMedium", global::DevWinUI.GlyphName.CancelMedium);
-                userType.AddEnumValue("SearchMedium", global::DevWinUI.GlyphName.SearchMedium);
-                userType.AddEnumValue("AcceptMedium", global::DevWinUI.GlyphName.AcceptMedium);
-                userType.AddEnumValue("RevealPasswordMedium", global::DevWinUI.GlyphName.RevealPasswordMedium);
-                userType.AddEnumValue("DeleteWord", global::DevWinUI.GlyphName.DeleteWord);
-                userType.AddEnumValue("DeleteWordFill", global::DevWinUI.GlyphName.DeleteWordFill);
-                userType.AddEnumValue("DeleteLines", global::DevWinUI.GlyphName.DeleteLines);
-                userType.AddEnumValue("DeleteLinesFill", global::DevWinUI.GlyphName.DeleteLinesFill);
-                userType.AddEnumValue("InstertWords", global::DevWinUI.GlyphName.InstertWords);
-                userType.AddEnumValue("InstertWordsFill", global::DevWinUI.GlyphName.InstertWordsFill);
-                userType.AddEnumValue("JoinWords", global::DevWinUI.GlyphName.JoinWords);
-                userType.AddEnumValue("JoinWordsFill", global::DevWinUI.GlyphName.JoinWordsFill);
-                userType.AddEnumValue("OverwriteWords", global::DevWinUI.GlyphName.OverwriteWords);
-                userType.AddEnumValue("OverwriteWordsFill", global::DevWinUI.GlyphName.OverwriteWordsFill);
-                userType.AddEnumValue("AddNewLine", global::DevWinUI.GlyphName.AddNewLine);
-                userType.AddEnumValue("AddNewLineFill", global::DevWinUI.GlyphName.AddNewLineFill);
-                userType.AddEnumValue("OverwriteWordsKorean", global::DevWinUI.GlyphName.OverwriteWordsKorean);
-                userType.AddEnumValue("OverwriteWordsFillKorean", global::DevWinUI.GlyphName.OverwriteWordsFillKorean);
-                userType.AddEnumValue("EducationIcon", global::DevWinUI.GlyphName.EducationIcon);
-                userType.AddEnumValue("WindowSnipping", global::DevWinUI.GlyphName.WindowSnipping);
-                userType.AddEnumValue("VideoCapture", global::DevWinUI.GlyphName.VideoCapture);
-                userType.AddEnumValue("StatusSecured", global::DevWinUI.GlyphName.StatusSecured);
-                userType.AddEnumValue("NarratorApp", global::DevWinUI.GlyphName.NarratorApp);
-                userType.AddEnumValue("PowerButtonUpdate", global::DevWinUI.GlyphName.PowerButtonUpdate);
-                userType.AddEnumValue("RestartUpdate", global::DevWinUI.GlyphName.RestartUpdate);
-                userType.AddEnumValue("UpdateStatusDot", global::DevWinUI.GlyphName.UpdateStatusDot);
-                userType.AddEnumValue("Eject", global::DevWinUI.GlyphName.Eject);
-                userType.AddEnumValue("Spelling", global::DevWinUI.GlyphName.Spelling);
-                userType.AddEnumValue("SpellingKorean", global::DevWinUI.GlyphName.SpellingKorean);
-                userType.AddEnumValue("SpellingSerbian", global::DevWinUI.GlyphName.SpellingSerbian);
-                userType.AddEnumValue("SpellingChinese", global::DevWinUI.GlyphName.SpellingChinese);
-                userType.AddEnumValue("FolderSelect", global::DevWinUI.GlyphName.FolderSelect);
-                userType.AddEnumValue("SmartScreen", global::DevWinUI.GlyphName.SmartScreen);
-                userType.AddEnumValue("ExploitProtection", global::DevWinUI.GlyphName.ExploitProtection);
-                userType.AddEnumValue("AddBold", global::DevWinUI.GlyphName.AddBold);
-                userType.AddEnumValue("SubtractBold", global::DevWinUI.GlyphName.SubtractBold);
-                userType.AddEnumValue("BackSolidBold", global::DevWinUI.GlyphName.BackSolidBold);
-                userType.AddEnumValue("ForwardSolidBold", global::DevWinUI.GlyphName.ForwardSolidBold);
-                userType.AddEnumValue("PauseBold", global::DevWinUI.GlyphName.PauseBold);
-                userType.AddEnumValue("ClickSolid", global::DevWinUI.GlyphName.ClickSolid);
-                userType.AddEnumValue("SettingsSolid", global::DevWinUI.GlyphName.SettingsSolid);
-                userType.AddEnumValue("MicrophoneSolidBold", global::DevWinUI.GlyphName.MicrophoneSolidBold);
-                userType.AddEnumValue("SpeechSolidBold", global::DevWinUI.GlyphName.SpeechSolidBold);
-                userType.AddEnumValue("ClickedOutLoudSolidBold", global::DevWinUI.GlyphName.ClickedOutLoudSolidBold);
-                xamlType = userType;
-                break;
-
-            case 46:   //  Microsoft.UI.Xaml.Media.FontFamily
-                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 47:   //  Windows.UI.Text.FontWeight
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_47_FontWeight;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 48:   //  Windows.UI.Text.FontStyle
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_48_FontStyle;
-                userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
-                userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
-                userType.AddEnumValue("Italic", global::Windows.UI.Text.FontStyle.Italic);
-                xamlType = userType;
-                break;
-
-            case 49:   //  Microsoft.UI.Xaml.Media.Brush
-                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 50:   //  Pascal.Views.MainWindow
+            case 41:   //  Pascal.Views.MainWindow
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_50_MainWindow;
-                userType.StaticInitializer = StaticInitializer_50_MainWindow;
+                userType.Activator = Activate_41_MainWindow;
+                userType.StaticInitializer = StaticInitializer_41_MainWindow;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 51:   //  Microsoft.UI.Xaml.Window
+            case 42:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 52:   //  Pascal.ViewModels.MainViewModel
+            case 43:   //  Pascal.ViewModels.MainViewModel
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableObject"));
-                userType.StaticInitializer = StaticInitializer_52_MainViewModel;
+                userType.StaticInitializer = StaticInitializer_43_MainViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 53:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+            case 44:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableObject
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_53_ObservableObject;
+                userType.StaticInitializer = StaticInitializer_44_ObservableObject;
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Thickness
+            case 45:   //  Microsoft.UI.Xaml.Thickness
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_54_Thickness;
+                userType.StaticInitializer = StaticInitializer_45_Thickness;
                 userType.AddMemberName("Left");
                 userType.AddMemberName("Top");
                 userType.AddMemberName("Right");
@@ -3691,10 +888,301 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 55:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 46:   //  Microsoft.UI.Xaml.Controls.ScrollView
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_46_ScrollView;
+                userType.StaticInitializer = StaticInitializer_46_ScrollView;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ScrollView.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("VerticalScrollBarVisibility");
+                userType.AddMemberName("ComputedHorizontalScrollBarVisibility");
+                userType.AddMemberName("ComputedHorizontalScrollMode");
+                userType.AddMemberName("ComputedVerticalScrollBarVisibility");
+                userType.AddMemberName("ComputedVerticalScrollMode");
+                userType.AddMemberName("ContentOrientation");
+                userType.AddMemberName("CurrentAnchor");
+                userType.AddMemberName("ExpressionAnimationSources");
+                userType.AddMemberName("ExtentHeight");
+                userType.AddMemberName("ExtentWidth");
+                userType.AddMemberName("HorizontalAnchorRatio");
+                userType.AddMemberName("HorizontalOffset");
+                userType.AddMemberName("HorizontalScrollBarVisibility");
+                userType.AddMemberName("HorizontalScrollChainMode");
+                userType.AddMemberName("HorizontalScrollMode");
+                userType.AddMemberName("HorizontalScrollRailMode");
+                userType.AddMemberName("IgnoredInputKinds");
+                userType.AddMemberName("MaxZoomFactor");
+                userType.AddMemberName("MinZoomFactor");
+                userType.AddMemberName("ScrollPresenter");
+                userType.AddMemberName("ScrollableHeight");
+                userType.AddMemberName("ScrollableWidth");
+                userType.AddMemberName("State");
+                userType.AddMemberName("VerticalAnchorRatio");
+                userType.AddMemberName("VerticalOffset");
+                userType.AddMemberName("VerticalScrollChainMode");
+                userType.AddMemberName("VerticalScrollMode");
+                userType.AddMemberName("VerticalScrollRailMode");
+                userType.AddMemberName("ViewportHeight");
+                userType.AddMemberName("ViewportWidth");
+                userType.AddMemberName("ZoomChainMode");
+                userType.AddMemberName("ZoomFactor");
+                userType.AddMemberName("ZoomMode");
+                xamlType = userType;
+                break;
+
+            case 47:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_47_ScrollingScrollBarVisibility;
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Auto);
+                userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Visible);
+                userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Hidden);
+                xamlType = userType;
+                break;
+
+            case 48:   //  Microsoft.UI.Xaml.Visibility
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 49:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_49_ScrollingScrollMode;
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Disabled);
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Auto);
+                xamlType = userType;
+                break;
+
+            case 50:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_50_ScrollingContentOrientation;
+                userType.AddEnumValue("Vertical", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Vertical);
+                userType.AddEnumValue("Horizontal", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Horizontal);
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.None);
+                userType.AddEnumValue("Both", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Both);
+                xamlType = userType;
+                break;
+
+            case 51:   //  Microsoft.UI.Composition.CompositionPropertySet
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Composition.CompositionObject"));
+                userType.StaticInitializer = StaticInitializer_51_CompositionPropertySet;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 52:   //  Microsoft.UI.Composition.CompositionObject
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_52_CompositionObject;
+                xamlType = userType;
+                break;
+
+            case 53:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_53_ScrollingChainMode;
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Auto);
+                userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Always);
+                userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Never);
+                xamlType = userType;
+                break;
+
+            case 54:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_54_ScrollingRailMode;
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 55:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_55_ScrollingInputKinds;
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.None);
+                userType.AddEnumValue("Touch", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Touch);
+                userType.AddEnumValue("Pen", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Pen);
+                userType.AddEnumValue("MouseWheel", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.MouseWheel);
+                userType.AddEnumValue("Keyboard", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Keyboard);
+                userType.AddEnumValue("Gamepad", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Gamepad);
+                userType.AddEnumValue("All", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.All);
+                xamlType = userType;
+                break;
+
+            case 56:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.FrameworkElement"));
+                userType.StaticInitializer = StaticInitializer_56_ScrollPresenter;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content");
+                userType.AddMemberName("Content");
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 57:   //  Microsoft.UI.Xaml.FrameworkElement
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 58:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_58_ScrollingInteractionState;
+                userType.AddEnumValue("Idle", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Idle);
+                userType.AddEnumValue("Interaction", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Interaction);
+                userType.AddEnumValue("Inertia", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Inertia);
+                userType.AddEnumValue("Animation", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Animation);
+                xamlType = userType;
+                break;
+
+            case 59:   //  Single
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 60:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_60_ScrollingZoomMode;
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 61:   //  DevWinUI.PanelAttach
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_61_PanelAttach;
+                userType.StaticInitializer = StaticInitializer_61_PanelAttach;
+                userType.AddMemberName("ChildrenTransitions");
+                xamlType = userType;
+                break;
+
+            case 62:   //  DevWinUI.PanelTransitionCollection
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_62_PanelTransitionCollection;
+                userType.AddEnumValue("None", global::DevWinUI.PanelTransitionCollection.None);
+                userType.AddEnumValue("Default", global::DevWinUI.PanelTransitionCollection.Default);
+                userType.AddEnumValue("AddDeleteThemeTransition", global::DevWinUI.PanelTransitionCollection.AddDeleteThemeTransition);
+                userType.AddEnumValue("ContentThemeTransition", global::DevWinUI.PanelTransitionCollection.ContentThemeTransition);
+                userType.AddEnumValue("EdgeUIThemeTransition", global::DevWinUI.PanelTransitionCollection.EdgeUIThemeTransition);
+                userType.AddEnumValue("EntranceThemeTransition", global::DevWinUI.PanelTransitionCollection.EntranceThemeTransition);
+                userType.AddEnumValue("NavigationThemeTransition", global::DevWinUI.PanelTransitionCollection.NavigationThemeTransition);
+                userType.AddEnumValue("PaneThemeTransition", global::DevWinUI.PanelTransitionCollection.PaneThemeTransition);
+                userType.AddEnumValue("PopupThemeTransition", global::DevWinUI.PanelTransitionCollection.PopupThemeTransition);
+                userType.AddEnumValue("ReorderThemeTransition", global::DevWinUI.PanelTransitionCollection.ReorderThemeTransition);
+                userType.AddEnumValue("RepositionThemeTransition", global::DevWinUI.PanelTransitionCollection.RepositionThemeTransition);
+                userType.AddEnumValue("SettingsCardTransition", global::DevWinUI.PanelTransitionCollection.SettingsCardTransition);
+                xamlType = userType;
+                break;
+
+            case 63:   //  DevWinUI.SettingsCard
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
+                userType.Activator = Activate_63_SettingsCard;
+                userType.StaticInitializer = StaticInitializer_63_SettingsCard;
+                userType.AddMemberName("Header");
+                userType.AddMemberName("Description");
+                userType.AddMemberName("HeaderIcon");
+                userType.AddMemberName("LaunchUri");
+                userType.AddMemberName("ActionIcon");
+                userType.AddMemberName("ActionIconToolTip");
+                userType.AddMemberName("IsClickEnabled");
+                userType.AddMemberName("ContentAlignment");
+                userType.AddMemberName("IsActionIconVisible");
+                xamlType = userType;
+                break;
+
+            case 64:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 65:   //  DevWinUI.ContentAlignment
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_65_ContentAlignment;
+                userType.AddEnumValue("Right", global::DevWinUI.ContentAlignment.Right);
+                userType.AddEnumValue("Left", global::DevWinUI.ContentAlignment.Left);
+                userType.AddEnumValue("Vertical", global::DevWinUI.ContentAlignment.Vertical);
+                xamlType = userType;
+                break;
+
+            case 66:   //  Microsoft.UI.Xaml.Controls.PersonPicture
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_66_PersonPicture;
+                userType.StaticInitializer = StaticInitializer_66_PersonPicture;
+                userType.AddMemberName("ProfilePicture");
+                userType.AddMemberName("BadgeGlyph");
+                userType.AddMemberName("BadgeImageSource");
+                userType.AddMemberName("BadgeNumber");
+                userType.AddMemberName("BadgeText");
+                userType.AddMemberName("Contact");
+                userType.AddMemberName("DisplayName");
+                userType.AddMemberName("Initials");
+                userType.AddMemberName("IsGroup");
+                userType.AddMemberName("PreferSmallImage");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 67:   //  Int32
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 68:   //  Windows.ApplicationModel.Contacts.Contact
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_68_Contact;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 69:   //  Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_55_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_55_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_69_PersonPictureTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 70:   //  Pascal.Views.CreditPage
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_70_CreditPage;
+                userType.StaticInitializer = StaticInitializer_70_CreditPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 71:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 72:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 73:   //  Pascal.Views.HomeLandingPage
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_73_HomeLandingPage;
+                userType.StaticInitializer = StaticInitializer_73_HomeLandingPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 74:   //  Pascal.Views.MaybeLaterPage
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_74_MaybeLaterPage;
+                userType.StaticInitializer = StaticInitializer_74_MaybeLaterPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 75:   //  Pascal.Views.PdfEditPage
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_75_PdfEditPage;
+                userType.StaticInitializer = StaticInitializer_75_PdfEditPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 76:   //  Pascal.Views.SettingsPage
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_76_SettingsPage;
+                userType.StaticInitializer = StaticInitializer_76_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 77:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_77_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_77_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -3706,16 +1194,12 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 56:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 78:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_56_IList;
-                userType.CollectionAdd = VectorAdd_56_IList;
+                userType.StaticInitializer = StaticInitializer_78_IList;
+                userType.CollectionAdd = VectorAdd_78_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
-                break;
-
-            case 57:   //  Int32
-                xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -3830,55 +1314,55 @@ namespace Pascal.Pascal_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
         }
-        private object get_5_TitleBar_Subtitle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
-            return that.Subtitle;
-        }
-        private void set_5_TitleBar_Subtitle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
-            that.Subtitle = (global::System.String)Value;
-        }
-        private object get_6_TitleBar_LeftHeader(object instance)
+        private object get_5_TitleBar_LeftHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             return that.LeftHeader;
         }
-        private void set_6_TitleBar_LeftHeader(object instance, object Value)
+        private void set_5_TitleBar_LeftHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             that.LeftHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_7_TitleBar_RightHeader(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
-            return that.RightHeader;
-        }
-        private void set_7_TitleBar_RightHeader(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
-            that.RightHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_8_TitleBar_IconSource(object instance)
+        private object get_6_TitleBar_IconSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             return that.IconSource;
         }
-        private void set_8_TitleBar_IconSource(object instance, object Value)
+        private void set_6_TitleBar_IconSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
         }
-        private object get_9_TitleBar_IsBackButtonEnabled(object instance)
+        private object get_7_TitleBar_IsBackButtonEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             return that.IsBackButtonEnabled;
         }
-        private void set_9_TitleBar_IsBackButtonEnabled(object instance, object Value)
+        private void set_7_TitleBar_IsBackButtonEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
             that.IsBackButtonEnabled = (global::System.Boolean)Value;
+        }
+        private object get_8_TitleBar_RightHeader(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
+            return that.RightHeader;
+        }
+        private void set_8_TitleBar_RightHeader(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
+            that.RightHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_9_TitleBar_Subtitle(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
+            return that.Subtitle;
+        }
+        private void set_9_TitleBar_Subtitle(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TitleBar)instance;
+            that.Subtitle = (global::System.String)Value;
         }
         private object get_10_TitleBar_TemplateSettings(object instance)
         {
@@ -4349,197 +1833,565 @@ namespace Pascal.Pascal_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.ImageIcon)instance;
             that.Source = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_62_FontIconExtension_Glyph(object instance)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            return that.Glyph;
-        }
-        private void set_62_FontIconExtension_Glyph(object instance, object Value)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            that.Glyph = (global::System.String)Value;
-        }
-        private object get_63_FontIconExtension_GlyphCode(object instance)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            return that.GlyphCode;
-        }
-        private void set_63_FontIconExtension_GlyphCode(object instance, object Value)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            that.GlyphCode = (global::DevWinUI.GlyphCode)Value;
-        }
-        private object get_64_FontIconExtension_GlyphName(object instance)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            return that.GlyphName;
-        }
-        private void set_64_FontIconExtension_GlyphName(object instance, object Value)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            that.GlyphName = (global::DevWinUI.GlyphName)Value;
-        }
-        private object get_65_FontIconExtension_FontFamily(object instance)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            return that.FontFamily;
-        }
-        private void set_65_FontIconExtension_FontFamily(object instance, object Value)
-        {
-            var that = (global::DevWinUI.FontIconExtension)instance;
-            that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
-        }
-        private object get_66_TextIconExtension_FontSize(object instance)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            return that.FontSize;
-        }
-        private void set_66_TextIconExtension_FontSize(object instance, object Value)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            that.FontSize = (global::System.Double)Value;
-        }
-        private object get_67_TextIconExtension_FontWeight(object instance)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            return that.FontWeight;
-        }
-        private void set_67_TextIconExtension_FontWeight(object instance, object Value)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
-        }
-        private object get_68_TextIconExtension_FontStyle(object instance)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            return that.FontStyle;
-        }
-        private void set_68_TextIconExtension_FontStyle(object instance, object Value)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
-        }
-        private object get_69_TextIconExtension_Foreground(object instance)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            return that.Foreground;
-        }
-        private void set_69_TextIconExtension_Foreground(object instance, object Value)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            that.Foreground = (global::Microsoft.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_70_TextIconExtension_IsTextScaleFactorEnabled(object instance)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            return that.IsTextScaleFactorEnabled;
-        }
-        private void set_70_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            that.IsTextScaleFactorEnabled = (global::System.Boolean)Value;
-        }
-        private object get_71_TextIconExtension_MirroredWhenRightToLeft(object instance)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            return that.MirroredWhenRightToLeft;
-        }
-        private void set_71_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
-        {
-            var that = (global::DevWinUI.TextIconExtension)instance;
-            that.MirroredWhenRightToLeft = (global::System.Boolean)Value;
-        }
-        private object get_72_MainWindow_ViewModel(object instance)
+        private object get_62_MainWindow_ViewModel(object instance)
         {
             var that = (global::Pascal.Views.MainWindow)instance;
             return that.ViewModel;
         }
-        private object get_73_Thickness_Left(object instance)
+        private object get_63_Thickness_Left(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             return that.Left;
         }
-        private void set_73_Thickness_Left(object instance, object Value)
+        private void set_63_Thickness_Left(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             that.Left = (global::System.Double)Value;
         }
-        private object get_74_Thickness_Top(object instance)
+        private object get_64_Thickness_Top(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             return that.Top;
         }
-        private void set_74_Thickness_Top(object instance, object Value)
+        private void set_64_Thickness_Top(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             that.Top = (global::System.Double)Value;
         }
-        private object get_75_Thickness_Right(object instance)
+        private object get_65_Thickness_Right(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             return that.Right;
         }
-        private void set_75_Thickness_Right(object instance, object Value)
+        private void set_65_Thickness_Right(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             that.Right = (global::System.Double)Value;
         }
-        private object get_76_Thickness_Bottom(object instance)
+        private object get_66_Thickness_Bottom(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             return that.Bottom;
         }
-        private void set_76_Thickness_Bottom(object instance, object Value)
+        private void set_66_Thickness_Bottom(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             that.Bottom = (global::System.Double)Value;
         }
-        private object get_77_TreeViewNode_Children(object instance)
+        private object get_67_ScrollView_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.Content;
+        }
+        private void set_67_ScrollView_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_68_ScrollView_VerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollBarVisibility;
+        }
+        private void set_68_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_69_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollBarVisibility;
+        }
+        private object get_70_ScrollView_ComputedHorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollMode;
+        }
+        private object get_71_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollBarVisibility;
+        }
+        private object get_72_ScrollView_ComputedVerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollMode;
+        }
+        private object get_73_ScrollView_ContentOrientation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ContentOrientation;
+        }
+        private void set_73_ScrollView_ContentOrientation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ContentOrientation = (global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation)Value;
+        }
+        private object get_74_ScrollView_CurrentAnchor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.CurrentAnchor;
+        }
+        private object get_75_ScrollView_ExpressionAnimationSources(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExpressionAnimationSources;
+        }
+        private object get_76_ScrollView_ExtentHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentHeight;
+        }
+        private object get_77_ScrollView_ExtentWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentWidth;
+        }
+        private object get_78_ScrollView_HorizontalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalAnchorRatio;
+        }
+        private void set_78_ScrollView_HorizontalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_79_ScrollView_HorizontalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalOffset;
+        }
+        private object get_80_ScrollView_HorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollBarVisibility;
+        }
+        private void set_80_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_81_ScrollView_HorizontalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollChainMode;
+        }
+        private void set_81_ScrollView_HorizontalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_82_ScrollView_HorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollMode;
+        }
+        private void set_82_ScrollView_HorizontalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_83_ScrollView_HorizontalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollRailMode;
+        }
+        private void set_83_ScrollView_HorizontalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_84_ScrollView_IgnoredInputKinds(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.IgnoredInputKinds;
+        }
+        private void set_84_ScrollView_IgnoredInputKinds(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.IgnoredInputKinds = (global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds)Value;
+        }
+        private object get_85_ScrollView_MaxZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MaxZoomFactor;
+        }
+        private void set_85_ScrollView_MaxZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MaxZoomFactor = (global::System.Double)Value;
+        }
+        private object get_86_ScrollView_MinZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MinZoomFactor;
+        }
+        private void set_86_ScrollView_MinZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MinZoomFactor = (global::System.Double)Value;
+        }
+        private object get_87_ScrollView_ScrollPresenter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollPresenter;
+        }
+        private object get_88_ScrollPresenter_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            return that.Content;
+        }
+        private void set_88_ScrollPresenter_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_89_ScrollView_ScrollableHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableHeight;
+        }
+        private object get_90_ScrollView_ScrollableWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableWidth;
+        }
+        private object get_91_ScrollView_State(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.State;
+        }
+        private object get_92_ScrollView_VerticalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalAnchorRatio;
+        }
+        private void set_92_ScrollView_VerticalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_93_ScrollView_VerticalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalOffset;
+        }
+        private object get_94_ScrollView_VerticalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollChainMode;
+        }
+        private void set_94_ScrollView_VerticalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_95_ScrollView_VerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollMode;
+        }
+        private void set_95_ScrollView_VerticalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_96_ScrollView_VerticalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollRailMode;
+        }
+        private void set_96_ScrollView_VerticalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_97_ScrollView_ViewportHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportHeight;
+        }
+        private object get_98_ScrollView_ViewportWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportWidth;
+        }
+        private object get_99_ScrollView_ZoomChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomChainMode;
+        }
+        private void set_99_ScrollView_ZoomChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_100_ScrollView_ZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomFactor;
+        }
+        private object get_101_ScrollView_ZoomMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomMode;
+        }
+        private void set_101_ScrollView_ZoomMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
+        }
+        private object get_102_PanelAttach_ChildrenTransitions(object instance)
+        {
+            return global::DevWinUI.PanelAttach.GetChildrenTransitions((global::Microsoft.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_102_PanelAttach_ChildrenTransitions(object instance, object Value)
+        {
+            global::DevWinUI.PanelAttach.SetChildrenTransitions((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::DevWinUI.PanelTransitionCollection)Value);
+        }
+        private object get_103_SettingsCard_Header(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.Header;
+        }
+        private void set_103_SettingsCard_Header(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_104_SettingsCard_Description(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.Description;
+        }
+        private void set_104_SettingsCard_Description(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.Description = (global::System.Object)Value;
+        }
+        private object get_105_SettingsCard_HeaderIcon(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.HeaderIcon;
+        }
+        private void set_105_SettingsCard_HeaderIcon(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
+        }
+        private object get_106_SettingsCard_LaunchUri(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.LaunchUri;
+        }
+        private void set_106_SettingsCard_LaunchUri(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.LaunchUri = (global::System.String)Value;
+        }
+        private object get_107_SettingsCard_ActionIcon(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.ActionIcon;
+        }
+        private void set_107_SettingsCard_ActionIcon(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.ActionIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
+        }
+        private object get_108_SettingsCard_ActionIconToolTip(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.ActionIconToolTip;
+        }
+        private void set_108_SettingsCard_ActionIconToolTip(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.ActionIconToolTip = (global::System.String)Value;
+        }
+        private object get_109_SettingsCard_IsClickEnabled(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.IsClickEnabled;
+        }
+        private void set_109_SettingsCard_IsClickEnabled(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.IsClickEnabled = (global::System.Boolean)Value;
+        }
+        private object get_110_SettingsCard_ContentAlignment(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.ContentAlignment;
+        }
+        private void set_110_SettingsCard_ContentAlignment(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.ContentAlignment = (global::DevWinUI.ContentAlignment)Value;
+        }
+        private object get_111_SettingsCard_IsActionIconVisible(object instance)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            return that.IsActionIconVisible;
+        }
+        private void set_111_SettingsCard_IsActionIconVisible(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsCard)instance;
+            that.IsActionIconVisible = (global::System.Boolean)Value;
+        }
+        private object get_112_PersonPicture_ProfilePicture(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.ProfilePicture;
+        }
+        private void set_112_PersonPicture_ProfilePicture(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.ProfilePicture = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_113_PersonPicture_BadgeGlyph(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeGlyph;
+        }
+        private void set_113_PersonPicture_BadgeGlyph(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeGlyph = (global::System.String)Value;
+        }
+        private object get_114_PersonPicture_BadgeImageSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeImageSource;
+        }
+        private void set_114_PersonPicture_BadgeImageSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeImageSource = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_115_PersonPicture_BadgeNumber(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeNumber;
+        }
+        private void set_115_PersonPicture_BadgeNumber(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeNumber = (global::System.Int32)Value;
+        }
+        private object get_116_PersonPicture_BadgeText(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.BadgeText;
+        }
+        private void set_116_PersonPicture_BadgeText(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.BadgeText = (global::System.String)Value;
+        }
+        private object get_117_PersonPicture_Contact(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.Contact;
+        }
+        private void set_117_PersonPicture_Contact(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.Contact = (global::Windows.ApplicationModel.Contacts.Contact)Value;
+        }
+        private object get_118_PersonPicture_DisplayName(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.DisplayName;
+        }
+        private void set_118_PersonPicture_DisplayName(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.DisplayName = (global::System.String)Value;
+        }
+        private object get_119_PersonPicture_Initials(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.Initials;
+        }
+        private void set_119_PersonPicture_Initials(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.Initials = (global::System.String)Value;
+        }
+        private object get_120_PersonPicture_IsGroup(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.IsGroup;
+        }
+        private void set_120_PersonPicture_IsGroup(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.IsGroup = (global::System.Boolean)Value;
+        }
+        private object get_121_PersonPicture_PreferSmallImage(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.PreferSmallImage;
+        }
+        private void set_121_PersonPicture_PreferSmallImage(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            that.PreferSmallImage = (global::System.Boolean)Value;
+        }
+        private object get_122_PersonPicture_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
+            return that.TemplateSettings;
+        }
+        private object get_123_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_78_TreeViewNode_Content(object instance)
+        private object get_124_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_78_TreeViewNode_Content(object instance, object Value)
+        private void set_124_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_79_TreeViewNode_Depth(object instance)
+        private object get_125_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_80_TreeViewNode_HasChildren(object instance)
+        private object get_126_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_81_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_127_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_81_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_127_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_82_TreeViewNode_IsExpanded(object instance)
+        private object get_128_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_82_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_128_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_83_TreeViewNode_Parent(object instance)
+        private object get_129_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -4587,40 +2439,40 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlMember.Getter = get_4_TitleBar_IsPaneToggleButtonVisible;
                 xamlMember.Setter = set_4_TitleBar_IsPaneToggleButtonVisible;
                 break;
-            case "Microsoft.UI.Xaml.Controls.TitleBar.Subtitle":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Subtitle", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_TitleBar_Subtitle;
-                xamlMember.Setter = set_5_TitleBar_Subtitle;
-                break;
             case "Microsoft.UI.Xaml.Controls.TitleBar.LeftHeader":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "LeftHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_TitleBar_LeftHeader;
-                xamlMember.Setter = set_6_TitleBar_LeftHeader;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TitleBar.RightHeader":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "RightHeader", "Microsoft.UI.Xaml.UIElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_TitleBar_RightHeader;
-                xamlMember.Setter = set_7_TitleBar_RightHeader;
+                xamlMember.Getter = get_5_TitleBar_LeftHeader;
+                xamlMember.Setter = set_5_TitleBar_LeftHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.TitleBar.IconSource":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_TitleBar_IconSource;
-                xamlMember.Setter = set_8_TitleBar_IconSource;
+                xamlMember.Getter = get_6_TitleBar_IconSource;
+                xamlMember.Setter = set_6_TitleBar_IconSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.TitleBar.IsBackButtonEnabled":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsBackButtonEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_TitleBar_IsBackButtonEnabled;
-                xamlMember.Setter = set_9_TitleBar_IsBackButtonEnabled;
+                xamlMember.Getter = get_7_TitleBar_IsBackButtonEnabled;
+                xamlMember.Setter = set_7_TitleBar_IsBackButtonEnabled;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TitleBar.RightHeader":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "RightHeader", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_TitleBar_RightHeader;
+                xamlMember.Setter = set_8_TitleBar_RightHeader;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TitleBar.Subtitle":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Subtitle", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_TitleBar_Subtitle;
+                xamlMember.Setter = set_9_TitleBar_Subtitle;
                 break;
             case "Microsoft.UI.Xaml.Controls.TitleBar.TemplateSettings":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TitleBar");
@@ -4988,140 +2840,460 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlMember.Getter = get_61_ImageIcon_Source;
                 xamlMember.Setter = set_61_ImageIcon_Source;
                 break;
-            case "DevWinUI.FontIconExtension.Glyph":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.FontIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Glyph", "String");
-                xamlMember.Getter = get_62_FontIconExtension_Glyph;
-                xamlMember.Setter = set_62_FontIconExtension_Glyph;
-                break;
-            case "DevWinUI.FontIconExtension.GlyphCode":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.FontIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "GlyphCode", "DevWinUI.GlyphCode");
-                xamlMember.Getter = get_63_FontIconExtension_GlyphCode;
-                xamlMember.Setter = set_63_FontIconExtension_GlyphCode;
-                break;
-            case "DevWinUI.FontIconExtension.GlyphName":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.FontIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "GlyphName", "DevWinUI.GlyphName");
-                xamlMember.Getter = get_64_FontIconExtension_GlyphName;
-                xamlMember.Setter = set_64_FontIconExtension_GlyphName;
-                break;
-            case "DevWinUI.FontIconExtension.FontFamily":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.FontIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
-                xamlMember.Getter = get_65_FontIconExtension_FontFamily;
-                xamlMember.Setter = set_65_FontIconExtension_FontFamily;
-                break;
-            case "DevWinUI.TextIconExtension.FontSize":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.TextIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_66_TextIconExtension_FontSize;
-                xamlMember.Setter = set_66_TextIconExtension_FontSize;
-                break;
-            case "DevWinUI.TextIconExtension.FontWeight":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.TextIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
-                xamlMember.Getter = get_67_TextIconExtension_FontWeight;
-                xamlMember.Setter = set_67_TextIconExtension_FontWeight;
-                break;
-            case "DevWinUI.TextIconExtension.FontStyle":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.TextIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
-                xamlMember.Getter = get_68_TextIconExtension_FontStyle;
-                xamlMember.Setter = set_68_TextIconExtension_FontStyle;
-                break;
-            case "DevWinUI.TextIconExtension.Foreground":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.TextIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Foreground", "Microsoft.UI.Xaml.Media.Brush");
-                xamlMember.Getter = get_69_TextIconExtension_Foreground;
-                xamlMember.Setter = set_69_TextIconExtension_Foreground;
-                break;
-            case "DevWinUI.TextIconExtension.IsTextScaleFactorEnabled":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.TextIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsTextScaleFactorEnabled", "Boolean");
-                xamlMember.Getter = get_70_TextIconExtension_IsTextScaleFactorEnabled;
-                xamlMember.Setter = set_70_TextIconExtension_IsTextScaleFactorEnabled;
-                break;
-            case "DevWinUI.TextIconExtension.MirroredWhenRightToLeft":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.TextIconExtension");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "MirroredWhenRightToLeft", "Boolean");
-                xamlMember.Getter = get_71_TextIconExtension_MirroredWhenRightToLeft;
-                xamlMember.Setter = set_71_TextIconExtension_MirroredWhenRightToLeft;
-                break;
             case "Pascal.Views.MainWindow.ViewModel":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Pascal.Views.MainWindow");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ViewModel", "Pascal.ViewModels.MainViewModel");
-                xamlMember.Getter = get_72_MainWindow_ViewModel;
+                xamlMember.Getter = get_62_MainWindow_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Thickness.Left":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Left", "Double");
-                xamlMember.Getter = get_73_Thickness_Left;
-                xamlMember.Setter = set_73_Thickness_Left;
+                xamlMember.Getter = get_63_Thickness_Left;
+                xamlMember.Setter = set_63_Thickness_Left;
                 break;
             case "Microsoft.UI.Xaml.Thickness.Top":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Top", "Double");
-                xamlMember.Getter = get_74_Thickness_Top;
-                xamlMember.Setter = set_74_Thickness_Top;
+                xamlMember.Getter = get_64_Thickness_Top;
+                xamlMember.Setter = set_64_Thickness_Top;
                 break;
             case "Microsoft.UI.Xaml.Thickness.Right":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Right", "Double");
-                xamlMember.Getter = get_75_Thickness_Right;
-                xamlMember.Setter = set_75_Thickness_Right;
+                xamlMember.Getter = get_65_Thickness_Right;
+                xamlMember.Setter = set_65_Thickness_Right;
                 break;
             case "Microsoft.UI.Xaml.Thickness.Bottom":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Bottom", "Double");
-                xamlMember.Getter = get_76_Thickness_Bottom;
-                xamlMember.Setter = set_76_Thickness_Bottom;
+                xamlMember.Getter = get_66_Thickness_Bottom;
+                xamlMember.Setter = set_66_Thickness_Bottom;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.Content":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_67_ScrollView_Content;
+                xamlMember.Setter = set_67_ScrollView_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollBarVisibility":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_68_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Setter = set_68_ScrollView_VerticalScrollBarVisibility;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollBarVisibility":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_69_ScrollView_ComputedHorizontalScrollBarVisibility;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_70_ScrollView_ComputedHorizontalScrollMode;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollBarVisibility":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_71_ScrollView_ComputedVerticalScrollBarVisibility;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_72_ScrollView_ComputedVerticalScrollMode;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ContentOrientation":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ContentOrientation", "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_73_ScrollView_ContentOrientation;
+                xamlMember.Setter = set_73_ScrollView_ContentOrientation;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.CurrentAnchor":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "CurrentAnchor", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.Getter = get_74_ScrollView_CurrentAnchor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExpressionAnimationSources":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ExpressionAnimationSources", "Microsoft.UI.Composition.CompositionPropertySet");
+                xamlMember.Getter = get_75_ScrollView_ExpressionAnimationSources;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentHeight":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ExtentHeight", "Double");
+                xamlMember.Getter = get_76_ScrollView_ExtentHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentWidth":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ExtentWidth", "Double");
+                xamlMember.Getter = get_77_ScrollView_ExtentWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalAnchorRatio":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalAnchorRatio", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_78_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Setter = set_78_ScrollView_HorizontalAnchorRatio;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalOffset":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
+                xamlMember.Getter = get_79_ScrollView_HorizontalOffset;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollBarVisibility":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_80_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Setter = set_80_ScrollView_HorizontalScrollBarVisibility;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollChainMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_81_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Setter = set_81_ScrollView_HorizontalScrollChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_82_ScrollView_HorizontalScrollMode;
+                xamlMember.Setter = set_82_ScrollView_HorizontalScrollMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollRailMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_83_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Setter = set_83_ScrollView_HorizontalScrollRailMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.IgnoredInputKinds":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IgnoredInputKinds", "Microsoft.UI.Xaml.Controls.ScrollingInputKinds");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_84_ScrollView_IgnoredInputKinds;
+                xamlMember.Setter = set_84_ScrollView_IgnoredInputKinds;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.MaxZoomFactor":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "MaxZoomFactor", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_85_ScrollView_MaxZoomFactor;
+                xamlMember.Setter = set_85_ScrollView_MaxZoomFactor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.MinZoomFactor":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "MinZoomFactor", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_86_ScrollView_MinZoomFactor;
+                xamlMember.Setter = set_86_ScrollView_MinZoomFactor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollPresenter":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ScrollPresenter", "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_87_ScrollView_ScrollPresenter;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_88_ScrollPresenter_Content;
+                xamlMember.Setter = set_88_ScrollPresenter_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableHeight":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ScrollableHeight", "Double");
+                xamlMember.Getter = get_89_ScrollView_ScrollableHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableWidth":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ScrollableWidth", "Double");
+                xamlMember.Getter = get_90_ScrollView_ScrollableWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.State":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "State", "Microsoft.UI.Xaml.Controls.ScrollingInteractionState");
+                xamlMember.Getter = get_91_ScrollView_State;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalAnchorRatio":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalAnchorRatio", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_92_ScrollView_VerticalAnchorRatio;
+                xamlMember.Setter = set_92_ScrollView_VerticalAnchorRatio;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalOffset":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
+                xamlMember.Getter = get_93_ScrollView_VerticalOffset;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollChainMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_94_ScrollView_VerticalScrollChainMode;
+                xamlMember.Setter = set_94_ScrollView_VerticalScrollChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_95_ScrollView_VerticalScrollMode;
+                xamlMember.Setter = set_95_ScrollView_VerticalScrollMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollRailMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_96_ScrollView_VerticalScrollRailMode;
+                xamlMember.Setter = set_96_ScrollView_VerticalScrollRailMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportHeight":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ViewportHeight", "Double");
+                xamlMember.Getter = get_97_ScrollView_ViewportHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportWidth":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ViewportWidth", "Double");
+                xamlMember.Getter = get_98_ScrollView_ViewportWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomChainMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ZoomChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_99_ScrollView_ZoomChainMode;
+                xamlMember.Setter = set_99_ScrollView_ZoomChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomFactor":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ZoomFactor", "Single");
+                xamlMember.Getter = get_100_ScrollView_ZoomFactor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomMode":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ZoomMode", "Microsoft.UI.Xaml.Controls.ScrollingZoomMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_101_ScrollView_ZoomMode;
+                xamlMember.Setter = set_101_ScrollView_ZoomMode;
+                break;
+            case "DevWinUI.PanelAttach.ChildrenTransitions":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.PanelAttach");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ChildrenTransitions", "DevWinUI.PanelTransitionCollection");
+                xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_102_PanelAttach_ChildrenTransitions;
+                xamlMember.Setter = set_102_PanelAttach_ChildrenTransitions;
+                break;
+            case "DevWinUI.SettingsCard.Header":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_103_SettingsCard_Header;
+                xamlMember.Setter = set_103_SettingsCard_Header;
+                break;
+            case "DevWinUI.SettingsCard.Description":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Description", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_104_SettingsCard_Description;
+                xamlMember.Setter = set_104_SettingsCard_Description;
+                break;
+            case "DevWinUI.SettingsCard.HeaderIcon":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_105_SettingsCard_HeaderIcon;
+                xamlMember.Setter = set_105_SettingsCard_HeaderIcon;
+                break;
+            case "DevWinUI.SettingsCard.LaunchUri":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "LaunchUri", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_106_SettingsCard_LaunchUri;
+                xamlMember.Setter = set_106_SettingsCard_LaunchUri;
+                break;
+            case "DevWinUI.SettingsCard.ActionIcon":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ActionIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_107_SettingsCard_ActionIcon;
+                xamlMember.Setter = set_107_SettingsCard_ActionIcon;
+                break;
+            case "DevWinUI.SettingsCard.ActionIconToolTip":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ActionIconToolTip", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_108_SettingsCard_ActionIconToolTip;
+                xamlMember.Setter = set_108_SettingsCard_ActionIconToolTip;
+                break;
+            case "DevWinUI.SettingsCard.IsClickEnabled":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsClickEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_109_SettingsCard_IsClickEnabled;
+                xamlMember.Setter = set_109_SettingsCard_IsClickEnabled;
+                break;
+            case "DevWinUI.SettingsCard.ContentAlignment":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ContentAlignment", "DevWinUI.ContentAlignment");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_110_SettingsCard_ContentAlignment;
+                xamlMember.Setter = set_110_SettingsCard_ContentAlignment;
+                break;
+            case "DevWinUI.SettingsCard.IsActionIconVisible":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsActionIconVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_111_SettingsCard_IsActionIconVisible;
+                xamlMember.Setter = set_111_SettingsCard_IsActionIconVisible;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.ProfilePicture":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ProfilePicture", "Microsoft.UI.Xaml.Media.ImageSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_112_PersonPicture_ProfilePicture;
+                xamlMember.Setter = set_112_PersonPicture_ProfilePicture;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeGlyph":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeGlyph", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_113_PersonPicture_BadgeGlyph;
+                xamlMember.Setter = set_113_PersonPicture_BadgeGlyph;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeImageSource":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeImageSource", "Microsoft.UI.Xaml.Media.ImageSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_114_PersonPicture_BadgeImageSource;
+                xamlMember.Setter = set_114_PersonPicture_BadgeImageSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeNumber":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeNumber", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_115_PersonPicture_BadgeNumber;
+                xamlMember.Setter = set_115_PersonPicture_BadgeNumber;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeText":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeText", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_116_PersonPicture_BadgeText;
+                xamlMember.Setter = set_116_PersonPicture_BadgeText;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.Contact":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Contact", "Windows.ApplicationModel.Contacts.Contact");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_117_PersonPicture_Contact;
+                xamlMember.Setter = set_117_PersonPicture_Contact;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.DisplayName":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "DisplayName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_118_PersonPicture_DisplayName;
+                xamlMember.Setter = set_118_PersonPicture_DisplayName;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.Initials":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Initials", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_119_PersonPicture_Initials;
+                xamlMember.Setter = set_119_PersonPicture_Initials;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.IsGroup":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsGroup", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_120_PersonPicture_IsGroup;
+                xamlMember.Setter = set_120_PersonPicture_IsGroup;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.PreferSmallImage":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "PreferSmallImage", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_121_PersonPicture_PreferSmallImage;
+                xamlMember.Setter = set_121_PersonPicture_PreferSmallImage;
+                break;
+            case "Microsoft.UI.Xaml.Controls.PersonPicture.TemplateSettings":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings");
+                xamlMember.Getter = get_122_PersonPicture_TemplateSettings;
+                xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_77_TreeViewNode_Children;
+                xamlMember.Getter = get_123_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_TreeViewNode_Content;
-                xamlMember.Setter = set_78_TreeViewNode_Content;
+                xamlMember.Getter = get_124_TreeViewNode_Content;
+                xamlMember.Setter = set_124_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_TreeViewNode_Depth;
+                xamlMember.Getter = get_125_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_126_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_81_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_81_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_127_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_127_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_82_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_128_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_128_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_83_TreeViewNode_Parent;
+                xamlMember.Getter = get_129_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
