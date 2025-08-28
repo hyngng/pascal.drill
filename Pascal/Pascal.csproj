@@ -77,8 +77,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Assets\Avatar\gabin.png" />
-    <None Remove="Assets\Avatar\thyun.png" />
+    <None Remove="Assets\Avatars\gabin.png" />
+    <None Remove="Assets\Avatars\thyun.png" />
     <None Remove="ViewModels\SettingsPage.xaml" />
     <None Remove="Views\CreditPage.xaml" />
     <None Remove="Views\HomeLandingPage.xaml" />

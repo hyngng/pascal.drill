@@ -5,10 +5,90 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pascal.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dev="using:DevWinUI"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <TextBox Text="테스트" />
+    <Page.Resources>
+        <x:Double x:Key="SettingsCardSpacing">4</x:Double>
+
+        <Style
+            x:Key="SettingsSectionHeaderTextBlockStyle"
+            BasedOn="{StaticResource BodyStrongTextBlockStyle}"
+            TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="Margin" Value="1,30,0,6" />
+            </Style.Setters>
+        </Style>
+    </Page.Resources>
+
+    <Grid x:Name="RootGrid" MaxWidth="1064">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
+            <TextBlock x:Name="PageHeader"
+                        Margin="{ThemeResource PageHeaderMargin}"
+                        Padding="{ThemeResource PageHeaderPadding}"
+                        Style="{StaticResource TitleTextBlockStyle}"
+                        AutomationProperties.HeadingLevel="Level1"
+                        Text="설정" />
+
+            <TextBlock x:Name="PageDescription"
+                       Margin="{ThemeResource PageDescriptionMargin}"
+                       Padding="{ThemeResource PageDescriptionPadding}"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       AutomationProperties.HeadingLevel="Level1"
+                       Text="프로그램과 관련된 편의기능을 설정할 수 있습니다." />
+        </StackPanel>
+
+        <ScrollView Grid.Row="1" Padding="36,0,36,0"
+                    VerticalScrollBarVisibility="Auto"
+                    VerticalScrollMode="Auto">
+            <StackPanel Spacing="{StaticResource SettingsCardSpacing}">
+                <StackPanel.ChildrenTransitions>
+                    <RepositionThemeTransition />
+                </StackPanel.ChildrenTransitions>
+                
+                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="테마 설정" />
+
+                <dev:SettingsCard Header="테마" Description="프로그램 테마를 바꿔보세요.">
+                    <dev:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE790;" />
+                    </dev:SettingsCard.HeaderIcon>
+                    <ComboBox x:Name="themeMode"
+                                AutomationProperties.AutomationId="themeModeComboBox">
+                        <!--SelectionChanged="themeMode_SelectionChanged"-->
+                        <ComboBoxItem Content="밝게" Tag="Light" />
+                        <ComboBoxItem Content="어둡게" Tag="Dark" />
+                        <ComboBoxItem Content="시스템 설정을 따름" Tag="Default" />
+                    </ComboBox>
+                </dev:SettingsCard>
+
+                <dev:SettingsCard Header="재질" Description="프로그램 재질을 바꿔보세요.">
+                    <dev:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE790;" />
+                    </dev:SettingsCard.HeaderIcon>
+                    <ComboBox x:Name="materialMode">
+                        <ComboBoxItem Content="미카" Tag="Light" />
+                        <ComboBoxItem Content="아크릴" Tag="Dark" />
+                        <ComboBoxItem Content="시스템 설정" Tag="Default" />
+                    </ComboBox>
+                </dev:SettingsCard>
+                
+
+                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="실험실" />
+
+                <dev:SettingsCard Header="실험실" Description="숨겨진 기능을 활성화합니다.">
+                    <dev:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE790;" />
+                    </dev:SettingsCard.HeaderIcon>
+                    <ToggleSwitch x:Name="labsToggle" /> <!--Toggled="labsToggle_Toggled"-->
+                </dev:SettingsCard>
+
+            </StackPanel>
+        </ScrollView>
     </Grid>
 </Page>

@@ -34,19 +34,29 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="PageHeader"
-               Margin="36,24,36,0"
-               AutomationProperties.HeadingLevel="Level1"
-               Style="{StaticResource TitleTextBlockStyle}"
-               Text="크레딧" />
+        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
+            <TextBlock x:Name="PageHeader"
+                   Margin="{ThemeResource PageHeaderMargin}"
+                   Padding="{ThemeResource PageHeaderPadding}"
+                   Style="{StaticResource TitleTextBlockStyle}"
+                   AutomationProperties.HeadingLevel="Level1"
+                   Text="크레딧" />
 
-        <ScrollView Margin="{ThemeResource ContentPageMargin}"
-                    Padding="{ThemeResource ContentPagePadding}"
-                    VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="10"
-                        dev:PanelAttach.ChildrenTransitions="Default"
-                        Spacing="5">
-                
+            <TextBlock x:Name="PageDescription"
+                       Margin="{ThemeResource PageDescriptionMargin}"
+                       Padding="{ThemeResource PageDescriptionPadding}"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       AutomationProperties.HeadingLevel="Level1"
+                       Text="어플리케이션을 만든 사람과, 사용한 라이브러리 및 기술스택 등." />
+        </StackPanel>
+
+        <ScrollView  VerticalScrollBarVisibility="Auto" Grid.Row="1">
+            <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
+                        Margin="{ThemeResource PageContentMargin}"
+                        Padding="{ThemeResource PageContentPadding}">
+
+                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="만든 이" />
+
                 <dev:SettingsCard>
                     <dev:SettingsCard.Header>
                         <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
@@ -66,41 +76,62 @@
                             <TextBlock Text="hyngng" VerticalAlignment="Center" />
                         </StackPanel>
                     </dev:SettingsCard.Header>
-                    <TextBlock Text="추가하고 싶은 기능이 있다면 언제든지 마음 속으로 말씀해주세요. " />
+                    <TextBlock Text="추가하고 싶은 기능이 있다면 언제든지 마음 속으로 알려주세요." />
                 </dev:SettingsCard>
 
 
+                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="기술 스택" />
 
-                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="기술스택" />
-                <dev:SettingsCard Header="Windows Community Toolkit" Description="MIT License. UI 컨트롤 및 헬퍼 라이브러리.">
-                    <dev:SettingsCard.HeaderIcon>
+                <dev:SettingsExpander Description="사실 대부분은 이번에 처음 알게 되었습니다."
+                                      Header="컴퓨터 언어"> <!--HeaderIcon="{dev:BitmapIcon Source=Assets/icon.png}"-->
+                    <dev:SettingsExpander.HeaderIcon>
                         <FontIcon Glyph="&#xE8A1;" />
-                    </dev:SettingsCard.HeaderIcon>
-                    <HyperlinkButton Content="자세히 보기" NavigateUri="https://github.com/CommunityToolkit/WindowsCommunityToolkit"/>
-                </dev:SettingsCard>
+                    </dev:SettingsExpander.HeaderIcon>
 
-                <dev:SettingsCard Header="Newtonsoft.Json" Description="MIT License. JSON 직렬화 라이브러리.">
-                    <dev:SettingsCard.HeaderIcon>
-                        <FontIcon Glyph="&#xF16B;" />
-                    </dev:SettingsCard.HeaderIcon>
-                    <HyperlinkButton Content="자세히 보기" NavigateUri="https://www.newtonsoft.com/json"/>
-                </dev:SettingsCard>
+                    <dev:SettingsExpander.Items>
+                        <dev:SettingsCard Header="XAML" Description="이걸로 틀을 만들고">
+                            <dev:SettingsCard.HeaderIcon>
+                                <FontIcon Glyph="&#xE8A1;" />
+                            </dev:SettingsCard.HeaderIcon>
+                        </dev:SettingsCard>
 
-                
+                        <dev:SettingsCard Header="C#" Description="이걸로 기능을 만듭니다.">
+                            <dev:SettingsCard.HeaderIcon>
+                                <FontIcon Glyph="&#xE8A1;" />
+                            </dev:SettingsCard.HeaderIcon>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+
+                <dev:SettingsExpander Description="사실 대부분은 이번에 처음 알게 되었습니다."
+                      Header="프레임워크">
+                    <dev:SettingsExpander.HeaderIcon>
+                        <FontIcon Glyph="&#xE8A1;" />
+                    </dev:SettingsExpander.HeaderIcon>
+
+                    <dev:SettingsExpander.Items>
+                        <dev:SettingsCard Header="WinUI 3" Description="Windows 데스크톱 앱을 위한 최신 네이티브 UI 프레임워크입니다.">
+                            <dev:SettingsCard.HeaderIcon>
+                                <FontIcon Glyph="&#xE8A1;" />
+                            </dev:SettingsCard.HeaderIcon>
+                        </dev:SettingsCard>
+
+                        <dev:SettingsCard Header="Windows App SDK" Description="Win32/데스크톱 앱에서 최신 Windows 기능을 일관된 API로 제공하는 SDK입니다.">
+                            <dev:SettingsCard.HeaderIcon>
+                                <FontIcon Glyph="&#xE8A1;" />
+                            </dev:SettingsCard.HeaderIcon>
+                        </dev:SettingsCard>
+                    </dev:SettingsExpander.Items>
+                </dev:SettingsExpander>
+
 
                 <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="오픈소스 라이브러리" />
-                <dev:SettingsCard Header="Windows Community Toolkit" Description="MIT License. UI 컨트롤 및 헬퍼 라이브러리.">
+
+                <dev:SettingsCard Header="DevWinUI" Description="WinUI 3용 컨트롤, 스타일, 유틸리티와 프로젝트 템플릿/스캐폴딩을 제공하는 확장 라이브러리입니다.">
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE8A1;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <HyperlinkButton Content="자세히 보기" NavigateUri="https://github.com/CommunityToolkit/WindowsCommunityToolkit"/>
-                </dev:SettingsCard>
-
-                <dev:SettingsCard Header="Newtonsoft.Json" Description="MIT License. JSON 직렬화 라이브러리.">
-                    <dev:SettingsCard.HeaderIcon>
-                        <FontIcon Glyph="&#xF16B;" />
-                    </dev:SettingsCard.HeaderIcon>
-                    <HyperlinkButton Content="자세히 보기" NavigateUri="https://www.newtonsoft.com/json"/>
+                    <HyperlinkButton Content="자세히 보기" NavigateUri="https://github.com/ghost1372/DevWinUI"/>
                 </dev:SettingsCard>
 
             </StackPanel>

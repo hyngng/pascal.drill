@@ -226,7 +226,7 @@ namespace Pascal.Pascal_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[79];
+            _typeNameTable = new string[80];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -273,41 +273,42 @@ namespace Pascal.Pascal_XamlTypeInfo
             _typeNameTable[43] = "Pascal.ViewModels.MainViewModel";
             _typeNameTable[44] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
             _typeNameTable[45] = "Microsoft.UI.Xaml.Thickness";
-            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.ScrollView";
-            _typeNameTable[47] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
-            _typeNameTable[48] = "Microsoft.UI.Xaml.Visibility";
-            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
-            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
-            _typeNameTable[51] = "Microsoft.UI.Composition.CompositionPropertySet";
-            _typeNameTable[52] = "Microsoft.UI.Composition.CompositionObject";
-            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
-            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
-            _typeNameTable[57] = "Microsoft.UI.Xaml.FrameworkElement";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
-            _typeNameTable[59] = "Single";
-            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
-            _typeNameTable[61] = "DevWinUI.PanelAttach";
-            _typeNameTable[62] = "DevWinUI.PanelTransitionCollection";
+            _typeNameTable[46] = "DevWinUI.PanelAttach";
+            _typeNameTable[47] = "DevWinUI.PanelTransitionCollection";
+            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.ScrollView";
+            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
+            _typeNameTable[50] = "Microsoft.UI.Xaml.Visibility";
+            _typeNameTable[51] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
+            _typeNameTable[53] = "Microsoft.UI.Composition.CompositionPropertySet";
+            _typeNameTable[54] = "Microsoft.UI.Composition.CompositionObject";
+            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
+            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+            _typeNameTable[59] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
+            _typeNameTable[61] = "Single";
+            _typeNameTable[62] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
             _typeNameTable[63] = "DevWinUI.SettingsCard";
             _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
             _typeNameTable[65] = "DevWinUI.ContentAlignment";
-            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.PersonPicture";
-            _typeNameTable[67] = "Int32";
-            _typeNameTable[68] = "Windows.ApplicationModel.Contacts.Contact";
-            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings";
-            _typeNameTable[70] = "Pascal.Views.CreditPage";
-            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[73] = "Pascal.Views.HomeLandingPage";
-            _typeNameTable[74] = "Pascal.Views.MaybeLaterPage";
-            _typeNameTable[75] = "Pascal.Views.PdfEditPage";
-            _typeNameTable[76] = "Pascal.Views.SettingsPage";
-            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[78] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[66] = "DevWinUI.SettingsExpander";
+            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.PersonPicture";
+            _typeNameTable[68] = "Int32";
+            _typeNameTable[69] = "Windows.ApplicationModel.Contacts.Contact";
+            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings";
+            _typeNameTable[71] = "Pascal.Views.CreditPage";
+            _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[73] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[74] = "Pascal.Views.HomeLandingPage";
+            _typeNameTable[75] = "Pascal.Views.MaybeLaterPage";
+            _typeNameTable[76] = "Pascal.Views.PdfEditPage";
+            _typeNameTable[77] = "Pascal.Views.SettingsPage";
+            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[79] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[79];
+            _typeTable = new global::System.Type[80];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -354,39 +355,40 @@ namespace Pascal.Pascal_XamlTypeInfo
             _typeTable[43] = typeof(global::Pascal.ViewModels.MainViewModel);
             _typeTable[44] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
             _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Thickness);
-            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
-            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
-            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Visibility);
-            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
-            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
-            _typeTable[51] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
-            _typeTable[52] = typeof(global::Microsoft.UI.Composition.CompositionObject);
-            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
-            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
-            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
-            _typeTable[59] = typeof(global::System.Single);
-            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
-            _typeTable[61] = typeof(global::DevWinUI.PanelAttach);
-            _typeTable[62] = typeof(global::DevWinUI.PanelTransitionCollection);
+            _typeTable[46] = typeof(global::DevWinUI.PanelAttach);
+            _typeTable[47] = typeof(global::DevWinUI.PanelTransitionCollection);
+            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
+            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
+            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Visibility);
+            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
+            _typeTable[53] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
+            _typeTable[54] = typeof(global::Microsoft.UI.Composition.CompositionObject);
+            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
+            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
+            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
+            _typeTable[61] = typeof(global::System.Single);
+            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
             _typeTable[63] = typeof(global::DevWinUI.SettingsCard);
             _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
             _typeTable[65] = typeof(global::DevWinUI.ContentAlignment);
-            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture);
-            _typeTable[67] = typeof(global::System.Int32);
-            _typeTable[68] = typeof(global::Windows.ApplicationModel.Contacts.Contact);
-            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings);
-            _typeTable[70] = typeof(global::Pascal.Views.CreditPage);
-            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[73] = typeof(global::Pascal.Views.HomeLandingPage);
-            _typeTable[74] = typeof(global::Pascal.Views.MaybeLaterPage);
-            _typeTable[75] = typeof(global::Pascal.Views.PdfEditPage);
-            _typeTable[76] = typeof(global::Pascal.Views.SettingsPage);
-            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[78] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[66] = typeof(global::DevWinUI.SettingsExpander);
+            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture);
+            _typeTable[68] = typeof(global::System.Int32);
+            _typeTable[69] = typeof(global::Windows.ApplicationModel.Contacts.Contact);
+            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings);
+            _typeTable[71] = typeof(global::Pascal.Views.CreditPage);
+            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[73] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[74] = typeof(global::Pascal.Views.HomeLandingPage);
+            _typeTable[75] = typeof(global::Pascal.Views.MaybeLaterPage);
+            _typeTable[76] = typeof(global::Pascal.Views.PdfEditPage);
+            _typeTable[77] = typeof(global::Pascal.Views.SettingsPage);
+            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[79] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -433,18 +435,19 @@ namespace Pascal.Pascal_XamlTypeInfo
         private object Activate_38_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
         private object Activate_41_MainWindow() { return new global::Pascal.Views.MainWindow(); }
         private object Activate_43_MainViewModel() { return new global::Pascal.ViewModels.MainViewModel(); }
-        private object Activate_46_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
-        private object Activate_56_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
-        private object Activate_61_PanelAttach() { return new global::DevWinUI.PanelAttach(); }
+        private object Activate_46_PanelAttach() { return new global::DevWinUI.PanelAttach(); }
+        private object Activate_48_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
+        private object Activate_58_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
         private object Activate_63_SettingsCard() { return new global::DevWinUI.SettingsCard(); }
-        private object Activate_66_PersonPicture() { return new global::Microsoft.UI.Xaml.Controls.PersonPicture(); }
-        private object Activate_68_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
-        private object Activate_70_CreditPage() { return new global::Pascal.Views.CreditPage(); }
-        private object Activate_73_HomeLandingPage() { return new global::Pascal.Views.HomeLandingPage(); }
-        private object Activate_74_MaybeLaterPage() { return new global::Pascal.Views.MaybeLaterPage(); }
-        private object Activate_75_PdfEditPage() { return new global::Pascal.Views.PdfEditPage(); }
-        private object Activate_76_SettingsPage() { return new global::Pascal.Views.SettingsPage(); }
-        private object Activate_77_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_66_SettingsExpander() { return new global::DevWinUI.SettingsExpander(); }
+        private object Activate_67_PersonPicture() { return new global::Microsoft.UI.Xaml.Controls.PersonPicture(); }
+        private object Activate_69_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
+        private object Activate_71_CreditPage() { return new global::Pascal.Views.CreditPage(); }
+        private object Activate_74_HomeLandingPage() { return new global::Pascal.Views.HomeLandingPage(); }
+        private object Activate_75_MaybeLaterPage() { return new global::Pascal.Views.MaybeLaterPage(); }
+        private object Activate_76_PdfEditPage() { return new global::Pascal.Views.PdfEditPage(); }
+        private object Activate_77_SettingsPage() { return new global::Pascal.Views.SettingsPage(); }
+        private object Activate_78_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_TitleBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TitleBar).TypeHandle);
         private void StaticInitializer_9_TitleBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TitleBarTemplateSettings).TypeHandle);
@@ -472,32 +475,33 @@ namespace Pascal.Pascal_XamlTypeInfo
         private void StaticInitializer_43_MainViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.ViewModels.MainViewModel).TypeHandle);
         private void StaticInitializer_44_ObservableObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject).TypeHandle);
         private void StaticInitializer_45_Thickness() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Thickness).TypeHandle);
-        private void StaticInitializer_46_ScrollView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollView).TypeHandle);
-        private void StaticInitializer_47_ScrollingScrollBarVisibility() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility).TypeHandle);
-        private void StaticInitializer_49_ScrollingScrollMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode).TypeHandle);
-        private void StaticInitializer_50_ScrollingContentOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation).TypeHandle);
-        private void StaticInitializer_51_CompositionPropertySet() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionPropertySet).TypeHandle);
-        private void StaticInitializer_52_CompositionObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionObject).TypeHandle);
-        private void StaticInitializer_53_ScrollingChainMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode).TypeHandle);
-        private void StaticInitializer_54_ScrollingRailMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode).TypeHandle);
-        private void StaticInitializer_55_ScrollingInputKinds() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds).TypeHandle);
-        private void StaticInitializer_56_ScrollPresenter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter).TypeHandle);
-        private void StaticInitializer_58_ScrollingInteractionState() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState).TypeHandle);
-        private void StaticInitializer_60_ScrollingZoomMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode).TypeHandle);
-        private void StaticInitializer_61_PanelAttach() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.PanelAttach).TypeHandle);
-        private void StaticInitializer_62_PanelTransitionCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.PanelTransitionCollection).TypeHandle);
+        private void StaticInitializer_46_PanelAttach() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.PanelAttach).TypeHandle);
+        private void StaticInitializer_47_PanelTransitionCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.PanelTransitionCollection).TypeHandle);
+        private void StaticInitializer_48_ScrollView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollView).TypeHandle);
+        private void StaticInitializer_49_ScrollingScrollBarVisibility() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility).TypeHandle);
+        private void StaticInitializer_51_ScrollingScrollMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode).TypeHandle);
+        private void StaticInitializer_52_ScrollingContentOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation).TypeHandle);
+        private void StaticInitializer_53_CompositionPropertySet() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionPropertySet).TypeHandle);
+        private void StaticInitializer_54_CompositionObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionObject).TypeHandle);
+        private void StaticInitializer_55_ScrollingChainMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode).TypeHandle);
+        private void StaticInitializer_56_ScrollingRailMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode).TypeHandle);
+        private void StaticInitializer_57_ScrollingInputKinds() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds).TypeHandle);
+        private void StaticInitializer_58_ScrollPresenter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter).TypeHandle);
+        private void StaticInitializer_60_ScrollingInteractionState() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState).TypeHandle);
+        private void StaticInitializer_62_ScrollingZoomMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode).TypeHandle);
         private void StaticInitializer_63_SettingsCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.SettingsCard).TypeHandle);
         private void StaticInitializer_65_ContentAlignment() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.ContentAlignment).TypeHandle);
-        private void StaticInitializer_66_PersonPicture() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture).TypeHandle);
-        private void StaticInitializer_68_Contact() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.ApplicationModel.Contacts.Contact).TypeHandle);
-        private void StaticInitializer_69_PersonPictureTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings).TypeHandle);
-        private void StaticInitializer_70_CreditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.CreditPage).TypeHandle);
-        private void StaticInitializer_73_HomeLandingPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.HomeLandingPage).TypeHandle);
-        private void StaticInitializer_74_MaybeLaterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.MaybeLaterPage).TypeHandle);
-        private void StaticInitializer_75_PdfEditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPage).TypeHandle);
-        private void StaticInitializer_76_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.SettingsPage).TypeHandle);
-        private void StaticInitializer_77_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_78_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_66_SettingsExpander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DevWinUI.SettingsExpander).TypeHandle);
+        private void StaticInitializer_67_PersonPicture() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture).TypeHandle);
+        private void StaticInitializer_69_Contact() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.ApplicationModel.Contacts.Contact).TypeHandle);
+        private void StaticInitializer_70_PersonPictureTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings).TypeHandle);
+        private void StaticInitializer_71_CreditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.CreditPage).TypeHandle);
+        private void StaticInitializer_74_HomeLandingPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.HomeLandingPage).TypeHandle);
+        private void StaticInitializer_75_MaybeLaterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.MaybeLaterPage).TypeHandle);
+        private void StaticInitializer_76_PdfEditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPage).TypeHandle);
+        private void StaticInitializer_77_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.SettingsPage).TypeHandle);
+        private void StaticInitializer_78_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_79_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -523,7 +527,7 @@ namespace Pascal.Pascal_XamlTypeInfo
             var newItem = (global::DevWinUI.BreadcrumbStep)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_78_IList(object instance, object item)
+        private void VectorAdd_79_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -888,10 +892,36 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 46:   //  Microsoft.UI.Xaml.Controls.ScrollView
+            case 46:   //  DevWinUI.PanelAttach
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_46_PanelAttach;
+                userType.StaticInitializer = StaticInitializer_46_PanelAttach;
+                userType.AddMemberName("ChildrenTransitions");
+                xamlType = userType;
+                break;
+
+            case 47:   //  DevWinUI.PanelTransitionCollection
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_47_PanelTransitionCollection;
+                userType.AddEnumValue("None", global::DevWinUI.PanelTransitionCollection.None);
+                userType.AddEnumValue("Default", global::DevWinUI.PanelTransitionCollection.Default);
+                userType.AddEnumValue("AddDeleteThemeTransition", global::DevWinUI.PanelTransitionCollection.AddDeleteThemeTransition);
+                userType.AddEnumValue("ContentThemeTransition", global::DevWinUI.PanelTransitionCollection.ContentThemeTransition);
+                userType.AddEnumValue("EdgeUIThemeTransition", global::DevWinUI.PanelTransitionCollection.EdgeUIThemeTransition);
+                userType.AddEnumValue("EntranceThemeTransition", global::DevWinUI.PanelTransitionCollection.EntranceThemeTransition);
+                userType.AddEnumValue("NavigationThemeTransition", global::DevWinUI.PanelTransitionCollection.NavigationThemeTransition);
+                userType.AddEnumValue("PaneThemeTransition", global::DevWinUI.PanelTransitionCollection.PaneThemeTransition);
+                userType.AddEnumValue("PopupThemeTransition", global::DevWinUI.PanelTransitionCollection.PopupThemeTransition);
+                userType.AddEnumValue("ReorderThemeTransition", global::DevWinUI.PanelTransitionCollection.ReorderThemeTransition);
+                userType.AddEnumValue("RepositionThemeTransition", global::DevWinUI.PanelTransitionCollection.RepositionThemeTransition);
+                userType.AddEnumValue("SettingsCardTransition", global::DevWinUI.PanelTransitionCollection.SettingsCardTransition);
+                xamlType = userType;
+                break;
+
+            case 48:   //  Microsoft.UI.Xaml.Controls.ScrollView
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_46_ScrollView;
-                userType.StaticInitializer = StaticInitializer_46_ScrollView;
+                userType.Activator = Activate_48_ScrollView;
+                userType.StaticInitializer = StaticInitializer_48_ScrollView;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ScrollView.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("VerticalScrollBarVisibility");
@@ -930,31 +960,31 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 47:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
+            case 49:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_47_ScrollingScrollBarVisibility;
+                userType.StaticInitializer = StaticInitializer_49_ScrollingScrollBarVisibility;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Auto);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Visible);
                 userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Hidden);
                 xamlType = userType;
                 break;
 
-            case 48:   //  Microsoft.UI.Xaml.Visibility
+            case 50:   //  Microsoft.UI.Xaml.Visibility
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 49:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
+            case 51:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_49_ScrollingScrollMode;
+                userType.StaticInitializer = StaticInitializer_51_ScrollingScrollMode;
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Enabled);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Disabled);
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Auto);
                 xamlType = userType;
                 break;
 
-            case 50:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
+            case 52:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_50_ScrollingContentOrientation;
+                userType.StaticInitializer = StaticInitializer_52_ScrollingContentOrientation;
                 userType.AddEnumValue("Vertical", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Vertical);
                 userType.AddEnumValue("Horizontal", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Horizontal);
                 userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.None);
@@ -962,39 +992,39 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 51:   //  Microsoft.UI.Composition.CompositionPropertySet
+            case 53:   //  Microsoft.UI.Composition.CompositionPropertySet
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Composition.CompositionObject"));
-                userType.StaticInitializer = StaticInitializer_51_CompositionPropertySet;
+                userType.StaticInitializer = StaticInitializer_53_CompositionPropertySet;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  Microsoft.UI.Composition.CompositionObject
+            case 54:   //  Microsoft.UI.Composition.CompositionObject
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_52_CompositionObject;
+                userType.StaticInitializer = StaticInitializer_54_CompositionObject;
                 xamlType = userType;
                 break;
 
-            case 53:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
+            case 55:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_53_ScrollingChainMode;
+                userType.StaticInitializer = StaticInitializer_55_ScrollingChainMode;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Auto);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Always);
                 userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Never);
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
+            case 56:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_54_ScrollingRailMode;
+                userType.StaticInitializer = StaticInitializer_56_ScrollingRailMode;
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Enabled);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Disabled);
                 xamlType = userType;
                 break;
 
-            case 55:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
+            case 57:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_55_ScrollingInputKinds;
+                userType.StaticInitializer = StaticInitializer_57_ScrollingInputKinds;
                 userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.None);
                 userType.AddEnumValue("Touch", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Touch);
                 userType.AddEnumValue("Pen", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Pen);
@@ -1005,22 +1035,22 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 56:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+            case 58:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.FrameworkElement"));
-                userType.StaticInitializer = StaticInitializer_56_ScrollPresenter;
+                userType.StaticInitializer = StaticInitializer_58_ScrollPresenter;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content");
                 userType.AddMemberName("Content");
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 57:   //  Microsoft.UI.Xaml.FrameworkElement
+            case 59:   //  Microsoft.UI.Xaml.FrameworkElement
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
+            case 60:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_58_ScrollingInteractionState;
+                userType.StaticInitializer = StaticInitializer_60_ScrollingInteractionState;
                 userType.AddEnumValue("Idle", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Idle);
                 userType.AddEnumValue("Interaction", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Interaction);
                 userType.AddEnumValue("Inertia", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Inertia);
@@ -1028,41 +1058,15 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 59:   //  Single
+            case 61:   //  Single
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 60:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
+            case 62:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_60_ScrollingZoomMode;
+                userType.StaticInitializer = StaticInitializer_62_ScrollingZoomMode;
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Enabled);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Disabled);
-                xamlType = userType;
-                break;
-
-            case 61:   //  DevWinUI.PanelAttach
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_61_PanelAttach;
-                userType.StaticInitializer = StaticInitializer_61_PanelAttach;
-                userType.AddMemberName("ChildrenTransitions");
-                xamlType = userType;
-                break;
-
-            case 62:   //  DevWinUI.PanelTransitionCollection
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_62_PanelTransitionCollection;
-                userType.AddEnumValue("None", global::DevWinUI.PanelTransitionCollection.None);
-                userType.AddEnumValue("Default", global::DevWinUI.PanelTransitionCollection.Default);
-                userType.AddEnumValue("AddDeleteThemeTransition", global::DevWinUI.PanelTransitionCollection.AddDeleteThemeTransition);
-                userType.AddEnumValue("ContentThemeTransition", global::DevWinUI.PanelTransitionCollection.ContentThemeTransition);
-                userType.AddEnumValue("EdgeUIThemeTransition", global::DevWinUI.PanelTransitionCollection.EdgeUIThemeTransition);
-                userType.AddEnumValue("EntranceThemeTransition", global::DevWinUI.PanelTransitionCollection.EntranceThemeTransition);
-                userType.AddEnumValue("NavigationThemeTransition", global::DevWinUI.PanelTransitionCollection.NavigationThemeTransition);
-                userType.AddEnumValue("PaneThemeTransition", global::DevWinUI.PanelTransitionCollection.PaneThemeTransition);
-                userType.AddEnumValue("PopupThemeTransition", global::DevWinUI.PanelTransitionCollection.PopupThemeTransition);
-                userType.AddEnumValue("ReorderThemeTransition", global::DevWinUI.PanelTransitionCollection.ReorderThemeTransition);
-                userType.AddEnumValue("RepositionThemeTransition", global::DevWinUI.PanelTransitionCollection.RepositionThemeTransition);
-                userType.AddEnumValue("SettingsCardTransition", global::DevWinUI.PanelTransitionCollection.SettingsCardTransition);
                 xamlType = userType;
                 break;
 
@@ -1095,10 +1099,29 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 66:   //  Microsoft.UI.Xaml.Controls.PersonPicture
+            case 66:   //  DevWinUI.SettingsExpander
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_66_PersonPicture;
-                userType.StaticInitializer = StaticInitializer_66_PersonPicture;
+                userType.Activator = Activate_66_SettingsExpander;
+                userType.StaticInitializer = StaticInitializer_66_SettingsExpander;
+                userType.SetContentPropertyName("DevWinUI.SettingsExpander.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("Description");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("HeaderIcon");
+                userType.AddMemberName("Items");
+                userType.AddMemberName("ItemsSource");
+                userType.AddMemberName("ItemTemplate");
+                userType.AddMemberName("ItemContainerStyleSelector");
+                userType.AddMemberName("ItemsHeader");
+                userType.AddMemberName("ItemsFooter");
+                userType.AddMemberName("IsExpanded");
+                xamlType = userType;
+                break;
+
+            case 67:   //  Microsoft.UI.Xaml.Controls.PersonPicture
+                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_67_PersonPicture;
+                userType.StaticInitializer = StaticInitializer_67_PersonPicture;
                 userType.AddMemberName("ProfilePicture");
                 userType.AddMemberName("BadgeGlyph");
                 userType.AddMemberName("BadgeImageSource");
@@ -1113,76 +1136,76 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  Int32
+            case 68:   //  Int32
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 68:   //  Windows.ApplicationModel.Contacts.Contact
+            case 69:   //  Windows.ApplicationModel.Contacts.Contact
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_68_Contact;
+                userType.StaticInitializer = StaticInitializer_69_Contact;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 69:   //  Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
+            case 70:   //  Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_69_PersonPictureTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_70_PersonPictureTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Pascal.Views.CreditPage
+            case 71:   //  Pascal.Views.CreditPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_70_CreditPage;
-                userType.StaticInitializer = StaticInitializer_70_CreditPage;
+                userType.Activator = Activate_71_CreditPage;
+                userType.StaticInitializer = StaticInitializer_71_CreditPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 71:   //  Microsoft.UI.Xaml.Controls.Page
+            case 72:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 72:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 73:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::Pascal.Pascal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 73:   //  Pascal.Views.HomeLandingPage
+            case 74:   //  Pascal.Views.HomeLandingPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_73_HomeLandingPage;
-                userType.StaticInitializer = StaticInitializer_73_HomeLandingPage;
+                userType.Activator = Activate_74_HomeLandingPage;
+                userType.StaticInitializer = StaticInitializer_74_HomeLandingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 74:   //  Pascal.Views.MaybeLaterPage
+            case 75:   //  Pascal.Views.MaybeLaterPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_74_MaybeLaterPage;
-                userType.StaticInitializer = StaticInitializer_74_MaybeLaterPage;
+                userType.Activator = Activate_75_MaybeLaterPage;
+                userType.StaticInitializer = StaticInitializer_75_MaybeLaterPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 75:   //  Pascal.Views.PdfEditPage
+            case 76:   //  Pascal.Views.PdfEditPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_75_PdfEditPage;
-                userType.StaticInitializer = StaticInitializer_75_PdfEditPage;
+                userType.Activator = Activate_76_PdfEditPage;
+                userType.StaticInitializer = StaticInitializer_76_PdfEditPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 76:   //  Pascal.Views.SettingsPage
+            case 77:   //  Pascal.Views.SettingsPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_76_SettingsPage;
-                userType.StaticInitializer = StaticInitializer_76_SettingsPage;
+                userType.Activator = Activate_77_SettingsPage;
+                userType.StaticInitializer = StaticInitializer_77_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 77:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 78:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_77_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_77_TreeViewNode;
+                userType.Activator = Activate_78_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_78_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -1194,10 +1217,10 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 78:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 79:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_78_IList;
-                userType.CollectionAdd = VectorAdd_78_IList;
+                userType.StaticInitializer = StaticInitializer_79_IList;
+                userType.CollectionAdd = VectorAdd_79_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -1878,278 +1901,278 @@ namespace Pascal.Pascal_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Thickness)instance;
             that.Bottom = (global::System.Double)Value;
         }
-        private object get_67_ScrollView_Content(object instance)
+        private object get_67_PanelAttach_ChildrenTransitions(object instance)
+        {
+            return global::DevWinUI.PanelAttach.GetChildrenTransitions((global::Microsoft.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_67_PanelAttach_ChildrenTransitions(object instance, object Value)
+        {
+            global::DevWinUI.PanelAttach.SetChildrenTransitions((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::DevWinUI.PanelTransitionCollection)Value);
+        }
+        private object get_68_ScrollView_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.Content;
         }
-        private void set_67_ScrollView_Content(object instance, object Value)
+        private void set_68_ScrollView_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_68_ScrollView_VerticalScrollBarVisibility(object instance)
+        private object get_69_ScrollView_VerticalScrollBarVisibility(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.VerticalScrollBarVisibility;
         }
-        private void set_68_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
+        private void set_69_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.VerticalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
         }
-        private object get_69_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
+        private object get_70_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ComputedHorizontalScrollBarVisibility;
         }
-        private object get_70_ScrollView_ComputedHorizontalScrollMode(object instance)
+        private object get_71_ScrollView_ComputedHorizontalScrollMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ComputedHorizontalScrollMode;
         }
-        private object get_71_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
+        private object get_72_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ComputedVerticalScrollBarVisibility;
         }
-        private object get_72_ScrollView_ComputedVerticalScrollMode(object instance)
+        private object get_73_ScrollView_ComputedVerticalScrollMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ComputedVerticalScrollMode;
         }
-        private object get_73_ScrollView_ContentOrientation(object instance)
+        private object get_74_ScrollView_ContentOrientation(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ContentOrientation;
         }
-        private void set_73_ScrollView_ContentOrientation(object instance, object Value)
+        private void set_74_ScrollView_ContentOrientation(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.ContentOrientation = (global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation)Value;
         }
-        private object get_74_ScrollView_CurrentAnchor(object instance)
+        private object get_75_ScrollView_CurrentAnchor(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.CurrentAnchor;
         }
-        private object get_75_ScrollView_ExpressionAnimationSources(object instance)
+        private object get_76_ScrollView_ExpressionAnimationSources(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ExpressionAnimationSources;
         }
-        private object get_76_ScrollView_ExtentHeight(object instance)
+        private object get_77_ScrollView_ExtentHeight(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ExtentHeight;
         }
-        private object get_77_ScrollView_ExtentWidth(object instance)
+        private object get_78_ScrollView_ExtentWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ExtentWidth;
         }
-        private object get_78_ScrollView_HorizontalAnchorRatio(object instance)
+        private object get_79_ScrollView_HorizontalAnchorRatio(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.HorizontalAnchorRatio;
         }
-        private void set_78_ScrollView_HorizontalAnchorRatio(object instance, object Value)
+        private void set_79_ScrollView_HorizontalAnchorRatio(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.HorizontalAnchorRatio = (global::System.Double)Value;
         }
-        private object get_79_ScrollView_HorizontalOffset(object instance)
+        private object get_80_ScrollView_HorizontalOffset(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.HorizontalOffset;
         }
-        private object get_80_ScrollView_HorizontalScrollBarVisibility(object instance)
+        private object get_81_ScrollView_HorizontalScrollBarVisibility(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.HorizontalScrollBarVisibility;
         }
-        private void set_80_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
+        private void set_81_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.HorizontalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
         }
-        private object get_81_ScrollView_HorizontalScrollChainMode(object instance)
+        private object get_82_ScrollView_HorizontalScrollChainMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.HorizontalScrollChainMode;
         }
-        private void set_81_ScrollView_HorizontalScrollChainMode(object instance, object Value)
+        private void set_82_ScrollView_HorizontalScrollChainMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.HorizontalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
         }
-        private object get_82_ScrollView_HorizontalScrollMode(object instance)
+        private object get_83_ScrollView_HorizontalScrollMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.HorizontalScrollMode;
         }
-        private void set_82_ScrollView_HorizontalScrollMode(object instance, object Value)
+        private void set_83_ScrollView_HorizontalScrollMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.HorizontalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
         }
-        private object get_83_ScrollView_HorizontalScrollRailMode(object instance)
+        private object get_84_ScrollView_HorizontalScrollRailMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.HorizontalScrollRailMode;
         }
-        private void set_83_ScrollView_HorizontalScrollRailMode(object instance, object Value)
+        private void set_84_ScrollView_HorizontalScrollRailMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.HorizontalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
         }
-        private object get_84_ScrollView_IgnoredInputKinds(object instance)
+        private object get_85_ScrollView_IgnoredInputKinds(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.IgnoredInputKinds;
         }
-        private void set_84_ScrollView_IgnoredInputKinds(object instance, object Value)
+        private void set_85_ScrollView_IgnoredInputKinds(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.IgnoredInputKinds = (global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds)Value;
         }
-        private object get_85_ScrollView_MaxZoomFactor(object instance)
+        private object get_86_ScrollView_MaxZoomFactor(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.MaxZoomFactor;
         }
-        private void set_85_ScrollView_MaxZoomFactor(object instance, object Value)
+        private void set_86_ScrollView_MaxZoomFactor(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.MaxZoomFactor = (global::System.Double)Value;
         }
-        private object get_86_ScrollView_MinZoomFactor(object instance)
+        private object get_87_ScrollView_MinZoomFactor(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.MinZoomFactor;
         }
-        private void set_86_ScrollView_MinZoomFactor(object instance, object Value)
+        private void set_87_ScrollView_MinZoomFactor(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.MinZoomFactor = (global::System.Double)Value;
         }
-        private object get_87_ScrollView_ScrollPresenter(object instance)
+        private object get_88_ScrollView_ScrollPresenter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ScrollPresenter;
         }
-        private object get_88_ScrollPresenter_Content(object instance)
+        private object get_89_ScrollPresenter_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
             return that.Content;
         }
-        private void set_88_ScrollPresenter_Content(object instance, object Value)
+        private void set_89_ScrollPresenter_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
             that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_89_ScrollView_ScrollableHeight(object instance)
+        private object get_90_ScrollView_ScrollableHeight(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ScrollableHeight;
         }
-        private object get_90_ScrollView_ScrollableWidth(object instance)
+        private object get_91_ScrollView_ScrollableWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ScrollableWidth;
         }
-        private object get_91_ScrollView_State(object instance)
+        private object get_92_ScrollView_State(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.State;
         }
-        private object get_92_ScrollView_VerticalAnchorRatio(object instance)
+        private object get_93_ScrollView_VerticalAnchorRatio(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.VerticalAnchorRatio;
         }
-        private void set_92_ScrollView_VerticalAnchorRatio(object instance, object Value)
+        private void set_93_ScrollView_VerticalAnchorRatio(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.VerticalAnchorRatio = (global::System.Double)Value;
         }
-        private object get_93_ScrollView_VerticalOffset(object instance)
+        private object get_94_ScrollView_VerticalOffset(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.VerticalOffset;
         }
-        private object get_94_ScrollView_VerticalScrollChainMode(object instance)
+        private object get_95_ScrollView_VerticalScrollChainMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.VerticalScrollChainMode;
         }
-        private void set_94_ScrollView_VerticalScrollChainMode(object instance, object Value)
+        private void set_95_ScrollView_VerticalScrollChainMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.VerticalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
         }
-        private object get_95_ScrollView_VerticalScrollMode(object instance)
+        private object get_96_ScrollView_VerticalScrollMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.VerticalScrollMode;
         }
-        private void set_95_ScrollView_VerticalScrollMode(object instance, object Value)
+        private void set_96_ScrollView_VerticalScrollMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.VerticalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
         }
-        private object get_96_ScrollView_VerticalScrollRailMode(object instance)
+        private object get_97_ScrollView_VerticalScrollRailMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.VerticalScrollRailMode;
         }
-        private void set_96_ScrollView_VerticalScrollRailMode(object instance, object Value)
+        private void set_97_ScrollView_VerticalScrollRailMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.VerticalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
         }
-        private object get_97_ScrollView_ViewportHeight(object instance)
+        private object get_98_ScrollView_ViewportHeight(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ViewportHeight;
         }
-        private object get_98_ScrollView_ViewportWidth(object instance)
+        private object get_99_ScrollView_ViewportWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ViewportWidth;
         }
-        private object get_99_ScrollView_ZoomChainMode(object instance)
+        private object get_100_ScrollView_ZoomChainMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ZoomChainMode;
         }
-        private void set_99_ScrollView_ZoomChainMode(object instance, object Value)
+        private void set_100_ScrollView_ZoomChainMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.ZoomChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
         }
-        private object get_100_ScrollView_ZoomFactor(object instance)
+        private object get_101_ScrollView_ZoomFactor(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ZoomFactor;
         }
-        private object get_101_ScrollView_ZoomMode(object instance)
+        private object get_102_ScrollView_ZoomMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             return that.ZoomMode;
         }
-        private void set_101_ScrollView_ZoomMode(object instance, object Value)
+        private void set_102_ScrollView_ZoomMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
             that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
-        }
-        private object get_102_PanelAttach_ChildrenTransitions(object instance)
-        {
-            return global::DevWinUI.PanelAttach.GetChildrenTransitions((global::Microsoft.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_102_PanelAttach_ChildrenTransitions(object instance, object Value)
-        {
-            global::DevWinUI.PanelAttach.SetChildrenTransitions((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::DevWinUI.PanelTransitionCollection)Value);
         }
         private object get_103_SettingsCard_Header(object instance)
         {
@@ -2241,157 +2264,267 @@ namespace Pascal.Pascal_XamlTypeInfo
             var that = (global::DevWinUI.SettingsCard)instance;
             that.IsActionIconVisible = (global::System.Boolean)Value;
         }
-        private object get_112_PersonPicture_ProfilePicture(object instance)
+        private object get_112_SettingsExpander_Content(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.Content;
+        }
+        private void set_112_SettingsExpander_Content(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.Content = (global::System.Object)Value;
+        }
+        private object get_113_SettingsExpander_Description(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.Description;
+        }
+        private void set_113_SettingsExpander_Description(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.Description = (global::System.Object)Value;
+        }
+        private object get_114_SettingsExpander_Header(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.Header;
+        }
+        private void set_114_SettingsExpander_Header(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_115_SettingsExpander_HeaderIcon(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.HeaderIcon;
+        }
+        private void set_115_SettingsExpander_HeaderIcon(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
+        }
+        private object get_116_SettingsExpander_Items(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.Items;
+        }
+        private void set_116_SettingsExpander_Items(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.Items = (global::System.Collections.Generic.IList<global::System.Object>)Value;
+        }
+        private object get_117_SettingsExpander_ItemsSource(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.ItemsSource;
+        }
+        private void set_117_SettingsExpander_ItemsSource(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.ItemsSource = (global::System.Object)Value;
+        }
+        private object get_118_SettingsExpander_ItemTemplate(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.ItemTemplate;
+        }
+        private void set_118_SettingsExpander_ItemTemplate(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.ItemTemplate = (global::System.Object)Value;
+        }
+        private object get_119_SettingsExpander_ItemContainerStyleSelector(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.ItemContainerStyleSelector;
+        }
+        private void set_119_SettingsExpander_ItemContainerStyleSelector(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.ItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
+        }
+        private object get_120_SettingsExpander_ItemsHeader(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.ItemsHeader;
+        }
+        private void set_120_SettingsExpander_ItemsHeader(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.ItemsHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_121_SettingsExpander_ItemsFooter(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.ItemsFooter;
+        }
+        private void set_121_SettingsExpander_ItemsFooter(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.ItemsFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_122_SettingsExpander_IsExpanded(object instance)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            return that.IsExpanded;
+        }
+        private void set_122_SettingsExpander_IsExpanded(object instance, object Value)
+        {
+            var that = (global::DevWinUI.SettingsExpander)instance;
+            that.IsExpanded = (global::System.Boolean)Value;
+        }
+        private object get_123_PersonPicture_ProfilePicture(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.ProfilePicture;
         }
-        private void set_112_PersonPicture_ProfilePicture(object instance, object Value)
+        private void set_123_PersonPicture_ProfilePicture(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.ProfilePicture = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_113_PersonPicture_BadgeGlyph(object instance)
+        private object get_124_PersonPicture_BadgeGlyph(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeGlyph;
         }
-        private void set_113_PersonPicture_BadgeGlyph(object instance, object Value)
+        private void set_124_PersonPicture_BadgeGlyph(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeGlyph = (global::System.String)Value;
         }
-        private object get_114_PersonPicture_BadgeImageSource(object instance)
+        private object get_125_PersonPicture_BadgeImageSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeImageSource;
         }
-        private void set_114_PersonPicture_BadgeImageSource(object instance, object Value)
+        private void set_125_PersonPicture_BadgeImageSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeImageSource = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_115_PersonPicture_BadgeNumber(object instance)
+        private object get_126_PersonPicture_BadgeNumber(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeNumber;
         }
-        private void set_115_PersonPicture_BadgeNumber(object instance, object Value)
+        private void set_126_PersonPicture_BadgeNumber(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeNumber = (global::System.Int32)Value;
         }
-        private object get_116_PersonPicture_BadgeText(object instance)
+        private object get_127_PersonPicture_BadgeText(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeText;
         }
-        private void set_116_PersonPicture_BadgeText(object instance, object Value)
+        private void set_127_PersonPicture_BadgeText(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeText = (global::System.String)Value;
         }
-        private object get_117_PersonPicture_Contact(object instance)
+        private object get_128_PersonPicture_Contact(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.Contact;
         }
-        private void set_117_PersonPicture_Contact(object instance, object Value)
+        private void set_128_PersonPicture_Contact(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.Contact = (global::Windows.ApplicationModel.Contacts.Contact)Value;
         }
-        private object get_118_PersonPicture_DisplayName(object instance)
+        private object get_129_PersonPicture_DisplayName(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.DisplayName;
         }
-        private void set_118_PersonPicture_DisplayName(object instance, object Value)
+        private void set_129_PersonPicture_DisplayName(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.DisplayName = (global::System.String)Value;
         }
-        private object get_119_PersonPicture_Initials(object instance)
+        private object get_130_PersonPicture_Initials(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.Initials;
         }
-        private void set_119_PersonPicture_Initials(object instance, object Value)
+        private void set_130_PersonPicture_Initials(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.Initials = (global::System.String)Value;
         }
-        private object get_120_PersonPicture_IsGroup(object instance)
+        private object get_131_PersonPicture_IsGroup(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.IsGroup;
         }
-        private void set_120_PersonPicture_IsGroup(object instance, object Value)
+        private void set_131_PersonPicture_IsGroup(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.IsGroup = (global::System.Boolean)Value;
         }
-        private object get_121_PersonPicture_PreferSmallImage(object instance)
+        private object get_132_PersonPicture_PreferSmallImage(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.PreferSmallImage;
         }
-        private void set_121_PersonPicture_PreferSmallImage(object instance, object Value)
+        private void set_132_PersonPicture_PreferSmallImage(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.PreferSmallImage = (global::System.Boolean)Value;
         }
-        private object get_122_PersonPicture_TemplateSettings(object instance)
+        private object get_133_PersonPicture_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.TemplateSettings;
         }
-        private object get_123_TreeViewNode_Children(object instance)
+        private object get_134_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_124_TreeViewNode_Content(object instance)
+        private object get_135_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_124_TreeViewNode_Content(object instance, object Value)
+        private void set_135_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_125_TreeViewNode_Depth(object instance)
+        private object get_136_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_126_TreeViewNode_HasChildren(object instance)
+        private object get_137_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_127_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_138_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_127_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_138_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_128_TreeViewNode_IsExpanded(object instance)
+        private object get_139_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_128_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_139_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_129_TreeViewNode_Parent(object instance)
+        private object get_140_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -2870,246 +3003,246 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlMember.Getter = get_66_Thickness_Bottom;
                 xamlMember.Setter = set_66_Thickness_Bottom;
                 break;
+            case "DevWinUI.PanelAttach.ChildrenTransitions":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.PanelAttach");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ChildrenTransitions", "DevWinUI.PanelTransitionCollection");
+                xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_67_PanelAttach_ChildrenTransitions;
+                xamlMember.Setter = set_67_PanelAttach_ChildrenTransitions;
+                break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.Content":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_ScrollView_Content;
-                xamlMember.Setter = set_67_ScrollView_Content;
+                xamlMember.Getter = get_68_ScrollView_Content;
+                xamlMember.Setter = set_68_ScrollView_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollBarVisibility":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_ScrollView_VerticalScrollBarVisibility;
-                xamlMember.Setter = set_68_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Getter = get_69_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Setter = set_69_ScrollView_VerticalScrollBarVisibility;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollBarVisibility":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_ScrollView_ComputedHorizontalScrollBarVisibility;
+                xamlMember.Getter = get_70_ScrollView_ComputedHorizontalScrollBarVisibility;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_ScrollView_ComputedHorizontalScrollMode;
+                xamlMember.Getter = get_71_ScrollView_ComputedHorizontalScrollMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollBarVisibility":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_ScrollView_ComputedVerticalScrollBarVisibility;
+                xamlMember.Getter = get_72_ScrollView_ComputedVerticalScrollBarVisibility;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_ScrollView_ComputedVerticalScrollMode;
+                xamlMember.Getter = get_73_ScrollView_ComputedVerticalScrollMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ContentOrientation":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ContentOrientation", "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_ScrollView_ContentOrientation;
-                xamlMember.Setter = set_73_ScrollView_ContentOrientation;
+                xamlMember.Getter = get_74_ScrollView_ContentOrientation;
+                xamlMember.Setter = set_74_ScrollView_ContentOrientation;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.CurrentAnchor":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "CurrentAnchor", "Microsoft.UI.Xaml.UIElement");
-                xamlMember.Getter = get_74_ScrollView_CurrentAnchor;
+                xamlMember.Getter = get_75_ScrollView_CurrentAnchor;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ExpressionAnimationSources":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ExpressionAnimationSources", "Microsoft.UI.Composition.CompositionPropertySet");
-                xamlMember.Getter = get_75_ScrollView_ExpressionAnimationSources;
+                xamlMember.Getter = get_76_ScrollView_ExpressionAnimationSources;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentHeight":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ExtentHeight", "Double");
-                xamlMember.Getter = get_76_ScrollView_ExtentHeight;
+                xamlMember.Getter = get_77_ScrollView_ExtentHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentWidth":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ExtentWidth", "Double");
-                xamlMember.Getter = get_77_ScrollView_ExtentWidth;
+                xamlMember.Getter = get_78_ScrollView_ExtentWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalAnchorRatio":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalAnchorRatio", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_ScrollView_HorizontalAnchorRatio;
-                xamlMember.Setter = set_78_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Getter = get_79_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Setter = set_79_ScrollView_HorizontalAnchorRatio;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalOffset":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
-                xamlMember.Getter = get_79_ScrollView_HorizontalOffset;
+                xamlMember.Getter = get_80_ScrollView_HorizontalOffset;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollBarVisibility":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_ScrollView_HorizontalScrollBarVisibility;
-                xamlMember.Setter = set_80_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Getter = get_81_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Setter = set_81_ScrollView_HorizontalScrollBarVisibility;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollChainMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_ScrollView_HorizontalScrollChainMode;
-                xamlMember.Setter = set_81_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Getter = get_82_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Setter = set_82_ScrollView_HorizontalScrollChainMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_ScrollView_HorizontalScrollMode;
-                xamlMember.Setter = set_82_ScrollView_HorizontalScrollMode;
+                xamlMember.Getter = get_83_ScrollView_HorizontalScrollMode;
+                xamlMember.Setter = set_83_ScrollView_HorizontalScrollMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollRailMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HorizontalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_ScrollView_HorizontalScrollRailMode;
-                xamlMember.Setter = set_83_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Getter = get_84_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Setter = set_84_ScrollView_HorizontalScrollRailMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.IgnoredInputKinds":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IgnoredInputKinds", "Microsoft.UI.Xaml.Controls.ScrollingInputKinds");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_ScrollView_IgnoredInputKinds;
-                xamlMember.Setter = set_84_ScrollView_IgnoredInputKinds;
+                xamlMember.Getter = get_85_ScrollView_IgnoredInputKinds;
+                xamlMember.Setter = set_85_ScrollView_IgnoredInputKinds;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.MaxZoomFactor":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "MaxZoomFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_ScrollView_MaxZoomFactor;
-                xamlMember.Setter = set_85_ScrollView_MaxZoomFactor;
+                xamlMember.Getter = get_86_ScrollView_MaxZoomFactor;
+                xamlMember.Setter = set_86_ScrollView_MaxZoomFactor;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.MinZoomFactor":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "MinZoomFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_ScrollView_MinZoomFactor;
-                xamlMember.Setter = set_86_ScrollView_MinZoomFactor;
+                xamlMember.Getter = get_87_ScrollView_MinZoomFactor;
+                xamlMember.Setter = set_87_ScrollView_MinZoomFactor;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollPresenter":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ScrollPresenter", "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_ScrollView_ScrollPresenter;
+                xamlMember.Getter = get_88_ScrollView_ScrollPresenter;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_ScrollPresenter_Content;
-                xamlMember.Setter = set_88_ScrollPresenter_Content;
+                xamlMember.Getter = get_89_ScrollPresenter_Content;
+                xamlMember.Setter = set_89_ScrollPresenter_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableHeight":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ScrollableHeight", "Double");
-                xamlMember.Getter = get_89_ScrollView_ScrollableHeight;
+                xamlMember.Getter = get_90_ScrollView_ScrollableHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableWidth":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ScrollableWidth", "Double");
-                xamlMember.Getter = get_90_ScrollView_ScrollableWidth;
+                xamlMember.Getter = get_91_ScrollView_ScrollableWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.State":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "State", "Microsoft.UI.Xaml.Controls.ScrollingInteractionState");
-                xamlMember.Getter = get_91_ScrollView_State;
+                xamlMember.Getter = get_92_ScrollView_State;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalAnchorRatio":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalAnchorRatio", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_ScrollView_VerticalAnchorRatio;
-                xamlMember.Setter = set_92_ScrollView_VerticalAnchorRatio;
+                xamlMember.Getter = get_93_ScrollView_VerticalAnchorRatio;
+                xamlMember.Setter = set_93_ScrollView_VerticalAnchorRatio;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalOffset":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
-                xamlMember.Getter = get_93_ScrollView_VerticalOffset;
+                xamlMember.Getter = get_94_ScrollView_VerticalOffset;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollChainMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_ScrollView_VerticalScrollChainMode;
-                xamlMember.Setter = set_94_ScrollView_VerticalScrollChainMode;
+                xamlMember.Getter = get_95_ScrollView_VerticalScrollChainMode;
+                xamlMember.Setter = set_95_ScrollView_VerticalScrollChainMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_ScrollView_VerticalScrollMode;
-                xamlMember.Setter = set_95_ScrollView_VerticalScrollMode;
+                xamlMember.Getter = get_96_ScrollView_VerticalScrollMode;
+                xamlMember.Setter = set_96_ScrollView_VerticalScrollMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollRailMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "VerticalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_ScrollView_VerticalScrollRailMode;
-                xamlMember.Setter = set_96_ScrollView_VerticalScrollRailMode;
+                xamlMember.Getter = get_97_ScrollView_VerticalScrollRailMode;
+                xamlMember.Setter = set_97_ScrollView_VerticalScrollRailMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportHeight":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ViewportHeight", "Double");
-                xamlMember.Getter = get_97_ScrollView_ViewportHeight;
+                xamlMember.Getter = get_98_ScrollView_ViewportHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportWidth":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ViewportWidth", "Double");
-                xamlMember.Getter = get_98_ScrollView_ViewportWidth;
+                xamlMember.Getter = get_99_ScrollView_ViewportWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomChainMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ZoomChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_99_ScrollView_ZoomChainMode;
-                xamlMember.Setter = set_99_ScrollView_ZoomChainMode;
+                xamlMember.Getter = get_100_ScrollView_ZoomChainMode;
+                xamlMember.Setter = set_100_ScrollView_ZoomChainMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomFactor":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ZoomFactor", "Single");
-                xamlMember.Getter = get_100_ScrollView_ZoomFactor;
+                xamlMember.Getter = get_101_ScrollView_ZoomFactor;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomMode":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ZoomMode", "Microsoft.UI.Xaml.Controls.ScrollingZoomMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_ScrollView_ZoomMode;
-                xamlMember.Setter = set_101_ScrollView_ZoomMode;
-                break;
-            case "DevWinUI.PanelAttach.ChildrenTransitions":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.PanelAttach");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ChildrenTransitions", "DevWinUI.PanelTransitionCollection");
-                xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_102_PanelAttach_ChildrenTransitions;
-                xamlMember.Setter = set_102_PanelAttach_ChildrenTransitions;
+                xamlMember.Getter = get_102_ScrollView_ZoomMode;
+                xamlMember.Setter = set_102_ScrollView_ZoomMode;
                 break;
             case "DevWinUI.SettingsCard.Header":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsCard");
@@ -3174,126 +3307,203 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlMember.Getter = get_111_SettingsCard_IsActionIconVisible;
                 xamlMember.Setter = set_111_SettingsCard_IsActionIconVisible;
                 break;
+            case "DevWinUI.SettingsExpander.Content":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_112_SettingsExpander_Content;
+                xamlMember.Setter = set_112_SettingsExpander_Content;
+                break;
+            case "DevWinUI.SettingsExpander.Description":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Description", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_113_SettingsExpander_Description;
+                xamlMember.Setter = set_113_SettingsExpander_Description;
+                break;
+            case "DevWinUI.SettingsExpander.Header":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_114_SettingsExpander_Header;
+                xamlMember.Setter = set_114_SettingsExpander_Header;
+                break;
+            case "DevWinUI.SettingsExpander.HeaderIcon":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_115_SettingsExpander_HeaderIcon;
+                xamlMember.Setter = set_115_SettingsExpander_HeaderIcon;
+                break;
+            case "DevWinUI.SettingsExpander.Items":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Object>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_116_SettingsExpander_Items;
+                xamlMember.Setter = set_116_SettingsExpander_Items;
+                break;
+            case "DevWinUI.SettingsExpander.ItemsSource":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_117_SettingsExpander_ItemsSource;
+                xamlMember.Setter = set_117_SettingsExpander_ItemsSource;
+                break;
+            case "DevWinUI.SettingsExpander.ItemTemplate":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_118_SettingsExpander_ItemTemplate;
+                xamlMember.Setter = set_118_SettingsExpander_ItemTemplate;
+                break;
+            case "DevWinUI.SettingsExpander.ItemContainerStyleSelector":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_119_SettingsExpander_ItemContainerStyleSelector;
+                xamlMember.Setter = set_119_SettingsExpander_ItemContainerStyleSelector;
+                break;
+            case "DevWinUI.SettingsExpander.ItemsHeader":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ItemsHeader", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_120_SettingsExpander_ItemsHeader;
+                xamlMember.Setter = set_120_SettingsExpander_ItemsHeader;
+                break;
+            case "DevWinUI.SettingsExpander.ItemsFooter":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ItemsFooter", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_121_SettingsExpander_ItemsFooter;
+                xamlMember.Setter = set_121_SettingsExpander_ItemsFooter;
+                break;
+            case "DevWinUI.SettingsExpander.IsExpanded":
+                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevWinUI.SettingsExpander");
+                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_122_SettingsExpander_IsExpanded;
+                xamlMember.Setter = set_122_SettingsExpander_IsExpanded;
+                break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.ProfilePicture":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ProfilePicture", "Microsoft.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_PersonPicture_ProfilePicture;
-                xamlMember.Setter = set_112_PersonPicture_ProfilePicture;
+                xamlMember.Getter = get_123_PersonPicture_ProfilePicture;
+                xamlMember.Setter = set_123_PersonPicture_ProfilePicture;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeGlyph":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeGlyph", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_PersonPicture_BadgeGlyph;
-                xamlMember.Setter = set_113_PersonPicture_BadgeGlyph;
+                xamlMember.Getter = get_124_PersonPicture_BadgeGlyph;
+                xamlMember.Setter = set_124_PersonPicture_BadgeGlyph;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeImageSource":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeImageSource", "Microsoft.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_PersonPicture_BadgeImageSource;
-                xamlMember.Setter = set_114_PersonPicture_BadgeImageSource;
+                xamlMember.Getter = get_125_PersonPicture_BadgeImageSource;
+                xamlMember.Setter = set_125_PersonPicture_BadgeImageSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeNumber":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeNumber", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_PersonPicture_BadgeNumber;
-                xamlMember.Setter = set_115_PersonPicture_BadgeNumber;
+                xamlMember.Getter = get_126_PersonPicture_BadgeNumber;
+                xamlMember.Setter = set_126_PersonPicture_BadgeNumber;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeText":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "BadgeText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_PersonPicture_BadgeText;
-                xamlMember.Setter = set_116_PersonPicture_BadgeText;
+                xamlMember.Getter = get_127_PersonPicture_BadgeText;
+                xamlMember.Setter = set_127_PersonPicture_BadgeText;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.Contact":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Contact", "Windows.ApplicationModel.Contacts.Contact");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_PersonPicture_Contact;
-                xamlMember.Setter = set_117_PersonPicture_Contact;
+                xamlMember.Getter = get_128_PersonPicture_Contact;
+                xamlMember.Setter = set_128_PersonPicture_Contact;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.DisplayName":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "DisplayName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_118_PersonPicture_DisplayName;
-                xamlMember.Setter = set_118_PersonPicture_DisplayName;
+                xamlMember.Getter = get_129_PersonPicture_DisplayName;
+                xamlMember.Setter = set_129_PersonPicture_DisplayName;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.Initials":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Initials", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_119_PersonPicture_Initials;
-                xamlMember.Setter = set_119_PersonPicture_Initials;
+                xamlMember.Getter = get_130_PersonPicture_Initials;
+                xamlMember.Setter = set_130_PersonPicture_Initials;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.IsGroup":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsGroup", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_120_PersonPicture_IsGroup;
-                xamlMember.Setter = set_120_PersonPicture_IsGroup;
+                xamlMember.Getter = get_131_PersonPicture_IsGroup;
+                xamlMember.Setter = set_131_PersonPicture_IsGroup;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.PreferSmallImage":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "PreferSmallImage", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_121_PersonPicture_PreferSmallImage;
-                xamlMember.Setter = set_121_PersonPicture_PreferSmallImage;
+                xamlMember.Getter = get_132_PersonPicture_PreferSmallImage;
+                xamlMember.Setter = set_132_PersonPicture_PreferSmallImage;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.TemplateSettings":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings");
-                xamlMember.Getter = get_122_PersonPicture_TemplateSettings;
+                xamlMember.Getter = get_133_PersonPicture_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_123_TreeViewNode_Children;
+                xamlMember.Getter = get_134_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_124_TreeViewNode_Content;
-                xamlMember.Setter = set_124_TreeViewNode_Content;
+                xamlMember.Getter = get_135_TreeViewNode_Content;
+                xamlMember.Setter = set_135_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_125_TreeViewNode_Depth;
+                xamlMember.Getter = get_136_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_137_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_127_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_127_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_138_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_138_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_128_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_128_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_139_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_139_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_129_TreeViewNode_Parent;
+                xamlMember.Getter = get_140_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
