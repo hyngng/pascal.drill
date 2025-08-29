@@ -19,9 +19,6 @@
     <None Update="Themes\Styles.xaml">
       <SubType>Designer</SubType>
     </None>
-    <Page Update="Views\MaybeLaterPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Views\PdfEditPage.xaml">
       <SubType>Designer</SubType>
     </Page>

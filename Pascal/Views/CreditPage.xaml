@@ -61,7 +61,7 @@
                     <dev:SettingsCard.Header>
                         <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
                             <PersonPicture ProfilePicture="/Assets/Avatars/gabin.png"
-                           Width="40" Height="40" />
+                                           Width="40" Height="40" />
                             <TextBlock Text="din-c" VerticalAlignment="Center" />
                         </StackPanel>
                     </dev:SettingsCard.Header>
@@ -72,7 +72,7 @@
                     <dev:SettingsCard.Header>
                         <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
                             <PersonPicture ProfilePicture="/Assets/Avatars/thyun.png"
-                               Width="40" Height="40" />
+                                           Width="40" Height="40" />
                             <TextBlock Text="hyngng" VerticalAlignment="Center" />
                         </StackPanel>
                     </dev:SettingsCard.Header>
@@ -85,51 +85,33 @@
                 <dev:SettingsExpander Description="사실 대부분은 이번에 처음 알게 되었습니다."
                                       Header="컴퓨터 언어"> <!--HeaderIcon="{dev:BitmapIcon Source=Assets/icon.png}"-->
                     <dev:SettingsExpander.HeaderIcon>
-                        <FontIcon Glyph="&#xE8A1;" />
+                        <FontIcon Glyph="&#xe756;" />
                     </dev:SettingsExpander.HeaderIcon>
 
                     <dev:SettingsExpander.Items>
-                        <dev:SettingsCard Header="XAML" Description="이걸로 틀을 만들고">
-                            <dev:SettingsCard.HeaderIcon>
-                                <FontIcon Glyph="&#xE8A1;" />
-                            </dev:SettingsCard.HeaderIcon>
-                        </dev:SettingsCard>
-
-                        <dev:SettingsCard Header="C#" Description="이걸로 기능을 만듭니다.">
-                            <dev:SettingsCard.HeaderIcon>
-                                <FontIcon Glyph="&#xE8A1;" />
-                            </dev:SettingsCard.HeaderIcon>
-                        </dev:SettingsCard>
+                        <dev:SettingsCard Header="XAML" Description="이걸로 온갖 문서를 찾아보면서 틀을 만들고" />
+                        <dev:SettingsCard Header="C#" Description="이걸로 대부분의 기능을 만들었습니다." />
                     </dev:SettingsExpander.Items>
                 </dev:SettingsExpander>
 
-                <dev:SettingsExpander Description="사실 대부분은 이번에 처음 알게 되었습니다."
+                <dev:SettingsExpander Description="세상에 이런게 존재하는줄도 몰랐습니다."
                       Header="프레임워크">
                     <dev:SettingsExpander.HeaderIcon>
-                        <FontIcon Glyph="&#xE8A1;" />
+                        <FontIcon Glyph="&#xe95f;" />
                     </dev:SettingsExpander.HeaderIcon>
 
                     <dev:SettingsExpander.Items>
-                        <dev:SettingsCard Header="WinUI 3" Description="Windows 데스크톱 앱을 위한 최신 네이티브 UI 프레임워크입니다.">
-                            <dev:SettingsCard.HeaderIcon>
-                                <FontIcon Glyph="&#xE8A1;" />
-                            </dev:SettingsCard.HeaderIcon>
-                        </dev:SettingsCard>
-
-                        <dev:SettingsCard Header="Windows App SDK" Description="Win32/데스크톱 앱에서 최신 Windows 기능을 일관된 API로 제공하는 SDK입니다.">
-                            <dev:SettingsCard.HeaderIcon>
-                                <FontIcon Glyph="&#xE8A1;" />
-                            </dev:SettingsCard.HeaderIcon>
-                        </dev:SettingsCard>
+                        <dev:SettingsCard Header="WinUI 3" Description="마이크로소프트가 관리하는 Windows 데스크톱 앱 네이티브 UI 프레임워크지만 아무도 안 씁니다." />
+                        <dev:SettingsCard Header="Windows App SDK" Description="Win32/데스크톱 앱에서 최신 Windows 기능을 일관된 API로 제공하는 SDK입니다." />
                     </dev:SettingsExpander.Items>
                 </dev:SettingsExpander>
 
 
                 <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="오픈소스 라이브러리" />
 
-                <dev:SettingsCard Header="DevWinUI" Description="WinUI 3용 컨트롤, 스타일, 유틸리티와 프로젝트 템플릿/스캐폴딩을 제공하는 확장 라이브러리입니다.">
+                <dev:SettingsCard Header="DevWinUI" Description="이란계 개발자가 관리하는 WinUI 3용 확장 라이브러리입니다. 마이크로소프트보다 낫습니다.">
                     <dev:SettingsCard.HeaderIcon>
-                        <FontIcon Glyph="&#xE8A1;" />
+                        <FontIcon Glyph="&#xe8f1;" />
                     </dev:SettingsCard.HeaderIcon>
                     <HyperlinkButton Content="자세히 보기" NavigateUri="https://github.com/ghost1372/DevWinUI"/>
                 </dev:SettingsCard>

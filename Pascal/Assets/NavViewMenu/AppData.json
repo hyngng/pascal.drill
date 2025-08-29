@@ -12,21 +12,14 @@
         {
           "UniqueId": "Pascal.Views.HomeLandingPage",
           "Title": "홈",
-          "ImagePath": "ms-appx:///Assets/AppIcon.png",
+          "ImagePath": "ms-appx:///Assets/Icons/HomeLandingPageIcon.png",
           "HideItem": true
 
         },
         {
           "UniqueId": "Pascal.Views.PdfEditPage",
           "Title": "PDF 편집 도구",
-          "ImagePath": "ms-appx:///Assets/AppIcon.png",
-          "HideItem": true
-
-        },
-        {
-          "UniqueId": "Pascal.Views.MaybeLaterPage",
-          "Title": "기대해 주세요",
-          "ImagePath": "ms-appx:///Assets/AppIcon.png",
+          "ImagePath": "ms-appx:///Assets/Icons/PdfFileEditPageIcon.png",
           "HideItem": true
 
         }

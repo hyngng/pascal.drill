@@ -17,7 +17,6 @@ public partial class NavigationPageMappings
     {
         {"Pascal.Views.HomeLandingPage", typeof(Pascal.Views.HomeLandingPage)},
         {"Pascal.Views.PdfEditPage", typeof(Pascal.Views.PdfEditPage)},
-        {"Pascal.Views.MaybeLaterPage", typeof(Pascal.Views.MaybeLaterPage)},
         {"Pascal.Views.CreditPage", typeof(Pascal.Views.CreditPage)},
     };
 }
