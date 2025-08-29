@@ -101,7 +101,7 @@
                     </dev:SettingsExpander.HeaderIcon>
 
                     <dev:SettingsExpander.Items>
-                        <dev:SettingsCard Header="WinUI 3" Description="마이크로소프트가 관리하는 Windows 데스크톱 앱 네이티브 UI 프레임워크지만 아무도 안 씁니다." />
+                        <dev:SettingsCard Header="WinUI 3" Description="마이크로소프트가 관리하는 Windows 데스크톱 앱 네이티브 UI 프레임워크지만 아무도 안 씁니다. 나 빼고." />
                         <dev:SettingsCard Header="Windows App SDK" Description="Win32/데스크톱 앱에서 최신 Windows 기능을 일관된 API로 제공하는 SDK입니다." />
                     </dev:SettingsExpander.Items>
                 </dev:SettingsExpander>
