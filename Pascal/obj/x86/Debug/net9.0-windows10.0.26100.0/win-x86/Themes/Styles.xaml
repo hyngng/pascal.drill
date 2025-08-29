@@ -12,7 +12,7 @@
     <Thickness x:Key="PageHeaderMargin">36,24,0,0</Thickness>
     <Thickness x:Key="PageHeaderPadding">0,0,0,0</Thickness>
 
-    <Thickness x:Key="PageDescriptionMargin">36,0,0,0</Thickness>
+    <Thickness x:Key="PageDescriptionMargin">36,0,0,30</Thickness>
     <Thickness x:Key="PageDescriptionPadding">0,0,0,0</Thickness>
 
     <Thickness x:Key="PageContentMargin">36,0,0,36</Thickness>

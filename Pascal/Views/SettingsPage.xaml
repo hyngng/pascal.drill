@@ -51,8 +51,8 @@
                 <StackPanel.ChildrenTransitions>
                     <RepositionThemeTransition />
                 </StackPanel.ChildrenTransitions>
-                
-                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="테마 설정" />
+
+                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="테마 설정" Margin="1,0,0,6" />
 
                 <dev:SettingsCard Header="테마" Description="프로그램 테마를 바꿔보세요.">
                     <dev:SettingsCard.HeaderIcon>
@@ -69,7 +69,7 @@
 
                 <dev:SettingsCard Header="재질" Description="프로그램 재질을 바꿔보세요.">
                     <dev:SettingsCard.HeaderIcon>
-                        <FontIcon Glyph="&#xE790;" />
+                        <FontIcon Glyph="&#xf5ef;" />
                     </dev:SettingsCard.HeaderIcon>
                     <ComboBox x:Name="materialMode">
                         <ComboBoxItem Content="미카" Tag="Light" />
@@ -83,7 +83,7 @@
 
                 <dev:SettingsCard Header="실험실" Description="숨겨진 기능을 활성화합니다.">
                     <dev:SettingsCard.HeaderIcon>
-                        <FontIcon Glyph="&#xE790;" />
+                        <FontIcon Glyph="&#xf196;" />
                     </dev:SettingsCard.HeaderIcon>
                     <ToggleSwitch x:Name="labsToggle" /> <!--Toggled="labsToggle_Toggled"-->
                 </dev:SettingsCard>

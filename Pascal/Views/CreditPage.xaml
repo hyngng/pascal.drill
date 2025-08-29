@@ -36,18 +36,18 @@
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
             <TextBlock x:Name="PageHeader"
-                   Margin="{ThemeResource PageHeaderMargin}"
-                   Padding="{ThemeResource PageHeaderPadding}"
-                   Style="{StaticResource TitleTextBlockStyle}"
-                   AutomationProperties.HeadingLevel="Level1"
-                   Text="크레딧" />
+                       Margin="{ThemeResource PageHeaderMargin}"
+                       Padding="{ThemeResource PageHeaderPadding}"
+                       Style="{StaticResource TitleTextBlockStyle}"
+                       AutomationProperties.HeadingLevel="Level1"
+                       Text="크레딧" />
 
             <TextBlock x:Name="PageDescription"
                        Margin="{ThemeResource PageDescriptionMargin}"
                        Padding="{ThemeResource PageDescriptionPadding}"
                        Style="{StaticResource CaptionTextBlockStyle}"
                        AutomationProperties.HeadingLevel="Level1"
-                       Text="어플리케이션을 만든 사람과, 사용한 라이브러리 및 기술스택 등." />
+                       Text="이 앱을 만든 사람들, 기술 스택, 오픈소스를 소개합니다." />
         </StackPanel>
 
         <ScrollView  VerticalScrollBarVisibility="Auto" Grid.Row="1">
@@ -55,7 +55,7 @@
                         Margin="{ThemeResource PageContentMargin}"
                         Padding="{ThemeResource PageContentPadding}">
 
-                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="만든 이" />
+                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="만든 이" Margin="1,0,0,6" />
 
                 <dev:SettingsCard>
                     <dev:SettingsCard.Header>

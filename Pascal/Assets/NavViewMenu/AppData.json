@@ -9,9 +9,27 @@
       "ShowItemsWithoutGroup": true,
       "IsExpanded": false,
       "Items": [
-        { "UniqueId": "Pascal.Views.HomeLandingPage", "Title": "홈", "ImagePath": "ms-appx:///Assets/AppIcon.png", "HideItem": true },
-        { "UniqueId": "Pascal.Views.PdfEditPage",     "Title": "PDF 편집 도구", "ImagePath": "ms-appx:///Assets/AppIcon.png", "HideItem": true },
-        { "UniqueId": "Pascal.Views.MaybeLaterPage",  "Title": "기대해 주세요", "ImagePath": "ms-appx:///Assets/AppIcon.png", "HideItem": true }
+        {
+          "UniqueId": "Pascal.Views.HomeLandingPage",
+          "Title": "홈",
+          "ImagePath": "ms-appx:///Assets/AppIcon.png",
+          "HideItem": true
+
+        },
+        {
+          "UniqueId": "Pascal.Views.PdfEditPage",
+          "Title": "PDF 편집 도구",
+          "ImagePath": "ms-appx:///Assets/AppIcon.png",
+          "HideItem": true
+
+        },
+        {
+          "UniqueId": "Pascal.Views.MaybeLaterPage",
+          "Title": "기대해 주세요",
+          "ImagePath": "ms-appx:///Assets/AppIcon.png",
+          "HideItem": true
+
+        }
       ]
     },
     {
@@ -24,7 +42,7 @@
         {
           "UniqueId": "Pascal.Views.CreditPage",
           "Title": "크레딧",
-          "ImagePath": "ms-appx:///Assets/AppIcon.png"
+          "IconGlyph": "E734"
         }
       ]
     }

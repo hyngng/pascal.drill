@@ -87,6 +87,7 @@
     <None Remove="Views\SettingsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Icons\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -526,8 +526,6 @@ D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x8
 D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Views\SettingsPage.xbf
 D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\AppIcon.ico
 D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\AppIcon.png
-D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Avatar\gabin.png
-D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Avatar\thyun.png
 D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Cover\CoverDark.png
 D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Cover\CoverLight.png
 D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\NavViewMenu\AppData.json
@@ -1088,3 +1086,5 @@ C:\Users\kiw60\Desktop\test4\Drill\Pascal\obj\x86\Debug\net9.0-windows10.0.26100
 C:\Users\kiw60\Desktop\test4\Drill\Pascal\obj\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Views\SettingsPage.xbf
 C:\Users\kiw60\Desktop\test4\Drill\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Avatars\gabin.png
 C:\Users\kiw60\Desktop\test4\Drill\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Avatars\thyun.png
+D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Avatars\gabin.png
+D:\develop\Drill.DevWinUI\Pascal\bin\x86\Debug\net9.0-windows10.0.26100.0\win-x86\Assets\Avatars\thyun.png
