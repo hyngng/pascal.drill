@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net9.0-windows10.0.26100": {
+      "CommunityToolkit.Common/8.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -16,6 +29,40 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "CommunityToolkit.WinUI.Controls.RangeSelector/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.Extensions": "8.2.250402",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.WinUI.Extensions/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "8.2.1",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "DevWinUI/8.9.2": {
@@ -587,6 +634,19 @@
       }
     },
     "net9.0-windows10.0.26100/win-arm64": {
+      "CommunityToolkit.Common/8.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -601,6 +661,40 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "CommunityToolkit.WinUI.Controls.RangeSelector/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.Extensions": "8.2.250402",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.WinUI.Extensions/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "8.2.1",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "DevWinUI/8.9.2": {
@@ -1236,6 +1330,19 @@
       }
     },
     "net9.0-windows10.0.26100/win-x64": {
+      "CommunityToolkit.Common/8.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -1250,6 +1357,40 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "CommunityToolkit.WinUI.Controls.RangeSelector/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.Extensions": "8.2.250402",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.WinUI.Extensions/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "8.2.1",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "DevWinUI/8.9.2": {
@@ -1885,6 +2026,19 @@
       }
     },
     "net9.0-windows10.0.26100/win-x86": {
+      "CommunityToolkit.Common/8.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -1899,6 +2053,40 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "CommunityToolkit.WinUI.Controls.RangeSelector/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.Extensions": "8.2.250402",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.WinUI.Extensions/8.2.250402": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "8.2.1",
+          "Microsoft.WindowsAppSDK": "1.6.250108002"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "DevWinUI/8.9.2": {
@@ -2535,6 +2723,29 @@
     }
   },
   "libraries": {
+    "CommunityToolkit.Common/8.2.1": {
+      "sha512": "LWuhy8cQKJ/MYcy3XafJ916U3gPH/YDvYoNGWyQWN11aiEKCZszzPOTJAOvBjP9yG8vHmIcCyPUt4L82OK47Iw==",
+      "type": "package",
+      "path": "communitytoolkit.common/8.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "communitytoolkit.common.8.2.1.nupkg.sha512",
+        "communitytoolkit.common.nuspec",
+        "lib/net6.0/CommunityToolkit.Common.dll",
+        "lib/net6.0/CommunityToolkit.Common.pdb",
+        "lib/net6.0/CommunityToolkit.Common.xml",
+        "lib/netstandard2.0/CommunityToolkit.Common.dll",
+        "lib/netstandard2.0/CommunityToolkit.Common.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Common.xml",
+        "lib/netstandard2.1/CommunityToolkit.Common.dll",
+        "lib/netstandard2.1/CommunityToolkit.Common.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Common.xml"
+      ]
+    },
     "CommunityToolkit.Mvvm/8.4.0": {
       "sha512": "tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
       "type": "package",
@@ -2575,6 +2786,82 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
+    "CommunityToolkit.WinUI.Controls.RangeSelector/8.2.250402": {
+      "sha512": "XlPZ1R6Qj9uyWwu+kl7dwJfm28DFJcdOcPqWnt+FKE/kSp9ahZc/x5rYK6z8FZhmDtxBmFz5ksdtl9hb8DKHYQ==",
+      "type": "package",
+      "path": "communitytoolkit.winui.controls.rangeselector/8.2.250402",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "ReadMe.md",
+        "communitytoolkit.winui.controls.rangeselector.8.2.250402.nupkg.sha512",
+        "communitytoolkit.winui.controls.rangeselector.nuspec",
+        "icon.png",
+        "lib/net7.0-windows10.0.18362/_._",
+        "lib/net8.0-windows10.0.18362/_._",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.pdb",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.pri",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.xml",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Controls.RangeSelector.aar",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Controls.RangeSelector.dll",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Controls.RangeSelector.pdb",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Controls.RangeSelector.xml",
+        "lib/net9.0-ios18.0/CommunityToolkit.WinUI.Controls.RangeSelector.dll",
+        "lib/net9.0-ios18.0/CommunityToolkit.WinUI.Controls.RangeSelector.pdb",
+        "lib/net9.0-ios18.0/CommunityToolkit.WinUI.Controls.RangeSelector.xml",
+        "lib/net9.0-maccatalyst18.0/CommunityToolkit.WinUI.Controls.RangeSelector.dll",
+        "lib/net9.0-maccatalyst18.0/CommunityToolkit.WinUI.Controls.RangeSelector.pdb",
+        "lib/net9.0-maccatalyst18.0/CommunityToolkit.WinUI.Controls.RangeSelector.xml",
+        "lib/net9.0-windows10.0.18362/_._",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.dll",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.pdb",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.pri",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.RangeSelector.xml",
+        "lib/net9.0/CommunityToolkit.WinUI.Controls.RangeSelector.dll",
+        "lib/net9.0/CommunityToolkit.WinUI.Controls.RangeSelector.pdb",
+        "lib/net9.0/CommunityToolkit.WinUI.Controls.RangeSelector.xml"
+      ]
+    },
+    "CommunityToolkit.WinUI.Extensions/8.2.250402": {
+      "sha512": "rAOYzNX6kdUeeE1ejGd6Q8B+xmyZvOrWFUbqCgOtP8OQsOL66en9ZQTtzxAlaaFC4qleLvnKcn8FJFBezujOlw==",
+      "type": "package",
+      "path": "communitytoolkit.winui.extensions/8.2.250402",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "ReadMe.md",
+        "communitytoolkit.winui.extensions.8.2.250402.nupkg.sha512",
+        "communitytoolkit.winui.extensions.nuspec",
+        "icon.png",
+        "lib/net7.0-windows10.0.18362/_._",
+        "lib/net8.0-windows10.0.18362/_._",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.pdb",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.pri",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.xml",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Extensions.aar",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Extensions.dll",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Extensions.pdb",
+        "lib/net9.0-android35.0/CommunityToolkit.WinUI.Extensions.xml",
+        "lib/net9.0-ios18.0/CommunityToolkit.WinUI.Extensions.dll",
+        "lib/net9.0-ios18.0/CommunityToolkit.WinUI.Extensions.pdb",
+        "lib/net9.0-ios18.0/CommunityToolkit.WinUI.Extensions.xml",
+        "lib/net9.0-maccatalyst18.0/CommunityToolkit.WinUI.Extensions.dll",
+        "lib/net9.0-maccatalyst18.0/CommunityToolkit.WinUI.Extensions.pdb",
+        "lib/net9.0-maccatalyst18.0/CommunityToolkit.WinUI.Extensions.xml",
+        "lib/net9.0-windows10.0.18362/_._",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.pdb",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.pri",
+        "lib/net9.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.xml",
+        "lib/net9.0/CommunityToolkit.WinUI.Extensions.dll",
+        "lib/net9.0/CommunityToolkit.WinUI.Extensions.pdb",
+        "lib/net9.0/CommunityToolkit.WinUI.Extensions.xml"
       ]
     },
     "DevWinUI/8.9.2": {
@@ -5123,6 +5410,7 @@
   "projectFileDependencyGroups": {
     "net9.0-windows10.0.26100": [
       "CommunityToolkit.Mvvm >= 8.4.0",
+      "CommunityToolkit.WinUI.Controls.RangeSelector >= 8.2.250402",
       "DevWinUI >= 8.9.2",
       "DevWinUI.Controls >= 8.9.2",
       "Microsoft.Extensions.DependencyInjection >= 9.0.8",
@@ -5135,23 +5423,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Users\\kiw60\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\develop\\Drill.DevWinUI\\Pascal\\Pascal.csproj",
+      "projectUniqueName": "C:\\Users\\kiw60\\Desktop\\Drill.Pascal\\Drill\\Pascal\\Pascal.csproj",
       "projectName": "Pascal",
-      "projectPath": "D:\\develop\\Drill.DevWinUI\\Pascal\\Pascal.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\develop\\Drill.DevWinUI\\Pascal\\obj\\",
+      "projectPath": "C:\\Users\\kiw60\\Desktop\\Drill.Pascal\\Drill\\Pascal\\Pascal.csproj",
+      "packagesPath": "C:\\Users\\kiw60\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kiw60\\Desktop\\Drill.Pascal\\Drill\\Pascal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kiw60\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5187,6 +5475,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.4.0, )"
+          },
+          "CommunityToolkit.WinUI.Controls.RangeSelector": {
+            "target": "Package",
+            "version": "[8.2.250402, )"
           },
           "DevWinUI": {
             "target": "Package",

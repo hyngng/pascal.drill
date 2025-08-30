@@ -47,6 +47,18 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BreadcrumbPageMappings.cs</LastGenOutput>
     </None>
+    <Page Update="Views\PdfEditPages\PdfMergePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\PdfEditPages\PdfSplitPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\PdfSplitPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\PdfMergePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\PdfEditPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,6 +92,10 @@
     <None Remove="Views\CreditPage.xaml" />
     <None Remove="Views\HomeLandingPage.xaml" />
     <None Remove="Views\PdfEditPage.xaml" />
+    <None Remove="Views\PdfEditPages\PdfMergePage.xaml" />
+    <None Remove="Views\PdfEditPages\PdfSplitPage.xaml" />
+    <None Remove="Views\PdfMergePage.xaml" />
+    <None Remove="Views\PdfSplitPage.xaml" />
     <None Remove="Views\SettingsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="CommunityToolkit.WinUI.Controls.RangeSelector" Version="8.2.250402" />
     <PackageReference Include="DevWinUI" Version="8.9.2" />
     <PackageReference Include="DevWinUI.Controls" Version="8.9.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />

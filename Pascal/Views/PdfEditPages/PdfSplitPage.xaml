@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="Pascal.Views.PdfEditPage"
+    x:Class="Pascal.Views.PdfEditPages.PdfSplitPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Pascal.Views"
+    xmlns:local="using:Pascal.Views.PdfEditPages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dev="using:DevWinUI"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -21,38 +21,43 @@
         </Style>
     </Page.Resources>
 
-    <Grid x:ConnectionId='2' x:Name="ContentArea" MaxWidth="1064">
+    <Grid x:Name="ContentArea" MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
-            <TextBlock x:ConnectionId='4' x:Name="PageHeader"
+            <TextBlock x:Name="PageHeader"
                        Margin="{ThemeResource PageHeaderMargin}"
                        Padding="{ThemeResource PageHeaderPadding}"
                        Style="{StaticResource TitleTextBlockStyle}"
                        AutomationProperties.HeadingLevel="Level1"
-                       Text="PDF 편집 도구" />
+                       Text="PDF 분할하기" />
 
-            <TextBlock x:ConnectionId='5' x:Name="PageDescription"
+            <TextBlock x:Name="PageDescription"
                        Margin="{ThemeResource PageDescriptionMargin}"
                        Padding="{ThemeResource PageDescriptionPadding}"
                        Style="{StaticResource CaptionTextBlockStyle}"
                        AutomationProperties.HeadingLevel="Level1"
-                       Text="이곳에서 병합 및 분할 작업을 수행할 수 있습니다." />
+                       Text="이곳에서 분할 작업을 수행할 수 있습니다." />
         </StackPanel>
 
-        <ScrollView  VerticalScrollBarVisibility="Auto" Grid.Row="1">
+        <ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
-                        Margin="{ThemeResource PageContentMargin}"
-                        Padding="{ThemeResource PageContentPadding}">
-                <StackPanel Height="1000" Style="{ThemeResource StackPanelStyle}">
-                    <dev:Shimmer/>
-                    <WebView2 x:ConnectionId='3' x:Name="PdfWebView2" Source="https://learn.microsoft.com/windows/apps/winui/winui3/" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" MinHeight="1000" MinWidth="600"/>
-                </StackPanel>
+                Margin="{ThemeResource PageContentMargin}"
+                Padding="{ThemeResource PageContentPadding}">
+
+                <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
+                    <AppBarButton x:Name="PickPdfFilesButton"
+                                  Icon="Add" Label="불러오기"
+                                  Click="PickPdfFilesButton_Click"/>
+                    <AppBarButton x:Name="SaveASplitedPdfFileButton"
+                                  Icon="Save" Label="저장하기"
+                                  Click="SaveASplitedPdfFileButton_Click"/>
+                </CommandBar>
+
             </StackPanel>
         </ScrollView>
     </Grid>
 </Page>
-

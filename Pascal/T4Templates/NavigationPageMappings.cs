@@ -16,7 +16,8 @@ public partial class NavigationPageMappings
     public static Dictionary<string, Type> PageDictionary { get; } = new Dictionary<string, Type>
     {
         {"Pascal.Views.HomeLandingPage", typeof(Pascal.Views.HomeLandingPage)},
-        {"Pascal.Views.PdfEditPage", typeof(Pascal.Views.PdfEditPage)},
+        {"Pascal.Views.PdfEditPages.PdfMergePage", typeof(Pascal.Views.PdfEditPages.PdfMergePage)},
+        {"Pascal.Views.PdfEditPages.PdfSplitPage", typeof(Pascal.Views.PdfEditPages.PdfSplitPage)},
         {"Pascal.Views.CreditPage", typeof(Pascal.Views.CreditPage)},
     };
 }
