@@ -9,6 +9,7 @@ public partial class App : Application
     public IJsonNavigationService NavService => GetService<IJsonNavigationService>();
     public IThemeService ThemeService => GetService<IThemeService>();
 
+
     public static T GetService<T>() where T : class
     {
         if ((App.Current as App)!.Services.GetService(typeof(T)) is not T service)
@@ -27,6 +28,9 @@ public partial class App : Application
         // Enables Multicore JIT with the specified profile
         System.Runtime.ProfileOptimization.SetProfileRoot(Constants.RootDirectoryPath);
         System.Runtime.ProfileOptimization.StartProfile("Startup.Profile");
+
+        // 테마 초기화
+        ThemeService.Initialize(MainWindow);
     }
 
     private static IServiceProvider ConfigureServices()

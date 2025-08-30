@@ -58,7 +58,9 @@
                                   Click="SaveAMergedPdfFileButton_Click"/>
                 </CommandBar>
 
-                <ListView CanReorderItems="True" CanDragItems="True" AllowDrop="True">
+                <ListView CanReorderItems="True" CanDragItems="True"
+                          AllowDrop="True" BorderThickness="1"
+                          BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -69,13 +71,16 @@
                         <Grid VerticalAlignment="Center">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
-                            <HyperlinkButton Grid.Column="0" Content="C:\Users\user\Desktop\pdf_files1.pdf" />
+                            <CheckBox Grid.Column="0" /> <!--Checked="TwoState_Checked" Unchecked="TwoState_Unchecked"-->
 
-                            <toolkit:RangeSelector Grid.Column="2" Width="220"
+                            <HyperlinkButton Grid.Column="1" Content="pdf_files1.pdf" />
+
+                            <toolkit:RangeSelector Grid.Column="3" Width="220"
                                                    VerticalAlignment="Center"
                                                    ThumbDragStarted="Selector_OnDragStarted"
                                                    ThumbDragCompleted="Selector_OnDragCompleted"/>
@@ -90,7 +95,7 @@
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
-                            <HyperlinkButton Grid.Column="0" Content="C:\Users\user\Desktop\pdf_files2.pdf" />
+                            <HyperlinkButton Grid.Column="0" Content="pdf_files2.pdf" />
 
                             <toolkit:RangeSelector Grid.Column="2" Width="220"
                                                    VerticalAlignment="Center"

@@ -58,12 +58,10 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE790;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <ComboBox x:Name="themeMode"
-                                AutomationProperties.AutomationId="themeModeComboBox">
-                        <!--SelectionChanged="themeMode_SelectionChanged"-->
+                    <ComboBox x:Name="themeMode" SelectionChanged="themeMode_SelectionChanged">
                         <ComboBoxItem Content="밝게" Tag="Light" />
                         <ComboBoxItem Content="어둡게" Tag="Dark" />
-                        <ComboBoxItem Content="시스템 설정을 따름" Tag="Default" />
+                        <ComboBoxItem Content="시스템 설정" Tag="Default" />
                     </ComboBox>
                 </dev:SettingsCard>
 
@@ -71,10 +69,12 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xf5ef;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <ComboBox x:Name="materialMode">
-                        <ComboBoxItem Content="미카" Tag="Light" />
-                        <ComboBoxItem Content="아크릴" Tag="Dark" />
-                        <ComboBoxItem Content="시스템 설정" Tag="Default" />
+                    <ComboBox x:Name="backdropMode" SelectionChanged="backdrop_SelectionChanged">
+                        <ComboBoxItem Content="없음" Tag="None" />
+                        <ComboBoxItem Content="기본 마이카" Tag="Mica" />
+                        <ComboBoxItem Content="강한 마이카" Tag="MicaAlt" />
+                        <ComboBoxItem Content="기본 아크릴" Tag="AcrylicBase" />
+                        <ComboBoxItem Content="강한 아크릴" Tag="AcrylicThin" />
                     </ComboBox>
                 </dev:SettingsCard>
                 
