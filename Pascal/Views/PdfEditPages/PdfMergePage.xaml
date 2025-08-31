@@ -8,6 +8,7 @@
     xmlns:dev="using:DevWinUI"
     xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:Pascal.Models"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -52,60 +53,64 @@
                 <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
                     <AppBarButton x:Name="PickPdfFilesButton"
                                   Icon="Add" Label="불러오기"
-                                  Click="PickPdfFilesButton_Click"/>
+                                  Command="{x:Bind ViewModel.PickFilesCommand}"
+                                  IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
                     <AppBarButton  x:Name="SaveAMergedPdfFileButton"
                                   Icon="Save" Label="저장하기"
-                                  Click="SaveAMergedPdfFileButton_Click"/>
+                                  Command="{x:Bind ViewModel.SaveFileCommand}"
+                                  IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
                 </CommandBar>
 
-                <ListView CanReorderItems="True" CanDragItems="True"
-                          AllowDrop="True" BorderThickness="1"
-                          BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
+                <ListView x:Name="ListViewRight"
+                          ItemsSource="{x:Bind ViewModel.Items}"
+                          CanReorderItems="True"
+                          AllowDrop="True"
+                          CanDragItems="True">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="Padding" Value="0"/>
                         </Style>
                     </ListView.ItemContainerStyle>
 
-                    <ListViewItem>
-                        <Grid VerticalAlignment="Center">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="models:PdfItemToMerge">
+                            <Grid VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <CheckBox Grid.Column="0" Margin="12,0,0,0" MinWidth="0"
+                                          VerticalAlignment="Center"
+                                          IsChecked="{x:Bind IsChecked, Mode=TwoWay}"/>
 
-                            <CheckBox Grid.Column="0" /> <!--Checked="TwoState_Checked" Unchecked="TwoState_Unchecked"-->
+                                <TextBlock Grid.Column="1" Margin="8,0,0,0"
+                                           Text="{x:Bind FileName}"
+                                           VerticalAlignment="Center"
+                                           TextTrimming="CharacterEllipsis" />
 
-                            <HyperlinkButton Grid.Column="1" Content="pdf_files1.pdf" />
+                                <Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">
+                                    <TextBlock Grid.Column="0" Text="{x:Bind FileSizeText}"
+                                               VerticalAlignment="Center" Margin="12,0,12,0" />
 
-                            <toolkit:RangeSelector Grid.Column="3" Width="220"
-                                                   VerticalAlignment="Center"
-                                                   ThumbDragStarted="Selector_OnDragStarted"
-                                                   ThumbDragCompleted="Selector_OnDragCompleted"/>
-                        </Grid>
-                    </ListViewItem>
-
-                    <ListViewItem>
-                        <Grid VerticalAlignment="Center">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-
-                            <HyperlinkButton Grid.Column="0" Content="pdf_files2.pdf" />
-
-                            <toolkit:RangeSelector Grid.Column="2" Width="220"
-                                                   VerticalAlignment="Center"
-                                                   ThumbDragStarted="Selector_OnDragStarted"
-                                                   ThumbDragCompleted="Selector_OnDragCompleted"/>
-                        </Grid>
-                    </ListViewItem>
+                                    <toolkit:RangeSelector Grid.Column="1"
+                                                           Width="220"
+                                                           VerticalAlignment="Center"
+                                                           Minimum="0"
+                                                           Maximum="{x:Bind PageCount}"
+                                                           RangeStart="{x:Bind RangeStart, Mode=TwoWay}"
+                                                           RangeEnd="{x:Bind RangeEnd, Mode=TwoWay}"
+                                                           ThumbDragStarted="Selector_OnDragStarted"
+                                                           ThumbDragCompleted="Selector_OnDragCompleted"/>
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
                 </ListView>
 
-                <Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
+                <!--<Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
                     <WebView2 x:Name="PdfWebView2"
                               Source="https://learn.microsoft.com/windows/apps/winui/winui3/"
                               HorizontalAlignment="Stretch"
@@ -113,12 +118,12 @@
                               MinHeight="1000" MinWidth="600"
                               Visibility="Collapsed" />
 
-                    <!--<dev:Shimmer x:Name="LoadingShimmer"
+                    <dev:Shimmer x:Name="LoadingShimmer"
                                  HorizontalAlignment="Stretch"
                                  VerticalAlignment="Stretch"
                                  Canvas.ZIndex="1"
-                                 IsHitTestVisible="False"/>-->
-                </Grid>
+                                 IsHitTestVisible="False"/>
+                </Grid>-->
 
             </StackPanel>
         </ScrollView>

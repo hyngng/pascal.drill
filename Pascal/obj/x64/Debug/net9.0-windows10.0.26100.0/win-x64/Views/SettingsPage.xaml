@@ -77,7 +77,6 @@
                         <ComboBoxItem Content="강한 아크릴" Tag="AcrylicThin" />
                     </ComboBox>
                 </dev:SettingsCard>
-                
 
                 <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="실험실" />
 

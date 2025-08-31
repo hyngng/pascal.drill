@@ -12,7 +12,7 @@
     <UseWinUI>true</UseWinUI>
     <WinUISDKReferences>false</WinUISDKReferences>
     <EnableMsixTooling>true</EnableMsixTooling>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
     <TrimMode>partial</TrimMode>
     <ImplicitUsings>true</ImplicitUsings>
     <LangVersion>Latest</LangVersion>
@@ -100,7 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Icons\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />

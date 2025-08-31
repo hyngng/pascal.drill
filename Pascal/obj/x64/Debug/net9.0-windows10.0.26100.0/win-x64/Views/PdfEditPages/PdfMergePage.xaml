@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page
+<Page x:ConnectionId='1'
     x:Class="Pascal.Views.PdfEditPages.PdfMergePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,6 +8,7 @@
     xmlns:dev="using:DevWinUI"
     xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:Pascal.Models"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -29,14 +30,14 @@
         </Grid.RowDefinitions>
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
-            <TextBlock x:ConnectionId='8' x:Name="PageHeader"
+            <TextBlock x:ConnectionId='12' x:Name="PageHeader"
                    Margin="{ThemeResource PageHeaderMargin}"
                    Padding="{ThemeResource PageHeaderPadding}"
                    Style="{StaticResource TitleTextBlockStyle}"
                    AutomationProperties.HeadingLevel="Level1"
                    Text="PDF 병합하기" />
 
-            <TextBlock x:ConnectionId='9' x:Name="PageDescription"
+            <TextBlock x:ConnectionId='13' x:Name="PageDescription"
                    Margin="{ThemeResource PageDescriptionMargin}"
                    Padding="{ThemeResource PageDescriptionPadding}"
                    Style="{StaticResource CaptionTextBlockStyle}"
@@ -50,75 +51,79 @@
                         Padding="{ThemeResource PageContentPadding}">
 
                 <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
-                    <AppBarButton x:ConnectionId='6' x:Name="PickPdfFilesButton"
+                    <AppBarButton x:ConnectionId='10' x:Name="PickPdfFilesButton"
                                   Icon="Add" Label="불러오기"
-                                                                  />
-                    <AppBarButton x:ConnectionId='7'  x:Name="SaveAMergedPdfFileButton"
+                                                                               
+                                                                                        />
+                    <AppBarButton x:ConnectionId='11'  x:Name="SaveAMergedPdfFileButton"
                                   Icon="Save" Label="저장하기"
-                                                                        />
+                                                                              
+                                                                                        />
                 </CommandBar>
 
-                <ListView CanReorderItems="True" CanDragItems="True"
-                          AllowDrop="True" BorderThickness="1"
-                          BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
+                <ListView x:ConnectionId='3' x:Name="ListViewRight"
+                                                                
+                          CanReorderItems="True"
+                          AllowDrop="True"
+                          CanDragItems="True">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="Padding" Value="0"/>
                         </Style>
                     </ListView.ItemContainerStyle>
 
-                    <ListViewItem>
-                        <Grid VerticalAlignment="Center">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+                    <ListView.ItemTemplate>
+                        <DataTemplate                                   >
+                            <Grid x:ConnectionId='5' VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <CheckBox x:ConnectionId='6' Grid.Column="0" Margin="12,0,0,0" MinWidth="0"
+                                          VerticalAlignment="Center"
+                                                                                     />
 
-                            <CheckBox Grid.Column="0" /> <!--Checked="TwoState_Checked" Unchecked="TwoState_Unchecked"-->
+                                <TextBlock x:ConnectionId='7' Grid.Column="1" Margin="8,0,0,0"
+                                                                   
+                                           VerticalAlignment="Center"
+                                           TextTrimming="CharacterEllipsis"/>
 
-                            <HyperlinkButton Grid.Column="1" Content="pdf_files1.pdf" />
+                                <Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">
+                                    <TextBlock x:ConnectionId='8' Grid.Column="0"                             
+                                               VerticalAlignment="Center" Margin="12,0,12,0" />
 
-                            <toolkit:RangeSelector x:ConnectionId='5' Grid.Column="3" Width="220"
-                                                   VerticalAlignment="Center"
-                                                                                            
-                                                                                                />
-                        </Grid>
-                    </ListViewItem>
-
-                    <ListViewItem>
-                        <Grid VerticalAlignment="Center">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-
-                            <HyperlinkButton Grid.Column="0" Content="pdf_files2.pdf" />
-
-                            <toolkit:RangeSelector x:ConnectionId='4' Grid.Column="2" Width="220"
-                                                   VerticalAlignment="Center"
-                                                                                            
-                                                                                                />
-                        </Grid>
-                    </ListViewItem>
+                                    <toolkit:RangeSelector x:ConnectionId='9' Grid.Column="1"
+                                                           Width="220"
+                                                           VerticalAlignment="Center"
+                                                           Minimum="0"
+                                                                                       
+                                                                                                        
+                                                                                                    
+                                                                                                    
+                                                                                                        />
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
                 </ListView>
 
-                <Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
-                    <WebView2 x:ConnectionId='3' x:Name="PdfWebView2"
+                <!--<Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
+                    <WebView2 x:Name="PdfWebView2"
                               Source="https://learn.microsoft.com/windows/apps/winui/winui3/"
                               HorizontalAlignment="Stretch"
                               VerticalAlignment="Stretch"
                               MinHeight="1000" MinWidth="600"
                               Visibility="Collapsed" />
 
-                    <!--<dev:Shimmer x:Name="LoadingShimmer"
+                    <dev:Shimmer x:Name="LoadingShimmer"
                                  HorizontalAlignment="Stretch"
                                  VerticalAlignment="Stretch"
                                  Canvas.ZIndex="1"
-                                 IsHitTestVisible="False"/>-->
-                </Grid>
+                                 IsHitTestVisible="False"/>
+                </Grid>-->
 
             </StackPanel>
         </ScrollView>

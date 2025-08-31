@@ -83,7 +83,7 @@
                 <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="기술 스택" />
 
                 <dev:SettingsExpander Description="사실 대부분은 이번에 처음 알게 되었습니다."
-                                      Header="컴퓨터 언어"> <!--HeaderIcon="{dev:BitmapIcon Source=Assets/icon.png}"-->
+                                      Header="컴퓨터 언어">
                     <dev:SettingsExpander.HeaderIcon>
                         <FontIcon Glyph="&#xe756;" />
                     </dev:SettingsExpander.HeaderIcon>
@@ -94,15 +94,14 @@
                     </dev:SettingsExpander.Items>
                 </dev:SettingsExpander>
 
-                <dev:SettingsExpander Description="세상에 이런게 존재하는줄도 몰랐습니다."
-                      Header="프레임워크">
+                <dev:SettingsExpander Header="프레임워크" Description="세상에 이런게 존재하는줄도 몰랐습니다.">
                     <dev:SettingsExpander.HeaderIcon>
                         <FontIcon Glyph="&#xe95f;" />
                     </dev:SettingsExpander.HeaderIcon>
 
                     <dev:SettingsExpander.Items>
                         <dev:SettingsCard Header="WinUI 3" Description="마이크로소프트가 관리하는 Windows 데스크톱 앱 네이티브 UI 프레임워크지만 아무도 안 씁니다. 나 빼고." />
-                        <dev:SettingsCard Header="Windows App SDK" Description="최신 Windows 기능을 일관된 API로 제공하는 SDK입니다. 체감은 안 되지만 유용했습니다." />
+                        <dev:SettingsCard Header="Windows App SDK" Description="최신 Windows 기능을 일관된 API로 제공하는 SDK입니다. 큰 체감은 안 되지만 유용했습니다." />
                     </dev:SettingsExpander.Items>
                 </dev:SettingsExpander>
 
