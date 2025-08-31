@@ -67,6 +67,7 @@
                           AllowDrop="True"
                           CanDragItems="True"
                           SelectionMode="Extended">
+                    
                     <!-- 코드리뷰 필요 -->
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
