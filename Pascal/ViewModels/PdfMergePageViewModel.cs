@@ -43,8 +43,6 @@ namespace Pascal.ViewModels
                             FileName = file.Name,
                             FileSizeText = $"{properties.Size / 1024:N0} KB",
                             PageCount = 100, // TODO: 여기에 실제 로직 구현
-                            RangeStart = 0, // TODO: 여기에 실제 로직 구현
-                            RangeEnd = 100 // TODO: 여기에 실제 로직 구현
                         };
                         Items.Add(newItem);
                     }

@@ -226,7 +226,7 @@ namespace Pascal.Pascal_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[82];
+            _typeNameTable = new string[81];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -302,15 +302,14 @@ namespace Pascal.Pascal_XamlTypeInfo
             _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[73] = "Microsoft.UI.Xaml.Controls.UserControl";
             _typeNameTable[74] = "Pascal.Views.HomeLandingPage";
-            _typeNameTable[75] = "CommunityToolkit.WinUI.Controls.RangeSelector";
-            _typeNameTable[76] = "Pascal.Views.PdfEditPages.PdfMergePage";
-            _typeNameTable[77] = "Pascal.ViewModels.PdfMergePageViewModel";
-            _typeNameTable[78] = "Pascal.Views.PdfEditPages.PdfSplitPage";
-            _typeNameTable[79] = "Pascal.Views.SettingsPage";
-            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[81] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[75] = "Pascal.Views.PdfEditPages.PdfMergePage";
+            _typeNameTable[76] = "Pascal.ViewModels.PdfMergePageViewModel";
+            _typeNameTable[77] = "Pascal.Views.PdfEditPages.PdfSplitPage";
+            _typeNameTable[78] = "Pascal.Views.SettingsPage";
+            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[80] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[82];
+            _typeTable = new global::System.Type[81];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -386,13 +385,12 @@ namespace Pascal.Pascal_XamlTypeInfo
             _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[73] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
             _typeTable[74] = typeof(global::Pascal.Views.HomeLandingPage);
-            _typeTable[75] = typeof(global::CommunityToolkit.WinUI.Controls.RangeSelector);
-            _typeTable[76] = typeof(global::Pascal.Views.PdfEditPages.PdfMergePage);
-            _typeTable[77] = typeof(global::Pascal.ViewModels.PdfMergePageViewModel);
-            _typeTable[78] = typeof(global::Pascal.Views.PdfEditPages.PdfSplitPage);
-            _typeTable[79] = typeof(global::Pascal.Views.SettingsPage);
-            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[81] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[75] = typeof(global::Pascal.Views.PdfEditPages.PdfMergePage);
+            _typeTable[76] = typeof(global::Pascal.ViewModels.PdfMergePageViewModel);
+            _typeTable[77] = typeof(global::Pascal.Views.PdfEditPages.PdfSplitPage);
+            _typeTable[78] = typeof(global::Pascal.Views.SettingsPage);
+            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[80] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -448,11 +446,10 @@ namespace Pascal.Pascal_XamlTypeInfo
         private object Activate_69_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
         private object Activate_71_CreditPage() { return new global::Pascal.Views.CreditPage(); }
         private object Activate_74_HomeLandingPage() { return new global::Pascal.Views.HomeLandingPage(); }
-        private object Activate_75_RangeSelector() { return new global::CommunityToolkit.WinUI.Controls.RangeSelector(); }
-        private object Activate_76_PdfMergePage() { return new global::Pascal.Views.PdfEditPages.PdfMergePage(); }
-        private object Activate_78_PdfSplitPage() { return new global::Pascal.Views.PdfEditPages.PdfSplitPage(); }
-        private object Activate_79_SettingsPage() { return new global::Pascal.Views.SettingsPage(); }
-        private object Activate_80_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_75_PdfMergePage() { return new global::Pascal.Views.PdfEditPages.PdfMergePage(); }
+        private object Activate_77_PdfSplitPage() { return new global::Pascal.Views.PdfEditPages.PdfSplitPage(); }
+        private object Activate_78_SettingsPage() { return new global::Pascal.Views.SettingsPage(); }
+        private object Activate_79_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_TitleBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TitleBar).TypeHandle);
         private void StaticInitializer_9_TitleBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TitleBarTemplateSettings).TypeHandle);
@@ -502,13 +499,12 @@ namespace Pascal.Pascal_XamlTypeInfo
         private void StaticInitializer_70_PersonPictureTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings).TypeHandle);
         private void StaticInitializer_71_CreditPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.CreditPage).TypeHandle);
         private void StaticInitializer_74_HomeLandingPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.HomeLandingPage).TypeHandle);
-        private void StaticInitializer_75_RangeSelector() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.RangeSelector).TypeHandle);
-        private void StaticInitializer_76_PdfMergePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPages.PdfMergePage).TypeHandle);
-        private void StaticInitializer_77_PdfMergePageViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.ViewModels.PdfMergePageViewModel).TypeHandle);
-        private void StaticInitializer_78_PdfSplitPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPages.PdfSplitPage).TypeHandle);
-        private void StaticInitializer_79_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.SettingsPage).TypeHandle);
-        private void StaticInitializer_80_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_81_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_75_PdfMergePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPages.PdfMergePage).TypeHandle);
+        private void StaticInitializer_76_PdfMergePageViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.ViewModels.PdfMergePageViewModel).TypeHandle);
+        private void StaticInitializer_77_PdfSplitPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.PdfEditPages.PdfSplitPage).TypeHandle);
+        private void StaticInitializer_78_SettingsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Pascal.Views.SettingsPage).TypeHandle);
+        private void StaticInitializer_79_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_80_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -534,7 +530,7 @@ namespace Pascal.Pascal_XamlTypeInfo
             var newItem = (global::DevWinUI.BreadcrumbStep)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_81_IList(object instance, object item)
+        private void VectorAdd_80_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -1185,55 +1181,43 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 75:   //  CommunityToolkit.WinUI.Controls.RangeSelector
-                userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_75_RangeSelector;
-                userType.StaticInitializer = StaticInitializer_75_RangeSelector;
-                userType.AddMemberName("Minimum");
-                userType.AddMemberName("Maximum");
-                userType.AddMemberName("RangeStart");
-                userType.AddMemberName("RangeEnd");
-                userType.AddMemberName("StepFrequency");
-                xamlType = userType;
-                break;
-
-            case 76:   //  Pascal.Views.PdfEditPages.PdfMergePage
+            case 75:   //  Pascal.Views.PdfEditPages.PdfMergePage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_76_PdfMergePage;
-                userType.StaticInitializer = StaticInitializer_76_PdfMergePage;
+                userType.Activator = Activate_75_PdfMergePage;
+                userType.StaticInitializer = StaticInitializer_75_PdfMergePage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 77:   //  Pascal.ViewModels.PdfMergePageViewModel
+            case 76:   //  Pascal.ViewModels.PdfMergePageViewModel
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableObject"));
-                userType.StaticInitializer = StaticInitializer_77_PdfMergePageViewModel;
+                userType.StaticInitializer = StaticInitializer_76_PdfMergePageViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Pascal.Views.PdfEditPages.PdfSplitPage
+            case 77:   //  Pascal.Views.PdfEditPages.PdfSplitPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_78_PdfSplitPage;
-                userType.StaticInitializer = StaticInitializer_78_PdfSplitPage;
+                userType.Activator = Activate_77_PdfSplitPage;
+                userType.StaticInitializer = StaticInitializer_77_PdfSplitPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 79:   //  Pascal.Views.SettingsPage
+            case 78:   //  Pascal.Views.SettingsPage
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_79_SettingsPage;
-                userType.StaticInitializer = StaticInitializer_79_SettingsPage;
+                userType.Activator = Activate_78_SettingsPage;
+                userType.StaticInitializer = StaticInitializer_78_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 79:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_80_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_80_TreeViewNode;
+                userType.Activator = Activate_79_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_79_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -1245,10 +1229,10 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 81:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 80:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Pascal.Pascal_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_81_IList;
-                userType.CollectionAdd = VectorAdd_81_IList;
+                userType.StaticInitializer = StaticInitializer_80_IList;
+                userType.CollectionAdd = VectorAdd_80_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -2509,107 +2493,57 @@ namespace Pascal.Pascal_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.TemplateSettings;
         }
-        private object get_134_RangeSelector_Minimum(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            return that.Minimum;
-        }
-        private void set_134_RangeSelector_Minimum(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            that.Minimum = (global::System.Double)Value;
-        }
-        private object get_135_RangeSelector_Maximum(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            return that.Maximum;
-        }
-        private void set_135_RangeSelector_Maximum(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            that.Maximum = (global::System.Double)Value;
-        }
-        private object get_136_RangeSelector_RangeStart(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            return that.RangeStart;
-        }
-        private void set_136_RangeSelector_RangeStart(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            that.RangeStart = (global::System.Double)Value;
-        }
-        private object get_137_RangeSelector_RangeEnd(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            return that.RangeEnd;
-        }
-        private void set_137_RangeSelector_RangeEnd(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            that.RangeEnd = (global::System.Double)Value;
-        }
-        private object get_138_RangeSelector_StepFrequency(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            return that.StepFrequency;
-        }
-        private void set_138_RangeSelector_StepFrequency(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.RangeSelector)instance;
-            that.StepFrequency = (global::System.Double)Value;
-        }
-        private object get_139_PdfMergePage_ViewModel(object instance)
+        private object get_134_PdfMergePage_ViewModel(object instance)
         {
             var that = (global::Pascal.Views.PdfEditPages.PdfMergePage)instance;
             return that.ViewModel;
         }
-        private object get_140_TreeViewNode_Children(object instance)
+        private object get_135_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_141_TreeViewNode_Content(object instance)
+        private object get_136_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_141_TreeViewNode_Content(object instance, object Value)
+        private void set_136_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_142_TreeViewNode_Depth(object instance)
+        private object get_137_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_143_TreeViewNode_HasChildren(object instance)
+        private object get_138_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_144_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_139_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_144_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_139_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_145_TreeViewNode_IsExpanded(object instance)
+        private object get_140_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_145_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_140_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_146_TreeViewNode_Parent(object instance)
+        private object get_141_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -3545,91 +3479,56 @@ namespace Pascal.Pascal_XamlTypeInfo
                 xamlMember.Getter = get_133_PersonPicture_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "CommunityToolkit.WinUI.Controls.RangeSelector.Minimum":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.RangeSelector");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_134_RangeSelector_Minimum;
-                xamlMember.Setter = set_134_RangeSelector_Minimum;
-                break;
-            case "CommunityToolkit.WinUI.Controls.RangeSelector.Maximum":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.RangeSelector");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_135_RangeSelector_Maximum;
-                xamlMember.Setter = set_135_RangeSelector_Maximum;
-                break;
-            case "CommunityToolkit.WinUI.Controls.RangeSelector.RangeStart":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.RangeSelector");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "RangeStart", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_136_RangeSelector_RangeStart;
-                xamlMember.Setter = set_136_RangeSelector_RangeStart;
-                break;
-            case "CommunityToolkit.WinUI.Controls.RangeSelector.RangeEnd":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.RangeSelector");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "RangeEnd", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_137_RangeSelector_RangeEnd;
-                xamlMember.Setter = set_137_RangeSelector_RangeEnd;
-                break;
-            case "CommunityToolkit.WinUI.Controls.RangeSelector.StepFrequency":
-                userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.RangeSelector");
-                xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "StepFrequency", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_138_RangeSelector_StepFrequency;
-                xamlMember.Setter = set_138_RangeSelector_StepFrequency;
-                break;
             case "Pascal.Views.PdfEditPages.PdfMergePage.ViewModel":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Pascal.Views.PdfEditPages.PdfMergePage");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "ViewModel", "Pascal.ViewModels.PdfMergePageViewModel");
-                xamlMember.Getter = get_139_PdfMergePage_ViewModel;
+                xamlMember.Getter = get_134_PdfMergePage_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_140_TreeViewNode_Children;
+                xamlMember.Getter = get_135_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_141_TreeViewNode_Content;
-                xamlMember.Setter = set_141_TreeViewNode_Content;
+                xamlMember.Getter = get_136_TreeViewNode_Content;
+                xamlMember.Setter = set_136_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_142_TreeViewNode_Depth;
+                xamlMember.Getter = get_137_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_143_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_138_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_144_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_144_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_139_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_139_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_145_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_145_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_140_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_140_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Pascal.Pascal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Pascal.Pascal_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_146_TreeViewNode_Parent;
+                xamlMember.Getter = get_141_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

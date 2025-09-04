@@ -45,6 +45,7 @@
                    Text="여러 PDF 문서를 하나의 파일로 합칠 수 있습니다." />
         </StackPanel>
 
+
         <ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
                         Margin="{ThemeResource PageContentMargin}"
@@ -76,38 +77,58 @@
                         </Style>
                     </ListView.ItemContainerStyle>
 
+                    <ListView.Header>
+                        <Grid Padding="16,12" ColumnSpacing="8">
+                            <Grid.ColumnDefinitions>
+                                <!--<ColumnDefinition Width="100" />-->
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <!--<TextBlock Grid.Column="0"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       Text="포함 여부" />-->
+                            <TextBlock Grid.Column="0"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       Text="파일명" />
+                            <TextBlock Grid.Column="1"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       Text="포함 범위" />
+                        </Grid>
+                    </ListView.Header>
+
+
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="models:PdfItemToMerge">
-                            <Grid VerticalAlignment="Center">
+                            <Grid VerticalAlignment="Center" ColumnSpacing="16">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
+                                    <!--<ColumnDefinition Width="100"/>-->
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                
-                                <CheckBox Grid.Column="0" Margin="12,0,0,0" MinWidth="0"
-                                          VerticalAlignment="Center"
-                                          IsChecked="{x:Bind IsChecked, Mode=TwoWay}"/>
 
-                                <TextBlock Grid.Column="1" Margin="8,0,0,0"
+                                <!--<CheckBox Grid.Column="0" MinWidth="0" Margin="12,0,0,0"
+                                          VerticalAlignment="Center"
+                                          IsChecked="{x:Bind IsChecked, Mode=TwoWay}"/>-->
+
+                                <TextBlock Grid.Column="0"
                                            Text="{x:Bind FileName}"
                                            VerticalAlignment="Center"
                                            TextTrimming="CharacterEllipsis" />
 
-                                <Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">
-                                    <TextBlock Grid.Column="0" Text="{x:Bind FileSizeText}"
-                                               VerticalAlignment="Center" Margin="12,0,12,0" />
+                                <!--<Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">-->
 
-                                    <toolkit:RangeSelector Grid.Column="1"
-                                                           Width="220"
-                                                           VerticalAlignment="Center"
-                                                           Minimum="0"
-                                                           Maximum="{x:Bind PageCount}"
-                                                           RangeStart="{x:Bind RangeStart, Mode=TwoWay}"
-                                                           RangeEnd="{x:Bind RangeEnd, Mode=TwoWay}"
-                                                           ThumbDragStarted="Selector_OnDragStarted"
-                                                           ThumbDragCompleted="Selector_OnDragCompleted"/>
-                                </Grid>
+                                <!--<toolkit:RangeSelector Grid.Column="2" Margin="0,0,12,0"
+                                                       Width="220"
+                                                       VerticalAlignment="Center"
+                                                       Minimum="0"
+                                                       Maximum="{x:Bind PageCount}"
+                                                       RangeStart="{x:Bind RangeStart, Mode=TwoWay}"
+                                                       RangeEnd="{x:Bind RangeEnd, Mode=TwoWay}"
+                                                       ThumbDragStarted="Selector_OnDragStarted"
+                                                       ThumbDragCompleted="Selector_OnDragCompleted"/>-->
+
+                                <TextBox Grid.Column="1" Margin="0,0,12,0" PlaceholderText="직접 입력" />
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
