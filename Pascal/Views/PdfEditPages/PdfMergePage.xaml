@@ -116,6 +116,19 @@
                                            VerticalAlignment="Center"
                                            TextTrimming="CharacterEllipsis" />
 
+                                <toolkit:TokenView IsWrapped=""
+                                                    CanRemoveTokens="False"
+                                                    SelectedIndex="2"
+                                                    SelectionMode="False">
+                                    <toolkit:TokenItem Content="All" />
+
+                                    <toolkit:TokenItem Content="Apps">
+                                        <toolkit:TokenItem.Icon>
+                                            <FontIcon Glyph="&#xECAA;" />
+                                        </toolkit:TokenItem.Icon>
+                                    </toolkit:TokenItem>
+                                </toolkit:TokenView>
+
                                 <!--<Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">-->
 
                                 <!--<toolkit:RangeSelector Grid.Column="2" Margin="0,0,12,0"
@@ -128,7 +141,7 @@
                                                        ThumbDragStarted="Selector_OnDragStarted"
                                                        ThumbDragCompleted="Selector_OnDragCompleted"/>-->
 
-                                <TextBox Grid.Column="1" Margin="0,0,12,0" PlaceholderText="직접 입력" />
+                                <!--<TextBox Grid.Column="1" Margin="0,0,12,0" PlaceholderText="직접 입력" />-->
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
