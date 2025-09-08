@@ -39,7 +39,8 @@ namespace Pascal.Views.PdfEditPages
         {
             //disable the button to avoid double-clicking
             var senderButton = sender as Button;
-            senderButton.IsEnabled = false;
+            if (senderButton != null) 
+                senderButton.IsEnabled = false;
 
             // Clear previous returned file name, if it exists, between iterations of this scenario
             // PickFilesOutputTextBlock.Text = "";
@@ -71,9 +72,10 @@ namespace Pascal.Views.PdfEditPages
                 // PickFilesOutputTextBlock.Text = output.ToString();
             }
             else
-                // PickFilesOutputTextBlock.Text = "Operation cancelled.";
+            // PickFilesOutputTextBlock.Text = "Operation cancelled.";
 
-                //re-enable the button
+            //re-enable the button
+            if (senderButton != null)
                 senderButton.IsEnabled = true;
         }
 
@@ -81,7 +83,8 @@ namespace Pascal.Views.PdfEditPages
         {
             //disable the button to avoid double-clicking
             var senderButton = sender as Button;
-            senderButton.IsEnabled = false;
+            if (senderButton != null) 
+                senderButton.IsEnabled = false;
 
             // Clear previous returned file name, if it exists, between iterations of this scenario
             // SaveFileOutputTextBlock.Text = "";
@@ -139,7 +142,8 @@ namespace Pascal.Views.PdfEditPages
             }
 
             //re-enable the button
-            senderButton.IsEnabled = true;
+            if (senderButton != null)
+                senderButton.IsEnabled = true;
         }
     }
 }

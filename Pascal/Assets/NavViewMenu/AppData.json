@@ -3,11 +3,11 @@
   "Groups": [
     {
       "UniqueId": "Pascal",
-      "Title": "Pascal",
+      "Title": "A_Pascal",
       "ImagePath": "ms-appx:///Assets/AppIcon.png",
       "IsSpecialSection": false,
       "ShowItemsWithoutGroup": true,
-      "IsExpanded": false,
+      "IsExpanded": true,
       "Items": [
         {
           "UniqueId": "Pascal.Views.HomeLandingPage",
@@ -19,7 +19,6 @@
     {
       "UniqueId": "PdfEditPage",
       "Title": "PDF 편집 도구",
-      "SectionId": "Pascal.Views.PdfEditPage",
       "ImagePath": "ms-appx:///Assets/Icons/PdfFileEditPageIcon.png",
       "UseBuiltInNavigationViewInfoBadgeStyle": true,
       "Items": [
@@ -34,6 +33,18 @@
           "Title": "PDF 분할하기",
           "Subtitle": "PDF를 분할합니다.",
           "ImagePath": "ms-appx:///Assets/Icons/PdfFileEditPageIcon.png"
+        }
+      ]
+    },
+    {
+      "UniqueId": "LabsPage",
+      "Title": "Z_실험실 기능",
+      "ImagePath": "ms-appx:///Assets/Icons/LabsPageIcon.png",
+      "Items": [
+        {
+          "UniqueId": "Pascal.Views.FakeWindowsUpdatePage",
+          "Title": "Windows 업데이트 창",
+          "ImagePath": "ms-appx:///Assets/Icons/FakeWindowsUpdatePageIcon.png"
         }
       ]
     },

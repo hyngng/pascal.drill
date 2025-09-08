@@ -18,6 +18,7 @@ public partial class NavigationPageMappings
         {"Pascal.Views.HomeLandingPage", typeof(Pascal.Views.HomeLandingPage)},
         {"Pascal.Views.PdfEditPages.PdfMergePage", typeof(Pascal.Views.PdfEditPages.PdfMergePage)},
         {"Pascal.Views.PdfEditPages.PdfSplitPage", typeof(Pascal.Views.PdfEditPages.PdfSplitPage)},
+        {"Pascal.Views.FakeWindowsUpdatePage", typeof(Pascal.Views.FakeWindowsUpdatePage)},
         {"Pascal.Views.CreditPage", typeof(Pascal.Views.CreditPage)},
     };
 }

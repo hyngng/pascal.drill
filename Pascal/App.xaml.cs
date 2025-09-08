@@ -1,4 +1,9 @@
-﻿namespace Pascal;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.UI.Xaml;
+using Pascal.Services.LabsService;
+using System;
+
+namespace Pascal;
 
 public partial class App : Application
 {
@@ -8,14 +13,13 @@ public partial class App : Application
     public IServiceProvider Services { get; }
     public IJsonNavigationService NavService => GetService<IJsonNavigationService>();
     public IThemeService ThemeService => GetService<IThemeService>();
+    public ILabsService LabsService => GetService<ILabsService>();
 
 
     public static T GetService<T>() where T : class
     {
         if ((App.Current as App)!.Services.GetService(typeof(T)) is not T service)
-        {
             throw new ArgumentException($"{typeof(T)} needs to be registered in ConfigureServices within App.xaml.cs.");
-        }
 
         return service;
     }
@@ -29,16 +33,16 @@ public partial class App : Application
         System.Runtime.ProfileOptimization.SetProfileRoot(Constants.RootDirectoryPath);
         System.Runtime.ProfileOptimization.StartProfile("Startup.Profile");
 
-        // 테마 초기화
-        ThemeService.Initialize(MainWindow);
+        InitializeApp();
     }
 
     private static IServiceProvider ConfigureServices()
     {
         var services = new ServiceCollection();
-        services.AddSingleton<IThemeService, ThemeService>();
-        services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
 
+        services.AddSingleton<IThemeService, ThemeService>();
+        services.AddSingleton<ILabsService, LabsService>();
+        services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
         services.AddTransient<MainViewModel>();
 
         return services.BuildServiceProvider();
@@ -54,13 +58,12 @@ public partial class App : Application
         ThemeService.AutoInitialize(MainWindow);
 
         MainWindow.Activate();
-
-        InitializeApp();
     }
 
     private void InitializeApp()
     {
-
+        ThemeService.Initialize(MainWindow);
+        LabsService.Initialize();
     }
 }
 

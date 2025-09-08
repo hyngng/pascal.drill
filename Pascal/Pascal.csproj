@@ -47,6 +47,9 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BreadcrumbPageMappings.cs</LastGenOutput>
     </None>
+    <Page Update="Views\FakeWindowsUpdatePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\PdfEditPages\PdfMergePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,6 +93,7 @@
     <None Remove="Assets\Avatars\thyun.png" />
     <None Remove="ViewModels\SettingsPage.xaml" />
     <None Remove="Views\CreditPage.xaml" />
+    <None Remove="Views\FakeWindowsUpdatePage.xaml" />
     <None Remove="Views\HomeLandingPage.xaml" />
     <None Remove="Views\PdfEditPage.xaml" />
     <None Remove="Views\PdfEditPages\PdfMergePage.xaml" />

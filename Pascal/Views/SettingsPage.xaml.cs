@@ -26,7 +26,6 @@ public sealed partial class SettingsPage : Page
     {
         InitializeComponent();
 
-        // 테마 설정
         pageLoaded();
     }
 
@@ -34,6 +33,7 @@ public sealed partial class SettingsPage : Page
     {
         loadThemeMode();
         loadBackdropMode();
+        loadLabsState();
     }
 
 #region 테마 모드, 재질 효과 변환
@@ -56,5 +56,19 @@ public sealed partial class SettingsPage : Page
     {
         App.Current.ThemeService.SetBackdropComboBoxDefaultItem(backdropMode);
     }
-    #endregion
+#endregion
+
+#region 실험실 기능 On/Off
+    
+    private void loadLabsState()
+    {
+        App.Current.LabsService.SetLabsStateToggleSwitchDefaultState(labsToggleSwitch);
+    }
+
+    private void labsToggleSwitch_Toggled(object sender, RoutedEventArgs e)
+    {
+        if (labsToggleSwitch.IsOn != App.Current.LabsService.IsLabsEnabled)
+            App.Current.LabsService.SetLabsEnabledStatus(labsToggleSwitch.IsOn);
+    }
+#endregion
 }

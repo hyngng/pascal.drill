@@ -84,7 +84,7 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xf196;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <ToggleSwitch x:Name="labsToggle" /> <!--Toggled="labsToggle_Toggled"-->
+                    <ToggleSwitch x:Name="labsToggleSwitch" Toggled="labsToggleSwitch_Toggled" />
                 </dev:SettingsCard>
 
             </StackPanel>

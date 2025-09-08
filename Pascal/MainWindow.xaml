@@ -48,6 +48,10 @@
             <NavigationView.Header>
                 <dev:BreadcrumbNavigator x:Name="BreadCrumbNav" />
             </NavigationView.Header>
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="AdminMenuItem" Content="Admin Tools" Icon="Admin"
+                                    Visibility="Collapsed"/>
+            </NavigationView.MenuItems>
             <Frame x:Name="NavFrame" />
         </NavigationView>
     </Grid>

@@ -116,7 +116,7 @@
                                            VerticalAlignment="Center"
                                            TextTrimming="CharacterEllipsis" />
 
-                                <toolkit:TokenView IsWrapped=""
+                                <!--<toolkit:TokenView IsWrapped=""
                                                     CanRemoveTokens="False"
                                                     SelectedIndex="2"
                                                     SelectionMode="False">
@@ -127,7 +127,7 @@
                                             <FontIcon Glyph="&#xECAA;" />
                                         </toolkit:TokenItem.Icon>
                                     </toolkit:TokenItem>
-                                </toolkit:TokenView>
+                                </toolkit:TokenView>-->
 
                                 <!--<Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">-->
 
