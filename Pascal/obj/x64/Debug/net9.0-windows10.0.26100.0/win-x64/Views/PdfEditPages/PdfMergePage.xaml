@@ -68,8 +68,8 @@
                               CanReorderItems="True"
                               AllowDrop="True"
                               CanDragItems="True"
-                              SelectionMode="Extended">
-                              <!-- DragItemsCompleted="ListView_OnDragCompleted" -->
+                              SelectionMode="Extended"
+                                                                           >
 
                         <!-- 코드리뷰 필요 -->
                         <ListView.ItemContainerStyle>
@@ -111,8 +111,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock x:ConnectionId='6' Grid.Column="0"
-                                                                        
+                                                                                     
                                                VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
                                                TextTrimming="CharacterEllipsis" />
 
                                     <TextBlock x:ConnectionId='7' Grid.Column="1"

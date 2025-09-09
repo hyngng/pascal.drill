@@ -117,53 +117,5 @@
 
             </StackPanel>
         </ScrollView>
-
-        <!--<ScrollView Grid.Row="1" Padding="36,0,36,0"
-                VerticalScrollBarVisibility="Auto"
-                VerticalScrollMode="Auto">
-            <Border>
-                <StackPanel Spacing="{StaticResource SettingsCardSpacing}">
-                    <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="만든 이" />
-
-                    <dev:SettingsCard>
-                        <dev:SettingsCard.Header>
-                            <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
-                                <PersonPicture ProfilePicture="/Assets/Avatars/gabin.png"
-                                               Width="40" Height="40" />
-                                <TextBlock Text="김가빈" VerticalAlignment="Center" />
-                            </StackPanel>
-                        </dev:SettingsCard.Header>
-                        <TextBlock Text="피드백은 받지 않겠습니다. 감사합니다." />
-                    </dev:SettingsCard>
-
-                    <dev:SettingsCard>
-                        <dev:SettingsCard.Header>
-                            <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
-                                <PersonPicture ProfilePicture="/Assets/Avatars/thyun.png"
-                                                   Width="40" Height="40" />
-                                <TextBlock Text="김태현" VerticalAlignment="Center" />
-                            </StackPanel>
-                        </dev:SettingsCard.Header>
-                        <TextBlock Text="추가하고 싶은 기능이 있다면 언제든지 마음 속으로 말씀해주세요. " />
-                    </dev:SettingsCard>
-
-                    <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="오픈소스 라이브러리" />
-                    <dev:SettingsCard Header="Windows Community Toolkit" Description="MIT License. UI 컨트롤 및 헬퍼 라이브러리.">
-                        <dev:SettingsCard.HeaderIcon>
-                            <FontIcon Glyph="&#xE8A1;" />
-                        </dev:SettingsCard.HeaderIcon>
-                        <HyperlinkButton Content="자세히 보기" NavigateUri="https://github.com/CommunityToolkit/WindowsCommunityToolkit"/>
-                    </dev:SettingsCard>
-
-                    <dev:SettingsCard Header="Newtonsoft.Json" Description="MIT License. JSON 직렬화 라이브러리.">
-                        <dev:SettingsCard.HeaderIcon>
-                            <FontIcon Glyph="&#xF16B;" />
-                        </dev:SettingsCard.HeaderIcon>
-                        <HyperlinkButton Content="자세히 보기" NavigateUri="https://www.newtonsoft.com/json"/>
-                    </dev:SettingsCard>
-
-                </StackPanel>
-            </Border>
-        </ScrollView>-->
     </Grid>
 </Page>

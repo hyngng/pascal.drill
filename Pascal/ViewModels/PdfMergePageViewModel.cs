@@ -56,16 +56,31 @@ namespace Pascal.ViewModels
             }
         }
 
-        // (선택) 재정렬 후 순번 재부여가 필요하면 호출
-        private async Task RenumberFilesAsync()
+        [RelayCommand]
+        private void ReorderFiles()
         {
+            System.Diagnostics.Debug.WriteLine($"=== ReorderFiles 실행 ===");
+            System.Diagnostics.Debug.WriteLine($"Items.Count: {Items.Count}");
+            
             IsBusy = true;
             try
             {
+                // 현재 상태 로깅
                 for (int i = 0; i < Items.Count; i++)
                 {
-                    if (Items[i].FileOrder != i + 1)
-                        Items[i].FileOrder = i + 1;
+                    System.Diagnostics.Debug.WriteLine($"BEFORE - Index {i}: {Items[i].FileName} (FileOrder: {Items[i].FileOrder})");
+                }
+                
+                // 순번 재설정
+                for (int i = 0; i < Items.Count; i++)
+                {
+                    Items[i].FileOrder = i + 1;
+                }
+                
+                // 변경 후 상태 로깅
+                for (int i = 0; i < Items.Count; i++)
+                {
+                    System.Diagnostics.Debug.WriteLine($"AFTER  - Index {i}: {Items[i].FileName} (FileOrder: {Items[i].FileOrder})");
                 }
             }
             finally

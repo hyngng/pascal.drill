@@ -47,9 +47,12 @@ namespace Pascal.Views.PdfEditPages
             //
         }
 
-        private void ListView_OnDragCompleted(object sender, DragCompletedEventArgs e)
+        private void ListView_OnDragCompleted(ListViewBase sender, DragItemsCompletedEventArgs e)
         {
-            //ViewModel.RenumberFilesCommand.Execute(null);
+            DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, () =>
+            {
+                ViewModel.ReorderFilesCommand.Execute(null);
+            });
         }
 
         // MVVM 모델에 따라 코드비하인드 대신 뷰모델에 작성하는게 좋을듯?
