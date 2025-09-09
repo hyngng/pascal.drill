@@ -76,7 +76,7 @@
                             <TextBlock Text="hyngng" VerticalAlignment="Center" />
                         </StackPanel>
                     </dev:SettingsCard.Header>
-                    <TextBlock Text="추가하고 싶은 기능이 있다면 언제든지 텔레파시로 알려주세요." />
+                    <TextBlock Text="추가하고 싶은 기능이 있다면 언제든지 마음 속으로 알려주세요." />
                 </dev:SettingsCard>
 
 

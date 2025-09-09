@@ -26,21 +26,6 @@ public sealed partial class MainWindow : Window
         mainPage_Loaded();
     }
 
-    private void ThemeButton_Click(object sender, RoutedEventArgs e)
-    {
-        ThemeService.ChangeThemeWithoutSave(App.MainWindow);
-    }
-
-    private void OnTextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
-    {
-        AutoSuggestBoxHelper.OnITitleBarAutoSuggestBoxTextChangedEvent(sender, args, NavFrame);
-    }
-
-    private void OnQuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
-    {
-        AutoSuggestBoxHelper.OnITitleBarAutoSuggestBoxQuerySubmittedEvent(sender, args, NavFrame);
-    }
-
     private void mainPage_Loaded()
     {
         App.Current.LabsService.LabsChanged += OnLabsEnabledToggled; 

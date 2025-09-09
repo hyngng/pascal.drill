@@ -3,7 +3,7 @@
   "Groups": [
     {
       "UniqueId": "Pascal",
-      "Title": "A_Pascal",
+      "Title": "Pascal",
       "ImagePath": "ms-appx:///Assets/AppIcon.png",
       "IsSpecialSection": false,
       "ShowItemsWithoutGroup": true,
@@ -38,7 +38,7 @@
     },
     {
       "UniqueId": "LabsPage",
-      "Title": "Z_실험실 기능",
+      "Title": "실험실 기능",
       "ImagePath": "ms-appx:///Assets/Icons/LabsPageIcon.png",
       "Items": [
         {

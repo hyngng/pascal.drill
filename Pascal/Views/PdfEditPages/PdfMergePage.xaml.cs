@@ -34,11 +34,7 @@ namespace Pascal.Views.PdfEditPages
 
     public sealed partial class PdfMergePage : Page, IFilePickerService
     {
-        // XAML에서 바인딩할 ViewModel 속성
         public PdfMergePageViewModel ViewModel { get; }
-
-        // 이 줄은 제거합니다. ViewModel의 Items를 사용해야 합니다.
-        // public ObservableCollection<PdfItemToMerge> Item;
 
         public PdfMergePage()
         {
@@ -46,14 +42,14 @@ namespace Pascal.Views.PdfEditPages
             ViewModel = new PdfMergePageViewModel(this);
         }
 
-        private void Selector_OnDragStarted(object sender, DragStartedEventArgs e)
+        private void ListView_OnDragStarted(object sender, DragStartedEventArgs e)
         {
             //
         }
 
-        private void Selector_OnDragCompleted(object sender, DragCompletedEventArgs e)
+        private void ListView_OnDragCompleted(object sender, DragCompletedEventArgs e)
         {
-            //
+            //ViewModel.RenumberFilesCommand.Execute(null);
         }
 
         // MVVM 모델에 따라 코드비하인드 대신 뷰모델에 작성하는게 좋을듯?

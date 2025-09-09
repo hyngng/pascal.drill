@@ -5,14 +5,14 @@ namespace Pascal.Models
 {
     public partial class PdfItemToMerge : INotifyPropertyChanged
     {
-        private bool isChecked;
+        private int fileOrder;
         private string fileName = string.Empty;
         private string fileSizeText = string.Empty;
         private int pageCount;
         private double rangeStart;
         private double rangeEnd;
 
-        public bool IsChecked { get => isChecked; set { isChecked = value; OnPropertyChanged(); } }
+        public int FileOrder { get => fileOrder; set { fileOrder = value; OnPropertyChanged(); } }
         public string FileName { get => fileName; set { fileName = value; OnPropertyChanged(); } }
         public string FileSizeText { get => fileSizeText; set { fileSizeText = value; OnPropertyChanged(); } }
         public int PageCount { get => pageCount; set { pageCount = value; OnPropertyChanged(); } }

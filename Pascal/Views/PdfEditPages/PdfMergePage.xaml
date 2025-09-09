@@ -62,92 +62,97 @@
                                   IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
                 </CommandBar>
 
-                <ListView x:Name="ListViewRight"
-                          ItemsSource="{x:Bind ViewModel.Items}"
-                          CanReorderItems="True"
-                          AllowDrop="True"
-                          CanDragItems="True"
-                          SelectionMode="Extended">
-                    
-                    <!-- 코드리뷰 필요 -->
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                            <Setter Property="Padding" Value="0"/>
-                        </Style>
-                    </ListView.ItemContainerStyle>
+                <Border Style="{ThemeResource InfoBorderPanelStyle}" Padding="16,16,16,16">
+                    <ListView x:Name="ListViewRight"
+                              ItemsSource="{x:Bind ViewModel.Items}"
+                              CanReorderItems="True"
+                              AllowDrop="True"
+                              CanDragItems="True"
+                              SelectionMode="Extended">
+                              <!-- DragItemsCompleted="ListView_OnDragCompleted" -->
 
-                    <ListView.Header>
-                        <Grid Padding="16,12" ColumnSpacing="8">
-                            <Grid.ColumnDefinitions>
-                                <!--<ColumnDefinition Width="100" />-->
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            
-                            <!--<TextBlock Grid.Column="0"
-                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                       Text="포함 여부" />-->
-                            <TextBlock Grid.Column="0"
-                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                       Text="파일명" />
-                            <TextBlock Grid.Column="1"
-                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                       Text="포함 범위" />
-                        </Grid>
-                    </ListView.Header>
+                        <!-- 코드리뷰 필요 -->
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Padding" Value="0"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
 
-
-                    <ListView.ItemTemplate>
-                        <DataTemplate x:DataType="models:PdfItemToMerge">
-                            <Grid VerticalAlignment="Center" ColumnSpacing="16">
+                        <ListView.Header>
+                            <Grid ColumnSpacing="16" Padding="16,12">
                                 <Grid.ColumnDefinitions>
-                                    <!--<ColumnDefinition Width="100"/>-->
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="30" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
 
-                                <!--<CheckBox Grid.Column="0" MinWidth="0" Margin="12,0,0,0"
-                                          VerticalAlignment="Center"
-                                          IsChecked="{x:Bind IsChecked, Mode=TwoWay}"/>-->
-
                                 <TextBlock Grid.Column="0"
-                                           Text="{x:Bind FileName}"
-                                           VerticalAlignment="Center"
-                                           TextTrimming="CharacterEllipsis" />
-
-                                <!--<toolkit:TokenView IsWrapped=""
-                                                    CanRemoveTokens="False"
-                                                    SelectedIndex="2"
-                                                    SelectionMode="False">
-                                    <toolkit:TokenItem Content="All" />
-
-                                    <toolkit:TokenItem Content="Apps">
-                                        <toolkit:TokenItem.Icon>
-                                            <FontIcon Glyph="&#xECAA;" />
-                                        </toolkit:TokenItem.Icon>
-                                    </toolkit:TokenItem>
-                                </toolkit:TokenView>-->
-
-                                <!--<Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">-->
-
-                                <!--<toolkit:RangeSelector Grid.Column="2" Margin="0,0,12,0"
-                                                       Width="220"
-                                                       VerticalAlignment="Center"
-                                                       Minimum="0"
-                                                       Maximum="{x:Bind PageCount}"
-                                                       RangeStart="{x:Bind RangeStart, Mode=TwoWay}"
-                                                       RangeEnd="{x:Bind RangeEnd, Mode=TwoWay}"
-                                                       ThumbDragStarted="Selector_OnDragStarted"
-                                                       ThumbDragCompleted="Selector_OnDragCompleted"/>-->
-
-                                <!--<TextBox Grid.Column="1" Margin="0,0,12,0" PlaceholderText="직접 입력" />-->
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="연번" />
+                                <TextBlock Grid.Column="1"
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="파일명" />
+                                <TextBlock Grid.Column="2"
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="포함 범위" />
                             </Grid>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                        </ListView.Header>
 
-                <!--<Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
+                        <!--<dev:Divider />-->
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="models:PdfItemToMerge">
+                                <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0"
+                                               Text="{x:Bind FileOrder}"
+                                               VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
+
+                                    <TextBlock Grid.Column="1"
+                                               Text="{x:Bind FileName}"
+                                               VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
+
+                                    <!--<toolkit:TokenView IsWrapped=""
+                                                        CanRemoveTokens="False"
+                                                        SelectedIndex="2"
+                                                        SelectionMode="False">
+                                        <toolkit:TokenItem Content="All" />
+
+                                        <toolkit:TokenItem Content="Apps">
+                                            <toolkit:TokenItem.Icon>
+                                                <FontIcon Glyph="&#xECAA;" />
+                                            </toolkit:TokenItem.Icon>
+                                        </toolkit:TokenItem>
+                                    </toolkit:TokenView>-->
+
+                                    <!--<Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">-->
+
+                                    <!--<toolkit:RangeSelector Grid.Column="2" Margin="0,0,12,0"
+                                                           Width="220"
+                                                           VerticalAlignment="Center"
+                                                           Minimum="0"
+                                                           Maximum="{x:Bind PageCount}"
+                                                           RangeStart="{x:Bind RangeStart, Mode=TwoWay}"
+                                                           RangeEnd="{x:Bind RangeEnd, Mode=TwoWay}"
+                                                           ThumbDragStarted="Selector_OnDragStarted"
+                                                           ThumbDragCompleted="Selector_OnDragCompleted"/>-->
+
+                                    <!--<TextBox Grid.Column="1" Margin="0,0,12,0" PlaceholderText="직접 입력" />-->
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Border>
+
+                    <!--<Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
                     <WebView2 x:Name="PdfWebView2"
                               Source="https://learn.microsoft.com/windows/apps/winui/winui3/"
                               HorizontalAlignment="Stretch"

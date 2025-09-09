@@ -1171,3 +1171,10 @@ C:\Users\kiw60\Desktop\Drill.Pascal\Drill\Pascal\obj\x64\Debug\net9.0-windows10.
 C:\Users\kiw60\Desktop\Drill.Pascal\Drill\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\kiw60\Desktop\Drill.Pascal\Drill\Pascal\bin\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Assets\Icons\LabsPageIcon.png
 C:\Users\kiw60\Desktop\Drill.Pascal\Drill\Pascal\bin\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Assets\Icons\FakeWindowsUpdatePageIcon.png
+D:\develop\Drill.DevWinUI\Pascal\bin\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\FakeWindowsUpdatePage.xbf
+D:\develop\Drill.DevWinUI\Pascal\bin\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Assets\Icons\FakeWindowsUpdatePageIcon.png
+D:\develop\Drill.DevWinUI\Pascal\bin\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Assets\Icons\LabsPageIcon.png
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\FakeWindowsUpdatePage.g.i.cs
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\FakeWindowsUpdatePage.g.cs
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\FakeWindowsUpdatePage.xaml
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\FakeWindowsUpdatePage.xbf

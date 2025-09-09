@@ -34,18 +34,38 @@ namespace Pascal.ViewModels
                 var files = await filePickerService.PickMultiplePdfFilesAsync();
                 if (files != null && files.Count > 0)
                 {
-                    foreach (var file in files)
+                    int baseCount = Items.Count; // 기존 항목 수(뒤에 이어붙이기용)
+                    for (int i = 0; i < files.Count; i++)
                     {
+                        var file = files[i];
                         var properties = await file.GetBasicPropertiesAsync();
                         var newItem = new PdfItemToMerge
                         {
-                            IsChecked = true,
+                            FileOrder = baseCount + i + 1, // 1부터 시작하는 순번 부여
                             FileName = file.Name,
                             FileSizeText = $"{properties.Size / 1024:N0} KB",
-                            PageCount = 100, // TODO: 여기에 실제 로직 구현
+                            PageCount = 100, // TODO: 실제 페이지 수 로직
                         };
                         Items.Add(newItem);
                     }
+                }
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        // (선택) 재정렬 후 순번 재부여가 필요하면 호출
+        private async Task RenumberFilesAsync()
+        {
+            IsBusy = true;
+            try
+            {
+                for (int i = 0; i < Items.Count; i++)
+                {
+                    if (Items[i].FileOrder != i + 1)
+                        Items[i].FileOrder = i + 1;
                 }
             }
             finally

@@ -28,8 +28,6 @@ public partial class LabsService : ILabsService
 
     public LabsService Initialize()
     {
-        IsLabsEnabled = GetLabsConfiguration();
-
         string RootPath = Path.Combine(PathHelper.GetAppDataFolderPath(), ProcessInfoHelper.ProductNameAndVersion);
         string AppConfigPath = Path.Combine(RootPath, ConfigFilePath);
 
@@ -39,14 +37,15 @@ public partial class LabsService : ILabsService
                 AppConfigPath = userDefinedFileName;
 
             GlobalData.SavePath = AppConfigPath;
+
             if (!Directory.Exists(RootPath))
-            {
                 Directory.CreateDirectory(RootPath);
-            }
+
             GlobalData.Init();
         }
 
-        LabsChanged?.Invoke(isLabsEnabled);
+        // 여기부터는 커스텀 로직
+        IsLabsEnabled = GetLabsConfiguration();
 
         return this;
     }
