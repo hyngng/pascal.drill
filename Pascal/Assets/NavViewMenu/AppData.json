@@ -18,7 +18,7 @@
     },
     {
       "UniqueId": "PdfEditPage",
-      "Title": "PDF 편집 도구",
+      "Title": "PDF 도구",
       "ImagePath": "ms-appx:///Assets/Icons/PdfFileEditPageIcon.png",
       "UseBuiltInNavigationViewInfoBadgeStyle": true,
       "Items": [

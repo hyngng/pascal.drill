@@ -30,14 +30,14 @@
         </Grid.RowDefinitions>
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
-            <TextBlock x:ConnectionId='10' x:Name="PageHeader"
+            <TextBlock x:ConnectionId='11' x:Name="PageHeader"
                    Margin="{ThemeResource PageHeaderMargin}"
                    Padding="{ThemeResource PageHeaderPadding}"
                    Style="{StaticResource TitleTextBlockStyle}"
                    AutomationProperties.HeadingLevel="Level1"
                    Text="PDF 병합하기" />
 
-            <TextBlock x:ConnectionId='11' x:Name="PageDescription"
+            <TextBlock x:ConnectionId='12' x:Name="PageDescription"
                    Margin="{ThemeResource PageDescriptionMargin}"
                    Padding="{ThemeResource PageDescriptionPadding}"
                    Style="{StaticResource CaptionTextBlockStyle}"
@@ -52,11 +52,11 @@
                         Padding="{ThemeResource PageContentPadding}">
 
                 <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
-                    <AppBarButton x:ConnectionId='8' x:Name="PickPdfFilesButton"
+                    <AppBarButton x:ConnectionId='9' x:Name="PickPdfFilesButton"
                                   Icon="Add" Label="불러오기"
                                                                                
                                                                                         />
-                    <AppBarButton x:ConnectionId='9'  x:Name="SaveAMergedPdfFileButton"
+                    <AppBarButton x:ConnectionId='10'  x:Name="SaveAMergedPdfFileButton"
                                   Icon="Save" Label="저장하기"
                                                                               
                                                                                         />
@@ -84,7 +84,8 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="30" />
                                     <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="70" />
+                                    <ColumnDefinition Width="60" />
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Grid.Column="0"
@@ -95,7 +96,7 @@
                                            Text="파일명" />
                                 <TextBlock Grid.Column="2"
                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="포함 범위" />
+                                           Text="페이지 수" />
                             </Grid>
                         </ListView.Header>
 
@@ -107,7 +108,8 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="30"/>
                                         <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition Width="60" />
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock x:ConnectionId='6' Grid.Column="0"
@@ -117,9 +119,43 @@
                                                TextTrimming="CharacterEllipsis" />
 
                                     <TextBlock x:ConnectionId='7' Grid.Column="1"
-                                                                       
+                                                                                    
                                                VerticalAlignment="Center"
                                                TextTrimming="CharacterEllipsis" />
+
+                                    <TextBlock x:ConnectionId='8' Grid.Column="2"
+                                                                                     
+                                               VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
+
+                                    <!--<AppBarButton x:Name="PickPdfFilesButton" Icon="More"
+                                                  IsCompact="True" Grid.Column="3">
+                                        <Button.Flyout>
+                                            <MenuFlyout>
+                                                <MenuFlyoutItem Text="Share">
+                                                    <MenuFlyoutItem.Icon>
+                                                        <FontIcon Glyph="&#xE72D;"/>
+                                                    </MenuFlyoutItem.Icon>
+                                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                                        <KeyboardAccelerator Key="S" Modifiers="Control"/>
+                                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutItem Text="Copy" Icon="Copy">
+                                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                                        <KeyboardAccelerator Key="C" Modifiers="Control"/>
+                                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutItem Text="Delete" Icon="Delete">
+                                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                                        <KeyboardAccelerator Key="Delete" />
+                                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutSeparator/>
+                                                <MenuFlyoutItem Text="Rename"/>
+                                                <MenuFlyoutItem Text="Select"/>
+                                            </MenuFlyout>
+                                        </Button.Flyout>
+                                    </AppBarButton>-->
 
                                     <!--<toolkit:TokenView IsWrapped=""
                                                         CanRemoveTokens="False"

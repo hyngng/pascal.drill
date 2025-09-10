@@ -84,7 +84,7 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="30" />
                                     <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="70" />
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Grid.Column="0"
@@ -95,7 +95,7 @@
                                            Text="파일명" />
                                 <TextBlock Grid.Column="2"
                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="포함 범위" />
+                                           Text="페이지 수" />
                             </Grid>
                         </ListView.Header>
 
@@ -107,7 +107,7 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="30"/>
                                         <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="70"/>
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Grid.Column="0"
@@ -117,9 +117,43 @@
                                                TextTrimming="CharacterEllipsis" />
 
                                     <TextBlock Grid.Column="1"
-                                               Text="{x:Bind FileName}"
+                                               Text="{x:Bind FileName, Mode=OneWay}"
                                                VerticalAlignment="Center"
                                                TextTrimming="CharacterEllipsis" />
+
+                                    <TextBlock Grid.Column="2"
+                                               Text="{x:Bind PageCount, Mode=OneWay}"
+                                               VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
+
+                                    <!--<AppBarButton x:Name="PickPdfFilesButton" Icon="More"
+                                                  IsCompact="True" Grid.Column="3">
+                                        <Button.Flyout>
+                                            <MenuFlyout>
+                                                <MenuFlyoutItem Text="Share">
+                                                    <MenuFlyoutItem.Icon>
+                                                        <FontIcon Glyph="&#xE72D;"/>
+                                                    </MenuFlyoutItem.Icon>
+                                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                                        <KeyboardAccelerator Key="S" Modifiers="Control"/>
+                                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutItem Text="Copy" Icon="Copy">
+                                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                                        <KeyboardAccelerator Key="C" Modifiers="Control"/>
+                                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutItem Text="Delete" Icon="Delete">
+                                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                                        <KeyboardAccelerator Key="Delete" />
+                                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutSeparator/>
+                                                <MenuFlyoutItem Text="Rename"/>
+                                                <MenuFlyoutItem Text="Select"/>
+                                            </MenuFlyout>
+                                        </Button.Flyout>
+                                    </AppBarButton>-->
 
                                     <!--<toolkit:TokenView IsWrapped=""
                                                         CanRemoveTokens="False"

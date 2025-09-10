@@ -62,7 +62,7 @@ public sealed partial class SettingsPage : Page
     
     private void loadLabsState()
     {
-        App.Current.LabsService.SetLabsStateToggleSwitchDefaultState(labsToggleSwitch);
+        App.Current.LabsService.GetToggleSwitchStatus(labsToggleSwitch);
     }
 
     private void labsToggleSwitch_Toggled(object sender, RoutedEventArgs e)

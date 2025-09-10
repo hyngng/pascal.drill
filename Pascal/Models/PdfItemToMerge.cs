@@ -7,14 +7,14 @@ namespace Pascal.Models
     {
         private int fileOrder;
         private string fileName = string.Empty;
-        private string fileSizeText = string.Empty;
+        private string fileSize = string.Empty;
         private int pageCount;
         private double rangeStart;
         private double rangeEnd;
 
         public int FileOrder { get => fileOrder; set { fileOrder = value; OnPropertyChanged(); } }
         public string FileName { get => fileName; set { fileName = value; OnPropertyChanged(); } }
-        public string FileSizeText { get => fileSizeText; set { fileSizeText = value; OnPropertyChanged(); } }
+        public string FileSize { get => fileSize; set { fileSize = value; OnPropertyChanged(); } }
         public int PageCount { get => pageCount; set { pageCount = value; OnPropertyChanged(); } }
         public double RangeStart { get => rangeStart; set { rangeStart = value; OnPropertyChanged(); } }
         public double RangeEnd { get => rangeEnd; set { rangeEnd = value; OnPropertyChanged(); } }

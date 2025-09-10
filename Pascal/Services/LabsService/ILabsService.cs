@@ -8,6 +8,6 @@ public interface ILabsService
 
     bool IsLabsEnabled { get; }
     LabsService Initialize();
-    void SetLabsStateToggleSwitchDefaultState(ToggleSwitch toggleSwitch);
+    void GetToggleSwitchStatus(ToggleSwitch toggleSwitch);
     void SetLabsEnabledStatus(bool isEnabled);
 }

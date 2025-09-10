@@ -10,15 +10,15 @@ namespace Pascal.Services.LabsService
     public partial class LabsService : ILabsService
     {
         #region 클래스 외부 API
-        public void SetLabsStateToggleSwitchDefaultState(ToggleSwitch toggleSwitch)
+        public void GetToggleSwitchStatus(ToggleSwitch toggleSwitch)
         {
             toggleSwitch.IsOn = isLabsEnabled;
         }
 
         public void SetLabsEnabledStatus(bool isEnabled)
         {
-            ToggleLabsEnabledStatus();
             SetLabsConfiguration(isEnabled);
+            ToggleLabsEnabledStatus();
         }
         #endregion 클래스 외부 API
 

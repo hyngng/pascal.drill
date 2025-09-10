@@ -42,8 +42,8 @@ namespace Pascal.ViewModels
                         var newItem = new PdfItemToMerge
                         {
                             FileOrder = baseCount + i + 1, // 1부터 시작하는 순번 부여
-                            FileName = file.Name,
-                            FileSizeText = $"{properties.Size / 1024:N0} KB",
+                            FileName  = file.Name,
+                            FileSize  = $"{properties.Size / 1024:N0} KB",
                             PageCount = 100, // TODO: 실제 페이지 수 로직
                         };
                         Items.Add(newItem);
@@ -59,29 +59,11 @@ namespace Pascal.ViewModels
         [RelayCommand]
         private void ReorderFiles()
         {
-            System.Diagnostics.Debug.WriteLine($"=== ReorderFiles 실행 ===");
-            System.Diagnostics.Debug.WriteLine($"Items.Count: {Items.Count}");
-            
             IsBusy = true;
             try
             {
-                // 현재 상태 로깅
                 for (int i = 0; i < Items.Count; i++)
-                {
-                    System.Diagnostics.Debug.WriteLine($"BEFORE - Index {i}: {Items[i].FileName} (FileOrder: {Items[i].FileOrder})");
-                }
-                
-                // 순번 재설정
-                for (int i = 0; i < Items.Count; i++)
-                {
                     Items[i].FileOrder = i + 1;
-                }
-                
-                // 변경 후 상태 로깅
-                for (int i = 0; i < Items.Count; i++)
-                {
-                    System.Diagnostics.Debug.WriteLine($"AFTER  - Index {i}: {Items[i].FileName} (FileOrder: {Items[i].FileOrder})");
-                }
             }
             finally
             {
