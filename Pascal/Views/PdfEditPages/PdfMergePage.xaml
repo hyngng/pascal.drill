@@ -78,7 +78,7 @@
                                 <Setter Property="ContextFlyout">
                                     <Setter.Value>
                                         <MenuFlyout Opening="ItemMenuFlyout_Opening">
-                                            <MenuFlyoutItem Text="열기" 
+                                            <MenuFlyoutItem Text="열기"
                                                             Icon="OpenFile"
                                                             Click="OpenMenuItem_Click" />
                                             <MenuFlyoutSeparator/>

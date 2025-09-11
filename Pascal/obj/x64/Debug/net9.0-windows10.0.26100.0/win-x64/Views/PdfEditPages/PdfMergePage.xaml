@@ -78,7 +78,7 @@
                                 <Setter Property="ContextFlyout">
                                     <Setter.Value>
                                         <MenuFlyout x:ConnectionId='4'                                 >
-                                            <MenuFlyoutItem x:ConnectionId='5' Text="열기" 
+                                            <MenuFlyoutItem x:ConnectionId='5' Text="열기"
                                                             Icon="OpenFile"
                                                                                        />
                                             <MenuFlyoutSeparator/>

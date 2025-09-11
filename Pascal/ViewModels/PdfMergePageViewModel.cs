@@ -74,6 +74,7 @@ namespace Pascal.ViewModels
         [RelayCommand]
         private void DeleteFile(PdfItemToMerge item)
         {
+            System.Diagnostics.Debug.WriteLine($"ㅋㅋ1.4 {item.GetType()}");
             if (item != null && Items.Contains(item))
             {
                 System.Diagnostics.Debug.WriteLine("ㅋㅋ3");

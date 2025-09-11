@@ -46,22 +46,13 @@ namespace Pascal.Views.PdfEditPages
             System.Diagnostics.Debug.WriteLine($"ㅋㅋ2.4 {sender.GetType()}");
 
             var menuFlyout = sender as MenuFlyout;
-
-            // 1. 메뉴가 연결된 대상(즉, ListViewItem)을 가져옵니다.
-            if (menuFlyout?.Target is FrameworkElement targetElement)
+            if (menuFlyout?.Target is ListViewItem lvi)
             {
-                // 2. ListViewItem의 DataContext (즉, PdfItemToMerge 객체)를 가져옵니다.
-                var dataContext = targetElement.DataContext;
-
-                // 3. 메뉴에 포함된 모든 항목(MenuFlyoutItem 등)을 순회합니다.
-                foreach (var item in menuFlyout.Items)
+                var item = lvi.Content as PdfItemToMerge;
+                foreach (var mi in menuFlyout.Items.OfType<MenuFlyoutItem>())
                 {
-                    // 4. 각 항목의 DataContext를 ListViewItem의 DataContext로 설정합니다.
-                    //    이것이 바로 끊어졌던 DataContext 상속을 수동으로 이어주는 과정입니다.
-                    if (item is FrameworkElement flyoutItem)
-                    {
-                        flyoutItem.DataContext = dataContext;
-                    }
+                    if (mi.Command == ViewModel.DeleteFileCommand)
+                        mi.CommandParameter = item;
                 }
             }
         }
