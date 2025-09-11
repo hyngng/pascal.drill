@@ -2,7 +2,10 @@
 using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
 using Pascal.Services;
+using System.Collections;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Pascal.ViewModels
@@ -34,7 +37,7 @@ namespace Pascal.ViewModels
                 var files = await filePickerService.PickMultiplePdfFilesAsync();
                 if (files != null && files.Count > 0)
                 {
-                    int baseCount = Items.Count; // 기존 항목 수(뒤에 이어붙이기용)
+                    int baseCount = Items.Count;
                     for (int i = 0; i < files.Count; i++)
                     {
                         var file = files[i];
@@ -42,9 +45,9 @@ namespace Pascal.ViewModels
                         var newItem = new PdfItemToMerge
                         {
                             FileOrder = baseCount + i + 1,
-                            FileName  = file.Name,
-                            FileSize  = $"{properties.Size / 1024:N0} KB",
-                            PageCount = 100, // TODO: 실제 페이지 수 로직
+                            FileName = file.Name,
+                            FileSize = $"{properties.Size / 1024:N0} KB",
+                            PageCount = 100, // TODO: 실제 페이지 수
                         };
                         Items.Add(newItem);
                     }
@@ -59,30 +62,37 @@ namespace Pascal.ViewModels
         [RelayCommand]
         private void ReorderFiles()
         {
-            IsBusy = true;
-            try
-            {
-                for (int i = 0; i < Items.Count; i++)
-                    Items[i].FileOrder = i + 1;
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            for (int i = 0; i < Items.Count; i++)
+                Items[i].FileOrder = i + 1;
         }
 
         [RelayCommand]
         private void DeleteFile(PdfItemToMerge item)
         {
-            System.Diagnostics.Debug.WriteLine($"ㅋㅋ1.4 {item.GetType()}");
             if (item != null && Items.Contains(item))
             {
-                System.Diagnostics.Debug.WriteLine("ㅋㅋ3");
                 Items.Remove(item);
                 ReorderFiles();
             }
-            else
-                System.Diagnostics.Debug.WriteLine("ㅋㅋ4");
+        }
+
+        // 새로 추가: 다중 삭제
+        [RelayCommand]
+        private void DeleteFiles(IEnumerable<PdfItemToMerge> itemsToDelete)
+        {
+            if (itemsToDelete == null)
+                return;
+
+            // 복사본 만들어 안전하게 삭제
+            var list = itemsToDelete.Where(i => i != null).Distinct().ToList();
+            if (list.Count == 0)
+                return;
+
+            foreach (var it in list)
+            {
+                Items.Remove(it);
+            }
+            ReorderFiles();
         }
 
         [RelayCommand]
@@ -94,7 +104,7 @@ namespace Pascal.ViewModels
                 var file = await filePickerService.PickSavePdfFileAsync();
                 if (file != null)
                 {
-                    // TODO: 여기에 실제 병합 및 저장 로직 구현
+                    // TODO: 병합 저장
                 }
             }
             finally

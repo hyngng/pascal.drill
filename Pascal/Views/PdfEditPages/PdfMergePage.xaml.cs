@@ -43,16 +43,38 @@ namespace Pascal.Views.PdfEditPages
 
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
-            System.Diagnostics.Debug.WriteLine($"ㅋㅋ2.4 {sender.GetType()}");
-
             var menuFlyout = sender as MenuFlyout;
             if (menuFlyout?.Target is ListViewItem lvi)
             {
                 var item = lvi.Content as PdfItemToMerge;
-                foreach (var mi in menuFlyout.Items.OfType<MenuFlyoutItem>())
+
+                // 삭제 메뉴 찾기 (Tag 기반)
+                var deleteItem = menuFlyout.Items
+                    .OfType<MenuFlyoutItem>()
+                    .FirstOrDefault(mi => (mi.Tag as string) == "DeleteMenu");
+
+                if (deleteItem == null)
+                    return;
+
+                // 현재 ListView (x:Name=PdfListView) 기준 선택 상태 확인
+                int selectedCount = PdfListView.SelectedItems?.Count ?? 0;
+
+                if (selectedCount > 1)
                 {
-                    if (mi.Command == ViewModel.DeleteFileCommand)
-                        mi.CommandParameter = item;
+                    // 다중 삭제 모드
+                    deleteItem.Text = $"선택 항목 삭제 ({selectedCount})";
+                    deleteItem.Command = ViewModel.DeleteFilesCommand;
+                    // SelectedItems는 IList -> Linq ToList()로 PdfItemToMerge 형식 리스트 변환
+                    deleteItem.CommandParameter = PdfListView.SelectedItems
+                        .OfType<PdfItemToMerge>()
+                        .ToList();
+                }
+                else
+                {
+                    // 단일 삭제 모드
+                    deleteItem.Text = "삭제";
+                    deleteItem.Command = ViewModel.DeleteFileCommand;
+                    deleteItem.CommandParameter = item;
                 }
             }
         }

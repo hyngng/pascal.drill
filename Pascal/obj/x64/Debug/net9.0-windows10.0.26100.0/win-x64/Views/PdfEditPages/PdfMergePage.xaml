@@ -83,6 +83,7 @@
                                                                                        />
                                             <MenuFlyoutSeparator/>
                                             <MenuFlyoutItem x:ConnectionId='6' Text="삭제"
+                                                            Tag="DeleteMenu"
                                                             Icon="Delete"
                                                                                                           
                                                             CommandParameter="{Binding}" />

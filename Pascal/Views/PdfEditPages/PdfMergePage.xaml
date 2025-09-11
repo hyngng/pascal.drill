@@ -83,6 +83,7 @@
                                                             Click="OpenMenuItem_Click" />
                                             <MenuFlyoutSeparator/>
                                             <MenuFlyoutItem Text="삭제"
+                                                            Tag="DeleteMenu"
                                                             Icon="Delete"
                                                             Command="{x:Bind ViewModel.DeleteFileCommand}"
                                                             CommandParameter="{Binding}" />
