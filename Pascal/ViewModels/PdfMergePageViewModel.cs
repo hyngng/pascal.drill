@@ -41,7 +41,7 @@ namespace Pascal.ViewModels
                         var properties = await file.GetBasicPropertiesAsync();
                         var newItem = new PdfItemToMerge
                         {
-                            FileOrder = baseCount + i + 1, // 1부터 시작하는 순번 부여
+                            FileOrder = baseCount + i + 1,
                             FileName  = file.Name,
                             FileSize  = $"{properties.Size / 1024:N0} KB",
                             PageCount = 100, // TODO: 실제 페이지 수 로직
@@ -69,6 +69,19 @@ namespace Pascal.ViewModels
             {
                 IsBusy = false;
             }
+        }
+
+        [RelayCommand]
+        private void DeleteFile(PdfItemToMerge item)
+        {
+            if (item != null && Items.Contains(item))
+            {
+                System.Diagnostics.Debug.WriteLine("ㅋㅋ3");
+                Items.Remove(item);
+                ReorderFiles();
+            }
+            else
+                System.Diagnostics.Debug.WriteLine("ㅋㅋ4");
         }
 
         [RelayCommand]

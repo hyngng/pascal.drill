@@ -56,26 +56,39 @@
                                   Icon="Add" Label="불러오기"
                                   Command="{x:Bind ViewModel.PickFilesCommand}"
                                   IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
-                    <AppBarButton  x:Name="SaveAMergedPdfFileButton"
+                    <AppBarButton x:Name="SaveAMergedPdfFileButton"
                                   Icon="Save" Label="저장하기"
                                   Command="{x:Bind ViewModel.SaveFileCommand}"
                                   IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
                 </CommandBar>
 
                 <Border Style="{ThemeResource InfoBorderPanelStyle}" Padding="16,16,16,16">
-                    <ListView x:Name="ListViewRight"
-                              ItemsSource="{x:Bind ViewModel.Items}"
+                    <ListView x:Name="PdfListView"
+                              ItemsSource="{x:Bind ViewModel.Items, Mode=OneWay}"
                               CanReorderItems="True"
                               AllowDrop="True"
                               CanDragItems="True"
                               SelectionMode="Extended"
                               DragItemsCompleted="ListView_OnDragCompleted">
 
-                        <!-- 코드리뷰 필요 -->
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                                 <Setter Property="Padding" Value="0"/>
+                                <Setter Property="ContextFlyout">
+                                    <Setter.Value>
+                                        <MenuFlyout Opening="ItemMenuFlyout_Opening">
+                                            <MenuFlyoutItem Text="열기" 
+                                                            Icon="OpenFile"
+                                                            Click="OpenMenuItem_Click" />
+                                            <MenuFlyoutSeparator/>
+                                            <MenuFlyoutItem Text="삭제"
+                                                            Icon="Delete"
+                                                            Command="{x:Bind ViewModel.DeleteFileCommand}"
+                                                            CommandParameter="{Binding}" />
+                                        </MenuFlyout>
+                                    </Setter.Value>
+                                </Setter>
                             </Style>
                         </ListView.ItemContainerStyle>
 
@@ -98,8 +111,6 @@
                                            Text="페이지 수" />
                             </Grid>
                         </ListView.Header>
-
-                        <!--<dev:Divider />-->
 
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="models:PdfItemToMerge">
@@ -125,83 +136,11 @@
                                                Text="{x:Bind PageCount, Mode=OneWay}"
                                                VerticalAlignment="Center"
                                                TextTrimming="CharacterEllipsis" />
-
-                                    <!--<AppBarButton x:Name="PickPdfFilesButton" Icon="More"
-                                                  IsCompact="True" Grid.Column="3">
-                                        <Button.Flyout>
-                                            <MenuFlyout>
-                                                <MenuFlyoutItem Text="Share">
-                                                    <MenuFlyoutItem.Icon>
-                                                        <FontIcon Glyph="&#xE72D;"/>
-                                                    </MenuFlyoutItem.Icon>
-                                                    <MenuFlyoutItem.KeyboardAccelerators>
-                                                        <KeyboardAccelerator Key="S" Modifiers="Control"/>
-                                                    </MenuFlyoutItem.KeyboardAccelerators>
-                                                </MenuFlyoutItem>
-                                                <MenuFlyoutItem Text="Copy" Icon="Copy">
-                                                    <MenuFlyoutItem.KeyboardAccelerators>
-                                                        <KeyboardAccelerator Key="C" Modifiers="Control"/>
-                                                    </MenuFlyoutItem.KeyboardAccelerators>
-                                                </MenuFlyoutItem>
-                                                <MenuFlyoutItem Text="Delete" Icon="Delete">
-                                                    <MenuFlyoutItem.KeyboardAccelerators>
-                                                        <KeyboardAccelerator Key="Delete" />
-                                                    </MenuFlyoutItem.KeyboardAccelerators>
-                                                </MenuFlyoutItem>
-                                                <MenuFlyoutSeparator/>
-                                                <MenuFlyoutItem Text="Rename"/>
-                                                <MenuFlyoutItem Text="Select"/>
-                                            </MenuFlyout>
-                                        </Button.Flyout>
-                                    </AppBarButton>-->
-
-                                    <!--<toolkit:TokenView IsWrapped=""
-                                                        CanRemoveTokens="False"
-                                                        SelectedIndex="2"
-                                                        SelectionMode="False">
-                                        <toolkit:TokenItem Content="All" />
-
-                                        <toolkit:TokenItem Content="Apps">
-                                            <toolkit:TokenItem.Icon>
-                                                <FontIcon Glyph="&#xECAA;" />
-                                            </toolkit:TokenItem.Icon>
-                                        </toolkit:TokenItem>
-                                    </toolkit:TokenView>-->
-
-                                    <!--<Grid Grid.Column="2" ColumnDefinitions="Auto,Auto" Margin="0,0,12,0">-->
-
-                                    <!--<toolkit:RangeSelector Grid.Column="2" Margin="0,0,12,0"
-                                                           Width="220"
-                                                           VerticalAlignment="Center"
-                                                           Minimum="0"
-                                                           Maximum="{x:Bind PageCount}"
-                                                           RangeStart="{x:Bind RangeStart, Mode=TwoWay}"
-                                                           RangeEnd="{x:Bind RangeEnd, Mode=TwoWay}"
-                                                           ThumbDragStarted="Selector_OnDragStarted"
-                                                           ThumbDragCompleted="Selector_OnDragCompleted"/>-->
-
-                                    <!--<TextBox Grid.Column="1" Margin="0,0,12,0" PlaceholderText="직접 입력" />-->
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
                 </Border>
-
-                    <!--<Grid Height="1000" Margin="{ThemeResource PageContentMargin}" Padding="{ThemeResource PageContentPadding}">
-                    <WebView2 x:Name="PdfWebView2"
-                              Source="https://learn.microsoft.com/windows/apps/winui/winui3/"
-                              HorizontalAlignment="Stretch"
-                              VerticalAlignment="Stretch"
-                              MinHeight="1000" MinWidth="600"
-                              Visibility="Collapsed" />
-
-                    <dev:Shimmer x:Name="LoadingShimmer"
-                                 HorizontalAlignment="Stretch"
-                                 VerticalAlignment="Stretch"
-                                 Canvas.ZIndex="1"
-                                 IsHitTestVisible="False"/>
-                </Grid>-->
-
             </StackPanel>
         </ScrollView>
     </Grid>
