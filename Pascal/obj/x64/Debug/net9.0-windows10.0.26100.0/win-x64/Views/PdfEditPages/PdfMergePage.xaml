@@ -85,7 +85,6 @@
                                     <ColumnDefinition Width="30" />
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="70" />
-                                    <ColumnDefinition Width="60" />
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Grid.Column="0"
@@ -109,7 +108,6 @@
                                         <ColumnDefinition Width="30"/>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="70"/>
-                                        <ColumnDefinition Width="60" />
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock x:ConnectionId='6' Grid.Column="0"
