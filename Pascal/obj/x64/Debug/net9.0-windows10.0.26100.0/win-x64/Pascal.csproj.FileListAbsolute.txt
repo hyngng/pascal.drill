@@ -1178,3 +1178,11 @@ D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x6
 D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\qualifiers.txt
 D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\qualifiers.txt.intermediate
 D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\MultipleQualifiersPerDimensionFound.txt
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\FakeWindowsUpdateSimulationPage.g.i.cs
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\FakeWindowsUpdateSimulationPage.g.cs
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\FakeWindowsUpdateSimulationPage.xaml
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\FakeWindowsUpdateSimulationPage.xbf
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\WindowsUpdateSimulationPage.g.i.cs
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\WindowsUpdateSimulationPage.g.cs
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\WindowsUpdateSimulationPage.xaml
+D:\develop\Drill.DevWinUI\Pascal\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Views\SubPages\WindowsUpdateSimulationPage.xbf

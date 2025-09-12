@@ -19,6 +19,9 @@
     <None Update="Themes\Styles.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Views\SubPages\WindowsUpdateSimulationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\FakeWindowsUpdatePage.xaml">
       <SubType>Designer</SubType>
     </Page>

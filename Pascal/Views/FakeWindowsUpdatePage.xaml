@@ -9,10 +9,12 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock Text="이 기능은 곧 제공될 예정입니다."
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="24"
-                   FontWeight="Bold"/>
+        <Button Click="ShowFakeWindowsUpdate">
+            <TextBlock Text="이 기능은 곧 제공될 예정입니다."
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="24"
+                       FontWeight="Bold"/>
+        </Button>
     </Grid>
 </Page>

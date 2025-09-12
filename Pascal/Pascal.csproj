@@ -47,6 +47,9 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BreadcrumbPageMappings.cs</LastGenOutput>
     </None>
+    <Page Update="Views\SubPages\WindowsUpdateSimulationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\FakeWindowsUpdatePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

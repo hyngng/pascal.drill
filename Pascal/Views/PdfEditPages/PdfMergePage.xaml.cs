@@ -44,62 +44,50 @@ namespace Pascal.Views.PdfEditPages
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
             var menuFlyout = sender as MenuFlyout;
-            if (menuFlyout?.Target is ListViewItem lvi)
+            if (menuFlyout?.Target is ListViewItem listViewItem)
             {
-                var item = lvi.Content as PdfItemToMerge;
+                var menuFlyOutDeleteItem = menuFlyout.Items
+                                                     .OfType<MenuFlyoutItem>()
+                                                     .FirstOrDefault(mi => (mi.Tag as string) == "DeleteMenu");
 
-                // 삭제 메뉴 찾기 (Tag 기반)
-                var deleteItem = menuFlyout.Items
-                    .OfType<MenuFlyoutItem>()
-                    .FirstOrDefault(mi => (mi.Tag as string) == "DeleteMenu");
-
-                if (deleteItem == null)
+                if (menuFlyOutDeleteItem is null)
                     return;
 
-                // 현재 ListView (x:Name=PdfListView) 기준 선택 상태 확인
-                int selectedCount = PdfListView.SelectedItems?.Count ?? 0;
+                menuFlyOutDeleteItem.Command = null;
+                menuFlyOutDeleteItem.CommandParameter = null;
 
-                if (selectedCount > 1)
-                {
-                    // 다중 삭제 모드
-                    deleteItem.Text = $"선택 항목 삭제 ({selectedCount})";
-                    deleteItem.Command = ViewModel.DeleteFilesCommand;
-                    // SelectedItems는 IList -> Linq ToList()로 PdfItemToMerge 형식 리스트 변환
-                    deleteItem.CommandParameter = PdfListView.SelectedItems
-                        .OfType<PdfItemToMerge>()
-                        .ToList();
-                }
+                var selectedList = PdfListView.SelectedItems?
+                    .OfType<PdfItemToMerge>()
+                    .ToList() ?? new List<PdfItemToMerge>();
+
+                List<PdfItemToMerge> itemsToDelete;
+                if (selectedList.Count > 0)
+                    itemsToDelete = selectedList;
                 else
                 {
-                    // 단일 삭제 모드
-                    deleteItem.Text = "삭제";
-                    deleteItem.Command = ViewModel.DeleteFileCommand;
-                    deleteItem.CommandParameter = item;
+                    var item = listViewItem.Content as PdfItemToMerge;
+                    itemsToDelete = item is not null
+                                  ? new List<PdfItemToMerge> { item }
+                                  : new List<PdfItemToMerge>();
                 }
+                menuFlyOutDeleteItem.CommandParameter = itemsToDelete;
+                menuFlyOutDeleteItem.Command = ViewModel.DeleteFilesCommand;
             }
         }
 
-        private void DeleteMenuItem_Click(object sender, RoutedEventArgs e)
+        private void PdfListView_DeleteInvoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
         {
-            System.Diagnostics.Debug.WriteLine($"ㅋㅋ2 {sender.GetType()}");
+            args.Handled = true;
 
-            var menuItem = sender as MenuFlyoutItem;
+            var items = PdfListView.SelectedItems?
+                .OfType<PdfItemToMerge>()
+                .ToList() ?? new List<PdfItemToMerge>();
 
-            if (menuItem?.Parent is MenuFlyout menuFlyout)
-            {
-                if (menuFlyout.Target is FrameworkElement targetItem)
-                {
-                    if (targetItem.DataContext is PdfItemToMerge itemToDelete)
-                    {
-                        if (ViewModel.DeleteFileCommand.CanExecute(itemToDelete))
-                        {
-                            ViewModel.DeleteFileCommand.Execute(itemToDelete);
-                        }
+            if (items.Count == 0 && PdfListView.SelectedItem is PdfItemToMerge single)
+                items.Add(single);
 
-                        return;
-                    }
-                }
-            }
+            if (items.Count > 0)
+                ViewModel.DeleteFilesCommand.Execute(items);
         }
 
         private void ListView_OnDragCompleted(ListViewBase sender, DragItemsCompletedEventArgs e)

@@ -67,31 +67,18 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private void DeleteFile(PdfItemToMerge item)
-        {
-            if (item != null && Items.Contains(item))
-            {
-                Items.Remove(item);
-                ReorderFiles();
-            }
-        }
-
-        // 새로 추가: 다중 삭제
-        [RelayCommand]
         private void DeleteFiles(IEnumerable<PdfItemToMerge> itemsToDelete)
         {
             if (itemsToDelete == null)
                 return;
 
-            // 복사본 만들어 안전하게 삭제
             var list = itemsToDelete.Where(i => i != null).Distinct().ToList();
             if (list.Count == 0)
                 return;
 
             foreach (var it in list)
-            {
                 Items.Remove(it);
-            }
+
             ReorderFiles();
         }
 

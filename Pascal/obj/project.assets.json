@@ -5423,23 +5423,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kiw60\\.nuget\\packages\\": {},
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kiw60\\Desktop\\Drill.Pascal\\Drill\\Pascal\\Pascal.csproj",
+      "projectUniqueName": "D:\\develop\\Drill.DevWinUI\\Pascal\\Pascal.csproj",
       "projectName": "Pascal",
-      "projectPath": "C:\\Users\\kiw60\\Desktop\\Drill.Pascal\\Drill\\Pascal\\Pascal.csproj",
-      "packagesPath": "C:\\Users\\kiw60\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kiw60\\Desktop\\Drill.Pascal\\Drill\\Pascal\\obj\\",
+      "projectPath": "D:\\develop\\Drill.DevWinUI\\Pascal\\Pascal.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "D:\\develop\\Drill.DevWinUI\\Pascal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kiw60\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

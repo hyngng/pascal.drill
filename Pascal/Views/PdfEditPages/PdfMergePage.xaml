@@ -70,7 +70,6 @@
                               CanDragItems="True"
                               SelectionMode="Extended"
                               DragItemsCompleted="ListView_OnDragCompleted">
-
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -80,13 +79,15 @@
                                         <MenuFlyout Opening="ItemMenuFlyout_Opening">
                                             <MenuFlyoutItem Text="열기"
                                                             Icon="OpenFile"
-                                                            Click="OpenMenuItem_Click" />
+                                                            Tag="OpenMenu" />
                                             <MenuFlyoutSeparator/>
                                             <MenuFlyoutItem Text="삭제"
-                                                            Tag="DeleteMenu"
                                                             Icon="Delete"
-                                                            Command="{x:Bind ViewModel.DeleteFileCommand}"
-                                                            CommandParameter="{Binding}" />
+                                                            Tag="DeleteMenu">
+                                                <!--<MenuFlyoutItem.KeyboardAccelerators>
+                                                    <KeyboardAccelerator Key="Delete" />
+                                                </MenuFlyoutItem.KeyboardAccelerators>-->
+                                            </MenuFlyoutItem>
                                         </MenuFlyout>
                                     </Setter.Value>
                                 </Setter>
