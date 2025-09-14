@@ -1,4 +1,5 @@
 ﻿using Microsoft.UI.Windowing;
+using Pascal.Views.Pages;
 
 namespace Pascal.Views;
 public sealed partial class MainWindow : Window
@@ -16,11 +17,11 @@ public sealed partial class MainWindow : Window
         if (navService != null)
         {
             navService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-                .ConfigureDefaultPage(typeof(HomeLandingPage))
-                .ConfigureSettingsPage(typeof(SettingsPage))
-                .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
-                .ConfigureTitleBar(AppTitleBar)
-                .ConfigureBreadcrumbBar(BreadCrumbNav, BreadcrumbPageMappings.PageDictionary);
+                      .ConfigureDefaultPage(typeof(HomeLandingPage))
+                      .ConfigureSettingsPage(typeof(SettingsPage))
+                      .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
+                      .ConfigureTitleBar(AppTitleBar)
+                      .ConfigureBreadcrumbBar(BreadCrumbNav, BreadcrumbPageMappings.PageDictionary);
         }
 
         mainPage_Loaded();

@@ -24,7 +24,7 @@ using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.Storage.Provider;
 
-namespace Pascal.Views.PdfEditPages
+namespace Pascal.Views.Pages.PdfEditPages
 {
     public sealed partial class PdfMergePage : Page, IFilePickerService
     {
@@ -36,11 +36,37 @@ namespace Pascal.Views.PdfEditPages
             ViewModel = new PdfMergePageViewModel(this);
         }
 
-        private void OpenMenuItem_Click(object sender, RoutedEventArgs e)
+        #region 파일 선택 및 저장 버튼 관련 로직
+        public async Task<IReadOnlyList<StorageFile>> PickMultiplePdfFilesAsync()
         {
-            // ...
+            var openPicker = new FileOpenPicker();
+            var window = App.MainWindow;
+            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+            WinRT.Interop.InitializeWithWindow.Initialize(openPicker, hWnd);
+
+            openPicker.ViewMode = PickerViewMode.List;
+            openPicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+            openPicker.FileTypeFilter.Add(".pdf");
+
+            return await openPicker.PickMultipleFilesAsync();
         }
 
+        public async Task<StorageFile?> PickSavePdfFileAsync()
+        {
+            var savePicker = new FileSavePicker();
+            var window = App.MainWindow;
+            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+            WinRT.Interop.InitializeWithWindow.Initialize(savePicker, hWnd);
+
+            savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+            savePicker.FileTypeChoices.Add("PDF Document", new List<string>() { ".pdf" });
+            savePicker.SuggestedFileName = ViewModel.PdfItems.FirstOrDefault()?.FileName ?? "merged-document";
+
+            return await savePicker.PickSaveFileAsync();
+        }
+        #endregion
+
+        #region ListView 관련 로직
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
             var menuFlyout = sender as MenuFlyout;
@@ -75,21 +101,6 @@ namespace Pascal.Views.PdfEditPages
             }
         }
 
-        private void PdfListView_DeleteInvoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
-        {
-            args.Handled = true;
-
-            var items = PdfListView.SelectedItems?
-                .OfType<PdfItemToMerge>()
-                .ToList() ?? new List<PdfItemToMerge>();
-
-            if (items.Count == 0 && PdfListView.SelectedItem is PdfItemToMerge single)
-                items.Add(single);
-
-            if (items.Count > 0)
-                ViewModel.DeleteFilesCommand.Execute(items);
-        }
-
         private void ListView_OnDragCompleted(ListViewBase sender, DragItemsCompletedEventArgs e)
         {
             DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, () =>
@@ -97,33 +108,6 @@ namespace Pascal.Views.PdfEditPages
                 ViewModel.ReorderFilesCommand.Execute(null);
             });
         }
-
-        public async Task<IReadOnlyList<StorageFile>> PickMultiplePdfFilesAsync()
-        {
-            var openPicker = new FileOpenPicker();
-            var window = App.MainWindow;
-            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
-            WinRT.Interop.InitializeWithWindow.Initialize(openPicker, hWnd);
-
-            openPicker.ViewMode = PickerViewMode.List;
-            openPicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-            openPicker.FileTypeFilter.Add(".pdf");
-
-            return await openPicker.PickMultipleFilesAsync();
-        }
-
-        public async Task<StorageFile?> PickSavePdfFileAsync()
-        {
-            var savePicker = new FileSavePicker();
-            var window = App.MainWindow;
-            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
-            WinRT.Interop.InitializeWithWindow.Initialize(savePicker, hWnd);
-
-            savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-            savePicker.FileTypeChoices.Add("PDF Document", new List<string>() { ".pdf" });
-            savePicker.SuggestedFileName = "merged-document";
-
-            return await savePicker.PickSaveFileAsync();
-        }
+        #endregion
     }
 }

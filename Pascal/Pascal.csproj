@@ -47,16 +47,10 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BreadcrumbPageMappings.cs</LastGenOutput>
     </None>
-    <Page Update="Views\SubPages\WindowsUpdateSimulationPage.xaml">
+    <Page Update="Views\SubPages\WindowsUpdateWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Views\FakeWindowsUpdatePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Update="Views\PdfEditPages\PdfMergePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Update="Views\PdfEditPages\PdfSplitPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Views\PdfSplitPage.xaml">
@@ -95,12 +89,11 @@
     <None Remove="Assets\Avatars\gabin.png" />
     <None Remove="Assets\Avatars\thyun.png" />
     <None Remove="ViewModels\SettingsPage.xaml" />
-    <None Remove="Views\CreditPage.xaml" />
     <None Remove="Views\FakeWindowsUpdatePage.xaml" />
     <None Remove="Views\HomeLandingPage.xaml" />
     <None Remove="Views\PdfEditPage.xaml" />
-    <None Remove="Views\PdfEditPages\PdfMergePage.xaml" />
-    <None Remove="Views\PdfEditPages\PdfSplitPage.xaml" />
+    <None Remove="Views\Pages\PdfEditPages\PdfMergePage.xaml" />
+    <None Remove="Views\Pages\PdfEditPages\PdfSplitPage.xaml" />
     <None Remove="Views\PdfMergePage.xaml" />
     <None Remove="Views\PdfSplitPage.xaml" />
     <None Remove="Views\SettingsPage.xaml" />

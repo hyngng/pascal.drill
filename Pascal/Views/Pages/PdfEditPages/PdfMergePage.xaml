@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="Pascal.Views.PdfEditPages.PdfMergePage"
+    x:Class="Pascal.Views.Pages.PdfEditPages.PdfMergePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Pascal.Views.PdfEditPages"
+    xmlns:local="using:Pascal.Views.Pages.PdfEditPages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dev="using:DevWinUI"
     xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
@@ -54,17 +54,19 @@
                 <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
                     <AppBarButton x:Name="PickPdfFilesButton"
                                   Icon="Add" Label="불러오기"
-                                  Command="{x:Bind ViewModel.PickFilesCommand}"
+                                  ToolTipService.ToolTip="PDF 파일을 목록에 추가합니다"
+                                  Command="{x:Bind ViewModel.AddPdfFilesCommand}"
                                   IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
                     <AppBarButton x:Name="SaveAMergedPdfFileButton"
                                   Icon="Save" Label="저장하기"
+                                  ToolTipService.ToolTip="추가된 PDF 파일을 하나로 병합합니다"
                                   Command="{x:Bind ViewModel.SaveFileCommand}"
                                   IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
                 </CommandBar>
 
                 <Border Style="{ThemeResource InfoBorderPanelStyle}" Padding="16,16,16,16">
                     <ListView x:Name="PdfListView"
-                              ItemsSource="{x:Bind ViewModel.Items, Mode=OneWay}"
+                              ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
                               CanReorderItems="True"
                               AllowDrop="True"
                               CanDragItems="True"

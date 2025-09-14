@@ -1,9 +1,10 @@
 App.xbf
 MainWindow.xbf
 Themes\Styles.xbf
-Views\CreditPage.xbf
-Views\FakeWindowsUpdatePage.xbf
-Views\HomeLandingPage.xbf
-Views\PdfEditPages\PdfMergePage.xbf
-Views\PdfEditPages\PdfSplitPage.xbf
-Views\SettingsPage.xbf
+Views\Pages\CreditPage.xbf
+Views\Pages\HomeLandingPage.xbf
+Views\Pages\PdfEditPages\PdfMergePage.xbf
+Views\Pages\PdfEditPages\PdfSplitPage.xbf
+Views\Pages\SettingsPage.xbf
+Views\Pages\WindowsUpdatePage.xbf
+Views\Windows\WindowsUpdateWindow.xbf

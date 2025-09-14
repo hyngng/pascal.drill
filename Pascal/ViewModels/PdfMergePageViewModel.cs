@@ -15,7 +15,7 @@ namespace Pascal.ViewModels
         private readonly IFilePickerService filePickerService;
 
         [ObservableProperty]
-        private ObservableCollection<PdfItemToMerge> items = new();
+        private ObservableCollection<PdfItemToMerge> pdfItems = new();
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
@@ -29,7 +29,7 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private async Task PickFilesAsync()
+        private async Task AddPdfFilesAsync()
         {
             IsBusy = true;
             try
@@ -37,7 +37,7 @@ namespace Pascal.ViewModels
                 var files = await filePickerService.PickMultiplePdfFilesAsync();
                 if (files != null && files.Count > 0)
                 {
-                    int baseCount = Items.Count;
+                    int baseCount = pdfItems.Count;
                     for (int i = 0; i < files.Count; i++)
                     {
                         var file = files[i];
@@ -49,7 +49,7 @@ namespace Pascal.ViewModels
                             FileSize = $"{properties.Size / 1024:N0} KB",
                             PageCount = 100, // TODO: 실제 페이지 수
                         };
-                        Items.Add(newItem);
+                        pdfItems.Add(newItem);
                     }
                 }
             }
@@ -62,22 +62,22 @@ namespace Pascal.ViewModels
         [RelayCommand]
         private void ReorderFiles()
         {
-            for (int i = 0; i < Items.Count; i++)
-                Items[i].FileOrder = i + 1;
+            for (int i = 0; i < pdfItems.Count; i++)
+                pdfItems[i].FileOrder = i + 1;
         }
 
         [RelayCommand]
-        private void DeleteFiles(IEnumerable<PdfItemToMerge> itemsToDelete)
+        private void DeleteFiles(IEnumerable<PdfItemToMerge> pdfItemsToDelete)
         {
-            if (itemsToDelete == null)
+            if (pdfItemsToDelete == null)
                 return;
 
-            var list = itemsToDelete.Where(i => i != null).Distinct().ToList();
+            var list = pdfItemsToDelete.Where(i => i != null).Distinct().ToList();
             if (list.Count == 0)
                 return;
 
             foreach (var it in list)
-                Items.Remove(it);
+                pdfItems.Remove(it);
 
             ReorderFiles();
         }

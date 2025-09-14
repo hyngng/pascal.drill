@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="Pascal.Views.SettingsPage"
+    x:Class="Pascal.Views.Pages.SettingsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Pascal.Views"
+    xmlns:local="using:Pascal.Views.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dev="using:DevWinUI"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -22,21 +22,21 @@
         </Style>
     </Page.Resources>
 
-    <Grid x:ConnectionId='2' x:Name="RootGrid" MaxWidth="1064">
+    <Grid x:Name="RootGrid" MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
-            <TextBlock x:ConnectionId='6' x:Name="PageHeader"
+            <TextBlock x:Name="PageHeader"
                         Margin="{ThemeResource PageHeaderMargin}"
                         Padding="{ThemeResource PageHeaderPadding}"
                         Style="{StaticResource TitleTextBlockStyle}"
                         AutomationProperties.HeadingLevel="Level1"
                         Text="설정" />
 
-            <TextBlock x:ConnectionId='7' x:Name="PageDescription"
+            <TextBlock x:Name="PageDescription"
                        Margin="{ThemeResource PageDescriptionMargin}"
                        Padding="{ThemeResource PageDescriptionPadding}"
                        Style="{StaticResource CaptionTextBlockStyle}"
@@ -58,7 +58,7 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE790;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <ComboBox x:ConnectionId='5' x:Name="themeMode"                                              >
+                    <ComboBox x:Name="themeMode" SelectionChanged="themeMode_SelectionChanged">
                         <ComboBoxItem Content="밝게" Tag="Light" />
                         <ComboBoxItem Content="어둡게" Tag="Dark" />
                         <ComboBoxItem Content="시스템 설정" Tag="Default" />
@@ -69,7 +69,7 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xf5ef;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <ComboBox x:ConnectionId='4' x:Name="backdropMode"                                             >
+                    <ComboBox x:Name="backdropMode" SelectionChanged="backdrop_SelectionChanged">
                         <ComboBoxItem Content="없음" Tag="None" />
                         <ComboBoxItem Content="기본 마이카" Tag="Mica" />
                         <ComboBoxItem Content="강한 마이카" Tag="MicaAlt" />
@@ -84,11 +84,10 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xf196;" />
                     </dev:SettingsCard.HeaderIcon>
-                    <ToggleSwitch x:ConnectionId='3' x:Name="labsToggleSwitch"                                    />
+                    <ToggleSwitch x:Name="labsToggleSwitch" Toggled="labsToggleSwitch_Toggled" />
                 </dev:SettingsCard>
 
             </StackPanel>
         </ScrollView>
     </Grid>
 </Page>
-

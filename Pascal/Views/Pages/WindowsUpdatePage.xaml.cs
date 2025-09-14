@@ -17,21 +17,21 @@ using Windows.Foundation.Collections;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Pascal.Views
+namespace Pascal.Views.Pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FakeWindowsUpdatePage : Page
+    public sealed partial class WindowsUpdatePage : Page
     {
-        public FakeWindowsUpdatePage()
+        public WindowsUpdatePage()
         {
             InitializeComponent();
         }
 
-        private void ShowFakeWindowsUpdate()
+        private void ActivateWindowsUpdateWindow(object sender, RoutedEventArgs e)
         {
-            FakeWindowsUpdateSimulationPage window = new FakeWindowsUpdateSimulationPage();
+            WindowsUpdateWindow window = new WindowsUpdateWindow();
             window.Activate();
         }
     }

@@ -15,10 +15,10 @@ public partial class NavigationPageMappings
 {
     public static Dictionary<string, Type> PageDictionary { get; } = new Dictionary<string, Type>
     {
-        {"Pascal.Views.HomeLandingPage", typeof(Pascal.Views.HomeLandingPage)},
-        {"Pascal.Views.PdfEditPages.PdfMergePage", typeof(Pascal.Views.PdfEditPages.PdfMergePage)},
-        {"Pascal.Views.PdfEditPages.PdfSplitPage", typeof(Pascal.Views.PdfEditPages.PdfSplitPage)},
-        {"Pascal.Views.FakeWindowsUpdatePage", typeof(Pascal.Views.FakeWindowsUpdatePage)},
-        {"Pascal.Views.CreditPage", typeof(Pascal.Views.CreditPage)},
+        {"Pascal.Views.Pages.HomeLandingPage", typeof(Pascal.Views.Pages.HomeLandingPage)},
+        {"Pascal.Views.Pages.PdfEditPages.PdfMergePage", typeof(Pascal.Views.Pages.PdfEditPages.PdfMergePage)},
+        {"Pascal.Views.Pages.PdfEditPages.PdfSplitPage", typeof(Pascal.Views.Pages.PdfEditPages.PdfSplitPage)},
+        {"Pascal.Views.Pages.WindowsUpdatePage", typeof(Pascal.Views.Pages.WindowsUpdatePage)},
+        {"Pascal.Views.Pages.CreditPage", typeof(Pascal.Views.Pages.CreditPage)},
     };
 }

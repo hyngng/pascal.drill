@@ -22,9 +22,9 @@ namespace Pascal.Views.SubPages;
 /// <summary>
 /// An empty page that can be used on its own or navigated to within a Frame.
 /// </summary>
-public sealed partial class WindowsUpdateSimulationPage : Window
+public sealed partial class WindowsUpdateWindow : Window
 {
-    public WindowsUpdateSimulationPage()
+    public WindowsUpdateWindow()
     {
         InitializeComponent();
 
