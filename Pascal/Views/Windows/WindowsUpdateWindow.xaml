@@ -12,6 +12,9 @@
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Spacing="8">
+            <Image Source="ms-appx:///Assets/Windows-loading-cargando.gif"
+                   HorizontalAlignment="Center"
+                   Stretch="None"/>
             <TextBlock Text="This window is running in Fullscreen mode"
                        Style="{ThemeResource TitleTextBlockStyle}"
                        TextAlignment="Center" />
