@@ -7,7 +7,7 @@ namespace Pascal.Services.LabsService;
 public partial class LabsService : ILabsService
 {
     private readonly string ConfigFilePath = "CoreAppConfigV9.0.0.json";
-    private string userDefinedFileName = null;
+    private string? userDefinedFileName = null;
     private bool useAutoSave = true;
     private bool isLabsEnabled;
 
