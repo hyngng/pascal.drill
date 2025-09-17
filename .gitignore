@@ -1,4 +1,4 @@
 .vs
 .editorconfig
-Pascal/bin
-Pascal/obj
+Pascal/bin/
+Pascal/obj/
