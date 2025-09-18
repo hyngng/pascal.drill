@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace Pascal.Services
+namespace Pascal.Services.FilePickerService
 {
     public interface IFilePickerService
     {

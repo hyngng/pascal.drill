@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
+using Pascal.Services.FilePickerService;
 using Pascal.Services.LabsService;
 using System;
 
@@ -14,6 +15,7 @@ public partial class App : Application
     public IJsonNavigationService NavService => GetService<IJsonNavigationService>();
     public IThemeService ThemeService => GetService<IThemeService>();
     public ILabsService LabsService => GetService<ILabsService>();
+    public IFilePickerService FilePickerService => GetService<IFilePickerService>();
 
 
     public static T GetService<T>() where T : class
@@ -44,6 +46,7 @@ public partial class App : Application
         services.AddSingleton<ILabsService, LabsService>();
         services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
         services.AddTransient<MainViewModel>();
+        services.AddTransient<IFilePickerService, FilePickerService>();
 
         return services.BuildServiceProvider();
     }

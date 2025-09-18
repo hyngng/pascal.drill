@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Pascal.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +15,7 @@ namespace Pascal.Services.PdfService
 
         IDictionary<string, List<int>> PdfPlanDict { get; set; }
 
-        void MergePdf();
+        void MergePdf(Stream stream, ObservableCollection<PdfItemToMerge> pdfItems);
         void SplitPdf();
     }
 }

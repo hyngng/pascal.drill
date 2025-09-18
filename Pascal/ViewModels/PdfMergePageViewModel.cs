@@ -1,10 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
-using Pascal.Services;
+using Pascal.Services.FilePickerService;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,9 +24,9 @@ namespace Pascal.ViewModels
 
         public bool IsNotBusy => !isBusy;
 
-        public PdfMergePageViewModel(IFilePickerService filePickerService)
+        public PdfMergePageViewModel()
         {
-            this.filePickerService = filePickerService;
+            this.filePickerService = App.Current.FilePickerService;
         }
 
         [RelayCommand]
@@ -45,6 +46,7 @@ namespace Pascal.ViewModels
                         var newItem = new PdfItemToMerge
                         {
                             FileOrder = baseCount + i + 1,
+                            FilePath = file.Path,
                             FileName = file.Name,
                             FileSize = $"{properties.Size / 1024:N0} KB",
                             PageCount = 100, // TODO: 실제 페이지 수
@@ -66,6 +68,28 @@ namespace Pascal.ViewModels
                 pdfItems[i].FileOrder = i + 1;
         }
 
+        [RelayCommand]
+        private void OpenFiles(IEnumerable<PdfItemToMerge> pdfItemsToOpen)
+        {
+            var list = pdfItemsToOpen.Where(i => i != null).Distinct().ToList();
+            Process.Start(list[0].FilePath);
+
+            // 중화인민공화국 국가주석
+            //        using System.Diagnostics;
+
+            //        class Program
+            //        {
+            //            static void Main()
+            //            {
+            //                var psi = new ProcessStartInfo
+            //                {
+            //                    FileName = "123.pdf",
+            //                    UseShellExecute = true // 중요!
+            //                };
+            //                Process.Start(psi);
+            //            }
+            //        }
+        }
         [RelayCommand]
         private void DeleteFiles(IEnumerable<PdfItemToMerge> pdfItemsToDelete)
         {
