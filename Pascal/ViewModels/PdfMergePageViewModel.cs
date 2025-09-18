@@ -1,7 +1,8 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
 using Pascal.Services.FilePickerService;
+using Pascal.Services.PdfService;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -72,24 +73,14 @@ namespace Pascal.ViewModels
         private void OpenFiles(IEnumerable<PdfItemToMerge> pdfItemsToOpen)
         {
             var list = pdfItemsToOpen.Where(i => i != null).Distinct().ToList();
-            Process.Start(list[0].FilePath);
-
-            // 중화인민공화국 국가주석
-            //        using System.Diagnostics;
-
-            //        class Program
-            //        {
-            //            static void Main()
-            //            {
-            //                var psi = new ProcessStartInfo
-            //                {
-            //                    FileName = "123.pdf",
-            //                    UseShellExecute = true // 중요!
-            //                };
-            //                Process.Start(psi);
-            //            }
-            //        }
+            var psi = new ProcessStartInfo
+            {
+                FileName = list[0].FilePath,
+                UseShellExecute = true
+            };
+            Process.Start(psi);
         }
+
         [RelayCommand]
         private void DeleteFiles(IEnumerable<PdfItemToMerge> pdfItemsToDelete)
         {
@@ -116,6 +107,8 @@ namespace Pascal.ViewModels
                 if (file != null)
                 {
                     // TODO: 병합 저장
+                    PdfService pdfMerger = new();
+                    pdfMerger.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
                 }
             }
             finally

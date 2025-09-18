@@ -1,4 +1,4 @@
-﻿using Pascal.Models;
+using Pascal.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,8 +12,6 @@ namespace Pascal.Services.PdfService
     {
         // 가빈씨 짱
         // PDF 관련 멤버 정의
-
-        IDictionary<string, List<int>> PdfPlanDict { get; set; }
 
         void MergePdf(Stream stream, ObservableCollection<PdfItemToMerge> pdfItems);
         void SplitPdf();
