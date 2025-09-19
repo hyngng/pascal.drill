@@ -19,7 +19,7 @@ namespace Pascal.Services.PdfService
             foreach (var pdfItem in pdfItems)
             {
                 string inputFilePath = pdfItem.FilePath;
-                List<int> pagesToExtract = new List<int> { 0, 1, 2 }; // 예시: 첫 3페이지만 추출
+                List<int> pagesToExtract = new List<int> { }; // 예시: 첫 3페이지만 추출
                 PdfDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
                 if (pagesToExtract.Count == 0)
                 {

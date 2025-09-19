@@ -15,6 +15,7 @@ namespace Pascal.ViewModels
     public partial class PdfMergePageViewModel : ObservableObject
     {
         private readonly IFilePickerService filePickerService;
+        private readonly IPdfService pdfService;
 
         [ObservableProperty]
         private ObservableCollection<PdfItemToMerge> pdfItems = new();
@@ -28,6 +29,7 @@ namespace Pascal.ViewModels
         public PdfMergePageViewModel()
         {
             this.filePickerService = App.Current.FilePickerService;
+            this.pdfService = App.Current.PdfService;
         }
 
         [RelayCommand]
@@ -107,8 +109,7 @@ namespace Pascal.ViewModels
                 if (file != null)
                 {
                     // TODO: 병합 저장
-                    PdfService pdfMerger = new();
-                    pdfMerger.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                    pdfService.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
                 }
             }
             finally
