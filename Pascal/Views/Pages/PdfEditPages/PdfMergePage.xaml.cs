@@ -7,6 +7,7 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using Pascal.Models;
 using Pascal.Services;
+using Pascal.Services.FilePickerService;
 using Pascal.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,7 @@ namespace Pascal.Views.Pages.PdfEditPages
         public PdfMergePage()
         {
             this.InitializeComponent();
-            ViewModel = new PdfMergePageViewModel(this);
+            ViewModel = new PdfMergePageViewModel();
         }
 
         #region 파일 선택 및 저장 버튼 관련 로직
@@ -72,6 +73,9 @@ namespace Pascal.Views.Pages.PdfEditPages
             var menuFlyout = sender as MenuFlyout;
             if (menuFlyout?.Target is ListViewItem listViewItem)
             {
+                var menuFlyOutOpenItem = menuFlyout.Items
+                                                     .OfType<MenuFlyoutItem>()
+                                                     .FirstOrDefault(mi => (mi.Tag as string) == "OpenMenu");
                 var menuFlyOutDeleteItem = menuFlyout.Items
                                                      .OfType<MenuFlyoutItem>()
                                                      .FirstOrDefault(mi => (mi.Tag as string) == "DeleteMenu");
@@ -79,24 +83,37 @@ namespace Pascal.Views.Pages.PdfEditPages
                 if (menuFlyOutDeleteItem is null)
                     return;
 
+                menuFlyOutOpenItem.Command = null;
+                menuFlyOutOpenItem.CommandParameter = null;
                 menuFlyOutDeleteItem.Command = null;
                 menuFlyOutDeleteItem.CommandParameter = null;
 
                 var selectedList = PdfListView.SelectedItems?
-                    .OfType<PdfItemToMerge>()
-                    .ToList() ?? new List<PdfItemToMerge>();
+                                   .OfType<PdfItemToMerge>()
+                                   .ToList() ?? new List<PdfItemToMerge>();
 
-                List<PdfItemToMerge> itemsToDelete;
-                if (selectedList.Count > 0)
-                    itemsToDelete = selectedList;
+                List<PdfItemToMerge> selectedItems;
+                if (selectedList.Count > 1)
+                {
+                    OpenMenu.Visibility = Visibility.Collapsed;
+                    FlyoutSeperator.Visibility = Visibility.Collapsed;
+
+                    selectedItems = selectedList;
+                }
                 else
                 {
+                    OpenMenu.Visibility = Visibility.Visible;
+                    FlyoutSeperator.Visibility = Visibility.Visible;
+
                     var item = listViewItem.Content as PdfItemToMerge;
-                    itemsToDelete = item is not null
+                    selectedItems = item is not null
                                   ? new List<PdfItemToMerge> { item }
                                   : new List<PdfItemToMerge>();
                 }
-                menuFlyOutDeleteItem.CommandParameter = itemsToDelete;
+
+                menuFlyOutOpenItem.CommandParameter = selectedItems;
+                menuFlyOutOpenItem.Command = ViewModel.OpenFilesCommand;
+                menuFlyOutDeleteItem.CommandParameter = selectedItems;
                 menuFlyOutDeleteItem.Command = ViewModel.DeleteFilesCommand;
             }
         }
