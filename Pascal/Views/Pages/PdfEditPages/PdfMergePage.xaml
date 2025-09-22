@@ -139,6 +139,7 @@
                                                TextTrimming="CharacterEllipsis" />
 
                                     <TextBox Grid.Column="2"
+                                             Text="{x:Bind PageRange, Mode=TwoWay}"
                                              PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                                 </Grid>
                             </DataTemplate>

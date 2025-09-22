@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using Pascal.Services.FilePickerService;
 using Pascal.Services.LabsService;
 using Pascal.Services.PdfService;
+using Pascal.Services.ParseService;
 using System;
 
 namespace Pascal;
@@ -13,11 +14,12 @@ public partial class App : Application
     public static Window MainWindow = Window.Current;
     public static IntPtr Hwnd => WinRT.Interop.WindowNative.GetWindowHandle(MainWindow);
     public IServiceProvider Services { get; }
-    public IPdfService PdfService => GetService<IPdfService>();
     public IJsonNavigationService NavService => GetService<IJsonNavigationService>();
     public IThemeService ThemeService => GetService<IThemeService>();
     public ILabsService LabsService => GetService<ILabsService>();
     public IFilePickerService FilePickerService => GetService<IFilePickerService>();
+    public IPdfService PdfService => GetService<IPdfService>();
+    public IParseService ParseService => GetService<IParseService>();
 
 
     public static T GetService<T>() where T : class
@@ -46,10 +48,11 @@ public partial class App : Application
 
         services.AddSingleton<IThemeService, ThemeService>();
         services.AddSingleton<ILabsService, LabsService>();
-        services.AddSingleton<IPdfService, PdfService>();
         services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
+        services.AddSingleton<IFilePickerService, FilePickerService>();
+        services.AddSingleton<IPdfService, PdfService>();
+        services.AddSingleton<IParseService, ParseService>();
         services.AddTransient<MainViewModel>();
-        services.AddTransient<IFilePickerService, FilePickerService>();
 
         return services.BuildServiceProvider();
     }

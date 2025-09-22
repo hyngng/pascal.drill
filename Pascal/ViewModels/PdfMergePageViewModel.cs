@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
 using Pascal.Services.FilePickerService;
 using Pascal.Services.PdfService;
+using Pascal.Services.ParseService;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,6 +16,8 @@ namespace Pascal.ViewModels
     public partial class PdfMergePageViewModel : ObservableObject
     {
         private readonly IFilePickerService filePickerService;
+        private readonly IPdfService pdfService;
+        private readonly IParseService parseService;
 
         [ObservableProperty]
         private ObservableCollection<PdfItemToMerge> pdfItems = new();
@@ -28,6 +31,8 @@ namespace Pascal.ViewModels
         public PdfMergePageViewModel()
         {
             this.filePickerService = App.Current.FilePickerService;
+            this.pdfService = App.Current.PdfService;
+            this.parseService = App.Current.ParseService;
         }
 
         [RelayCommand]
@@ -45,7 +50,7 @@ namespace Pascal.ViewModels
                         var file = files[i];
                         var properties = await file.GetBasicPropertiesAsync();
 
-                        var pageCount = App.Current.PdfService.FindPageRanges(file.Path);
+                        var pageCount = pdfService.FindPageRanges(file.Path);
 
                         var newItem = new PdfItemToMerge
                         {
@@ -104,18 +109,22 @@ namespace Pascal.ViewModels
         [RelayCommand]
         private async Task SaveFileAsync()
         {
-            IsBusy = true;
-            try
+            if (pdfItems.Count != 0)
             {
-                var file = await filePickerService.PickSavePdfFileAsync();
-                if (file != null)
+                IsBusy = true;
+                parseService.ParsePageRange(pdfItems);
+                try
                 {
-                    App.Current.PdfService.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                    var file = await filePickerService.PickSavePdfFileAsync();
+                    if (file != null)
+                    {
+                        pdfService.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                    }
                 }
-            }
-            finally
-            {
-                IsBusy = false;
+                finally
+                {
+                    IsBusy = false;
+                }
             }
         }
     }
