@@ -139,7 +139,7 @@
                                                TextTrimming="CharacterEllipsis" />
 
                                     <TextBox Grid.Column="2"
-                                             PlaceholderText="1-100" />
+                                             PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>

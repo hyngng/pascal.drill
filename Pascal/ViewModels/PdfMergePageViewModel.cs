@@ -44,13 +44,17 @@ namespace Pascal.ViewModels
                     {
                         var file = files[i];
                         var properties = await file.GetBasicPropertiesAsync();
+
+                        var pageCount = App.Current.PdfService.FindPageRanges(file.Path);
+
                         var newItem = new PdfItemToMerge
                         {
                             FileOrder = baseCount + i + 1,
                             FilePath = file.Path,
                             FileName = file.Name,
                             FileSize = $"{properties.Size / 1024:N0} KB",
-                            PageCount = 100, // TODO: 실제 페이지 수
+                            PageCount = pageCount,
+                            PagesToExtract = new List<int>()
                         };
                         pdfItems.Add(newItem);
                     }
@@ -63,13 +67,6 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private void ReorderFiles()
-        {
-            for (int i = 0; i < pdfItems.Count; i++)
-                pdfItems[i].FileOrder = i + 1;
-        }
-
-        [RelayCommand]
         private void OpenFiles(IEnumerable<PdfItemToMerge> pdfItemsToOpen)
         {
             var list = pdfItemsToOpen.Where(i => i != null).Distinct().ToList();
@@ -79,6 +76,13 @@ namespace Pascal.ViewModels
                 UseShellExecute = true
             };
             Process.Start(psi);
+        }
+
+        [RelayCommand]
+        private void ReorderFiles()
+        {
+            for (int i = 0; i < pdfItems.Count; i++)
+                pdfItems[i].FileOrder = i + 1;
         }
 
         [RelayCommand]
@@ -106,9 +110,7 @@ namespace Pascal.ViewModels
                 var file = await filePickerService.PickSavePdfFileAsync();
                 if (file != null)
                 {
-                    // TODO: 병합 저장
-                    PdfService pdfMerger = new();
-                    pdfMerger.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                    App.Current.PdfService.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
                 }
             }
             finally

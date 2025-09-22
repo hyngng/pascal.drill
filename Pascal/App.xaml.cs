@@ -2,6 +2,7 @@
 using Microsoft.UI.Xaml;
 using Pascal.Services.FilePickerService;
 using Pascal.Services.LabsService;
+using Pascal.Services.PdfService;
 using System;
 
 namespace Pascal;
@@ -12,6 +13,7 @@ public partial class App : Application
     public static Window MainWindow = Window.Current;
     public static IntPtr Hwnd => WinRT.Interop.WindowNative.GetWindowHandle(MainWindow);
     public IServiceProvider Services { get; }
+    public IPdfService PdfService => GetService<IPdfService>();
     public IJsonNavigationService NavService => GetService<IJsonNavigationService>();
     public IThemeService ThemeService => GetService<IThemeService>();
     public ILabsService LabsService => GetService<ILabsService>();
@@ -44,6 +46,7 @@ public partial class App : Application
 
         services.AddSingleton<IThemeService, ThemeService>();
         services.AddSingleton<ILabsService, LabsService>();
+        services.AddSingleton<IPdfService, PdfService>();
         services.AddSingleton<IJsonNavigationService, JsonNavigationService>();
         services.AddTransient<MainViewModel>();
         services.AddTransient<IFilePickerService, FilePickerService>();
