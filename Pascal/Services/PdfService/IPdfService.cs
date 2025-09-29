@@ -14,6 +14,6 @@ namespace Pascal.Services.PdfService
         // PDF 관련 멤버 정의
         int FindPageRanges(string filePath);
         void MergePdf(Stream stream, ObservableCollection<PdfItemToMerge> pdfItems);
-        void SplitPdf();
+        void SplitPdf(ObservableCollection<PdfItemToMerge> pdfItems);
     }
 }
