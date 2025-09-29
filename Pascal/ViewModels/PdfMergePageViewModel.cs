@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
 using Pascal.Services.FilePickerService;
 using Pascal.Services.PdfService;
+using Pascal.Services.ParseService;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,6 +16,8 @@ namespace Pascal.ViewModels
     public partial class PdfMergePageViewModel : ObservableObject
     {
         private readonly IFilePickerService filePickerService;
+        private readonly IPdfService pdfService;
+        private readonly IParseService parseService;
 
         [ObservableProperty]
         private ObservableCollection<PdfItemToMerge> pdfItems = new();
@@ -28,6 +31,8 @@ namespace Pascal.ViewModels
         public PdfMergePageViewModel()
         {
             this.filePickerService = App.Current.FilePickerService;
+            this.pdfService = App.Current.PdfService;
+            this.parseService = App.Current.ParseService;
         }
 
         [RelayCommand]
@@ -44,13 +49,17 @@ namespace Pascal.ViewModels
                     {
                         var file = files[i];
                         var properties = await file.GetBasicPropertiesAsync();
+
+                        var pageCount = pdfService.FindPageRanges(file.Path);
+
                         var newItem = new PdfItemToMerge
                         {
                             FileOrder = baseCount + i + 1,
                             FilePath = file.Path,
                             FileName = file.Name,
                             FileSize = $"{properties.Size / 1024:N0} KB",
-                            PageCount = 100, // TODO: 실제 페이지 수
+                            PageCount = pageCount,
+                            PagesToExtract = new List<int>()
                         };
                         pdfItems.Add(newItem);
                     }
@@ -63,13 +72,6 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private void ReorderFiles()
-        {
-            for (int i = 0; i < pdfItems.Count; i++)
-                pdfItems[i].FileOrder = i + 1;
-        }
-
-        [RelayCommand]
         private void OpenFiles(IEnumerable<PdfItemToMerge> pdfItemsToOpen)
         {
             var list = pdfItemsToOpen.Where(i => i != null).Distinct().ToList();
@@ -79,6 +81,13 @@ namespace Pascal.ViewModels
                 UseShellExecute = true
             };
             Process.Start(psi);
+        }
+
+        [RelayCommand]
+        private void ReorderFiles()
+        {
+            for (int i = 0; i < pdfItems.Count; i++)
+                pdfItems[i].FileOrder = i + 1;
         }
 
         [RelayCommand]
@@ -100,20 +109,22 @@ namespace Pascal.ViewModels
         [RelayCommand]
         private async Task SaveFileAsync()
         {
-            IsBusy = true;
-            try
+            if (pdfItems.Count != 0)
             {
-                var file = await filePickerService.PickSavePdfFileAsync();
-                if (file != null)
+                IsBusy = true;
+                parseService.ParsePageRange(pdfItems);
+                try
                 {
-                    // TODO: 병합 저장
-                    PdfService pdfMerger = new();
-                    pdfMerger.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                    var file = await filePickerService.PickSavePdfFileAsync();
+                    if (file != null)
+                    {
+                        pdfService.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                    }
                 }
-            }
-            finally
-            {
-                IsBusy = false;
+                finally
+                {
+                    IsBusy = false;
+                }
             }
         }
     }
