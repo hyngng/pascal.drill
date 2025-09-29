@@ -11,22 +11,11 @@
     xmlns:models="using:Pascal.Models"
     mc:Ignorable="d">
 
-    <Page.Resources>
-        <x:Double x:Key="SettingsCardSpacing">4</x:Double>
-
-        <Style x:Key="SettingsSectionHeaderTextBlockStyle"
-           BasedOn="{StaticResource BodyStrongTextBlockStyle}"
-           TargetType="TextBlock">
-            <Style.Setters>
-                <Setter Property="Margin" Value="1,30,0,6" />
-            </Style.Setters>
-        </Style>
-    </Page.Resources>
-
     <Grid x:Name="ContentArea" MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="36" />
         </Grid.RowDefinitions>
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
@@ -43,26 +32,26 @@
                    Style="{StaticResource CaptionTextBlockStyle}"
                    AutomationProperties.HeadingLevel="Level1"
                    Text="여러 PDF 문서를 하나의 파일로 합칠 수 있습니다." />
-        </StackPanel>
 
+            <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right"
+                        Margin="36,0,36,0">
+                <AppBarButton x:Name="PickPdfFilesButton"
+                              Icon="Add" Label="불러오기"
+                              ToolTipService.ToolTip="PDF 파일을 목록에 추가합니다"
+                              Command="{x:Bind ViewModel.AddPdfFilesCommand}"
+                              IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
+                <AppBarButton x:Name="SaveAMergedPdfFileButton"
+                              Icon="Save" Label="저장하기"
+                              ToolTipService.ToolTip="추가된 PDF 파일을 하나로 병합합니다"
+                              Command="{x:Bind ViewModel.SaveFileCommand}"
+                              IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
+            </CommandBar>
+        </StackPanel>
 
         <ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
-                        Margin="{ThemeResource PageContentMargin}"
-                        Padding="{ThemeResource PageContentPadding}">
-
-                <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
-                    <AppBarButton x:Name="PickPdfFilesButton"
-                                  Icon="Add" Label="불러오기"
-                                  ToolTipService.ToolTip="PDF 파일을 목록에 추가합니다"
-                                  Command="{x:Bind ViewModel.AddPdfFilesCommand}"
-                                  IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
-                    <AppBarButton x:Name="SaveAMergedPdfFileButton"
-                                  Icon="Save" Label="저장하기"
-                                  ToolTipService.ToolTip="추가된 PDF 파일을 하나로 병합합니다"
-                                  Command="{x:Bind ViewModel.SaveFileCommand}"
-                                  IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
-                </CommandBar>
+                        Margin="36,0,0,0"
+                        Padding="0,0,36,0">
 
                 <Border Style="{ThemeResource InfoBorderPanelStyle}" Padding="16,16,16,16">
                     <ListView x:Name="PdfListView"
@@ -72,6 +61,27 @@
                               CanDragItems="True"
                               SelectionMode="Extended"
                               DragItemsCompleted="ListView_OnDragCompleted">
+                        
+                        <ListView.Header>
+                            <Grid ColumnSpacing="16" Padding="16,12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0"
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="연번" />
+                                <TextBlock Grid.Column="1"
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="파일명" />
+                                <TextBlock Grid.Column="2"
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="페이지 수" />
+                            </Grid>
+                        </ListView.Header>
+                        
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -97,27 +107,7 @@
                                 </Setter>
                             </Style>
                         </ListView.ItemContainerStyle>
-
-                        <ListView.Header>
-                            <Grid ColumnSpacing="16" Padding="16,12">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="30" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="100" />
-                                </Grid.ColumnDefinitions>
-
-                                <TextBlock Grid.Column="0"
-                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="연번" />
-                                <TextBlock Grid.Column="1"
-                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="파일명" />
-                                <TextBlock Grid.Column="2"
-                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="페이지 수" />
-                            </Grid>
-                        </ListView.Header>
-
+                        
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="models:PdfItemToMerge">
                                 <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
@@ -148,5 +138,6 @@
                 </Border>
             </StackPanel>
         </ScrollView>
+        <Border />
     </Grid>
 </Page>

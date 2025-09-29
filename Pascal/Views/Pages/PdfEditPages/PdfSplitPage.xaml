@@ -9,22 +9,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page.Resources>
-        <x:Double x:Key="SettingsCardSpacing">4</x:Double>
-
-        <Style x:Key="SettingsSectionHeaderTextBlockStyle"
-               BasedOn="{StaticResource BodyStrongTextBlockStyle}"
-               TargetType="TextBlock">
-            <Style.Setters>
-                <Setter Property="Margin" Value="1,30,0,6" />
-            </Style.Setters>
-        </Style>
-    </Page.Resources>
-
     <Grid x:Name="ContentArea" MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="36" />
         </Grid.RowDefinitions>
 
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
@@ -56,8 +45,99 @@
                                   Icon="Save" Label="저장하기"
                                   Click="SaveASplitedPdfFileButton_Click"/>
                 </CommandBar>
-
             </StackPanel>
         </ScrollView>
+
+        <ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
+            <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
+                Margin="36,0,0,0"
+                Padding="0,0,36,0">
+
+                <Border Style="{ThemeResource InfoBorderPanelStyle}" Padding="16,16,16,16">
+                    <ListView x:Name="PdfListView"
+                      ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
+                      CanReorderItems="True"
+                      AllowDrop="True"
+                      CanDragItems="True"
+                      SelectionMode="Extended"
+                      DragItemsCompleted="ListView_OnDragCompleted">
+
+                        <ListView.Header>
+                            <Grid ColumnSpacing="16" Padding="16,12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   Text="연번" />
+                                <TextBlock Grid.Column="1"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   Text="파일명" />
+                                <TextBlock Grid.Column="2"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   Text="페이지 수" />
+                            </Grid>
+                        </ListView.Header>
+
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Padding" Value="0"/>
+                                <Setter Property="ContextFlyout">
+                                    <Setter.Value>
+                                        <MenuFlyout Opening="ItemMenuFlyout_Opening">
+                                            <MenuFlyoutItem x:Name="OpenMenu"
+                                                    Text="열기"
+                                                    Icon="OpenFile"
+                                                    Tag="OpenMenu" />
+                                            <MenuFlyoutSeparator x:Name="FlyoutSeperator"/>
+                                            <MenuFlyoutItem x:Name="DeleteMenu"
+                                                    Text="삭제"
+                                                    Icon="Delete"
+                                                    Tag="DeleteMenu">
+                                                <!--<MenuFlyoutItem.KeyboardAccelerators>
+                                            <KeyboardAccelerator Key="Delete" />
+                                        </MenuFlyoutItem.KeyboardAccelerators>-->
+                                            </MenuFlyoutItem>
+                                        </MenuFlyout>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="models:PdfItemToMerge">
+                                <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="100"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0"
+                                       Text="{x:Bind FileOrder, Mode=OneWay}"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis" />
+
+                                    <TextBlock Grid.Column="1"
+                                       Text="{x:Bind FileName, Mode=OneWay}"
+                                       VerticalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis" />
+
+                                    <TextBox Grid.Column="2"
+                                     Text="{x:Bind PageRange, Mode=TwoWay}"
+                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Border>
+            </StackPanel>
+        </ScrollView>
+        <Border />
     </Grid>
 </Page>
