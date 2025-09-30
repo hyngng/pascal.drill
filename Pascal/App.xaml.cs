@@ -39,7 +39,7 @@ public partial class App : Application
         System.Runtime.ProfileOptimization.SetProfileRoot(Constants.RootDirectoryPath);
         System.Runtime.ProfileOptimization.StartProfile("Startup.Profile");
 
-        InitializeApp();
+        // InitializeApp();
     }
 
     private static IServiceProvider ConfigureServices()
@@ -64,7 +64,7 @@ public partial class App : Application
         MainWindow.Title = MainWindow.AppWindow.Title = ProcessInfoHelper.ProductNameAndVersion;
         MainWindow.AppWindow.SetIcon("Assets/AppIcon.ico");
 
-        ThemeService.AutoInitialize(MainWindow);
+        this.ThemeService.Initialize(MainWindow);
 
         MainWindow.Activate();
     }
