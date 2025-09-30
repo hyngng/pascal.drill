@@ -20,6 +20,8 @@ public partial class LabsService : ILabsService
         {
             if (isLabsEnabled != value)
             {
+                GlobalData.Config.IsLabsEnabled = value;
+                GlobalData.Save();
                 isLabsEnabled = value;
                 LabsChanged?.Invoke(isLabsEnabled);
             }

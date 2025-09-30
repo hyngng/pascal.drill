@@ -6,7 +6,9 @@
     xmlns:local="using:Pascal.Views.Pages.PdfEditPages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dev="using:DevWinUI"
+    xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:Pascal.Models"
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea" MaxWidth="1064">
@@ -16,7 +18,7 @@
             <RowDefinition Height="36" />
         </Grid.RowDefinitions>
 
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
+        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12" Grid.Row="0">
             <TextBlock x:Name="PageHeader"
                        Margin="{ThemeResource PageHeaderMargin}"
                        Padding="{ThemeResource PageHeaderPadding}"
@@ -30,37 +32,32 @@
                        Style="{StaticResource CaptionTextBlockStyle}"
                        AutomationProperties.HeadingLevel="Level1"
                        Text="이곳에서 분할 작업을 수행할 수 있습니다." />
+
+
+            <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right"
+                        Margin="36,0,36,0">
+                <AppBarButton x:Name="PickPdfFilesButton"
+                              Icon="Add" Label="불러오기"
+                              Click="PickPdfFilesButton_Click"/>
+                <AppBarButton x:Name="SaveASplitedPdfFileButton"
+                              Icon="Save" Label="저장하기"
+                              Click="SaveASplitedPdfFileButton_Click"/>
+            </CommandBar>
         </StackPanel>
 
         <ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
-            <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
-                Margin="{ThemeResource PageContentMargin}"
-                Padding="{ThemeResource PageContentPadding}">
-
-                <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right">
-                    <AppBarButton x:Name="PickPdfFilesButton"
-                                  Icon="Add" Label="불러오기"
-                                  Click="PickPdfFilesButton_Click"/>
-                    <AppBarButton x:Name="SaveASplitedPdfFileButton"
-                                  Icon="Save" Label="저장하기"
-                                  Click="SaveASplitedPdfFileButton_Click"/>
-                </CommandBar>
-            </StackPanel>
-        </ScrollView>
-
-        <!--<ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
                 Margin="36,0,0,0"
                 Padding="0,0,36,0">
 
                 <Border Style="{ThemeResource InfoBorderPanelStyle}" Padding="16,16,16,16">
                     <ListView x:Name="PdfListView"
-                      ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
-                      CanReorderItems="True"
-                      AllowDrop="True"
-                      CanDragItems="True"
-                      SelectionMode="Extended"
-                      DragItemsCompleted="ListView_OnDragCompleted">
+                              ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
+                              CanReorderItems="True"
+                              AllowDrop="True"
+                              CanDragItems="True"
+                              SelectionMode="Extended"
+                              DragItemsCompleted="ListView_OnDragCompleted">
 
                         <ListView.Header>
                             <Grid ColumnSpacing="16" Padding="16,12">
@@ -71,14 +68,14 @@
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Grid.Column="0"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="연번" />
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="연번" />
                                 <TextBlock Grid.Column="1"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="파일명" />
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="파일명" />
                                 <TextBlock Grid.Column="2"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="페이지 수" />
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                           Text="페이지 수" />
                             </Grid>
                         </ListView.Header>
 
@@ -98,9 +95,9 @@
                                                     Text="삭제"
                                                     Icon="Delete"
                                                     Tag="DeleteMenu">
-                                                --><!--<MenuFlyoutItem.KeyboardAccelerators>
+                                                <MenuFlyoutItem.KeyboardAccelerators>
                                             <KeyboardAccelerator Key="Delete" />
-                                        </MenuFlyoutItem.KeyboardAccelerators>--><!--
+                                        </MenuFlyoutItem.KeyboardAccelerators>
                                             </MenuFlyoutItem>
                                         </MenuFlyout>
                                     </Setter.Value>
@@ -118,19 +115,19 @@
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Grid.Column="0"
-                                       Text="{x:Bind FileOrder, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
+                                               Text="{x:Bind FileOrder, Mode=OneWay}"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
 
                                     <TextBlock Grid.Column="1"
-                                       Text="{x:Bind FileName, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
+                                               Text="{x:Bind FileName, Mode=OneWay}"
+                                               VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
 
                                     <TextBox Grid.Column="2"
-                                     Text="{x:Bind PageRange, Mode=TwoWay}"
-                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
+                                             Text="{x:Bind PageRange, Mode=TwoWay}"
+                                             PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -138,6 +135,6 @@
                 </Border>
             </StackPanel>
         </ScrollView>
-        <Border />-->
+        <Border Grid.Row="2" />
     </Grid>
 </Page>

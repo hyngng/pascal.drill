@@ -18,7 +18,7 @@
             <RowDefinition Height="36" />
         </Grid.RowDefinitions>
 
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
+        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12" Grid.Row="0">
             <TextBlock x:Name="PageHeader"
                    Margin="{ThemeResource PageHeaderMargin}"
                    Padding="{ThemeResource PageHeaderPadding}"
@@ -138,6 +138,6 @@
                 </Border>
             </StackPanel>
         </ScrollView>
-        <Border />
+        <Border Grid.Row="2" />
     </Grid>
 </Page>

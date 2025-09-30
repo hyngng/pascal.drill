@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Pascal.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,10 +29,27 @@ namespace Pascal.Views.Pages.PdfEditPages
     /// </summary>
     public sealed partial class PdfSplitPage : Page
     {
+        public PdfSplitPageViewModel ViewModel { get; } = new();
+
         public PdfSplitPage()
         {
             InitializeComponent();
         }
+
+        #region ListView 관련 로직
+        private void ItemMenuFlyout_Opening(object sender, object e)
+        {
+            //
+        }
+
+        private void ListView_OnDragCompleted(ListViewBase sender, DragItemsCompletedEventArgs e)
+        {
+            //DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, () =>
+            //{
+            //    ViewModel.ReorderFilesCommand.Execute(null);
+            //});
+        }
+        #endregion
 
         // MVVM 모델에 따라 코드비하인드 대신 뷰모델에 작성하는게 좋을듯?
 

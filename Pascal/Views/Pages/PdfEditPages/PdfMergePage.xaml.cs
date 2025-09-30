@@ -29,12 +29,11 @@ namespace Pascal.Views.Pages.PdfEditPages
 {
     public sealed partial class PdfMergePage : Page, IFilePickerService
     {
-        public PdfMergePageViewModel ViewModel { get; }
+        public PdfMergePageViewModel ViewModel { get; } = new();
 
         public PdfMergePage()
         {
             this.InitializeComponent();
-            ViewModel = new PdfMergePageViewModel();
         }
 
         #region 파일 선택 및 저장 버튼 관련 로직
