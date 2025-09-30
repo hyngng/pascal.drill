@@ -20,7 +20,7 @@ namespace Pascal.ViewModels
         private readonly IParseService parseService;
 
         [ObservableProperty]
-        private ObservableCollection<PdfItemToMerge> pdfItems = new();
+        private ObservableCollection<PdfItem> pdfItems = new();
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
@@ -52,7 +52,7 @@ namespace Pascal.ViewModels
 
                         var pageCount = pdfService.FindPageRanges(file.Path);
 
-                        var newItem = new PdfItemToMerge
+                        var newItem = new PdfItem
                         {
                             FileOrder = baseCount + i + 1,
                             FilePath = file.Path,
@@ -72,7 +72,7 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private void OpenFiles(IEnumerable<PdfItemToMerge> pdfItemsToOpen)
+        private void OpenFiles(IEnumerable<PdfItem> pdfItemsToOpen)
         {
             var list = pdfItemsToOpen.Where(i => i != null).Distinct().ToList();
             var psi = new ProcessStartInfo
@@ -91,7 +91,7 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private void DeleteFiles(IEnumerable<PdfItemToMerge> pdfItemsToDelete)
+        private void DeleteFiles(IEnumerable<PdfItem> pdfItemsToDelete)
         {
             if (pdfItemsToDelete == null)
                 return;
@@ -118,7 +118,7 @@ namespace Pascal.ViewModels
                     var file = await filePickerService.PickSavePdfFileAsync();
                     if (file != null)
                     {
-                        pdfService.MergePdf(await file.OpenStreamForWriteAsync(), pdfItems);
+                        pdfService.MergePdf(file.Path, pdfItems);
                     }
                 }
                 finally

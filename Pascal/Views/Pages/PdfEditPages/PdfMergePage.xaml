@@ -109,7 +109,7 @@
                         </ListView.ItemContainerStyle>
                         
                         <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="models:PdfItemToMerge">
+                            <DataTemplate x:DataType="models:PdfItem">
                                 <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="30"/>
