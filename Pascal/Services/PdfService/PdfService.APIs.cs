@@ -1,13 +1,14 @@
 using Microsoft.UI.Xaml.Controls;
 using Pascal.Models;
-using PdfSharp.Pdf;
-using UglyToad.PdfPig;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PdfSharp.Pdf;
+using PdfSharpDocument = PdfSharp.Pdf.PdfDocument;
+using UglyToadDocument = UglyToad.PdfPig.PdfDocument;
 
 namespace Pascal.Services.PdfService
 {
@@ -30,7 +31,7 @@ namespace Pascal.Services.PdfService
             // UglyToad.PdfPig 사용
             try
             {
-                using UglyToad.PdfPig.PdfDocument document = UglyToad.PdfPig.PdfDocument.Open(filePath);
+                using UglyToadDocument document = UglyToadDocument.Open(filePath);
                 return document.NumberOfPages;
             }
             catch (Exception)
@@ -43,13 +44,13 @@ namespace Pascal.Services.PdfService
         public void MergePdf(Stream stream, ObservableCollection<PdfItemToMerge> pdfItems)
         {
             // PDF 병합 기능 구현
-            PdfSharp.Pdf.PdfDocument outputDocument = new(stream);
+            PdfSharpDocument outputDocument = new(stream);
             foreach (var pdfItem in pdfItems)
             {
                 string inputFilePath = pdfItem.FilePath;
                 List<int> selectedPages = pdfItem.PagesToExtract;
                 // 리스트에 추가된 파일을 삭제하고 저장하면 여기서 튕기고 세계가 멸망하고 우주가 폭발함. 주의.
-                PdfDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
+                PdfSharpDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
                 if (selectedPages.Count == 0)
                 {
                     // 모든 페이지를 병합
