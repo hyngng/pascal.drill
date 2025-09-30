@@ -36,6 +36,7 @@ namespace Pascal.Services.PdfService
             {
                 string inputFilePath = pdfItem.FilePath;
                 List<int> selectedPages = pdfItem.PagesToExtract;
+                // 리스트에 추가된 파일을 삭제하고 저장하면 여기서 튕기고 세계가 멸망하고 우주가 폭발함. 주의.
                 PdfDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
                 if (selectedPages.Count == 0)
                 {

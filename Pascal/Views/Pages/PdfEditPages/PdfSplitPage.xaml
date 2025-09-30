@@ -48,7 +48,7 @@
             </StackPanel>
         </ScrollView>
 
-        <ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
+        <!--<ScrollView VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
                 Margin="36,0,0,0"
                 Padding="0,0,36,0">
@@ -98,9 +98,9 @@
                                                     Text="삭제"
                                                     Icon="Delete"
                                                     Tag="DeleteMenu">
-                                                <!--<MenuFlyoutItem.KeyboardAccelerators>
+                                                --><!--<MenuFlyoutItem.KeyboardAccelerators>
                                             <KeyboardAccelerator Key="Delete" />
-                                        </MenuFlyoutItem.KeyboardAccelerators>-->
+                                        </MenuFlyoutItem.KeyboardAccelerators>--><!--
                                             </MenuFlyoutItem>
                                         </MenuFlyout>
                                     </Setter.Value>
@@ -138,6 +138,6 @@
                 </Border>
             </StackPanel>
         </ScrollView>
-        <Border />
+        <Border />-->
     </Grid>
 </Page>
