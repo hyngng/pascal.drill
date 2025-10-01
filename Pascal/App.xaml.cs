@@ -38,8 +38,6 @@ public partial class App : Application
         // Enables Multicore JIT with the specified profile
         System.Runtime.ProfileOptimization.SetProfileRoot(Constants.RootDirectoryPath);
         System.Runtime.ProfileOptimization.StartProfile("Startup.Profile");
-
-        // InitializeApp();
     }
 
     private static IServiceProvider ConfigureServices()
@@ -65,14 +63,9 @@ public partial class App : Application
         MainWindow.AppWindow.SetIcon("Assets/AppIcon.ico");
 
         this.ThemeService.Initialize(MainWindow);
+        this.LabsService.Initialize();
 
         MainWindow.Activate();
-    }
-
-    private void InitializeApp()
-    {
-        ThemeService.Initialize(MainWindow);
-        LabsService.Initialize();
     }
 }
 

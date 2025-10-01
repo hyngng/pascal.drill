@@ -39,129 +39,53 @@ namespace Pascal.Views.Pages.PdfEditPages
         #region ListView 관련 로직
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
-            //
-        }
-
-        private void ListView_OnDragCompleted(ListViewBase sender, DragItemsCompletedEventArgs e)
-        {
-            //DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, () =>
-            //{
-            //    ViewModel.ReorderFilesCommand.Execute(null);
-            //});
-        }
-        #endregion
-
-        // MVVM 모델에 따라 코드비하인드 대신 뷰모델에 작성하는게 좋을듯?
-
-        private async void PickPdfFilesButton_Click(object sender, RoutedEventArgs e)
-        {
-            //disable the button to avoid double-clicking
-            var senderButton = sender as Button;
-            if (senderButton != null) 
-                senderButton.IsEnabled = false;
-
-            // Clear previous returned file name, if it exists, between iterations of this scenario
-            // PickFilesOutputTextBlock.Text = "";
-
-            // Create a file picker
-            var openPicker = new Windows.Storage.Pickers.FileOpenPicker();
-
-            // See the sample code below for how to make the window accessible from the App class.
-            var window = App.MainWindow;
-
-            // Retrieve the window handle (HWND) of the current WinUI 3 window.
-            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
-
-            // Initialize the file picker with the window handle (HWND).
-            WinRT.Interop.InitializeWithWindow.Initialize(openPicker, hWnd);
-
-            // Set options for your file picker
-            openPicker.ViewMode = PickerViewMode.List;
-            openPicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-            openPicker.FileTypeFilter.Add(".pdf");
-
-            // Open the picker for the user to pick a file
-            IReadOnlyList<StorageFile> files = await openPicker.PickMultipleFilesAsync();
-            if (files.Count > 0)
+            var menuFlyout = sender as MenuFlyout;
+            if (menuFlyout?.Target is ListViewItem listViewItem)
             {
-                StringBuilder output = new StringBuilder("Picked files:\n");
-                foreach (StorageFile file in files)
-                    output.Append(file.Name + "\n");
-                // PickFilesOutputTextBlock.Text = output.ToString();
-            }
-            else
-            // PickFilesOutputTextBlock.Text = "Operation cancelled.";
+                var menuFlyOutOpenItem = menuFlyout.Items
+                                                    .OfType<MenuFlyoutItem>()
+                                                    .FirstOrDefault(mi => (mi.Tag as string) == "OpenMenu");
+                var menuFlyOutDeleteItem = menuFlyout.Items
+                                                     .OfType<MenuFlyoutItem>()
+                                                     .FirstOrDefault(mi => (mi.Tag as string) == "DeleteMenu");
 
-            //re-enable the button
-            if (senderButton != null)
-                senderButton.IsEnabled = true;
-        }
+                if (menuFlyOutDeleteItem is null)
+                    return;
 
-        private async void SaveASplitedPdfFileButton_Click(object sender, RoutedEventArgs e)
-        {
-            //disable the button to avoid double-clicking
-            var senderButton = sender as Button;
-            if (senderButton != null) 
-                senderButton.IsEnabled = false;
+                menuFlyOutOpenItem.Command = null;
+                menuFlyOutOpenItem.CommandParameter = null;
+                menuFlyOutDeleteItem.Command = null;
+                menuFlyOutDeleteItem.CommandParameter = null;
 
-            // Clear previous returned file name, if it exists, between iterations of this scenario
-            // SaveFileOutputTextBlock.Text = "";
+                var selectedList = PdfListView.SelectedItems?
+                                   .OfType<PdfItemToMerge>()
+                                   .ToList() ?? new List<PdfItemToMerge>();
 
-            // Create a file picker
-            FileSavePicker savePicker = new Windows.Storage.Pickers.FileSavePicker();
-
-            // See the sample code below for how to make the window accessible from the App class.
-            var window = App.MainWindow;
-
-            // Retrieve the window handle (HWND) of the current WinUI 3 window.
-            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
-
-            // Initialize the file picker with the window handle (HWND).
-            WinRT.Interop.InitializeWithWindow.Initialize(savePicker, hWnd);
-
-            // Set options for your file picker
-            savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-            // Dropdown of file types the user can save the file as
-            savePicker.FileTypeChoices.Add("Plain Text", new List<string>() { ".txt" });
-            // Default file name if the user does not type one in or select a file to replace
-            // var enteredFileName = ((sender as Button).Parent as StackPanel)
-            // .FindName("FileNameTextBox") as TextBox;
-            // savePicker.SuggestedFileName = SaveASplitedPdfFileButton.Text;
-
-            // Open the picker for the user to pick a file
-            StorageFile file = await savePicker.PickSaveFileAsync();
-            if (file != null)
-            {
-                // Prevent updates to the remote version of the file until we finish making changes and call CompleteUpdatesAsync.
-                CachedFileManager.DeferUpdates(file);
-
-                // Another way to write a string to the file is to use this instead:
-                // await FileIO.WriteTextAsync(file, "Example file contents.");
-
-                // Let Windows know that we're finished changing the file so the other app can update the remote version of the file.
-                // Completing updates may require Windows to ask for user input.
-                FileUpdateStatus status = await CachedFileManager.CompleteUpdatesAsync(file);
-                if (status == FileUpdateStatus.Complete)
+                List<PdfItemToMerge> selectedItems;
+                if (selectedList.Count > 1)
                 {
-                    // SaveFileOutputTextBlock.Text = "File " + file.Name + " was saved.";
-                }
-                else if (status == FileUpdateStatus.CompleteAndRenamed)
-                {
-                    // SaveFileOutputTextBlock.Text = "File " + file.Name + " was renamed and saved.";
+                    OpenMenu.Visibility = Visibility.Collapsed;
+                    FlyoutSeperator.Visibility = Visibility.Collapsed;
+
+                    selectedItems = selectedList;
                 }
                 else
                 {
-                    // SaveFileOutputTextBlock.Text = "File " + file.Name + " couldn't be saved.";
-                }
-            }
-            else
-            {
-                // SaveFileOutputTextBlock.Text = "Operation cancelled.";
-            }
+                    OpenMenu.Visibility = Visibility.Visible;
+                    FlyoutSeperator.Visibility = Visibility.Visible;
 
-            //re-enable the button
-            if (senderButton != null)
-                senderButton.IsEnabled = true;
+                    var item = listViewItem.Content as PdfItemToMerge;
+                    selectedItems = item is not null
+                                  ? new List<PdfItemToMerge> { item }
+                                  : new List<PdfItemToMerge>();
+                }
+
+                menuFlyOutOpenItem.CommandParameter = selectedItems;
+                menuFlyOutOpenItem.Command = ViewModel.OpenFilesCommand;
+                menuFlyOutDeleteItem.CommandParameter = selectedItems;
+                menuFlyOutDeleteItem.Command = ViewModel.DeleteFilesCommand;
+            }
         }
+        #endregion
     }
 }

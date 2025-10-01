@@ -10,6 +10,7 @@ namespace Pascal.Internal
     /// <summary>
     /// DevWinUI.GlobalData인데, internal로 되어있어서 Pascal.Internal로 복사해옴.
     /// </summary>
+
     internal partial class GlobalData
     {
         public static void Init()
@@ -27,9 +28,7 @@ namespace Pascal.Internal
                 }
             }
             else
-            {
                 Config = new AppConfig();
-            }
         }
 
         public static void Save()

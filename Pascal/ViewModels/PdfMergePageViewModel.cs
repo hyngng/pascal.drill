@@ -25,7 +25,6 @@ namespace Pascal.ViewModels
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         private bool isBusy = false;
-
         public bool IsNotBusy => !isBusy;
 
         public PdfMergePageViewModel()
