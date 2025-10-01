@@ -82,7 +82,7 @@ namespace Pascal.Services.ParseService
             return result;
         }
 
-        public void ParsePageRange(ObservableCollection<PdfItemToMerge> pdfItems)
+        public void ParsePageRange(ObservableCollection<PdfItem> pdfItems)
         {
             foreach (var pdfItem in pdfItems)
             {

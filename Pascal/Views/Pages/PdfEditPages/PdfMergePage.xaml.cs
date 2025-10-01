@@ -88,10 +88,10 @@ namespace Pascal.Views.Pages.PdfEditPages
                 menuFlyOutDeleteItem.CommandParameter = null;
 
                 var selectedList = PdfListView.SelectedItems?
-                                   .OfType<PdfItemToMerge>()
-                                   .ToList() ?? new List<PdfItemToMerge>();
+                                   .OfType<PdfItem>()
+                                   .ToList() ?? new List<PdfItem>();
 
-                List<PdfItemToMerge> selectedItems;
+                List<PdfItem> selectedItems;
                 if (selectedList.Count > 1)
                 {
                     OpenMenu.Visibility = Visibility.Collapsed;
@@ -104,10 +104,10 @@ namespace Pascal.Views.Pages.PdfEditPages
                     OpenMenu.Visibility = Visibility.Visible;
                     FlyoutSeperator.Visibility = Visibility.Visible;
 
-                    var item = listViewItem.Content as PdfItemToMerge;
+                    var item = listViewItem.Content as PdfItem;
                     selectedItems = item is not null
-                                  ? new List<PdfItemToMerge> { item }
-                                  : new List<PdfItemToMerge>();
+                                  ? new List<PdfItem> { item }
+                                  : new List<PdfItem>();
                 }
 
                 menuFlyOutOpenItem.CommandParameter = selectedItems;

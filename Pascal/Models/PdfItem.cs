@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace Pascal.Models
 {
-    public class PdfItemToMerge : INotifyPropertyChanged
+    public class PdfItem : INotifyPropertyChanged
     {
         private int fileOrder;
         private string filePath = string.Empty;
@@ -12,6 +12,10 @@ namespace Pascal.Models
         private int pageCount;
         private string pageRange = string.Empty;
         private List<int> pagesToExtract = [];
+        private string splitName = string.Empty;
+        private int splitStart;
+        private int splitEnd;
+        private int splitSize;
 
         public int FileOrder { get => fileOrder; set { fileOrder = value; OnPropertyChanged(); } }
         public string FilePath { get => filePath; set { filePath = value; OnPropertyChanged(); } }
@@ -21,6 +25,10 @@ namespace Pascal.Models
         public string PageRangeHint => PageCount <= 1 ? "1" : $"1-{PageCount}";
         public string PageRange { get => pageRange; set { if (pageRange != value) { pageRange = value; OnPropertyChanged(); } } }
         public List<int> PagesToExtract { get => pagesToExtract; set { pagesToExtract = value; OnPropertyChanged(); } }
+        public string SplitName { get => splitName; set { splitName = value; OnPropertyChanged(); } }
+        public int SplitStart { get => splitStart; set { splitStart = value; OnPropertyChanged(); } }
+        public int SplitEnd { get => splitEnd; set { splitEnd = value; OnPropertyChanged(); } }
+        public int SplitSize { get => splitSize; set { splitSize = value; OnPropertyChanged(); } }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
