@@ -74,7 +74,7 @@
                                            Text="분할 단위" />
                                 <TextBlock Grid.Column="2"
                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="페이지 수" />
+                                           Text="분할 범위" />
                             </Grid>
                         </ListView.Header>
 
@@ -95,7 +95,7 @@
                                                     Icon="Delete"
                                                     Tag="DeleteMenu">
                                                 <MenuFlyoutItem.KeyboardAccelerators>
-                                            <KeyboardAccelerator Key="Delete" />
+                                            <!--<KeyboardAccelerator Key="Delete" />-->
                                         </MenuFlyoutItem.KeyboardAccelerators>
                                             </MenuFlyoutItem>
                                         </MenuFlyout>

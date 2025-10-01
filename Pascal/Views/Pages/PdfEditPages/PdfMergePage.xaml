@@ -78,7 +78,7 @@
                                            Text="파일명" />
                                 <TextBlock Grid.Column="2"
                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                           Text="페이지 수" />
+                                           Text="병합 범위" />
                             </Grid>
                         </ListView.Header>
                         
