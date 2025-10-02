@@ -58,6 +58,8 @@
                     <dev:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE790;" />
                     </dev:SettingsCard.HeaderIcon>
+                    <!-- dev:ThemeServiceAttach.ThemeService="{x:Bind local:App.Current.ThemeService}" -->
+                    <!-- https://github.com/ghost1372/DevWinUI/blob/main/dev/DevWinUI.Gallery/Views/Settings/ThemeSettingPage.xaml#L19 -->
                     <ComboBox x:Name="themeMode" SelectionChanged="themeMode_SelectionChanged">
                         <ComboBoxItem Content="밝게" Tag="Light" />
                         <ComboBoxItem Content="어둡게" Tag="Dark" />
