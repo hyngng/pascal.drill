@@ -65,7 +65,7 @@
                                     <ColumnDefinition Width="80" />
                                     <ColumnDefinition Width="120" />
                                 </Grid.ColumnDefinitions>
-                                
+
                                 <TextBlock Grid.Column="0"
                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                            Text="파일명" />
@@ -77,32 +77,6 @@
                                            Text="분할 범위" />
                             </Grid>
                         </ListView.Header>
-
-                        <ListView.ItemContainerStyle>
-                            <Style TargetType="ListViewItem">
-                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                                <Setter Property="Padding" Value="0"/>
-                                <Setter Property="ContextFlyout">
-                                    <Setter.Value>
-                                        <MenuFlyout Opening="ItemMenuFlyout_Opening">
-                                            <MenuFlyoutItem x:Name="OpenMenu"
-                                                    Text="열기"
-                                                    Icon="OpenFile"
-                                                    Tag="OpenMenu" />
-                                            <MenuFlyoutSeparator x:Name="FlyoutSeperator" />
-                                            <MenuFlyoutItem x:Name="DeleteMenu"
-                                                    Text="삭제"
-                                                    Icon="Delete"
-                                                    Tag="DeleteMenu">
-                                                <MenuFlyoutItem.KeyboardAccelerators>
-                                            <!--<KeyboardAccelerator Key="Delete" />-->
-                                        </MenuFlyoutItem.KeyboardAccelerators>
-                                            </MenuFlyoutItem>
-                                        </MenuFlyout>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </ListView.ItemContainerStyle>
 
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="models:PdfItem">
@@ -128,6 +102,32 @@
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
+                        
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Padding" Value="0"/>
+                                <Setter Property="ContextFlyout">
+                                    <Setter.Value>
+                                        <MenuFlyout Opening="ItemMenuFlyout_Opening">
+                                            <MenuFlyoutItem x:Name="OpenMenu"
+                                                    Text="열기"
+                                                    Icon="OpenFile"
+                                                    Tag="OpenMenu" />
+                                            <MenuFlyoutSeparator x:Name="FlyoutSeperator" />
+                                            <MenuFlyoutItem x:Name="DeleteMenu"
+                                                    Text="삭제"
+                                                    Icon="Delete"
+                                                    Tag="DeleteMenu">
+                                                <MenuFlyoutItem.KeyboardAccelerators>
+                                            <!--<KeyboardAccelerator Key="Delete" />-->
+                                        </MenuFlyoutItem.KeyboardAccelerators>
+                                            </MenuFlyoutItem>
+                                        </MenuFlyout>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListView.ItemContainerStyle>
                     </ListView>
                 </Border>
             </StackPanel>

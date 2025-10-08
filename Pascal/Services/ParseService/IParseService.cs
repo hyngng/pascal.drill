@@ -11,6 +11,7 @@ namespace Pascal.Services.ParseService
     public interface IParseService
     {
         List<int> ParsePageRange(string input, int maxPage);
+
         void ParsePageRange(ObservableCollection<PdfItem> pdfItems);
     }
 }

@@ -12,6 +12,10 @@ namespace Pascal.Services.ParseService
     {
         public List<int> ParsePageRange(string input, int maxPage)
         {
+            /// <summary>
+            /// 
+            /// </summary>
+
             int minPage = 1;
             List<int> result = [];
             string[] parts = input.Split(',');
@@ -28,42 +32,38 @@ namespace Pascal.Services.ParseService
                     {
                         // "-20" → "1-20"
                         if (int.TryParse(part[1..].Trim(), out end))
-                        {
                             start = minPage;
-                        }
+
                         else continue;
                     }
                     else if (part.EndsWith('-'))
                     {
                         // "3-" → "3-maxPage"
                         if (int.TryParse(part[..^1].Trim(), out start))
-                        {
                             end = maxPage;
-                        }
+
                         else continue;
                     }
                     else
                     {
                         // "5-8"
                         var rangeParts = part.Split('-');
+
                         if (rangeParts.Length == 2 &&
                             int.TryParse(rangeParts[0].Trim(), out start) &&
                             int.TryParse(rangeParts[1].Trim(), out end))
                         {
                             // OK
                         }
+
                         else continue;
                     }
 
                     if (start <= end)
                     {
                         for (int p = start; p <= end; p++)
-                        {
                             if (p >= minPage && p <= maxPage)
-                            {
                                 result.Add(p - 1);
-                            }
-                        }
                     }
                 }
                 else
@@ -72,9 +72,7 @@ namespace Pascal.Services.ParseService
                     if (int.TryParse(part, out int page))
                     {
                         if (page >= minPage && page <= maxPage)
-                        {
                             result.Add(page - 1);
-                        }
                     }
                 }
             }
@@ -85,9 +83,7 @@ namespace Pascal.Services.ParseService
         public void ParsePageRange(ObservableCollection<PdfItem> pdfItems)
         {
             foreach (var pdfItem in pdfItems)
-            {
-                pdfItem.PagesToExtract = ParsePageRange(pdfItem.PageRange, pdfItem.PageCount);
-            }
+                pdfItem.PagesToProcess = ParsePageRange(pdfItem.PageRange, pdfItem.PageCount);
         }
     }
 }

@@ -1,9 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
-using Pascal.Services.FilePickerService;
-using Pascal.Services.PdfService;
-using Pascal.Services.ParseService;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,10 +12,6 @@ namespace Pascal.ViewModels
 {
     public partial class PdfMergePageViewModel : ObservableObject
     {
-        private readonly IFilePickerService filePickerService;
-        private readonly IPdfService pdfService;
-        private readonly IParseService parseService;
-
         [ObservableProperty]
         private ObservableCollection<PdfItem> pdfItems = new();
 
@@ -27,12 +20,7 @@ namespace Pascal.ViewModels
         private bool isBusy = false;
         public bool IsNotBusy => !isBusy;
 
-        public PdfMergePageViewModel()
-        {
-            this.filePickerService = App.Current.FilePickerService;
-            this.pdfService = App.Current.PdfService;
-            this.parseService = App.Current.ParseService;
-        }
+        public PdfMergePageViewModel(){ }
 
         [RelayCommand]
         private async Task AddPdfFilesAsync()
@@ -40,25 +28,26 @@ namespace Pascal.ViewModels
             IsBusy = true;
             try
             {
-                var files = await filePickerService.PickMultiplePdfFilesAsync();
+                var files = await App.Current.FilePickerService.PickMultiplePdfFilesAsync();
                 if (files != null && files.Count > 0)
                 {
                     int baseCount = pdfItems.Count;
                     for (int i = 0; i < files.Count; i++)
                     {
                         var file = files[i];
-                        var properties = await file.GetBasicPropertiesAsync();
-
-                        var pageCount = pdfService.FindPageRanges(file.Path);
+                        var properties  = await file.GetBasicPropertiesAsync();
+                        var pageCount   = App.Current.PdfService.FindPageRanges(file.Path);
+                        // var processUnit = 
 
                         var newItem = new PdfItem
                         {
-                            FileOrder = baseCount + i + 1,
-                            FilePath = file.Path,
-                            FileName = file.Name,
-                            FileSize = $"{properties.Size / 1024:N0} KB",
-                            PageCount = pageCount,
-                            PagesToExtract = new List<int>()
+                            FileOrder      = baseCount + i + 1,
+                            PageCount      = pageCount,
+                            // ProcessUnit    = processUnit,
+                            FilePath       = file.Path,
+                            FileName       = file.Name,
+                            FileSize       = $"{properties.Size / 1024:N0} KB",
+                            // PagesToProcess = new List<int>()
                         };
                         pdfItems.Add(newItem);
                     }
@@ -111,14 +100,14 @@ namespace Pascal.ViewModels
             if (pdfItems.Count != 0)
             {
                 IsBusy = true;
-                parseService.ParsePageRange(pdfItems);
+
+                App.Current.ParseService.ParsePageRange(pdfItems);
+
                 try
                 {
-                    var file = await filePickerService.PickSavePdfFileAsync();
+                    var file = await App.Current.FilePickerService.PickSavePdfFileAsync();
                     if (file != null)
-                    {
-                        pdfService.MergePdf(file.Path, pdfItems);
-                    }
+                        App.Current.PdfService.MergePdf(file.Path, pdfItems);
                 }
                 finally
                 {

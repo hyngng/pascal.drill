@@ -6,29 +6,31 @@ namespace Pascal.Models
     public class PdfItem : INotifyPropertyChanged
     {
         private int fileOrder;
+        private int pageCount;
+        private int processUnit;
         private string filePath = string.Empty;
         private string fileName = string.Empty;
         private string fileSize = string.Empty;
-        private int pageCount;
         private string pageRange = string.Empty;
-        private List<int> pagesToExtract = [];
-        private string splitName = string.Empty;
-        private int splitStart;
-        private int splitEnd;
-        private int splitSize;
+        private List<int> pagesToProcess = [];
+        //private string splitName = string.Empty;
+        //private int splitStart;
+        //private int splitEnd;
+        //private int splitSize;
 
         public int FileOrder { get => fileOrder; set { fileOrder = value; OnPropertyChanged(); } }
+        public int PageCount { get => pageCount; set { pageCount = value; OnPropertyChanged(); } }
+        public int ProcessUnit { get => processUnit; set { processUnit = value; OnPropertyChanged(); } }
         public string FilePath { get => filePath; set { filePath = value; OnPropertyChanged(); } }
         public string FileName { get => fileName; set { fileName = value; OnPropertyChanged(); } }
         public string FileSize { get => fileSize; set { fileSize = value; OnPropertyChanged(); } }
-        public int PageCount { get => pageCount; set { if (pageCount != value) { pageCount = value; OnPropertyChanged(); } } }
         public string PageRangeHint => PageCount <= 1 ? "1" : $"1-{PageCount}";
         public string PageRange { get => pageRange; set { if (pageRange != value) { pageRange = value; OnPropertyChanged(); } } }
-        public List<int> PagesToExtract { get => pagesToExtract; set { pagesToExtract = value; OnPropertyChanged(); } }
-        public string SplitName { get => splitName; set { splitName = value; OnPropertyChanged(); } }
-        public int SplitStart { get => splitStart; set { splitStart = value; OnPropertyChanged(); } }
-        public int SplitEnd { get => splitEnd; set { splitEnd = value; OnPropertyChanged(); } }
-        public int SplitSize { get => splitSize; set { splitSize = value; OnPropertyChanged(); } }
+        public List<int> PagesToProcess { get => pagesToProcess; set { pagesToProcess = value; OnPropertyChanged(); } }
+        //public string SplitName { get => splitName; set { splitName = value; OnPropertyChanged(); } }
+        //public int SplitStart { get => splitStart; set { splitStart = value; OnPropertyChanged(); } }
+        //public int SplitEnd { get => splitEnd; set { splitEnd = value; OnPropertyChanged(); } }
+        //public int SplitSize { get => splitSize; set { splitSize = value; OnPropertyChanged(); } }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

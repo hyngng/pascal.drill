@@ -69,6 +69,10 @@ namespace Pascal.Views.Pages.PdfEditPages
         #region ListView 관련 로직
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
+            /// <summary>
+            /// 개 짜치는 로직.
+            /// </summary>
+
             var menuFlyout = sender as MenuFlyout;
             if (menuFlyout?.Target is ListViewItem listViewItem)
             {

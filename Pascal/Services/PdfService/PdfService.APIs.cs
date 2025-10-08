@@ -45,12 +45,15 @@ namespace Pascal.Services.PdfService
         {
             // PDF 병합 기능 구현
             PdfSharpDocument outputDocument = new(outputPath);
+
             foreach (var pdfItem in pdfItems)
             {
                 string inputFilePath = pdfItem.FilePath;
-                List<int> selectedPages = pdfItem.PagesToExtract;
+                List<int> selectedPages = pdfItem.PagesToProcess;
+
                 // 리스트에 추가된 파일을 삭제하고 저장하면 여기서 튕기고 세계가 멸망하고 우주가 폭발함. 주의.
                 PdfSharpDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
+                
                 if (selectedPages.Count == 0)
                 {
                     // 모든 페이지를 병합
@@ -71,7 +74,11 @@ namespace Pascal.Services.PdfService
 
         public void SplitPdf(string outputPath, ObservableCollection<Models.PdfItem> pdfItems)
         {
-            // PDF 분할 기능 구현
+            /// <summary>
+            /// PDF 분할 기능 구현.
+            /// 한 번 뜯어보기.
+            /// </summary>
+
             foreach (var pdfItem in pdfItems)
             {
                 string inputFilePath = pdfItem.FilePath;
