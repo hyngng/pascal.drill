@@ -9,27 +9,35 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#4978d0">
+    <!--
+    TO-DO:
+    
+    1. 해상도에 따라 폰트 크기 조절하기
+    
+    2. 모니터를 복수개로 사용할 경우
+    모든 모니터에 대해 창 띄우기
+    
+    2.
+    "업데이트가 진행 중입니다", "업데이트 진행 중 74%", "다시 시작 중입니다"
+    주기 만들기
+    -->
+
+    <Grid Background="#000000" KeyDown="Window_KeyDown">
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Spacing="8">
-            <dev:ProgressRing IsActive="True" />
-            <TextBlock Text="This window is running in Fullscreen mode"
-                       Style="{ThemeResource TitleTextBlockStyle}"
+            <dev:ProgressRing IsActive="True"
+                              Foreground="#FFFFFFFF"
+                              Width="60"
+                              Height="60"/>
+            <TextBlock Text="업데이트가 진행 중입니다."
+                       Foreground="#FFFFFFFF"
+                       FontSize="20"
                        TextAlignment="Center" />
-            <Button x:Name="Close"
-                    Click="Close_Click"
-                    Width="200"
-                    HorizontalAlignment="Center">
-                <StackPanel Orientation="Horizontal"
-                            VerticalAlignment="Center">
-                    <SymbolIcon Symbol="Cancel"
-                                Foreground="{ThemeResource SystemFillColorCriticalBrush}"
-                                Margin="0,0,4,0" />
-                    <TextBlock Text="Close"
-                               Foreground="{ThemeResource SystemFillColorCriticalBrush}" />
-                </StackPanel>
-            </Button>
+            <TextBlock Text="컴퓨터를 계속 켜 두세요."
+                       Foreground="#FFFFFFFF"
+                       FontSize="20"
+                       TextAlignment="Center" />
         </StackPanel>
     </Grid>
 </Window>
