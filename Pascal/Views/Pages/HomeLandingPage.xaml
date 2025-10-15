@@ -26,8 +26,92 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
+
+        <dev:HomePageHeader HeaderImage="/Assets/Images/sabok_bg.png"
+                            HeaderImageHeight="300"
+                            HeaderText="홈 페이지"
+                            HeaderSubtitleText="안녕하세요! 환영합니다!">
+            <dev:HomePageHeader.HeaderContent>
+                <StackPanel Orientation="Horizontal"
+                            Spacing="12">
+                    <dev:HeaderTile Title="사용법 가이드"
+                                    Description="프로그램 사용 방법을 알아봅니다.">
+                        <dev:HeaderTile.Source>
+                            <Image Source="/Assets/Fluent/Clock.png" />
+                        </dev:HeaderTile.Source>
+                    </dev:HeaderTile>
+                    <dev:HeaderTile Title="Title"
+                                    Description="Description">
+                        <dev:HeaderTile.Source>
+                            <Image Source="/Assets/Fluent/Clock.png" />
+                        </dev:HeaderTile.Source>
+                    </dev:HeaderTile>
+                    <dev:HeaderTile Title="Title"
+                                    Description="Description">
+                        <dev:HeaderTile.Source>
+                            <Image Source="/Assets/Fluent/Clock.png" />
+                        </dev:HeaderTile.Source>
+                    </dev:HeaderTile>
+                    <dev:HeaderTile Title="Title"
+                                    Description="Description">
+                        <dev:HeaderTile.Source>
+                            <Image Source="/Assets/Fluent/InfoBadge.png" />
+                        </dev:HeaderTile.Source>
+                    </dev:HeaderTile>
+                    <dev:HeaderTile Title="Title"
+                                    Description="Description">
+                        <dev:HeaderTile.Source>
+                            <Image Source="/Assets/Fluent/RatingControl.png" />
+                        </dev:HeaderTile.Source>
+                    </dev:HeaderTile>
+                    <dev:HeaderTile Title="Title"
+                                    Description="Description">
+                        <dev:HeaderTile.Source>
+                            <Image Source="/Assets/Fluent/update.png" />
+                        </dev:HeaderTile.Source>
+                    </dev:HeaderTile>
+                </StackPanel>
+            </dev:HomePageHeader.HeaderContent>
+        </dev:HomePageHeader>
+
+        <!--<dev:HeaderCarousel BlurAmount="100"
+                    IsBlurEnabled="True">
+            <dev:HeaderCarousel.Header>
+                <TextBlock HorizontalAlignment="Center"
+                   FontSize="40"
+                   Text="파스칼 프로젝트"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap">
+                </TextBlock>
+            </dev:HeaderCarousel.Header>
+            <dev:HeaderCarouselItem Description="Chat with a local language model"
+                    Header="Chat"
+                    Id="chat"
+                    ImageUrl="/Assets/TileImages/Chat.png" />
+            <dev:HeaderCarouselItem Description="Chat with a local language model"
+                    Header="Chat"
+                    Id="chat"
+                    ImageUrl="/Assets/TileImages/Chat.png" />
+            <dev:HeaderCarouselItem Description="Chat with a local language model"
+                    Header="Chat"
+                    Id="chat"
+                    ImageUrl="/Assets/TileImages/Chat.png" />
+            <dev:HeaderCarouselItem Description="Chat with a local language model"
+                    Header="Chat"
+                    Id="chat"
+                    ImageUrl="/Assets/TileImages/Chat.png" />
+            <dev:HeaderCarouselItem Description="Summarize text with a local language model"
+                    Header="Text Summarization"
+                    Id="summarize-text"
+                    ImageUrl="/Assets/TileImages/TextSummarization.png" />
+            <dev:HeaderCarouselItem Description="Semantically search text with a local embeddings model"
+                    Foreground="{StaticResource DarkTextGradient}"
+                    Header="Semantic Search"
+                    Id="semantic-search"
+                    ImageUrl="/Assets/TileImages/SemanticSearch.png" />
+        </dev:HeaderCarousel>-->
+
+        <!--<StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
             <TextBlock x:Name="PageHeader"
                        Margin="{ThemeResource PageHeaderMargin}"
                        Padding="{ThemeResource PageHeaderPadding}"
@@ -41,6 +125,6 @@
                        Style="{StaticResource CaptionTextBlockStyle}"
                        AutomationProperties.HeadingLevel="Level1"
                        Text="안녕하세요! 환영합니다!" />
-        </StackPanel>
+        </StackPanel>-->
     </Grid>
 </Page>
