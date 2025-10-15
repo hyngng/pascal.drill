@@ -19,7 +19,7 @@ namespace Pascal.Services.PdfService
             //// PdfSharp 사용
             //try
             //{
-            //    using PdfSharp.Pdf.PdfDocument document = PdfSharp.Pdf.IO.PdfReader.Open(filePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
+            //    using PdfSharpDocument document = PdfSharp.Pdf.IO.PdfReader.Open(filePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
             //    return document.PageCount;
             //}
             //catch (Exception)
@@ -41,27 +41,30 @@ namespace Pascal.Services.PdfService
             }
         }
 
-        public void MergePdf(Stream stream, ObservableCollection<PdfItemToMerge> pdfItems)
+        public void MergePdf(string outputPath, ObservableCollection<Models.PdfItem> pdfItems)
         {
             // PDF 병합 기능 구현
-            PdfSharpDocument outputDocument = new(stream);
+            PdfSharpDocument outputDocument = new(outputPath);
+
             foreach (var pdfItem in pdfItems)
             {
                 string inputFilePath = pdfItem.FilePath;
-                List<int> selectedPages = pdfItem.PagesToExtract;
+                List<int> selectedPages = pdfItem.PagesToProcess;
+
                 // 리스트에 추가된 파일을 삭제하고 저장하면 여기서 튕기고 세계가 멸망하고 우주가 폭발함. 주의.
                 PdfSharpDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
+                
                 if (selectedPages.Count == 0)
                 {
                     // 모든 페이지를 병합
-                    for (int idx = 0; idx < inputDocument.PageCount; idx++)
+                    for (int idx = 0; idx < pdfItem.PageCount; idx++)
                         outputDocument.AddPage(inputDocument.Pages[idx]);
                 }
                 else
                 {
                     // 지정된 페이지만 병합
                     foreach (int pageIndex in selectedPages)
-                        if (pageIndex >= 0 && pageIndex < inputDocument.PageCount)
+                        if (pageIndex >= 0 && pageIndex < pdfItem.PageCount)
                             outputDocument.AddPage(inputDocument.Pages[pageIndex]);
                 }
                 inputDocument.Close();
@@ -69,9 +72,13 @@ namespace Pascal.Services.PdfService
             outputDocument.Close();
         }
 
-        public void SplitPdf(ObservableCollection<PdfItemToMerge> pdfItems)
+        public void SplitPdf(string outputPath, ObservableCollection<Models.PdfItem> pdfItems)
         {
-            // PDF 분할 기능 구현
+            /// <summary>
+            /// PDF 분할 기능 구현.
+            /// 한 번 뜯어보기.
+            /// </summary>
+
             foreach (var pdfItem in pdfItems)
             {
                 string inputFilePath = pdfItem.FilePath;
@@ -84,17 +91,15 @@ namespace Pascal.Services.PdfService
                 int splitTo = FindPageRanges(inputFilePath); // 예: 마지막 페이지까지
                 int splitInterval = 10; // 예: 10페이지씩 분할
 
-                PdfSharp.Pdf.PdfDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
+                PdfSharpDocument inputDocument = PdfSharp.Pdf.IO.PdfReader.Open(inputFilePath, PdfSharp.Pdf.IO.PdfDocumentOpenMode.Import);
                 int partNumber = 1;
                 for (int i = splitFrom; i < splitTo; i += splitInterval)
                 {
-                    PdfSharp.Pdf.PdfDocument outputDocument = new();
+                    string outputFilePath = Path.Combine(Directory.CreateDirectory(outputPath).FullName, $"{outputPrefix}{partNumber}.pdf");
+                    PdfSharpDocument outputDocument = new(outputPath);
                     for (int j = i; j < i + splitInterval && j < splitTo; j++)
-                    {
                         outputDocument.AddPage(inputDocument.Pages[j]);
-                    }
-                    string outputFilePath = Path.Combine(Directory.CreateDirectory(Path.Combine(Path.GetDirectoryName(inputFilePath) ?? Environment.GetFolderPath(Environment.SpecialFolder.Desktop), Path.GetFileNameWithoutExtension(inputFilePath))).FullName, $"{outputPrefix}{partNumber}.pdf");
-                    outputDocument.Save(outputFilePath);
+
                     outputDocument.Close();
                     partNumber++;
                 }

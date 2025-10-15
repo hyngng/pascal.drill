@@ -29,12 +29,11 @@ namespace Pascal.Views.Pages.PdfEditPages
 {
     public sealed partial class PdfMergePage : Page, IFilePickerService
     {
-        public PdfMergePageViewModel ViewModel { get; }
+        public PdfMergePageViewModel ViewModel { get; } = new();
 
         public PdfMergePage()
         {
             this.InitializeComponent();
-            ViewModel = new PdfMergePageViewModel();
         }
 
         #region 파일 선택 및 저장 버튼 관련 로직
@@ -70,6 +69,10 @@ namespace Pascal.Views.Pages.PdfEditPages
         #region ListView 관련 로직
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
+            /// <summary>
+            /// 개 짜치는 로직.
+            /// </summary>
+
             var menuFlyout = sender as MenuFlyout;
             if (menuFlyout?.Target is ListViewItem listViewItem)
             {
@@ -89,10 +92,10 @@ namespace Pascal.Views.Pages.PdfEditPages
                 menuFlyOutDeleteItem.CommandParameter = null;
 
                 var selectedList = PdfListView.SelectedItems?
-                                   .OfType<PdfItemToMerge>()
-                                   .ToList() ?? new List<PdfItemToMerge>();
+                                   .OfType<PdfItem>()
+                                   .ToList() ?? new List<PdfItem>();
 
-                List<PdfItemToMerge> selectedItems;
+                List<PdfItem> selectedItems;
                 if (selectedList.Count > 1)
                 {
                     OpenMenu.Visibility = Visibility.Collapsed;
@@ -105,10 +108,10 @@ namespace Pascal.Views.Pages.PdfEditPages
                     OpenMenu.Visibility = Visibility.Visible;
                     FlyoutSeperator.Visibility = Visibility.Visible;
 
-                    var item = listViewItem.Content as PdfItemToMerge;
+                    var item = listViewItem.Content as PdfItem;
                     selectedItems = item is not null
-                                  ? new List<PdfItemToMerge> { item }
-                                  : new List<PdfItemToMerge>();
+                                  ? new List<PdfItem> { item }
+                                  : new List<PdfItem>();
                 }
 
                 menuFlyOutOpenItem.CommandParameter = selectedItems;

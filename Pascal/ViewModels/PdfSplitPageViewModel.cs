@@ -1,16 +1,15 @@
-using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using Pascal.Models;
-using System.Collections;
+﻿using Pascal.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Pascal.ViewModels
 {
-    public partial class PdfMergePageViewModel : ObservableObject
+    public partial class PdfSplitPageViewModel : ObservableObject
     {
         [ObservableProperty]
         private ObservableCollection<PdfItem> pdfItems = new();
@@ -20,7 +19,7 @@ namespace Pascal.ViewModels
         private bool isBusy = false;
         public bool IsNotBusy => !isBusy;
 
-        public PdfMergePageViewModel(){ }
+        public PdfSplitPageViewModel() { }
 
         [RelayCommand]
         private async Task AddPdfFilesAsync()
@@ -72,13 +71,6 @@ namespace Pascal.ViewModels
         }
 
         [RelayCommand]
-        private void ReorderFiles()
-        {
-            for (int i = 0; i < pdfItems.Count; i++)
-                pdfItems[i].FileOrder = i + 1;
-        }
-
-        [RelayCommand]
         private void DeleteFiles(IEnumerable<PdfItem> pdfItemsToDelete)
         {
             if (pdfItemsToDelete == null)
@@ -90,10 +82,8 @@ namespace Pascal.ViewModels
 
             foreach (var it in list)
                 pdfItems.Remove(it);
-
-            ReorderFiles();
         }
-
+        
         [RelayCommand]
         private async Task SaveFileAsync()
         {

@@ -13,6 +13,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -36,8 +37,9 @@ public sealed partial class WindowsUpdateWindow : Window
         AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
     }
 
-    private void Close_Click(object sender, RoutedEventArgs e)
+    private void Window_KeyDown(object sender, KeyRoutedEventArgs e)
     {
-        this.Close();
+        if (e.Key == VirtualKey.Escape)
+            this.Close();
     }
 }
