@@ -31,32 +31,8 @@ public sealed partial class SettingsPage : Page
 
     private void pageLoaded()
     {
-        loadThemeMode();
-        loadBackdropMode();
         loadLabsState();
     }
-
-#region 테마 모드, 재질 효과 변환
-    private void themeMode_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        App.Current.ThemeService.OnThemeComboBoxSelectionChanged(sender);
-    }
-
-    private void loadThemeMode()
-    {
-        App.Current.ThemeService.SetThemeComboBoxDefaultItem(themeMode);
-    }
-
-    private void backdrop_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        App.Current.ThemeService.OnBackdropComboBoxSelectionChanged(sender);
-    }
-
-    private void loadBackdropMode()
-    {
-        App.Current.ThemeService.SetBackdropComboBoxDefaultItem(backdropMode);
-    }
-#endregion
 
 #region 실험실 기능 On/Off
     

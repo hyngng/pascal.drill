@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pascal.Views.SubPages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dev="using:DevWinUI"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
@@ -12,9 +13,7 @@
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Spacing="8">
-            <Image Source="ms-appx:///Assets/Windows-loading-cargando.gif"
-                   HorizontalAlignment="Center"
-                   Stretch="None"/>
+            <dev:ProgressRing IsActive="True" />
             <TextBlock Text="This window is running in Fullscreen mode"
                        Style="{ThemeResource TitleTextBlockStyle}"
                        TextAlignment="Center" />
