@@ -11,6 +11,7 @@
     xmlns:behaviors="using:CommunityToolkit.WinUI.Behaviors"
     xmlns:models="using:Pascal.Models"
     xmlns:dev="using:DevWinUI"
+    NavigationCacheMode="Required"
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea" MaxWidth="1064">
@@ -19,130 +20,97 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="36" />
         </Grid.RowDefinitions>
-
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12" Grid.Row="0">
-            <TextBlock x:Name="PageHeader"
-                   Margin="{ThemeResource PageHeaderMargin}"
-                   Padding="{ThemeResource PageHeaderPadding}"
-                   Style="{StaticResource TitleTextBlockStyle}"
-                   AutomationProperties.HeadingLevel="Level1"
-                   Text="PDF 병합하기" />
-
-            <TextBlock x:Name="PageDescription"
-                   Margin="{ThemeResource PageDescriptionMargin}"
-                   Padding="{ThemeResource PageDescriptionPadding}"
-                   Style="{StaticResource CaptionTextBlockStyle}"
-                   AutomationProperties.HeadingLevel="Level1"
-                   Text="여러 PDF 문서를 하나의 파일로 합칠 수 있습니다." />
-
-            <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right"
-                        Margin="36,0,36,0">
-                <AppBarButton x:Name="PickPdfFilesButton"
-                              Icon="Add" Label="불러오기"
-                              ToolTipService.ToolTip="PDF 파일을 목록에 추가합니다"
-                              Command="{x:Bind ViewModel.AddPdfFilesCommand}"
-                              IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
-                <AppBarButton x:Name="SaveAMergedPdfFileButton"
-                              Icon="Save" Label="저장하기"
-                              ToolTipService.ToolTip="추가된 PDF 파일을 하나로 병합합니다"
-                              Command="{x:Bind ViewModel.SaveFileCommand}"
-                              IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
+        <StackPanel
+            dev:PanelAttach.ChildrenTransitions="Default"
+            Spacing="12"
+            Grid.Row="0">
+            <TextBlock
+                x:Name="PageHeader"
+                Margin="{ThemeResource PageHeaderMargin}"
+                Padding="{ThemeResource PageHeaderPadding}"
+                Style="{StaticResource TitleTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="PDF 병합하기" />
+            <TextBlock
+                x:Name="PageDescription"
+                Margin="{ThemeResource PageDescriptionMargin}"
+                Padding="{ThemeResource PageDescriptionPadding}"
+                Style="{StaticResource CaptionTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="여러 PDF 문서를 하나의 파일로 합칠 수 있습니다." />
+            <CommandBar
+                Background="Transparent"
+                IsOpen="False"
+                DefaultLabelPosition="Right"
+                Margin="36,0,36,0">
+                <AppBarButton
+                    x:Name="PickPdfFilesButton"
+                    Icon="Add"
+                    Label="불러오기"
+                    ToolTipService.ToolTip="PDF 파일을 목록에 추가합니다"
+                    Command="{x:Bind ViewModel.AddPdfFilesCommand}"
+                    IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
+                <AppBarButton
+                    x:Name="SaveAMergedPdfFileButton"
+                    Icon="Save"
+                    Label="저장하기"
+                    ToolTipService.ToolTip="추가된 PDF 파일을 하나로 병합합니다"
+                    Command="{x:Bind ViewModel.SaveFileCommand}"
+                    IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}" />
             </CommandBar>
         </StackPanel>
-
-        <Border Style="{ThemeResource InfoBorderPanelStyle}" 
-                Margin="36,0,36,0"
-                Grid.Row="1"
-                Padding="16">
-            <ListView x:Name="PdfListView"
-                      ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
-                      CanReorderItems="True"
-                      AllowDrop="True"
-                      CanDragItems="True"
-                      SelectionMode="Extended"
-                      DragItemsCompleted="ListView_OnDragCompleted">
-
+        <Border
+            Style="{ThemeResource InfoBorderPanelStyle}"
+            Margin="36,0,36,0"
+            Grid.Row="1"
+            Padding="16">
+            <ListView
+                x:Name="PdfListView"
+                ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
+                CanReorderItems="True"
+                AllowDrop="True"
+                CanDragItems="True"
+                SelectionMode="Extended"
+                DragItemsCompleted="ListView_OnDragCompleted">
                 <ListView.Header>
-                    <Border Padding="8,4,0,4"
-                            Background="{ThemeResource SolidBackgroundFillColorTertiaryBrush}"
+                    <Border Background="{ThemeResource SolidBackgroundFillColorTertiaryBrush}"
                             CornerRadius="4">
                         <interactivity:Interaction.Behaviors>
                             <behaviors:StickyHeaderBehavior />
                         </interactivity:Interaction.Behaviors>
-
                         <toolkit:DataTable ColumnSpacing="16">
-                            <toolkit:DataColumn Content="연번"
-                                                MinWidth="30" />
-                            <toolkit:DataColumn Content="파일명"
-                                                DesiredWidth="*"
-                                                CanResize="True" />
-                            <toolkit:DataColumn Content="병합 범위"
-                                                MinWidth="120" />
+                            <toolkit:DataColumn
+                                Content="연번"
+                                MinWidth="30" />
+                            <toolkit:DataColumn
+                                Content="파일명"
+                                DesiredWidth="*"
+                                CanResize="True" />
+                            <toolkit:DataColumn
+                                Content="병합 범위"
+                                MinWidth="120" />
                         </toolkit:DataTable>
                     </Border>
-
-                    <!--<Grid ColumnSpacing="16" Padding="16,12">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="30" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="120" />
-                        </Grid.ColumnDefinitions>
-
-                        <TextBlock Grid.Column="0"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="연번" />
-                        <TextBlock Grid.Column="1"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="파일명" />
-                        <TextBlock Grid.Column="2"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="병합 범위" />
-                    </Grid>-->
                 </ListView.Header>
-
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:PdfItem">
-                        <toolkit:DataRow>
-                            <TextBlock Grid.Column="0"
-                                       Text="{x:Bind FileOrder, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
-
-                            <TextBlock Grid.Column="1"
-                                       Text="{x:Bind FileName, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
-
-                            <TextBox Grid.Column="2"
-                                     Text="{x:Bind PageRange, Mode=TwoWay}"
-                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
+                        <toolkit:DataRow HorizontalAlignment="Left">
+                            <TextBlock
+                                Text="{x:Bind FileOrder, Mode=OneWay}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                TextTrimming="CharacterEllipsis" />
+                            <TextBlock
+                                Text="{x:Bind FileName, Mode=OneWay}"
+                                VerticalAlignment="Center"
+                                TextTrimming="CharacterEllipsis" />
+                            <TextBox
+                                Text="{x:Bind PageRange, Mode=TwoWay}"
+                                PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}"
+                                VerticalAlignment="Center" />
                         </toolkit:DataRow>
-                        <!--<Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="30"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="120"/>
-                            </Grid.ColumnDefinitions>
-
-                            <TextBlock Grid.Column="0"
-                                       Text="{x:Bind FileOrder, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
-
-                            <TextBlock Grid.Column="1"
-                                       Text="{x:Bind FileName, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
-
-                            <TextBox Grid.Column="2"
-                                     Text="{x:Bind PageRange, Mode=TwoWay}"
-                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
-                        </Grid>-->
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                
                 <ListView.ItemContainerStyle>
                     <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -170,7 +138,6 @@
                 </ListView.ItemContainerStyle>
             </ListView>
         </Border>
-
         <Border Grid.Row="2" />
     </Grid>
 </Page>

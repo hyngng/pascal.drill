@@ -58,6 +58,7 @@ public partial class App : Application
         MainWindow.AppWindow.SetIcon("Assets/AppIcon.ico");
 
         ThemeService.Initialize(MainWindow);
+        LabsService.Initialize();
 
         MainWindow.Activate();
 

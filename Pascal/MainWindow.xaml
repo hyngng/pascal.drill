@@ -40,29 +40,29 @@
                     dev:NavigationServiceEx.NavigateTo="pages:HomeLandingPage" />
                 <NavigationViewItemSeparator/>
                 <NavigationViewItem
-                        x:Name="PdfEditPages"
-                        Content="PDF 편집"
-                        Icon="TwoPage"
-                        SelectsOnInvoked="False">
+                    x:Name="PdfEditPages"
+                    Content="PDF 편집"
+                    Icon="TwoPage"
+                    SelectsOnInvoked="False">
                     <NavigationViewItem.MenuItems>
-                    <NavigationViewItem
-                        x:Name="PdfMergePage"
-                        Content="PDF 병합 페이지"
-                        Icon="Page2"
-                        dev:NavigationServiceEx.NavigateTo="pdfPages:PdfMergePage" />
-                    <NavigationViewItem
-                        x:Name="PdfSplitPage"
-                        Content="PDF 분할 페이지" 
-                        Icon="Page2"
-                        dev:NavigationServiceEx.NavigateTo="pdfPages:PdfSplitPage" />
+                        <NavigationViewItem
+                            x:Name="PdfMergePage"
+                            Content="PDF 병합 페이지"
+                            Icon="Page2"
+                            dev:NavigationServiceEx.NavigateTo="pdfPages:PdfMergePage" />
+                        <NavigationViewItem
+                            x:Name="PdfSplitPage"
+                            Content="PDF 분할 페이지" 
+                            Icon="Page2"
+                            dev:NavigationServiceEx.NavigateTo="pdfPages:PdfSplitPage" />
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
-                <NavigationViewItem>
-                    <NavigationViewItem.MenuItems>
-                        <NavigationViewItem />
-                        <NavigationViewItem />
-                    </NavigationViewItem.MenuItems>
-                </NavigationViewItem>
+                <NavigationViewItem
+                    x:Name="LabsPage"
+                    Content="아직 만드는 중"
+                    Icon="Emoji"
+                    Visibility="Collapsed"
+                    dev:NavigationServiceEx.NavigateTo="pages:WindowsUpdatePage" />
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
                 <NavigationViewItem

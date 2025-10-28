@@ -9,7 +9,6 @@ namespace Pascal.Services.LabsService
 {
     public partial class LabsService : ILabsService
     {
-        #region 클래스 외부 API
         public void GetToggleSwitchStatus(ToggleSwitch toggleSwitch)
         {
             toggleSwitch.IsOn = isLabsEnabled;
@@ -20,28 +19,5 @@ namespace Pascal.Services.LabsService
             SetLabsConfiguration(isEnabled);
             ToggleLabsEnabledStatus();
         }
-        #endregion 클래스 외부 API
-
-        #region 클래스 내부 API
-        private void SetLabsConfiguration(bool isEnabled)
-        {
-            try
-            {
-                GlobalData.Config.IsLabsEnabled = isEnabled;
-                GlobalData.Save();
-            }
-            catch { }
-        }
-
-        private bool GetLabsConfiguration()
-        {
-            return GlobalData.Config?.IsLabsEnabled ?? false;
-        }
-
-        private void ToggleLabsEnabledStatus()
-        {
-            IsLabsEnabled = !IsLabsEnabled;
-        }
-        #endregion 클래스 내부 API
     }
 }

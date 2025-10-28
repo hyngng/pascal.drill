@@ -49,4 +49,24 @@ public partial class LabsService : ILabsService
 
         return this;
     }
+
+    private void SetLabsConfiguration(bool isEnabled)
+    {
+        try
+        {
+            GlobalData.Config.IsLabsEnabled = isEnabled;
+            GlobalData.Save();
+        }
+        catch { }
+    }
+
+    private bool GetLabsConfiguration()
+    {
+        return GlobalData.Config?.IsLabsEnabled ?? false;
+    }
+
+    private void ToggleLabsEnabledStatus()
+    {
+        IsLabsEnabled = !IsLabsEnabled;
+    }
 }
