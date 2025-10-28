@@ -13,24 +13,26 @@ public sealed partial class MainWindow : Window
         SetTitleBar(AppTitleBar);
         AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
 
-        var navService = App.GetService<IJsonNavigationService>() as JsonNavigationService;
-        if (navService != null)
-        {
-            navService.Initialize(NavView, NavFrame, NavigationPageMappings.PageDictionary)
-                      .ConfigureDefaultPage(typeof(HomeLandingPage))
-                      .ConfigureSettingsPage(typeof(SettingsPage))
-                      .ConfigureJsonFile("Assets/NavViewMenu/AppData.json")
-                      .ConfigureTitleBar(AppTitleBar)
-                      .ConfigureBreadcrumbBar(BreadCrumbNav, BreadcrumbPageMappings.PageDictionary);
-        }
-
         mainPage_Loaded();
     }
 
     private void mainPage_Loaded()
     {
-        App.Current.LabsService.LabsChanged += OnLabsEnabledToggled; 
+        App.Current.LabsService.LabsChanged += OnLabsEnabledToggled;
+        
+        // DevWinUI의 ConfigureDefaultPage와 ConfigureSettingsPage 사용
+        App.Current.NavigationService
+            .Initialize(NavView, NavFrame)
+            .ConfigureDefaultPage(typeof(HomeLandingPage))
+            .ConfigureSettingsPage(typeof(SettingsPage));
     }
+
+    #region 고든램지 햄버거 버튼
+    private void TitleBar_PaneToggleRequested(TitleBar sender, object args)
+    {
+        NavView.IsPaneOpen = !NavView.IsPaneOpen;
+    }
+    #endregion 고든램지 햄버거 버튼
 
     #region 실험실 기능 숨기기/보이기 => 모델뷰로 옮길 것
     private void OnLabsEnabledToggled(bool isEnabled)
@@ -48,7 +50,7 @@ public sealed partial class MainWindow : Window
     private NavigationViewItem FindNavigationViewItem(string identifier)
     {
         var allCollections = new[] { NavView.MenuItems, NavView.FooterMenuItems };
-        
+
         return allCollections
               .SelectMany(collection => GetAllNavigationItems(collection))
               .FirstOrDefault(item => item.Tag?.ToString() == identifier || item.Name == identifier);
@@ -61,7 +63,7 @@ public sealed partial class MainWindow : Window
             if (item is NavigationViewItem navItem)
             {
                 yield return navItem;
-                
+
                 if (navItem.MenuItems?.Count > 0)
                     foreach (var childItem in GetAllNavigationItems(navItem.MenuItems))
                         yield return childItem;

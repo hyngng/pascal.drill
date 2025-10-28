@@ -27,17 +27,20 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <dev:HomePageHeader HeaderImage="/Assets/Images/sabok_bg.png"
+        <dev:HomePageHeader HeaderImage="/Assets/Banners/sabok_bg.png"
                             HeaderImageHeight="300"
-                            HeaderText="홈 페이지"
-                            HeaderSubtitleText="안녕하세요! 환영합니다!">
+                            HeaderText="홈페이지"
+                            HeaderSubtitleText="안녕하세요! 환영합니다!"
+                            HeaderSubtitleFontSize="16"
+                            Grid.Row="0">
             <dev:HomePageHeader.HeaderContent>
                 <StackPanel Orientation="Horizontal"
                             Spacing="12">
-                    <dev:HeaderTile Title="사용법 가이드"
-                                    Description="프로그램 사용 방법을 알아봅니다.">
+                    <dev:HeaderTile Title="이용 가이드"
+                                    Description="프로그램 사용 방법을 알아봅니다."
+                                    Link="https://github.com/hyngng/pascal.drill/wiki">
                         <dev:HeaderTile.Source>
-                            <Image Source="/Assets/Fluent/Clock.png" />
+                            <Image Source="/Assets/Icons/Board.png" />
                         </dev:HeaderTile.Source>
                     </dev:HeaderTile>
                     <dev:HeaderTile Title="Title"

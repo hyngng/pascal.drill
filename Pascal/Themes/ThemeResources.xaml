@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <Thickness x:Key="PageHeaderMargin">36,24,0,0</Thickness>
+            <Thickness x:Key="PageHeaderPadding">0,0,0,0</Thickness>
+
+            <Thickness x:Key="PageDescriptionMargin">36,0,0,30</Thickness>
+            <Thickness x:Key="PageDescriptionPadding">0,0,0,0</Thickness>
+
+            <Thickness x:Key="PageContentMargin">36,0,0,36</Thickness>
+            <Thickness x:Key="PageContentPadding">0,0,36,0</Thickness>
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <Thickness x:Key="PageHeaderMargin">36,24,0,0</Thickness>
+            <Thickness x:Key="PageHeaderPadding">0,0,0,0</Thickness>
+
+            <Thickness x:Key="PageDescriptionMargin">36,0,0,30</Thickness>
+            <Thickness x:Key="PageDescriptionPadding">0,0,0,0</Thickness>
+
+            <Thickness x:Key="PageContentMargin">36,0,0,36</Thickness>
+            <Thickness x:Key="PageContentPadding">0,0,36,0</Thickness>
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="HighContrast">
+
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="Pascal.Views.Pages.PdfEditPages.PdfMergePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -7,6 +7,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:behaviors="using:CommunityToolkit.WinUI.Behaviors"
     xmlns:models="using:Pascal.Models"
     xmlns:dev="using:DevWinUI"
     mc:Ignorable="d">
@@ -61,7 +63,25 @@
                       DragItemsCompleted="ListView_OnDragCompleted">
 
                 <ListView.Header>
-                    <Grid ColumnSpacing="16" Padding="16,12">
+                    <Border Padding="8,4,0,4"
+                            Background="{ThemeResource SolidBackgroundFillColorTertiaryBrush}"
+                            CornerRadius="4">
+                        <interactivity:Interaction.Behaviors>
+                            <behaviors:StickyHeaderBehavior />
+                        </interactivity:Interaction.Behaviors>
+
+                        <toolkit:DataTable ColumnSpacing="16">
+                            <toolkit:DataColumn Content="연번"
+                                                MinWidth="30" />
+                            <toolkit:DataColumn Content="파일명"
+                                                DesiredWidth="*"
+                                                CanResize="True" />
+                            <toolkit:DataColumn Content="병합 범위"
+                                                MinWidth="120" />
+                        </toolkit:DataTable>
+                    </Border>
+
+                    <!--<Grid ColumnSpacing="16" Padding="16,12">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="30" />
                             <ColumnDefinition Width="*" />
@@ -77,12 +97,28 @@
                         <TextBlock Grid.Column="2"
                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                    Text="병합 범위" />
-                    </Grid>
+                    </Grid>-->
                 </ListView.Header>
 
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:PdfItem">
-                        <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
+                        <toolkit:DataRow>
+                            <TextBlock Grid.Column="0"
+                                       Text="{x:Bind FileOrder, Mode=OneWay}"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis" />
+
+                            <TextBlock Grid.Column="1"
+                                       Text="{x:Bind FileName, Mode=OneWay}"
+                                       VerticalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis" />
+
+                            <TextBox Grid.Column="2"
+                                     Text="{x:Bind PageRange, Mode=TwoWay}"
+                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
+                        </toolkit:DataRow>
+                        <!--<Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="30"/>
                                 <ColumnDefinition Width="*"/>
@@ -103,12 +139,12 @@
                             <TextBox Grid.Column="2"
                                      Text="{x:Bind PageRange, Mode=TwoWay}"
                                      PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
-                        </Grid>
+                        </Grid>-->
                     </DataTemplate>
                 </ListView.ItemTemplate>
                 
                 <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
+                    <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                         <Setter Property="Padding" Value="0"/>
                         <Setter Property="ContextFlyout">

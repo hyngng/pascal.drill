@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Pascal.ViewModels
 {
@@ -19,6 +20,14 @@ namespace Pascal.ViewModels
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         private bool isBusy = false;
         public bool IsNotBusy => !isBusy;
+
+        public Visibility IsListEmpty => PdfItems == null || PdfItems.Count == 0
+            ? Visibility.Visible
+            : Visibility.Collapsed;
+
+        public Visibility IsListNotEmpty => PdfItems != null && PdfItems.Count > 0
+            ? Visibility.Visible
+            : Visibility.Collapsed;
 
         public PdfMergePageViewModel(){ }
 

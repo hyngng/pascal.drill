@@ -1,4 +1,4 @@
-using Microsoft.UI.Xaml;
+ï»¿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -36,7 +36,7 @@ namespace Pascal.Views.Pages.PdfEditPages
             this.InitializeComponent();
         }
 
-        #region ÆÄÀÏ ¼±ÅÃ ¹× ÀúÀå ¹öÆ° °ü·Ã ·ÎÁ÷
+        #region íŒŒì¼ ì„ íƒ ë° ì €ì¥ ë²„íŠ¼ ê´€ë ¨ ë¡œì§
         public async Task<IReadOnlyList<StorageFile>> PickMultiplePdfFilesAsync()
         {
             var openPicker = new FileOpenPicker();
@@ -66,11 +66,11 @@ namespace Pascal.Views.Pages.PdfEditPages
         }
         #endregion
 
-        #region ListView °ü·Ã ·ÎÁ÷
+        #region ListView ê´€ë ¨ ë¡œì§
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
             /// <summary>
-            /// °³ Â¥Ä¡´Â ·ÎÁ÷.
+            /// ê°œ ì§œì¹˜ëŠ” ë¡œì§.
             /// </summary>
 
             var menuFlyout = sender as MenuFlyout;
