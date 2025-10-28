@@ -118,15 +118,17 @@
                         <Setter Property="ContextFlyout">
                             <Setter.Value>
                                 <MenuFlyout Opening="ItemMenuFlyout_Opening">
-                                    <MenuFlyoutItem x:Name="OpenMenu"
-                                                    Text="열기"
-                                                    Icon="OpenFile"
-                                                    Tag="OpenMenu" />
+                                    <MenuFlyoutItem
+                                        x:Name="OpenMenu"
+                                        Text="열기"
+                                        Icon="OpenFile"
+                                        Tag="OpenMenu" />
                                     <MenuFlyoutSeparator x:Name="FlyoutSeperator" />
-                                    <MenuFlyoutItem x:Name="DeleteMenu"
-                                                    Text="삭제"
-                                                    Icon="Delete"
-                                                    Tag="DeleteMenu">
+                                    <MenuFlyoutItem
+                                        x:Name="DeleteMenu"
+                                        Text="삭제"
+                                        Icon="Delete"
+                                        Tag="DeleteMenu">
                                         <!--<MenuFlyoutItem.KeyboardAccelerators>
                                             <KeyboardAccelerator Key="Delete" />
                                         </MenuFlyoutItem.KeyboardAccelerators>-->
