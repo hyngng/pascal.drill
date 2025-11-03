@@ -26,21 +26,27 @@ namespace Pascal.Views.SubPages;
 /// </summary>
 public sealed partial class WindowsUpdateWindow : Window
 {
+    public bool ShowUIContent
+    {
+        get => UIContent.Visibility == Visibility.Visible;
+        set => UIContent.Visibility = value ? Visibility.Visible : Visibility.Collapsed;
+    }
+
     public WindowsUpdateWindow()
     {
         InitializeComponent();
+        InitializeWindowSettings();
+    }
 
-        this.InitializeComponent();
-        //AppWindow.SetIcon("Assets/Tiles/GalleryIcon.ico");
+    private void InitializeWindowSettings()
+    {
         AppWindow.TitleBar.PreferredTheme = TitleBarTheme.UseDefaultAppMode;
-
-        // Set the window to Full-Screen mode
         AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
     }
 
     private void Window_KeyDown(object sender, KeyRoutedEventArgs e)
     {
         if (e.Key == VirtualKey.Escape)
-            this.Close();
+            Close();
     }
 }

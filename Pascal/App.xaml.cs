@@ -2,6 +2,7 @@
 using Pascal.Services.LabsService;
 using Pascal.Services.ParseService;
 using Pascal.Services.PdfService;
+using Pascal.Services.WindowService;
 
 namespace Pascal;
 
@@ -38,14 +39,18 @@ public partial class App : Application
     {
         var services = new ServiceCollection();
 
+        // ViewModels
         services.AddTransient<MainViewModel>();
+        services.AddTransient<WindowsUpdatePageViewModel>();
 
+        // Services
         services.AddSingleton<IThemeService, ThemeService>();
         services.AddSingleton<ILabsService, LabsService>();
         services.AddSingleton<IFilePickerService, FilePickerService>();
         services.AddSingleton<IPdfService, PdfService>();
         services.AddSingleton<IParseService, ParseService>();
         services.AddSingleton<INavigationServiceEx, NavigationServiceEx>();
+        services.AddSingleton<IWindowService, WindowService>();
 
         return services.BuildServiceProvider();
     }

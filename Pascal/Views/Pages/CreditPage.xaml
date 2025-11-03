@@ -34,29 +34,34 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
-            <TextBlock x:Name="PageHeader"
-                       Margin="{ThemeResource PageHeaderMargin}"
-                       Padding="{ThemeResource PageHeaderPadding}"
-                       Style="{StaticResource TitleTextBlockStyle}"
-                       AutomationProperties.HeadingLevel="Level1"
-                       Text="크레딧" />
-
-            <TextBlock x:Name="PageDescription"
-                       Margin="{ThemeResource PageDescriptionMargin}"
-                       Padding="{ThemeResource PageDescriptionPadding}"
-                       Style="{StaticResource CaptionTextBlockStyle}"
-                       AutomationProperties.HeadingLevel="Level1"
-                       Text="이 앱을 만든 사람들, 기술 스택, 오픈소스를 소개합니다." />
+        <StackPanel
+            dev:PanelAttach.ChildrenTransitions="Default"
+            Spacing="12">
+            <TextBlock
+                x:Name="PageHeader"
+                Margin="{ThemeResource PageHeaderMargin}"
+                Padding="{ThemeResource PageHeaderPadding}"
+                Style="{StaticResource TitleTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="크레딧" />
+            <TextBlock
+                x:Name="PageDescription"
+                Margin="{ThemeResource PageDescriptionMargin}"
+                Padding="{ThemeResource PageDescriptionPadding}"
+                Style="{StaticResource CaptionTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="이 앱을 만든 사람들, 기술 스택, 오픈소스를 소개합니다." />
         </StackPanel>
 
-        <ScrollView  VerticalScrollBarVisibility="Auto" Grid.Row="1">
-            <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="5"
-                        Margin="{ThemeResource PageContentMargin}"
-                        Padding="{ThemeResource PageContentPadding}">
-
+        <ScrollView
+            VerticalScrollBarVisibility="Auto"
+            Grid.Row="1">
+            <StackPanel
+                dev:PanelAttach.ChildrenTransitions="Default"
+                Spacing="5"
+                Margin="{ThemeResource PageContentMargin}"
+                Padding="{ThemeResource PageContentPadding}">
                 <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="만든 이" Margin="1,0,0,6" />
-
                 <dev:SettingsCard>
                     <dev:SettingsCard.Header>
                         <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">

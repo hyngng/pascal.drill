@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="Pascal.Views.Pages.WindowsUpdatePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -11,11 +11,12 @@
 
     <Grid>
         <Button Click="ActivateWindowsUpdateWindow">
-            <TextBlock Text="이 기능은 곧 제공될 예정입니다."
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       FontSize="24"
-                       FontWeight="Bold"/>
+            <TextBlock
+                Text="이 기능은 곧 제공될 예정입니다."
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="24"
+                FontWeight="Bold"/>
         </Button>
 
         <dev:KeyVisual Content="Ctrl+F5" />
