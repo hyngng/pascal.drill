@@ -1,4 +1,4 @@
-using Microsoft.UI.Xaml;
+Ôªøusing Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -29,14 +29,15 @@ namespace Pascal.Views.Pages.PdfEditPages
     /// </summary>
     public sealed partial class PdfSplitPage : Page
     {
-        public PdfSplitPageViewModel ViewModel { get; } = new();
+        public PdfSplitPageViewModel ViewModel { get; }
 
         public PdfSplitPage()
         {
+            ViewModel = App.GetService<PdfSplitPageViewModel>();
             InitializeComponent();
         }
 
-        #region ListView ∞¸∑√ ∑Œ¡˜
+        #region ListView Í¥ÄÎ†® Î°úÏßÅ
         private void ItemMenuFlyout_Opening(object sender, object e)
         {
             var menuFlyout = sender as MenuFlyout;

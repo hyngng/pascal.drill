@@ -1,13 +1,12 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Pascal.Models;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+using Pascal.Services.FileManageService;
 
 namespace Pascal.ViewModels
 {
@@ -18,111 +17,60 @@ namespace Pascal.ViewModels
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
-        private bool isBusy = false;
-        public bool IsNotBusy => !isBusy;
+        private bool isBusy;
 
-        public Visibility IsListEmpty => PdfItems == null || PdfItems.Count == 0
-            ? Visibility.Visible
-            : Visibility.Collapsed;
+        public bool IsNotBusy => !IsBusy;
 
-        public Visibility IsListNotEmpty => PdfItems != null && PdfItems.Count > 0
-            ? Visibility.Visible
-            : Visibility.Collapsed;
+        private readonly IFileManageService fileManager;
 
-        public PdfMergePageViewModel(){ }
-
-        [RelayCommand]
-        private async Task AddPdfFilesAsync()
+        public PdfMergePageViewModel(IFileManageService fileManager)
         {
-            IsBusy = true;
-            try
-            {
-                var files = await App.Current.FilePickerService.PickMultiplePdfFilesAsync();
-                if (files != null && files.Count > 0)
-                {
-                    int baseCount = pdfItems.Count;
-                    for (int i = 0; i < files.Count; i++)
-                    {
-                        var file = files[i];
-                        var properties  = await file.GetBasicPropertiesAsync();
-                        var pageCount   = App.Current.PdfService.FindPageRanges(file.Path);
-                        // var processUnit = 
-
-                        var newItem = new PdfItem
-                        {
-                            FileOrder      = baseCount + i + 1,
-                            PageCount      = pageCount,
-                            // ProcessUnit    = processUnit,
-                            FilePath       = file.Path,
-                            FileName       = file.Name,
-                            FileSize       = $"{properties.Size / 1024:N0} KB",
-                            // PagesToProcess = new List<int>()
-                        };
-                        pdfItems.Add(newItem);
-                    }
-                }
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            this.fileManager = fileManager;
+            this.fileManager.BusyChanged += (_, busy) => IsBusy = busy;
         }
 
         [RelayCommand]
-        private void OpenFiles(IEnumerable<PdfItem> pdfItemsToOpen)
+        public async Task AddPdfFiles()
         {
-            var list = pdfItemsToOpen.Where(i => i != null).Distinct().ToList();
-            var psi = new ProcessStartInfo
-            {
-                FileName = list[0].FilePath,
-                UseShellExecute = true
-            };
-            Process.Start(psi);
+            if (IsBusy) return;
+            var added = await fileManager.PickAndCreatePdfItemsAsync(PdfItems.Count);
+            if (added is null || added.Count == 0) return;
+
+            foreach (var item in added)
+                PdfItems.Add(item);
         }
 
         [RelayCommand]
-        private void ReorderFiles()
+        public async Task SavePdfFile()
         {
-            for (int i = 0; i < pdfItems.Count; i++)
-                pdfItems[i].FileOrder = i + 1;
-        }
-
-        [RelayCommand]
-        private void DeleteFiles(IEnumerable<PdfItem> pdfItemsToDelete)
-        {
-            if (pdfItemsToDelete == null)
+            if (IsBusy || PdfItems.Count == 0)
                 return;
 
-            var list = pdfItemsToDelete.Where(i => i != null).Distinct().ToList();
-            if (list.Count == 0)
-                return;
-
-            foreach (var it in list)
-                pdfItems.Remove(it);
-
-            ReorderFiles();
+            await fileManager.SaveMergedPdfAsync(PdfItems);
         }
 
         [RelayCommand]
-        private async Task SaveFileAsync()
+        public void OpenPdfFiles(IList<PdfItem>? selectedItems)
         {
-            if (pdfItems.Count != 0)
-            {
-                IsBusy = true;
+            var list = (selectedItems?.Count > 0 ? selectedItems : new List<PdfItem> { PdfItems.FirstOrDefault()! })
+                       .Where(x => x != null);
 
-                App.Current.ParseService.ParsePageRange(pdfItems);
+            fileManager.OpenFiles(list, i => i.FilePath);
+        }
 
-                try
-                {
-                    var file = await App.Current.FilePickerService.PickSavePdfFileAsync();
-                    if (file != null)
-                        App.Current.PdfService.MergePdf(file.Path, pdfItems);
-                }
-                finally
-                {
-                    IsBusy = false;
-                }
-            }
+        [RelayCommand]
+        public void DeletePdfFiles(IList<PdfItem>? selectedItems)
+        {
+            if (selectedItems is null || selectedItems.Count == 0)
+                return;
+
+            fileManager.DeleteItems(selectedItems, PdfItems, (it, order) => it.FileOrder = order);
+        }
+
+        [RelayCommand]
+        public void ReorderPdfFiles()
+        {
+            fileManager.ReorderItems(PdfItems, (it, order) => it.FileOrder = order);
         }
     }
 }

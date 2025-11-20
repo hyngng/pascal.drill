@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace Pascal.Models
@@ -13,10 +13,6 @@ namespace Pascal.Models
         private string fileSize = string.Empty;
         private string pageRange = string.Empty;
         private List<int> pagesToProcess = [];
-        //private string splitName = string.Empty;
-        //private int splitStart;
-        //private int splitEnd;
-        //private int splitSize;
 
         public int FileOrder { get => fileOrder; set { fileOrder = value; OnPropertyChanged(); } }
         public int PageCount { get => pageCount; set { pageCount = value; OnPropertyChanged(); } }
@@ -27,10 +23,6 @@ namespace Pascal.Models
         public string PageRangeHint => PageCount <= 1 ? "1" : $"1-{PageCount}";
         public string PageRange { get => pageRange; set { if (pageRange != value) { pageRange = value; OnPropertyChanged(); } } }
         public List<int> PagesToProcess { get => pagesToProcess; set { pagesToProcess = value; OnPropertyChanged(); } }
-        //public string SplitName { get => splitName; set { splitName = value; OnPropertyChanged(); } }
-        //public int SplitStart { get => splitStart; set { splitStart = value; OnPropertyChanged(); } }
-        //public int SplitEnd { get => splitEnd; set { splitEnd = value; OnPropertyChanged(); } }
-        //public int SplitSize { get => splitSize; set { splitSize = value; OnPropertyChanged(); } }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

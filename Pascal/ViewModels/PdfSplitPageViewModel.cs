@@ -27,7 +27,7 @@ namespace Pascal.ViewModels
             IsBusy = true;
             try
             {
-                var files = await App.Current.FilePickerService.PickMultiplePdfFilesAsync();
+                var files = await App.Current.FileManageService.PickMultiplePdfFilesAsync();
                 if (files != null && files.Count > 0)
                 {
                     int baseCount = pdfItems.Count;
@@ -95,7 +95,7 @@ namespace Pascal.ViewModels
 
                 try
                 {
-                    var file = await App.Current.FilePickerService.PickSavePdfFileAsync();
+                    var file = await App.Current.FileManageService.PickSavePdfFileAsync();
                     if (file != null)
                         App.Current.PdfService.MergePdf(file.Path, pdfItems);
                 }

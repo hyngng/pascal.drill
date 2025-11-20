@@ -1,4 +1,4 @@
-﻿using Pascal.Services.FilePickerService;
+﻿using Pascal.Services.FileManageService;
 using Pascal.Services.LabsService;
 using Pascal.Services.ParseService;
 using Pascal.Services.PdfService;
@@ -14,7 +14,7 @@ public partial class App : Application
     public IServiceProvider Services { get; }
     public IThemeService ThemeService => GetService<IThemeService>();
     public ILabsService LabsService => GetService<ILabsService>();
-    public IFilePickerService FilePickerService => GetService<IFilePickerService>();
+    public IFileManageService FileManageService => GetService<IFileManageService>();
     public IPdfService PdfService => GetService<IPdfService>();
     public IParseService ParseService => GetService<IParseService>();
     public INavigationServiceEx NavigationService => GetService<INavigationServiceEx>();
@@ -41,16 +41,19 @@ public partial class App : Application
 
         // ViewModels
         services.AddTransient<MainViewModel>();
+        services.AddTransient<PdfMergePageViewModel>();
+        services.AddTransient<PdfSplitPageViewModel>();
         services.AddTransient<WindowsUpdatePageViewModel>();
 
         // Services
         services.AddSingleton<IThemeService, ThemeService>();
         services.AddSingleton<ILabsService, LabsService>();
-        services.AddSingleton<IFilePickerService, FilePickerService>();
         services.AddSingleton<IPdfService, PdfService>();
         services.AddSingleton<IParseService, ParseService>();
         services.AddSingleton<INavigationServiceEx, NavigationServiceEx>();
         services.AddSingleton<IWindowService, WindowService>();
+
+        services.AddTransient<IFileManageService, FileManageService>();
 
         return services.BuildServiceProvider();
     }

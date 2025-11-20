@@ -18,44 +18,46 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="36" />
         </Grid.RowDefinitions>
-
         <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12" Grid.Row="0">
-            <TextBlock x:Name="PageHeader"
-                       Margin="{ThemeResource PageHeaderMargin}"
-                       Padding="{ThemeResource PageHeaderPadding}"
-                       Style="{StaticResource TitleTextBlockStyle}"
-                       AutomationProperties.HeadingLevel="Level1"
-                       Text="PDF 분할하기" />
-
-            <TextBlock x:Name="PageDescription"
-                       Margin="{ThemeResource PageDescriptionMargin}"
-                       Padding="{ThemeResource PageDescriptionPadding}"
-                       Style="{StaticResource CaptionTextBlockStyle}"
-                       AutomationProperties.HeadingLevel="Level1"
-                       Text="이곳에서 분할 작업을 수행할 수 있습니다." />
-
-            <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right"
-                        Margin="36,0,36,0">
-                <AppBarButton x:Name="PickPdfFilesButton"
-                              Icon="Add" Label="불러오기"
-                              Command="{x:Bind ViewModel.AddPdfFilesCommand}"
-                              IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}"/>
-                <AppBarButton x:Name="SaveASplitedPdfFileButton"
-                              Icon="Save" Label="저장하기"
-                              Command="{x:Bind ViewModel.SaveFileCommand}"
-                              IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}"/>
+            <TextBlock
+                x:Name="PageHeader"
+                Margin="{ThemeResource PageHeaderMargin}"
+                Padding="{ThemeResource PageHeaderPadding}"
+                Style="{StaticResource TitleTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="PDF 분할하기" />
+            <TextBlock
+                x:Name="PageDescription"
+                Margin="{ThemeResource PageDescriptionMargin}"
+                Padding="{ThemeResource PageDescriptionPadding}"
+                Style="{StaticResource CaptionTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="이곳에서 분할 작업을 수행할 수 있습니다." />
+            <CommandBar
+                Background="Transparent" IsOpen="False" DefaultLabelPosition="Right"
+                Margin="36,0,36,0">
+                <AppBarButton
+                    x:Name="PickPdfFilesButton"
+                    Icon="Add" Label="불러오기"
+                    Command="{x:Bind ViewModel.AddPdfFilesCommand}"
+                    IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}"/>
+                <AppBarButton
+                    x:Name="SaveASplitedPdfFileButton"
+                    Icon="Save" Label="저장하기"
+                    Command="{x:Bind ViewModel.SaveFileCommand}"
+                    IsEnabled="{x:Bind ViewModel.IsNotBusy, Mode=OneWay}"/>
             </CommandBar>
         </StackPanel>
-
-        <Border Style="{ThemeResource InfoBorderPanelStyle}" 
-                Margin="36,0,36,0"
-                Grid.Row="1"
-                Padding="16">
-            <ListView x:Name="PdfListView"
-                      ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
-                      AllowDrop="True"
-                      SelectionMode="Extended">
-
+        <Border
+            Style="{ThemeResource InfoBorderPanelStyle}" 
+            Margin="36,0,36,0"
+            Grid.Row="1"
+            Padding="16">
+            <ListView
+                x:Name="PdfListView"
+                ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
+                AllowDrop="True"
+                SelectionMode="Extended">
                 <ListView.Header>
                     <Grid ColumnSpacing="16" Padding="16,12">
                         <Grid.ColumnDefinitions>
@@ -63,19 +65,20 @@
                             <ColumnDefinition Width="80" />
                             <ColumnDefinition Width="120" />
                         </Grid.ColumnDefinitions>
-
-                        <TextBlock Grid.Column="0"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="파일명" />
-                        <TextBlock Grid.Column="1"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="분할 단위" />
-                        <TextBlock Grid.Column="2"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                   Text="분할 범위" />
+                        <TextBlock
+                            Grid.Column="0"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="파일명" />
+                        <TextBlock
+                            Grid.Column="1"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="분할 단위" />
+                        <TextBlock
+                            Grid.Column="2"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="분할 범위" />
                     </Grid>
                 </ListView.Header>
-
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:PdfItem">
                         <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
@@ -84,23 +87,24 @@
                                 <ColumnDefinition Width="80"/>
                                 <ColumnDefinition Width="120" />
                             </Grid.ColumnDefinitions>
+                            <TextBlock
+                                Grid.Column="0"
+                                Text="{x:Bind FileName, Mode=OneWay}"
+                                VerticalAlignment="Center"
+                                TextTrimming="CharacterEllipsis" />
 
-                            <TextBlock Grid.Column="0"
-                                       Text="{x:Bind FileName, Mode=OneWay}"
-                                       VerticalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
+                            <TextBox
+                                Grid.Column="1"
+                                Text="{x:Bind PageRange, Mode=TwoWay}"
+                                PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
 
-                            <TextBox Grid.Column="1"
-                                     Text="{x:Bind PageRange, Mode=TwoWay}"
-                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
-
-                            <TextBox Grid.Column="2"
-                                     Text="{x:Bind PageRange, Mode=TwoWay}"
-                                     PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
+                            <TextBox
+                                Grid.Column="2"
+                                Text="{x:Bind PageRange, Mode=TwoWay}"
+                                PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                
                 <ListView.ItemContainerStyle>
                     <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -108,18 +112,20 @@
                         <Setter Property="ContextFlyout">
                             <Setter.Value>
                                 <MenuFlyout Opening="ItemMenuFlyout_Opening">
-                                    <MenuFlyoutItem x:Name="OpenMenu"
-                                            Text="열기"
-                                            Icon="OpenFile"
-                                            Tag="OpenMenu" />
+                                    <MenuFlyoutItem
+                                        x:Name="OpenMenu"
+                                        Text="열기"
+                                        Icon="OpenFile"
+                                        Tag="OpenMenu" />
                                     <MenuFlyoutSeparator x:Name="FlyoutSeperator" />
-                                    <MenuFlyoutItem x:Name="DeleteMenu"
-                                            Text="삭제"
-                                            Icon="Delete"
-                                            Tag="DeleteMenu">
+                                    <MenuFlyoutItem
+                                        x:Name="DeleteMenu"
+                                        Text="삭제"
+                                        Icon="Delete"
+                                        Tag="DeleteMenu">
                                         <MenuFlyoutItem.KeyboardAccelerators>
-                                    <!--<KeyboardAccelerator Key="Delete" />-->
-                                </MenuFlyoutItem.KeyboardAccelerators>
+                                            <!--<KeyboardAccelerator Key="Delete" />-->
+                                        </MenuFlyoutItem.KeyboardAccelerators>
                                     </MenuFlyoutItem>
                                 </MenuFlyout>
                             </Setter.Value>
@@ -128,7 +134,6 @@
                 </ListView.ItemContainerStyle>
             </ListView>
         </Border>
-
         <Border Grid.Row="2" />
     </Grid>
 </Page>

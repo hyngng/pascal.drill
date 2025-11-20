@@ -1,8 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Pascal.Models;
 
@@ -10,78 +11,67 @@ namespace Pascal.Services.ParseService
 {
     public partial class ParseService : IParseService
     {
+        private static readonly Regex RangeRegex = new(@"^(\d*)-(\d*)$", RegexOptions.Compiled);
+
+        private static IEnumerable<int> ParseToken(string part, int min, int max)
+        {
+            if (string.IsNullOrWhiteSpace(part))
+                yield break;
+
+            part = part.Trim();
+
+            var m = RangeRegex.Match(part);
+            if (m.Success)
+            {
+                int start = string.IsNullOrEmpty(m.Groups[1].Value) ? min
+                           : (int.TryParse(m.Groups[1].Value, out var s) ? s : -1);
+
+                int end = string.IsNullOrEmpty(m.Groups[2].Value) ? max
+                         : (int.TryParse(m.Groups[2].Value, out var e) ? e : -1);
+
+                if (start < min || end < min || start == -1 || end == -1)
+                    yield break;
+
+                if (start > end)
+                    yield break;
+
+                for (int i = start; i <= end; i++)
+                    if (i >= min && i <= max)
+                        yield return i;
+
+                yield break;
+            }
+
+            if (int.TryParse(part, out int p) && p >= min && p <= max)
+                yield return p;
+        }
+
         public List<int> ParsePageRange(string input, int maxPage)
         {
-            /// <summary>
-            /// 
-            /// </summary>
-
             int minPage = 1;
-            List<int> result = [];
-            string[] parts = input.Split(',');
+            if (maxPage < minPage || string.IsNullOrWhiteSpace(input))
+                return new();
 
-            foreach (string rawPart in parts)
+            var tokens = input.Split(',', StringSplitOptions.RemoveEmptyEntries);
+
+            var set = new HashSet<int>();
+            foreach (var raw in tokens)
             {
-                string part = rawPart.Trim();
-
-                if (part.Contains('-'))
+                var trimmed = raw.Trim();
+                foreach (var oneBased in ParseToken(trimmed, minPage, maxPage))
                 {
-                    int start, end;
-
-                    if (part.StartsWith('-'))
-                    {
-                        // "-20" → "1-20"
-                        if (int.TryParse(part[1..].Trim(), out end))
-                            start = minPage;
-
-                        else continue;
-                    }
-                    else if (part.EndsWith('-'))
-                    {
-                        // "3-" → "3-maxPage"
-                        if (int.TryParse(part[..^1].Trim(), out start))
-                            end = maxPage;
-
-                        else continue;
-                    }
-                    else
-                    {
-                        // "5-8"
-                        var rangeParts = part.Split('-');
-
-                        if (rangeParts.Length == 2 &&
-                            int.TryParse(rangeParts[0].Trim(), out start) &&
-                            int.TryParse(rangeParts[1].Trim(), out end))
-                        {
-                            // OK
-                        }
-
-                        else continue;
-                    }
-
-                    if (start <= end)
-                    {
-                        for (int p = start; p <= end; p++)
-                            if (p >= minPage && p <= maxPage)
-                                result.Add(p - 1);
-                    }
-                }
-                else
-                {
-                    // 단일 페이지 숫자
-                    if (int.TryParse(part, out int page))
-                    {
-                        if (page >= minPage && page <= maxPage)
-                            result.Add(page - 1);
-                    }
+                    int zeroBased = oneBased - 1;
+                    if (zeroBased >= 0 && zeroBased < maxPage)
+                        set.Add(zeroBased);
                 }
             }
 
-            return result;
+            return set.OrderBy(p => p).ToList();
         }
 
         public void ParsePageRange(ObservableCollection<PdfItem> pdfItems)
         {
+            if (pdfItems == null) return;
             foreach (var pdfItem in pdfItems)
                 pdfItem.PagesToProcess = ParsePageRange(pdfItem.PageRange, pdfItem.PageCount);
         }
