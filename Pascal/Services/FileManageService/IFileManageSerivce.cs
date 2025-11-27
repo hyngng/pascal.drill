@@ -9,8 +9,9 @@ namespace Pascal.Services.FileManageService
         event EventHandler<bool>? BusyChanged;
 
         Task<IReadOnlyList<StorageFile>> PickMultiplePdfFilesAsync();
+        //Task<StorageFolder?> PickFolderAsync();
         Task<StorageFile?> PickSavePdfFileAsync();
-
+        Task<StorageFolder?> PickSavePdfFolderAsync();
         Task<IReadOnlyList<PdfItem>> PickAndCreatePdfItemsAsync(int baseCount, CancellationToken ct = default);
         Task<string?> SaveMergedPdfAsync(IReadOnlyList<PdfItem> items, CancellationToken ct = default);
 

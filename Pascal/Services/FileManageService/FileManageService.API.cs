@@ -8,6 +8,14 @@ namespace Pascal.Services.FileManageService;
 internal partial class FileManageService
 {
     #region 범용 Picker API
+    public async Task<StorageFolder?> PickFolderAsync(
+        PickerLocationId startLocation = PickerLocationId.DocumentsLibrary,
+        PickerViewMode viewMode = PickerViewMode.List)
+    {
+        var picker = CreateFolderPicker(startLocation, viewMode);
+        return await picker.PickSingleFolderAsync();
+    }
+
     public async Task<IReadOnlyList<StorageFile>> PickMultipleFilesAsync(
         IEnumerable<string>? fileTypeFilters,
         PickerLocationId startLocation = PickerLocationId.DocumentsLibrary,

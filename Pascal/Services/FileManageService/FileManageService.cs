@@ -24,6 +24,20 @@ namespace Pascal.Services.FileManageService
         }
 
         #region 내부 유틸
+        private static FolderPicker CreateFolderPicker(PickerLocationId location, PickerViewMode mode)
+        {
+            var picker = new FolderPicker
+            {
+                SuggestedStartLocation = location,
+                ViewMode = mode
+            };
+            picker.FileTypeFilter.Add("*");
+            var window = App.MainWindow;
+            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+            WinRT.Interop.InitializeWithWindow.Initialize(picker, hWnd);
+            return picker;
+        }
+
         private static FileOpenPicker CreateOpenPicker(PickerLocationId location, PickerViewMode mode)
         {
             var picker = new FileOpenPicker

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="Pascal.Views.Pages.PdfEditPages.PdfSplitPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -95,7 +95,7 @@
 
                             <TextBox
                                 Grid.Column="1"
-                                Text="{x:Bind PageRange, Mode=TwoWay}"
+                                Text="{x:Bind SplitSize, Mode=TwoWay}"
                                 PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
 
                             <TextBox

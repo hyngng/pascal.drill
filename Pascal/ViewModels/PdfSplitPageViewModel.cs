@@ -95,9 +95,9 @@ namespace Pascal.ViewModels
 
                 try
                 {
-                    var file = await App.Current.FileManageService.PickSavePdfFileAsync();
-                    if (file != null)
-                        App.Current.PdfService.MergePdf(file.Path, pdfItems);
+                    var folder = await App.Current.FileManageService.PickSavePdfFolderAsync();
+                    if (folder != null)
+                        App.Current.PdfService.SplitPdf(folder.Path, pdfItems);
                 }
                 finally
                 {

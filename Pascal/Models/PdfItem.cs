@@ -13,6 +13,7 @@ namespace Pascal.Models
         private string fileSize = string.Empty;
         private string pageRange = string.Empty;
         private List<int> pagesToProcess = [];
+        private int splitSize = 1;
 
         public int FileOrder { get => fileOrder; set { fileOrder = value; OnPropertyChanged(); } }
         public int PageCount { get => pageCount; set { pageCount = value; OnPropertyChanged(); } }
@@ -23,6 +24,7 @@ namespace Pascal.Models
         public string PageRangeHint => PageCount <= 1 ? "1" : $"1-{PageCount}";
         public string PageRange { get => pageRange; set { if (pageRange != value) { pageRange = value; OnPropertyChanged(); } } }
         public List<int> PagesToProcess { get => pagesToProcess; set { pagesToProcess = value; OnPropertyChanged(); } }
+        public int SplitSize { get => splitSize; set { splitSize = value; OnPropertyChanged(); } }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

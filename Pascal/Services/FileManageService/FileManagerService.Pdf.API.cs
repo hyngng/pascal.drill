@@ -22,6 +22,12 @@ internal partial class FileManageService
         picker.SuggestedFileName = "merged-document";
         return await picker.PickSaveFileAsync();
     }
+
+    public async Task<StorageFolder?> PickSavePdfFolderAsync()
+    {
+        var picker = CreateFolderPicker(PickerLocationId.DocumentsLibrary, PickerViewMode.List);
+        return await picker.PickSingleFolderAsync();
+    }
     #endregion
 
     #region PDF 특화 래퍼
