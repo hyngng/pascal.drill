@@ -33,7 +33,7 @@ namespace Pascal.Views.Pages.PdfEditPages
                 deleteItem.Command = null;
                 deleteItem.CommandParameter = null;
 
-                var selectedList = PdfListView.SelectedItems?.OfType<PdfItem>().ToList() ?? new List<PdfItem>();
+                var selectedList = PdfTableView.SelectedItems?.OfType<PdfItem>().ToList() ?? new List<PdfItem>();
                 List<PdfItem> selectedItems;
                 if (selectedList.Count > 1)
                 {

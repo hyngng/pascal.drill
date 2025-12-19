@@ -53,8 +53,8 @@ namespace Pascal.Views.Pages.PdfEditPages
                 if (menuFlyOutDeleteItem is null)
                     return;
 
-                menuFlyOutOpenItem.Command = null;
-                menuFlyOutOpenItem.CommandParameter = null;
+                menuFlyOutOpenItem?.Command = null;
+                menuFlyOutOpenItem?.CommandParameter = null;
                 menuFlyOutDeleteItem.Command = null;
                 menuFlyOutDeleteItem.CommandParameter = null;
 
@@ -81,8 +81,8 @@ namespace Pascal.Views.Pages.PdfEditPages
                                   : new List<PdfItem>();
                 }
 
-                menuFlyOutOpenItem.CommandParameter = selectedItems;
-                menuFlyOutOpenItem.Command = ViewModel.OpenFilesCommand;
+                menuFlyOutOpenItem?.CommandParameter = selectedItems;
+                menuFlyOutOpenItem?.Command = ViewModel.OpenFilesCommand;
                 menuFlyOutDeleteItem.CommandParameter = selectedItems;
                 menuFlyOutDeleteItem.Command = ViewModel.DeleteFilesCommand;
             }

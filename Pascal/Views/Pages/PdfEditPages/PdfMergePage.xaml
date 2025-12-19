@@ -62,10 +62,10 @@
         <Border
             Style="{ThemeResource InfoBorderPanelStyle}"
             Margin="36,0,36,0"
-            Grid.Row="1"
-            Padding="16">
+            Padding="16,0,16,16"
+            Grid.Row="1">
             <ListView
-                x:Name="PdfListView"
+                x:Name="PdfTableView"
                 ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
                 CanReorderItems="True"
                 AllowDrop="True"
@@ -73,8 +73,9 @@
                 SelectionMode="Extended"
                 DragItemsCompleted="ListView_OnDragCompleted">
                 <ListView.Header>
-                    <Border Background="{ThemeResource SolidBackgroundFillColorTertiaryBrush}"
-                            CornerRadius="4">
+                    <Border
+                        Background="{ThemeResource TableIndexBackgroundColor}"
+                        Padding="{ThemeResource TableIndexBackgroundPadding}">
                         <interactivity:Interaction.Behaviors>
                             <behaviors:StickyHeaderBehavior />
                         </interactivity:Interaction.Behaviors>
@@ -84,29 +85,30 @@
                                 MinWidth="30" />
                             <toolkit:DataColumn
                                 Content="파일명"
-                                DesiredWidth="*"
-                                CanResize="True" />
+                                DesiredWidth="*" />
                             <toolkit:DataColumn
                                 Content="병합 범위"
-                                MinWidth="120" />
+                                MinWidth="160" />
                         </toolkit:DataTable>
                     </Border>
                 </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:PdfItem">
-                        <toolkit:DataRow HorizontalAlignment="Left">
+                        <toolkit:DataRow HorizontalAlignment="Stretch">
                             <TextBlock
                                 Text="{x:Bind FileOrder, Mode=OneWay}"
                                 HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                TextTrimming="CharacterEllipsis" />
+                                VerticalAlignment="Center" />
                             <TextBlock
                                 Text="{x:Bind FileName, Mode=OneWay}"
-                                VerticalAlignment="Center"
-                                TextTrimming="CharacterEllipsis" />
+                                TextTrimming="CharacterEllipsis"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center" />
                             <TextBox
                                 Text="{x:Bind PageRange, Mode=TwoWay}"
                                 PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}"
+                                Width="Auto"
+                                HorizontalAlignment="Stretch"
                                 VerticalAlignment="Center" />
                         </toolkit:DataRow>
                     </DataTemplate>
@@ -129,9 +131,9 @@
                                         Text="삭제"
                                         Icon="Delete"
                                         Tag="DeleteMenu">
-                                        <!--<MenuFlyoutItem.KeyboardAccelerators>
+                                        <MenuFlyoutItem.KeyboardAccelerators>
                                             <KeyboardAccelerator Key="Delete" />
-                                        </MenuFlyoutItem.KeyboardAccelerators>-->
+                                        </MenuFlyoutItem.KeyboardAccelerators>
                                     </MenuFlyoutItem>
                                 </MenuFlyout>
                             </Setter.Value>

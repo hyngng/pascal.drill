@@ -14,10 +14,11 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TitleBar x:Name="AppTitleBar"
-                  Title="{x:Bind dev:ProcessInfoHelper.ProductName}"
-                  IsPaneToggleButtonVisible="True"
-                  PaneToggleRequested="TitleBar_PaneToggleRequested">
+        <TitleBar
+            x:Name="AppTitleBar"
+            Title="{x:Bind dev:ProcessInfoHelper.ProductName}"
+            IsPaneToggleButtonVisible="True"
+            PaneToggleRequested="TitleBar_PaneToggleRequested">
             <!--  Temporary Fix TitleBar Icon  -->
             <TitleBar.LeftHeader>
                 <ImageIcon Width="16"
@@ -61,7 +62,7 @@
                     x:Name="LabsPage"
                     Content="아직 만드는 중"
                     Icon="Emoji"
-                    Visibility="Collapsed"
+                    Visibility="{x:Bind ViewModel.IsLabsVisible, Mode=OneWay}"
                     dev:NavigationServiceEx.NavigateTo="pages:WindowsUpdatePage" />
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>

@@ -18,8 +18,6 @@ public sealed partial class MainWindow : Window
 
     private void mainPage_Loaded()
     {
-        App.Current.LabsService.LabsChanged += OnLabsEnabledToggled;
-        
         // DevWinUI의 ConfigureDefaultPage와 ConfigureSettingsPage 사용
         App.Current.NavigationService
             .Initialize(NavView, NavFrame)
@@ -33,43 +31,4 @@ public sealed partial class MainWindow : Window
         NavView.IsPaneOpen = !NavView.IsPaneOpen;
     }
     #endregion 고든램지 햄버거 버튼
-
-    #region 실험실 기능 숨기기/보이기 => 모델뷰로 옮길 것
-    private void OnLabsEnabledToggled(bool isEnabled)
-    {
-        UpdateNavigationViewItemVisibility("LabsPage", !isEnabled);
-    }
-
-    private void UpdateNavigationViewItemVisibility(string uniqueId, bool hide)
-    {
-        var item = FindNavigationViewItem(uniqueId);
-        if (item != null)
-            item.Visibility = hide ? Visibility.Collapsed : Visibility.Visible;
-    }
-
-    private NavigationViewItem FindNavigationViewItem(string identifier)
-    {
-        var allCollections = new[] { NavView.MenuItems, NavView.FooterMenuItems };
-
-        return allCollections
-              .SelectMany(collection => GetAllNavigationItems(collection))
-              .FirstOrDefault(item => item.Tag?.ToString() == identifier || item.Name == identifier);
-    }
-
-    private IEnumerable<NavigationViewItem> GetAllNavigationItems(IList<object> items)
-    {
-        foreach (var item in items)
-        {
-            if (item is NavigationViewItem navItem)
-            {
-                yield return navItem;
-
-                if (navItem.MenuItems?.Count > 0)
-                    foreach (var childItem in GetAllNavigationItems(navItem.MenuItems))
-                        yield return childItem;
-            }
-        }
-    }
-    #endregion 실험실 기능 숨기기/보이기
 }
-
