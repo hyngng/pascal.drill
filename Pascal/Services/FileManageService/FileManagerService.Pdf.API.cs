@@ -76,5 +76,51 @@ internal partial class FileManageService
         App.Current.PdfService.MergePdf(file.Path, oc);
         return file.Path;
     }
+
+    public async Task<IReadOnlyList<PdfItem>?> CreatePdfItemsFromFilePathsAsync(int startOrder, IReadOnlyList<string> filePaths)
+    {
+        if (filePaths.Count == 0)
+            return Array.Empty<PdfItem>();
+
+        BeginBusy();
+        try
+        {
+            var list = new List<PdfItem>();
+            for (int i = 0; i < filePaths.Count; i++)
+            {
+                var path = filePaths[i];
+                if (string.IsNullOrWhiteSpace(path))
+                    continue;
+
+                StorageFile? file;
+                try
+                {
+                    file = await StorageFile.GetFileFromPathAsync(path);
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
+
+                var props = await file.GetBasicPropertiesAsync();
+                var pageCount = App.Current.PdfService.FindPageRanges(path);
+
+                list.Add(new PdfItem
+                {
+                    FileOrder = startOrder + list.Count + 1,
+                    PageCount = pageCount,
+                    FilePath = path,
+                    FileName = file.Name,
+                    FileSize = $"{props.Size / 1024:N0} KB",
+                });
+            }
+
+            return list.Count > 0 ? list : null;
+        }
+        finally
+        {
+            EndBusy();
+        }
+    }
     #endregion
 }

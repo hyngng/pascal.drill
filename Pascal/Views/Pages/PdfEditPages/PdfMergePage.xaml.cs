@@ -3,8 +3,12 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Pascal.Models;
 using Pascal.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.Storage;
 
 namespace Pascal.Views.Pages.PdfEditPages
 {
@@ -17,6 +21,37 @@ namespace Pascal.Views.Pages.PdfEditPages
             ViewModel = App.GetService<PdfMergePageViewModel>();
             this.InitializeComponent();
         }
+
+        #region 파일 드래그&드롭
+        private void PdfListView_OnDragOver(object sender, DragEventArgs e)
+        {
+            if (ViewModel.IsNotBusy && e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                e.AcceptedOperation               = DataPackageOperation.Copy;
+                e.DragUIOverride.Caption          = "PDF 추가";
+                e.DragUIOverride.IsCaptionVisible = true;
+                e.Handled                         = true;
+            }
+        }
+
+        private async void PdfListView_OnDrop(object sender, DragEventArgs e)
+        {
+            if (ViewModel.IsBusy || !e.DataView.Contains(StandardDataFormats.StorageItems))
+                return;
+
+            var storageItems = await e.DataView.GetStorageItemsAsync();
+            var pdfPaths = storageItems.OfType<StorageFile>()
+                .Where(file => file.FileType.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                .Select(file => file.Path)
+                .Where(path => !string.IsNullOrEmpty(path))
+                .ToList();
+
+            if (pdfPaths.Count == 0)
+                return;
+
+            await ViewModel.AddPdfFilesFromPathsAsync(pdfPaths);
+        }
+        #endregion 파일 드래그&드롭
 
         #region 항목 우클릭 메뉴
         private void ItemMenuFlyout_Opening(object sender, object e)
@@ -33,7 +68,7 @@ namespace Pascal.Views.Pages.PdfEditPages
                 deleteItem.Command = null;
                 deleteItem.CommandParameter = null;
 
-                var selectedList = PdfTableView.SelectedItems?.OfType<PdfItem>().ToList() ?? new List<PdfItem>();
+                var selectedList = PdfListView.SelectedItems?.OfType<PdfItem>().ToList() ?? new List<PdfItem>();
                 List<PdfItem> selectedItems;
                 if (selectedList.Count > 1)
                 {

@@ -72,5 +72,19 @@ namespace Pascal.ViewModels
         {
             fileManager.ReorderItems(PdfItems, (it, order) => it.FileOrder = order);
         }
+
+        [RelayCommand]
+        public async Task AddPdfFilesFromPathsAsync(IReadOnlyList<string> filePaths)
+        {
+            if (IsBusy || filePaths.Count == 0)
+                return;
+
+            var added = await fileManager.CreatePdfItemsFromFilePathsAsync(PdfItems.Count, filePaths);
+            if (added is null || added.Count == 0)
+                return;
+
+            foreach (var item in added)
+                PdfItems.Add(item);
+        }
     }
 }

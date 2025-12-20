@@ -14,6 +14,8 @@ namespace Pascal.Services.FileManageService
         Task<StorageFolder?> PickSavePdfFolderAsync();
         Task<IReadOnlyList<PdfItem>> PickAndCreatePdfItemsAsync(int baseCount, CancellationToken ct = default);
         Task<string?> SaveMergedPdfAsync(IReadOnlyList<PdfItem> items, CancellationToken ct = default);
+        Task<IReadOnlyList<PdfItem>?> CreatePdfItemsFromFilePathsAsync(int startOrder, IReadOnlyList<string> filePaths);
+
 
         void OpenFiles<T>(IEnumerable<T>? items, Func<T, string> pathSelector);
         void ReorderItems<T>(ObservableCollection<T>? items, Action<T, int> setOrder);

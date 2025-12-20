@@ -39,8 +39,10 @@
                 AutomationProperties.HeadingLevel="Level1"
                 Text="이곳에서 분할 작업을 수행할 수 있습니다." />
             <CommandBar
-                Background="Transparent" IsOpen="False" DefaultLabelPosition="Right"
-                Margin="36,0,36,0">
+                Background="Transparent"
+                IsOpen="False"
+                DefaultLabelPosition="Right"
+                Margin="36,0">
                 <AppBarButton
                     x:Name="PickPdfFilesButton"
                     Icon="Add" Label="불러오기"
@@ -54,6 +56,99 @@
             </CommandBar>
         </StackPanel>
         <Border
+            Style="{ThemeResource InfoBorderPanelStyle}" 
+            Margin="36,0"
+            Padding="16"
+            Grid.Row="1">
+            <ListView
+                x:Name="PdfListView"
+                ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
+                AllowDrop="True"
+                SelectionMode="Extended">
+                <ListView.Header>
+                    <Grid
+                        Background="{ThemeResource TableIndexBackgroundColor}"
+                        ColumnSpacing="16"
+                        Padding="8,8,8,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="120" />
+                        </Grid.ColumnDefinitions>
+                        <interactivity:Interaction.Behaviors>
+                            <behaviors:StickyHeaderBehavior />
+                        </interactivity:Interaction.Behaviors>
+                        <TextBlock
+                            Grid.Column="0"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="파일명" />
+                        <TextBlock
+                            Grid.Column="1"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="분할 단위" />
+                        <TextBlock
+                            Grid.Column="2"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="분할 범위" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:PdfItem">
+                        <Grid
+                            VerticalAlignment="Center"
+                            ColumnSpacing="16"
+                            Padding="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="120" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock
+                                Grid.Column="0"
+                                Text="{x:Bind FileName, Mode=OneWay}"
+                                VerticalAlignment="Center"
+                                TextTrimming="CharacterEllipsis" />
+                            <TextBox
+                                Grid.Column="1"
+                                PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}"
+                                Text="{x:Bind SplitSize, Mode=TwoWay}" />
+                            <TextBox
+                                Grid.Column="2"
+                                PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}"
+                                Text="{x:Bind PageRange, Mode=TwoWay}" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemContainerStyle>
+                    <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="ContextFlyout">
+                            <Setter.Value>
+                                <MenuFlyout Opening="ItemMenuFlyout_Opening">
+                                    <MenuFlyoutItem
+                                        x:Name="OpenMenu"
+                                        Text="열기"
+                                        Icon="OpenFile"
+                                        Tag="OpenMenu" />
+                                    <MenuFlyoutSeparator x:Name="FlyoutSeperator" />
+                                    <MenuFlyoutItem
+                                        x:Name="DeleteMenu"
+                                        Text="삭제"
+                                        Icon="Delete"
+                                        Tag="DeleteMenu">
+                                        <MenuFlyoutItem.KeyboardAccelerators>
+                                            <!--<KeyboardAccelerator Key="Delete" />-->
+                                        </MenuFlyoutItem.KeyboardAccelerators>
+                                    </MenuFlyoutItem>
+                                </MenuFlyout>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+        </Border>
+        <!--<Border
             Style="{ThemeResource InfoBorderPanelStyle}"
             Margin="36,0,36,0"
             Padding="16,0,16,16"
@@ -104,7 +199,7 @@
                         </toolkit:DataRow>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                <!--<ListView.ItemTemplate>
+                --><!--<ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:PdfItem">
                         <Grid VerticalAlignment="Center" ColumnSpacing="16" Padding="16,12">
                             <Grid.ColumnDefinitions>
@@ -127,7 +222,7 @@
                                 PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                         </Grid>
                     </DataTemplate>
-                </ListView.ItemTemplate>-->
+                </ListView.ItemTemplate>--><!--
                 <ListView.ItemContainerStyle>
                     <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -146,7 +241,7 @@
                                         Icon="Delete"
                                         Tag="DeleteMenu">
                                         <MenuFlyoutItem.KeyboardAccelerators>
-                                            <!--<KeyboardAccelerator Key="Delete" />-->
+                                            --><!--<KeyboardAccelerator Key="Delete" />--><!--
                                         </MenuFlyoutItem.KeyboardAccelerators>
                                     </MenuFlyoutItem>
                                 </MenuFlyout>
@@ -155,7 +250,7 @@
                     </Style>
                 </ListView.ItemContainerStyle>
             </ListView>
-        </Border>
+        </Border>-->
         <Border Grid.Row="2" />
     </Grid>
 </Page>
