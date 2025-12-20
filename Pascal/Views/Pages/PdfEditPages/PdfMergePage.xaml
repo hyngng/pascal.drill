@@ -67,6 +67,7 @@
             <ListView
                 x:Name="PdfListView"
                 ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
+                DragItemsCompleted="ListView_OnDragCompleted"
                 DragOver="PdfListView_OnDragOver"
                 Drop="PdfListView_OnDrop"
                 SelectionMode="Extended"
