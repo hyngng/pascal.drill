@@ -11,9 +11,10 @@
 
     <Page.Resources>
         <x:Double x:Key="SettingsCardSpacing">4</x:Double>
-        <Style x:Key="SettingsSectionHeaderTextBlockStyle"
-               BasedOn="{StaticResource BodyStrongTextBlockStyle}"
-               TargetType="TextBlock">
+        <Style
+            x:Key="SettingsSectionHeaderTextBlockStyle"
+            BasedOn="{StaticResource BodyStrongTextBlockStyle}"
+            TargetType="TextBlock">
             <Style.Setters>
                 <Setter Property="Margin" Value="1,30,0,6" />
             </Style.Setters>
@@ -22,7 +23,7 @@
     <Grid x:Name="ContentArea" MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="36" />
         </Grid.RowDefinitions> 
         <dev:HomePageHeader
             HeaderImageHeight="300"
@@ -82,5 +83,6 @@
                 </StackPanel>
             </dev:HomePageHeader.HeaderContent>
         </dev:HomePageHeader>
+        <Border Grid.Row="1" />
     </Grid>
 </Page>

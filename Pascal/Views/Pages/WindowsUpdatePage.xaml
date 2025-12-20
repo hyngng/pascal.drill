@@ -9,16 +9,42 @@
     xmlns:dev="using:DevWinUI"
     mc:Ignorable="d">
 
-    <Grid>
-        <Button Click="ActivateWindowsUpdateWindow">
+    <Grid x:Name="ContentArea" MaxWidth="1064">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="36" />
+        </Grid.RowDefinitions>
+        <StackPanel
+            dev:PanelAttach.ChildrenTransitions="Default"
+            Spacing="12"
+            Grid.Row="0">
             <TextBlock
-                Text="이 기능은 곧 제공될 예정입니다."
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                FontSize="24"
-                FontWeight="Bold"/>
-        </Button>
-
-        <dev:KeyVisual Content="Ctrl+F5" />
+                x:Name="PageHeader"
+                Margin="{ThemeResource PageHeaderMargin}"
+                Padding="{ThemeResource PageHeaderPadding}"
+                Style="{StaticResource TitleTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="잠시 쉬기" />
+            <TextBlock
+                x:Name="PageDescription"
+                Margin="{ThemeResource PageDescriptionMargin}"
+                Padding="{ThemeResource PageDescriptionPadding}"
+                Style="{StaticResource CaptionTextBlockStyle}"
+                AutomationProperties.HeadingLevel="Level1"
+                Text="윈도우 업데이트 창을 가짜로 띄울 수 있습니다." />
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Button Click="ActivateWindowsUpdateWindow">
+                <TextBlock
+                    Text="이 기능은 곧 제공될 예정입니다."
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    FontWeight="Bold"/>
+            </Button>
+            <dev:KeyVisual Content="Ctrl+F5" />
+        </StackPanel>
+        <Border Grid.Row="2" />
     </Grid>
 </Page>

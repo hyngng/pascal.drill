@@ -12,7 +12,6 @@
 
     <Page.Resources>
         <x:Double x:Key="SettingsCardSpacing">4</x:Double>
-
         <Style
             x:Key="SettingsSectionHeaderTextBlockStyle"
             BasedOn="{StaticResource BodyStrongTextBlockStyle}"
@@ -22,14 +21,16 @@
             </Style.Setters>
         </Style>
     </Page.Resources>
-
     <Grid x:Name="RootGrid" MaxWidth="1064">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="36" />
         </Grid.RowDefinitions>
-
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12">
+        <StackPanel
+            dev:PanelAttach.ChildrenTransitions="Default"
+            Spacing="12"
+            Grid.Row="0">
             <TextBlock
                 x:Name="PageHeader"
                 Margin="{ThemeResource PageHeaderMargin}"
@@ -45,7 +46,6 @@
                 AutomationProperties.HeadingLevel="Level1"
                 Text="프로그램과 관련된 편의기능을 설정할 수 있습니다." />
         </StackPanel>
-
         <ScrollView
             Grid.Row="1"
             Padding="36,0,36,0"
@@ -92,8 +92,8 @@
                     </dev:SettingsCard.HeaderIcon>
                     <ToggleSwitch x:Name="labsToggleSwitch" Toggled="labsToggleSwitch_Toggled" />
                 </dev:SettingsCard>
-
             </StackPanel>
         </ScrollView>
+        <Border Grid.Row="2" />
     </Grid>
 </Page>

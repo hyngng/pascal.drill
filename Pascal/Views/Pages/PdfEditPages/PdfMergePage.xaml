@@ -41,8 +41,7 @@
             <CommandBar
                 Background="Transparent"
                 IsOpen="False"
-                DefaultLabelPosition="Right"
-                Margin="36,0,36,0">
+                DefaultLabelPosition="Right">
                 <AppBarButton
                     x:Name="PickPdfFilesButton"
                     Icon="Add"
@@ -61,17 +60,17 @@
         </StackPanel>
         <Border
             Style="{ThemeResource InfoBorderPanelStyle}"
-            Margin="36,0,36,0"
-            Padding="16,0,16,16"
+            Margin="36,0"
+            Padding="16,0"
             Grid.Row="1">
             <ListView
                 x:Name="PdfTableView"
                 ItemsSource="{x:Bind ViewModel.PdfItems, Mode=OneWay}"
-                CanReorderItems="True"
-                AllowDrop="True"
-                CanDragItems="True"
+                DragItemsCompleted="ListView_OnDragCompleted"
                 SelectionMode="Extended"
-                DragItemsCompleted="ListView_OnDragCompleted">
+                CanReorderItems="True"
+                CanDragItems="True"
+                AllowDrop="True">
                 <ListView.Header>
                     <Border
                         Background="{ThemeResource TableIndexBackgroundColor}"
@@ -82,13 +81,14 @@
                         <toolkit:DataTable ColumnSpacing="16">
                             <toolkit:DataColumn
                                 Content="연번"
-                                MinWidth="30" />
+                                MinWidth="30">
+                            </toolkit:DataColumn>
                             <toolkit:DataColumn
                                 Content="파일명"
                                 DesiredWidth="*" />
                             <toolkit:DataColumn
                                 Content="병합 범위"
-                                MinWidth="160" />
+                                MinWidth="160"/>
                         </toolkit:DataTable>
                     </Border>
                 </ListView.Header>
@@ -97,18 +97,14 @@
                         <toolkit:DataRow HorizontalAlignment="Stretch">
                             <TextBlock
                                 Text="{x:Bind FileOrder, Mode=OneWay}"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center" />
+                                VerticalAlignment="Center"/>
                             <TextBlock
                                 Text="{x:Bind FileName, Mode=OneWay}"
                                 TextTrimming="CharacterEllipsis"
-                                HorizontalAlignment="Left"
                                 VerticalAlignment="Center" />
                             <TextBox
                                 Text="{x:Bind PageRange, Mode=TwoWay}"
                                 PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}"
-                                Width="Auto"
-                                HorizontalAlignment="Stretch"
                                 VerticalAlignment="Center" />
                         </toolkit:DataRow>
                     </DataTemplate>
@@ -116,7 +112,6 @@
                 <ListView.ItemContainerStyle>
                     <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                        <Setter Property="Padding" Value="0"/>
                         <Setter Property="ContextFlyout">
                             <Setter.Value>
                                 <MenuFlyout Opening="ItemMenuFlyout_Opening">

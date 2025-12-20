@@ -20,7 +20,10 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="36" />
         </Grid.RowDefinitions>
-        <StackPanel dev:PanelAttach.ChildrenTransitions="Default" Spacing="12" Grid.Row="0">
+        <StackPanel
+            dev:PanelAttach.ChildrenTransitions="Default"
+            Spacing="12"
+            Grid.Row="0">
             <TextBlock
                 x:Name="PageHeader"
                 Margin="{ThemeResource PageHeaderMargin}"
@@ -70,34 +73,32 @@
                         <toolkit:DataTable ColumnSpacing="16">
                             <toolkit:DataColumn
                                 Content="파일명"
-                                MinWidth="30" />
-                            <toolkit:DataColumn
-                                Content="분할 단위"
                                 DesiredWidth="*" />
                             <toolkit:DataColumn
+                                Content="분할 단위"
+                                MinWidth="80" />
+                            <toolkit:DataColumn
                                 Content="분할 범위"
-                                MinWidth="160" />
+                                MinWidth="120" />
                         </toolkit:DataTable>
                     </Border>
                 </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:PdfItem">
-                        <toolkit:DataRow HorizontalAlignment="Stretch">
+                        <toolkit:DataRow>
                             <TextBlock
                                 Text="{x:Bind FileName, Mode=OneWay}"
-                                HorizontalAlignment="Center"
+                                Width="Auto"
                                 VerticalAlignment="Center"
                                 TextTrimming="CharacterEllipsis" />
                             <TextBox
                                 Text="{x:Bind SplitSize, Mode=TwoWay}"
                                 Width="Auto"
-                                HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                             <TextBox
                                 Text="{x:Bind PageRange, Mode=TwoWay}"
                                 Width="Auto"
-                                HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 PlaceholderText="{x:Bind PageRangeHint, Mode=OneWay}" />
                         </toolkit:DataRow>
@@ -130,7 +131,6 @@
                 <ListView.ItemContainerStyle>
                     <Style BasedOn="{StaticResource DefaultListViewItemStyle}" TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                        <Setter Property="Padding" Value="0"/>
                         <Setter Property="ContextFlyout">
                             <Setter.Value>
                                 <MenuFlyout Opening="ItemMenuFlyout_Opening">
