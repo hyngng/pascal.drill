@@ -1,6 +1,6 @@
 ﻿# Pascal
 
-
+![pages-light](https://github.com/hyngng/pascal.drill/blob/main/Image/pages-light.png)
 
 .NET 9 및 WinUI 3 기반 Windows PDF 유틸리티 앱입니다. MVVM 아키텍처와 DI 패턴으로 설계되었습니다.
 
